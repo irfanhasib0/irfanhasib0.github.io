@@ -25,7 +25,7 @@ Here I have added my machine learning projects.
 <img src="https://github.com/irfanhasib0/Machine-Learning/blob/master/docs/Results/iris_ID3.png" align="left"
      title="Schematics" width="320" height="240">
 
-<img src="https://github.com/irfanhasib0/Machine-Learning/blob/master/docs/Results/irispred.png" align="right"
+<img src="https://github.com/irfanhasib0/Machine-Learning/blob/master/docs/Results/irispred.jpg" align="right"
      title="Schematics" width="320" height="240">
 
 
