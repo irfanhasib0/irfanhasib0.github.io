@@ -6,7 +6,7 @@ Here I have added my machine learning projects.
 * ![NN Implementation from scratch - Code ](https://github.com/irfanhasib0/Machine-Learning/blob/master/Machine_Learning_Algo_From_Scratch/ID3_with_continuous_feature_support_exp.py)
 
 <img src="https://github.com/irfanhasib0/Machine-Learning/blob/master/docs/Algorihms/NN.jpg" align="center"
-     title="Schematics" width="1080" height="720">
+     title="Schematics" width="640" height="960">
 * Result of ANN implementation for XOR data - mean sqaure error vs epoch -
 <img src="https://github.com/irfanhasib0/Machine-Learning/blob/master/docs/Results/xor_ann.jpg" align="center"
      title="Schematics" width="320" height="240">
@@ -22,14 +22,23 @@ Here I have added my machine learning projects.
 <img src="https://github.com/irfanhasib0/Machine-Learning/blob/master/docs/Algorihms/ID3.jpg" align="center"
      title="Schematics" width="640" height="480">
 
-* Result of ID3 implementation for Titanic data - Precision Recall and Accuracy for -
-* Result of ID3 implementation for Iris data - True Label vs Prediction -
+* Result of ID3 implementation for iris data - a.Precision Recall and Accuracy and b.True Label vs Prediction -
+
 
 <img src="https://github.com/irfanhasib0/Machine-Learning/blob/master/docs/Results/iris_ID3.png" align="left"
      title="Schematics" width="320" height="240">
 
 <img src="https://github.com/irfanhasib0/Machine-Learning/blob/master/docs/Results/irispred.jpg" align="center"
      title="Schematics" width="320" height="240">
+
+* Result of ID3 implementation for Titanic data - a.Precision Recall and Accuracy and b.True Label vs Predictio
+
+<img src="https://github.com/irfanhasib0/Machine-Learning/blob/master/docs/Results/titanic_ID3.png" align="left"
+     title="Schematics" width="320" height="240">
+
+<img src="https://github.com/irfanhasib0/Machine-Learning/blob/master/docs/Results/titanicpred.jpg" align="center"
+     title="Schematics" width="320" height="240">
+
 
 
 ### Naive Bayes Implementation for text classification.
