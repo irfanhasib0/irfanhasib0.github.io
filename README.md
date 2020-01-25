@@ -6,12 +6,12 @@ Here I have added my machine learning projects.
 * ![NN Implementation from scratch - Code ](https://github.com/irfanhasib0/Machine-Learning/blob/master/Machine_Learning_Algo_From_Scratch/ID3_with_continuous_feature_support_exp.py)
 *a. Forward Propagation b. Back Propagation c.Result of ANN implementation for XOR data - mean sqaure error vs epoch -
 <img src="https://github.com/irfanhasib0/Machine-Learning/blob/master/docs/Algorihms/NN_fp.jpg" align="left"
-     title="Schematics" width="480" height="320">
+     title="Schematics" width="320" height="320">
 <img src="https://github.com/irfanhasib0/Machine-Learning/blob/master/docs/Algorihms/NN_bp.jpg" align="center"
-     title="Schematics" width="480" height="320">
+     title="Schematics" width="320" height="320">
 
 <img src="https://github.com/irfanhasib0/Machine-Learning/blob/master/docs/Results/xor_ann.jpg" align="right"
-     title="Schematics" width="480" height="320">
+     title="Schematics" width="320" height="320">
 
 
 ### Decision Tree :: ID3 Implementation from scratch with continuous data split based on entropy and information gain.
