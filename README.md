@@ -21,11 +21,12 @@ c. Result of ANN implementation for XOR data - mean sqaure error vs epoch -
 
 
 ### Decision Tree :: ID3 Implementation from scratch with continuous data split based on entropy and information gain.
+* ![ID3 Implementation from scratch - Notebook (Project Presentaion and Code Link) ](https://github.com/irfanhasib0/Machine-Learning/blob/master/Machine_Learning_Algo_From_Scratch/ANN_From_Scratch_modular_class.ipynb)
+
 * Titanic and irish dataset was used for testing ID3.
 * Continuous data spliting based on information gain.
 * ID3 Algorithm with recursion. Best attribute was calculated based on information gain.
 * Prediction : accuracy,precision,recall reporting.
-* ![ID3 Implementation from scratch - Notebook (Project Presentaion and Code Link) ](https://github.com/irfanhasib0/Machine-Learning/blob/master/Machine_Learning_Algo_From_Scratch/ANN_From_Scratch_modular_class.ipynb)
 
 * ID3 Flow Chart of Implementation (Click on image for full resolution and clear view on a new tab)
 
@@ -57,10 +58,11 @@ c. Result of ANN implementation for XOR data - mean sqaure error vs epoch -
 
 
 ### Naive Bayes :: Implementation for text classification.
+* ![Naive Bayes Implementation from scratch - Notebook (Project Presentaion and Code Link) ](https://github.com/irfanhasib0/Machine-Learning/blob/master/Machine_Learning_Algo_From_Scratch/Naive_Bayes_Stack_Exchange.ipynb)
+
 * Archived data from stack exchange is used for classification.
 * Text Preprocessing was done with raw python without nltk.
-* Naive Bayes algorithm applied on the proceswed text.
-* ![Naive Bayes Implementation from scratch - Notebook (Project Presentaion and Code Link) ](https://github.com/irfanhasib0/Machine-Learning/blob/master/Machine_Learning_Algo_From_Scratch/Naive_Bayes_Stack_Exchange.ipynb)
+* Naive Bayes algorithm applied on the procesed text.
 <img src="https://github.com/irfanhasib0/Machine-Learning/blob/master/docs/Algorihms/Naive Bayes.jpg" align="center"
      title="Schematics" width="640" height="480">
 
