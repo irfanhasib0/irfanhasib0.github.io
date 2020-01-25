@@ -15,14 +15,14 @@ Neural Network :: NN Implementation from scratch
 
 	a. Forward Propagation b. Back Propagation (Click on image for full resolution and clear view on a new tab)
 
-<img src="https://github.com/irfanhasib0/Machine-Learning/blob/master/docs/Algorihms/NN_fp.jpg" align="left"
+<img src="docs/Algorihms/NN_fp.jpg" align="left"
      title="Schematics" width="420" height="420"/>
-<img src="https://github.com/irfanhasib0/Machine-Learning/blob/master/docs/Algorihms/NN_bp.jpg" align="center"
+<img src="docs/Algorihms/NN_bp.jpg" align="center"
      title="(Click on image for full resolution and clear view on a new tab)" width="420" height="420">
 
 c. Result of ANN implementation for XOR data - mean sqaure error vs epoch -
 
-<img src="https://github.com/irfanhasib0/Machine-Learning/blob/master/docs/Results/xor_ann.jpg" align="center"
+<img src="docs/Results/xor_ann.jpg" align="center"
      title="(Click on image for full resolution and clear view on a new tab)" width="320" height="240">
 
 
@@ -37,28 +37,28 @@ Decision Tree :: ID3 Implementation from scratch
 
 	ID3 Flow Chart of Implementation (Click on image for full resolution and clear view on a new tab)
 
-<img src="https://github.com/irfanhasib0/Machine-Learning/blob/master/docs/Algorihms/ID3.jpg" align="center"
+<img src="docs/Algorihms/ID3.jpg" align="center"
      title="(Click on image for full resolution and clear view on a new tab)
 " width="320" height="240">
 
 * Result of ID3 implementation for iris data - a.Precision Recall and Accuracy and b.True Label vs Prediction -
 
 
-<img src="https://github.com/irfanhasib0/Machine-Learning/blob/master/docs/Results/iris_ID3.png" align="left"
+<img src="docs/Results/iris_ID3.png" align="left"
      title="(Click on image for full resolution and clear view on a new tab)
 " width="320" height="240">
 
-<img src="https://github.com/irfanhasib0/Machine-Learning/blob/master/docs/Results/irispred.jpg" align="center"
+<img src="docs/Results/irispred.jpg" align="center"
      title="(Click on image for full resolution and clear view on a new tab)
 " width="320" height="240">
 
 * Result of ID3 implementation for Titanic data - a.Precision Recall and Accuracy and b.True Label vs Predictio
 
-<img src="https://github.com/irfanhasib0/Machine-Learning/blob/master/docs/Results/titanic_ID3.png" align="left"
+<img src="docs/Results/titanic_ID3.png" align="left"
      title="(Click on image for full resolution and clear view on a new tab)
 " width="320" height="240">
 
-<img src="https://github.com/irfanhasib0/Machine-Learning/blob/master/docs/Results/titanicpred.jpg" align="center"
+<img src="docs/Results/titanicpred.jpg" align="center"
      title="(Click on image for full resolution and clear view on a new tab)
 " width="320" height="240">
 
