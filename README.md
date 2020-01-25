@@ -1,6 +1,6 @@
 Here I have added my machine learning projects.
 Table of Conteenct ::
- - [Neural Network :: NN Implementation from scratch with raw python.](#Neural-Network-::-NN-Implementation-from-scratch)
+ - [Neural Network :: NN Implementation from scratch with raw python.](#neural-network--nn-implementation-from-scratch)
 
 Neural Network :: NN Implementation from scratch
 ================================================
