@@ -21,10 +21,11 @@ Here I have added my machine learning projects.
 <img src="https://github.com/irfanhasib0/Machine-Learning/blob/master/docs/Algorihms/ID3.jpg" align="center"
      title="Schematics" width="640" height="480">
 * Result of ID3 implementation for Titanic data - Precision Recall and Accuracy for -
-<img src="https://github.com/irfanhasib0/Machine-Learning/blob/master/docs/Results/iris_ID3.jpg" align="left"
-     title="Schematics" width="320" height="240">
 * Result of ID3 implementation for Iris data - True Label vs Prediction -
-<img src="https://github.com/irfanhasib0/Machine-Learning/blob/master/docs/Results/xor_ann.jpg" align="right"
+<img src="https://github.com/irfanhasib0/Machine-Learning/blob/master/docs/Results/iris_ID3.png" align="left"
+     title="Schematics" width="320" height="240">
+
+<img src="https://github.com/irfanhasib0/Machine-Learning/blob/master/docs/Results/irispred.png" align="right"
      title="Schematics" width="320" height="240">
 
 
