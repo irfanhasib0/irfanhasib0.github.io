@@ -7,14 +7,14 @@ Here I have added my machine learning projects.
 * a. Forward Propagation b. Back Propagation 
 
 <img src="https://github.com/irfanhasib0/Machine-Learning/blob/master/docs/Algorihms/NN_fp.jpg" align="left"
-     title="Schematics" width="440" height="440">
+     title="Schematics" width="420" height="420">
 <img src="https://github.com/irfanhasib0/Machine-Learning/blob/master/docs/Algorihms/NN_bp.jpg" align="center"
-     title="Schematics" width="440" height="440">
+     title="Schematics" width="420" height="420">
 
 c. Result of ANN implementation for XOR data - mean sqaure error vs epoch -
 
 <img src="https://github.com/irfanhasib0/Machine-Learning/blob/master/docs/Results/xor_ann.jpg" align="center"
-     title="Schematics" width="640" height="240">
+     title="Schematics" width="320" height="240">
 
 
 ### Decision Tree :: ID3 Implementation from scratch with continuous data split based on entropy and information gain.
