@@ -21,7 +21,8 @@ c. Result of ANN implementation for XOR data - mean sqaure error vs epoch -
 
 
 ### Decision Tree :: ID3 Implementation from scratch with continuous data split based on entropy and information gain.
-logo:[logo.png][ID3 Implementation from scratch - Notebook (Project Presentation and Code Link) ](https://github.com/irfanhasib0/Machine-Learning/blob/master/Machine_Learning_Algo_From_Scratch/ANN_From_Scratch_modular_class.ipynb)
+(logo.png)
+[ID3 Implementation from scratch - Notebook (Project Presentation and Code Link) ](https://github.com/irfanhasib0/Machine-Learning/blob/master/Machine_Learning_Algo_From_Scratch/ANN_From_Scratch_modular_class.ipynb)
 
 * Titanic and irish dataset was used for testing ID3.
 * Continuous data spliting based on information gain.
