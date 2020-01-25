@@ -7,13 +7,13 @@ Table of Contenct
 
 Neural Network :: NN Implementation from scratch
 ================================================
-* ![NN Implementation from scratch - Notebook (Project Presentation and Code Link) ](https://github.com/irfanhasib0/Machine-Learning/blob/master/Machine_Learning_Algo_From_Scratch/ID3_with_continuous_feature_support_exp.py)
+![NN Implementation from scratch - Notebook (Project Presentation and Code Link) ](https://github.com/irfanhasib0/Machine-Learning/blob/master/Machine_Learning_Algo_From_Scratch/ID3_with_continuous_feature_support_exp.py)
 
 * Forward Propagation
 * Backward Propagation
 
 
-* a. Forward Propagation b. Back Propagation (Click on image for full resolution and clear view on a new tab)
+	a. Forward Propagation b. Back Propagation (Click on image for full resolution and clear view on a new tab)
 
 <img src="https://github.com/irfanhasib0/Machine-Learning/blob/master/docs/Algorihms/NN_fp.jpg" align="left"
      title="Schematics" width="420" height="420">
@@ -35,7 +35,7 @@ Decision Tree :: ID3 Implementation from scratch
 * ID3 Algorithm with recursion. Best attribute was calculated based on information gain.
 * Prediction : accuracy,precision,recall reporting.
 
-* ID3 Flow Chart of Implementation (Click on image for full resolution and clear view on a new tab)
+	ID3 Flow Chart of Implementation (Click on image for full resolution and clear view on a new tab)
 
 <img src="https://github.com/irfanhasib0/Machine-Learning/blob/master/docs/Algorihms/ID3.jpg" align="center"
      title="(Click on image for full resolution and clear view on a new tab)
@@ -70,7 +70,7 @@ Naive Bayes :: Implementation for text classification
 
 * Archived data from stack exchange is used for classification.
 * Text Preprocessing was done with raw python without nltk.
-* Naive Bayes algorithm applied on the procesed text.
+	Naive Bayes algorithm applied on the procesed text.
 <img src="https://github.com/irfanhasib0/Machine-Learning/blob/master/docs/Algorihms/Naive Bayes.jpg" align="center"
      title="Schematics" width="640" height="480">
 
