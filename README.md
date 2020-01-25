@@ -16,7 +16,7 @@ Neural Network :: NN Implementation from scratch
 	a. Forward Propagation b. Back Propagation (Click on image for full resolution and clear view on a new tab)
 
 <img src="https://github.com/irfanhasib0/Machine-Learning/blob/master/docs/Algorihms/NN_fp.jpg" align="left"
-     title="Schematics" width="420" height="420">
+     title="Schematics" width="420" height="420"/>
 <img src="https://github.com/irfanhasib0/Machine-Learning/blob/master/docs/Algorihms/NN_bp.jpg" align="center"
      title="(Click on image for full resolution and clear view on a new tab)" width="420" height="420">
 
@@ -28,7 +28,7 @@ c. Result of ANN implementation for XOR data - mean sqaure error vs epoch -
 
 Decision Tree :: ID3 Implementation from scratch
 ====================================================
-![ID3 Implementation from scratch - Notebook (Project Presentation and Code Link) ](https://github.com/irfanhasib0/Machine-Learning/blob/master/Machine_Learning_Algo_From_Scratch/ANN_From_Scratch_modular_class.ipynb)
+[ID3 Implementation from scratch - Notebook (Project Presentation and Code Link) ](https://github.com/irfanhasib0/Machine-Learning/blob/master/Machine_Learning_Algo_From_Scratch/ANN_From_Scratch_modular_class.ipynb)
 
 * Titanic and irish dataset was used for testing ID3.
 * Continuous data spliting based on information gain.
@@ -66,7 +66,8 @@ Decision Tree :: ID3 Implementation from scratch
 
 Naive Bayes :: Implementation for text classification
 ==========================================================
-* ![Naive Bayes Implementation from scratch - Notebook (Project Presentation and Code Link) ](https://github.com/irfanhasib0/Machine-Learning/blob/master/Machine_Learning_Algo_From_Scratch/Naive_Bayes_Stack_Exchange.ipynb)
+
+[Naive Bayes Implementation from scratch - Notebook (Project Presentation and Code Link) ](https://github.com/irfanhasib0/Machine-Learning/blob/master/Machine_Learning_Algo_From_Scratch/Naive_Bayes_Stack_Exchange.ipynb)
 
 * Archived data from stack exchange is used for classification.
 * Text Preprocessing was done with raw python without nltk.
