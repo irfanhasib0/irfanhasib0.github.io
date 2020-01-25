@@ -1,9 +1,9 @@
 Here I have added my machine learning projects.
 Table of Conteenct ::
- - [Neural Network :: NN Implementation from scratch with raw python.](Neural Network :: NN Implementation from scratch with raw python)
+ - [Neural Network :: NN Implementation from scratch with raw python.](#Neural Network :: NN Implementation from scratch with raw python)
 
-Neural Network :: NN Implementation from scratch with raw python.
-=====================================================================
+Neural Network :: NN Implementation from scratch
+================================================
 * ![NN Implementation from scratch - Notebook (Project Presentation and Code Link) ](https://github.com/irfanhasib0/Machine-Learning/blob/master/Machine_Learning_Algo_From_Scratch/ID3_with_continuous_feature_support_exp.py)
 
 * Forward Propagation
@@ -23,8 +23,8 @@ c. Result of ANN implementation for XOR data - mean sqaure error vs epoch -
      title="(Click on image for full resolution and clear view on a new tab)" width="320" height="240">
 
 
-### Decision Tree :: ID3 Implementation from scratch with continuous data split based on entropy and information gain.
-======================================================================================================================
+Decision Tree :: ID3 Implementation from scratch
+====================================================
 ![ID3 Implementation from scratch - Notebook (Project Presentation and Code Link) ](https://github.com/irfanhasib0/Machine-Learning/blob/master/Machine_Learning_Algo_From_Scratch/ANN_From_Scratch_modular_class.ipynb)
 
 * Titanic and irish dataset was used for testing ID3.
@@ -61,7 +61,7 @@ c. Result of ANN implementation for XOR data - mean sqaure error vs epoch -
 
 
 
-### Naive Bayes :: Implementation for text classification.
+Naive Bayes :: Implementation for text classification
 ==========================================================
 * ![Naive Bayes Implementation from scratch - Notebook (Project Presentation and Code Link) ](https://github.com/irfanhasib0/Machine-Learning/blob/master/Machine_Learning_Algo_From_Scratch/Naive_Bayes_Stack_Exchange.ipynb)
 
