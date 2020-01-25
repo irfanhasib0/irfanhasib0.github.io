@@ -15,6 +15,8 @@ Neural Network :: NN Implementation from scratch
 
 	a. Forward Propagation b. Back Propagation (Click on image for full resolution and clear view on a new tab)
 
+<img src="logo.png" align="left"
+     title="Schematics" width="420" height="420"/>
 <img src="https://github.com/irfanhasib0/Machine-Learning/blob/master/docs/Algorihms/NN_fp.jpg" align="left"
      title="Schematics" width="420" height="420"/>
 <img src="https://github.com/irfanhasib0/Machine-Learning/blob/master/docs/Algorihms/NN_bp.jpg" align="center"
