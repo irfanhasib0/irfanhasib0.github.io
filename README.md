@@ -16,9 +16,9 @@ Neural Network :: NN Implementation from scratch
 	a. Forward Propagation b. Back Propagation (Open Image in new tab for full resolution)
 
 <img src="docs/Algorihms/NN_fp.jpg" align="left"
-     title="Schematics" width="640" height="480"/>
+     title="Schematics" width="800" height="480"/>
 <img src="docs/Algorihms/NN_bp.jpg" align="center"
-     title="(Open Image in new tab for good resolution)" width="640" height="480">
+     title="(Open Image in new tab for good resolution)" width="800" height="480">
 
 c. Result of ANN implementation for XOR data - mean sqaure error vs epoch -
 
