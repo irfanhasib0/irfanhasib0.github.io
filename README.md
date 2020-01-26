@@ -39,7 +39,7 @@ Decision Tree :: ID3 Implementation from scratch
 
 <img src="docs/Algorihms/ID3.jpg" align="center"
      title="(Open Image in new tab for full resolution)
-" width="480" height="320">
+" width="480" height="480">
 
 * Result of ID3 implementation for iris data - a.Precision Recall and Accuracy and b.True Label vs Prediction -
 
