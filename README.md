@@ -13,7 +13,7 @@ Neural Network :: NN Implementation from scratch
 * Backward Propagation
 
 
-	a. Forward Propagation b. Back Propagation (Click on image for full resolution and clear view on a new tab)
+	a. Forward Propagation b. Back Propagation (Open Image in new tab for full resolution)
 
 <img src="docs/Algorihms/NN_fp.jpg" align="left"
      title="Schematics" width="420" height="420"/>
@@ -35,10 +35,10 @@ Decision Tree :: ID3 Implementation from scratch
 * ID3 Algorithm with recursion. Best attribute was calculated based on information gain.
 * Prediction : accuracy,precision,recall reporting.
 
-	ID3 Flow Chart of Implementation (Click on image for full resolution and clear view on a new tab)
+	ID3 Flow Chart of Implementation (Open Image in new tab for full resolution)
 
 <img src="docs/Algorihms/ID3.jpg" align="center"
-     title="(Click on image for full resolution and clear view on a new tab)
+     title="(Open Image in new tab for full resolution)
 " width="320" height="240">
 
 * Result of ID3 implementation for iris data - a.Precision Recall and Accuracy and b.True Label vs Prediction -
@@ -55,11 +55,11 @@ Decision Tree :: ID3 Implementation from scratch
 * Result of ID3 implementation for Titanic data - a.Precision Recall and Accuracy and b.True Label vs Prediction
 
 <img src="docs/Results/titanic_ID3.png" align="left"
-     title="(Open Image in new tab for good resolution)
+     title="(Open Image in new tab for full resolution)
 " width="320" height="240">
 
 <img src="docs/Results/titanicpred.jpg" align="center"
-     title="(Open Image in new tab for good resolution)
+     title="(Open Image in new tab for full resolution)
 " width="480" height="240">
 
 
