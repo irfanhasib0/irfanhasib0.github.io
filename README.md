@@ -16,9 +16,9 @@ Neural Network :: NN Implementation from scratch
 	a. Forward Propagation b. Back Propagation (Open Image in new tab for full resolution)
 
 <img src="docs/Algorihms/NN_fp.jpg" align="left"
-     title="Schematics" width="420" height="420"/>
+     title="Schematics" width="640" height="480"/>
 <img src="docs/Algorihms/NN_bp.jpg" align="center"
-     title="(Open Image in new tab for good resolution)" width="420" height="420">
+     title="(Open Image in new tab for good resolution)" width="640" height="480">
 
 c. Result of ANN implementation for XOR data - mean sqaure error vs epoch -
 
@@ -39,7 +39,7 @@ Decision Tree :: ID3 Implementation from scratch
 
 <img src="docs/Algorihms/ID3.jpg" align="center"
      title="(Open Image in new tab for full resolution)
-" width="320" height="240">
+" width="480" height="320">
 
 * Result of ID3 implementation for iris data - a.Precision Recall and Accuracy and b.True Label vs Prediction -
 
