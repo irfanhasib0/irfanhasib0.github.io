@@ -18,12 +18,12 @@ Neural Network :: NN Implementation from scratch
 <img src="docs/Algorihms/NN_fp.jpg" align="left"
      title="Schematics" width="420" height="420"/>
 <img src="docs/Algorihms/NN_bp.jpg" align="center"
-     title="(Click on image for full resolution and clear view on a new tab)" width="420" height="420">
+     title="(Open Image in new tab for good resolution)" width="420" height="420">
 
 c. Result of ANN implementation for XOR data - mean sqaure error vs epoch -
 
 <img src="docs/Results/xor_ann.jpg" align="center"
-     title="(Click on image for full resolution and clear view on a new tab)" width="320" height="240">
+     title="(Open Image in new tab for good resolution)" width="320" height="240">
 
 
 Decision Tree :: ID3 Implementation from scratch
@@ -45,22 +45,22 @@ Decision Tree :: ID3 Implementation from scratch
 
 
 <img src="docs/Results/iris_ID3.png" align="left"
-     title="(Click on image for full resolution and clear view on a new tab)
+     title="(Open Image in new tab for good resolution)
 " width="320" height="240">
 
 <img src="docs/Results/irispred.jpg" align="center"
-     title="(Click on image for full resolution and clear view on a new tab)
-" width="320" height="240">
+     title="(Open Image in new tab for good resolution)
+" width="480" height="240">
 
-* Result of ID3 implementation for Titanic data - a.Precision Recall and Accuracy and b.True Label vs Predictio
+* Result of ID3 implementation for Titanic data - a.Precision Recall and Accuracy and b.True Label vs Prediction
 
 <img src="docs/Results/titanic_ID3.png" align="left"
-     title="(Click on image for full resolution and clear view on a new tab)
+     title="(Open Image in new tab for good resolution)
 " width="320" height="240">
 
 <img src="docs/Results/titanicpred.jpg" align="center"
-     title="(Click on image for full resolution and clear view on a new tab)
-" width="320" height="240">
+     title="(Open Image in new tab for good resolution)
+" width="480" height="240">
 
 
 
@@ -72,6 +72,6 @@ Naive Bayes :: Implementation for text classification
 * Archived data from stack exchange is used for classification.
 * Text Preprocessing was done with raw python without nltk.
 	Naive Bayes algorithm applied on the procesed text.
-<img src="https://github.com/irfanhasib0/Machine-Learning/blob/master/docs/Algorihms/Naive Bayes.jpg" align="center"
-     title="Schematics" width="640" height="480">
+<img src="docs/Algorihms/Naive_Bayes.jpg" align="center"
+     title="Open Image in new tab for good resolution" width="640" height="480">
 
