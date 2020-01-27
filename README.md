@@ -7,7 +7,7 @@ Table of Contenct
 
 Neural Network :: NN Implementation from scratch
 ================================================
-[NN Implementation from scratch - Notebook (Project Presentation and Code Link) ](https://github.com/irfanhasib0/Machine-Learning/blob/master/Machine_Learning_Algo_From_Scratch/ID3_with_continuous_feature_support_exp.py)
+[NN Implementation from scratch - Notebook (Project Presentation and Code Link) ](https://github.com/irfanhasib0/Machine-Learning/blob/master/Machine_Learning_Algo_From_Scratch/ANN_From_Scratch_modular_class.ipynb)
 
 * Forward Propagation
 * Backward Propagation
@@ -28,7 +28,7 @@ c. Result of ANN implementation for XOR data - mean sqaure error vs epoch -
 
 Decision Tree :: ID3 Implementation from scratch
 ====================================================
-[ID3 Implementation from scratch - Notebook (Project Presentation and Code Link) ](https://github.com/irfanhasib0/Machine-Learning/blob/master/Machine_Learning_Algo_From_Scratch/ANN_From_Scratch_modular_class.ipynb)
+[ID3 Implementation from scratch - Notebook (Project Presentation and Code Link) ](https://github.com/irfanhasib0/Machine-Learning/blob/master/Machine_Learning_Algo_From_Scratch/ID3_with_continuous_feature_support_exp.py)
 
 * Titanic and irish dataset was used for testing ID3.
 * Continuous data spliting based on information gain.
@@ -74,6 +74,35 @@ Naive Bayes :: Implementation for text classification
 	Naive Bayes algorithm applied on the procesed text.
 <img src="docs/Algorihms/Naive_Bayes.jpg" align="center"
      title="Open Image in new tab for good resolution" width="640" height="480">
+
+* Result of Naive Bayes implementation for Stack Exchange data - a.Precision Recall and Accuracy and b.True Label vs Prediction
+
+<img src="docs/Results/stack_exchange_NB.png" align="left"
+     title="(Open Image in new tab for full resolution)
+" width="320" height="240">
+
+<img src="docs/Results/stack_exchange_NB_pred.png" align="center"
+     title="(Open Image in new tab for full resolution)
+" width="640" height="240">
+
+
+
+
+
+
+
+House Price Prediction :: Data Pre-Processing and Hiper-Parasmeter Tuning ( Using Raw Tensorflow)
+==================================================================================================
+
+[Naive Bayes Implementation from scratch - Notebook (Project Presentation and Code Link) ](https://github.com/irfanhasib0/Machine-Learning/blob/master/Machine_Learning_Algo_From_Scratch/Naive_Bayes_Stack_Exchange.ipynb)
+
+* House Price Prediction - Regression.
+* Text Preprocessing was done with raw python without nltk.
+	Naive Bayes algorithm applied on the procesed text.
+<img src="docs/Algorihms/kaggle_hp" align="center"
+     title="Open Image in new tab for good resolution" width="1280" height="960">
+
+* Result of Naive Bayes implementation for Stack Exchange data - a.Precision Recall and Accuracy and b.True Label vs Prediction
 
 <img src="docs/Results/stack_exchange_NB.png" align="left"
      title="(Open Image in new tab for full resolution)
