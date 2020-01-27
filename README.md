@@ -99,7 +99,7 @@ House Price Prediction :: Data Pre-Processing and Hiper-Parasmeter Tuning ( Usin
 * House Price Prediction - Regression.
 * Text Preprocessing was done with raw python without nltk.
 	Naive Bayes algorithm applied on the procesed text.
-<img src="docs/Algorihms/kaggle_hp" align="center"
+<img src="docs/Algorihms/kaggle_hp.jpg" align="center"
      title="Open Image in new tab for good resolution" width="1280" height="960">
 
 * Result of Naive Bayes implementation for Stack Exchange data - a.Precision Recall and Accuracy and b.True Label vs Prediction
