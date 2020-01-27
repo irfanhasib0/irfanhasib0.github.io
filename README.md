@@ -75,3 +75,10 @@ Naive Bayes :: Implementation for text classification
 <img src="docs/Algorihms/Naive_Bayes.jpg" align="center"
      title="Open Image in new tab for good resolution" width="640" height="480">
 
+<img src="docs/Results/stack_exchange_NB.png" align="left"
+     title="(Open Image in new tab for full resolution)
+" width="320" height="240">
+
+<img src="docs/Results/stack_exchange_NB_pred.png" align="center"
+     title="(Open Image in new tab for full resolution)
+" width="480" height="240">
