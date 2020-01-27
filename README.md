@@ -81,4 +81,4 @@ Naive Bayes :: Implementation for text classification
 
 <img src="docs/Results/stack_exchange_NB_pred.png" align="center"
      title="(Open Image in new tab for full resolution)
-" width="480" height="240">
+" width="320" height="240">
