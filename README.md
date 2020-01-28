@@ -125,7 +125,7 @@ House Price Prediction :: Data Pre-Processing and Hiper-Parameter Tuning
      
 
 <img src="docs/ANN_HP/res.png" align="right"
-     title="(Open Image in new tab for full resolution)" width="640" height="480"/>
+     title="(Open Image in new tab for full resolution)" width="640" height="480"/></br>
      
 
  
