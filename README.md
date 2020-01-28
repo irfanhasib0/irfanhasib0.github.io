@@ -135,10 +135,9 @@ Japanese Job Entrance Problem :: Shakura Bloom Prediction
    
  *  __Dataset :__ Weather data from japanese meteorological agency
  *  __Steps :__  
-                 - Data Preprocessing
+                 - Feature Analysis and Data Preprocessing
                  - Implementing Nural Network with tensorflow low level API.
                  - Hiper-Parameter Tuning for ANN
-
  
 ### 1.0 Project Flow Chart :
 <img src="docs/Algorihms/sakura_jp.jpg" align="center"
