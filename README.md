@@ -122,14 +122,12 @@ House Price Prediction :: Data Pre-Processing and Hiper-Parameter Tuning
 ### Cross validation(MSLE) and Kaggle Result(RMSLE)
 <img src="docs/ANN_HP/cv.png" align="left"
      title="(Open Image in new tab for full resolution)" width="320" height="240"/>
-     
-
-<img src="docs/ANN_HP/res.png" align="right"
+<img src="docs/ANN_HP/res.png" align="center"
      title="(Open Image in new tab for full resolution)" width="640" height="480"/></br>
      
 
  
-.
+
 Japanese Job Entrance Problem :: Shakura Bloom Prediction
 ==================================================================================================
 
