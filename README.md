@@ -146,6 +146,6 @@ Japanese Job Entrance Problem :: Shakura Bloom Prediction
      
 ### Cross Validation R2 Score :
 <img src="docs/Sakura/res.png" align="left"
-     title="(Open Image in new tab for full resolution)" width="320" height="240"/></br>
+     title="(Open Image in new tab for full resolution)" width="240" height="160"/></br>
 
 
