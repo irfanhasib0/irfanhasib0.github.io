@@ -148,3 +148,44 @@ Japanese Job Entrance Problem :: Shakura Bloom Prediction
      title="(Open Image in new tab for full resolution)" width="240" height="160"/></br>
 
 
+
+DQN:: Implementation from scratch
+==================================================================================================
+
+### Notebook : [Mountain Car with DQN - Notebook (Project Presentation and Code Link)](https://github.com/irfanhasib0/RL-Algorithms/blob/master/Deep_Q_Learning_mc.ipynb)
+ *  __Dataset :__ Weather data from japanese meteorological agency
+ *  __Steps :__  
+                 - Feature Analysis and Data Preprocessing
+                 - Implementing Nural Network with tensorflow low level API.
+                 - Hiper-Parameter Tuning for ANN
+ 
+### 1.0 Project Flow Chart :
+<img src="docs/Algorihms/DQN.jpg" align="center"
+     title="Open Image in new tab for good resolution" width="640" height="640">
+     
+### Cross Validation R2 Score :
+<img src="docs/Sakura/res.png" align="left"
+     title="(Open Image in new tab for full resolution)" width="240" height="160"/></br>
+
+
+
+DDPG:: Implementation from scratch
+==================================================================================================
+
+### Notebook : [Pendulum Balancing with DDPG - Notebook (Project Presentation and Code Link)](https://github.com/irfanhasib0/RL-Algorithms/blob/master/DDPG_Pendulum_TF-V-2-ROS.ipynb)
+   
+ *  __Dataset :__ Weather data from japanese meteorological agency
+ *  __Steps :__  
+                 - Feature Analysis and Data Preprocessing
+                 - Implementing Nural Network with tensorflow low level API.
+                 - Hiper-Parameter Tuning for ANN
+ 
+### 1.0 Project Flow Chart :
+<img src="docs/Algorihms/DQN.jpg" align="center"
+     title="Open Image in new tab for good resolution" width="640" height="640">
+     
+### Cross Validation R2 Score :
+<img src="docs/Sakura/res.png" align="left"
+     title="(Open Image in new tab for full resolution)" width="240" height="160"/></br>
+
+
