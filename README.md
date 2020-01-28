@@ -181,7 +181,7 @@ DDPG:: Implementation from scratch
                  - Hiper-Parameter Tuning for ANN
  
 ### 1.0 Project Flow Chart :
-<img src="docs/Algorihms/DQN.jpg" align="center"
+<img src="docs/Algorihms/DDPG.jpg" align="center"
      title="Open Image in new tab for good resolution" width="640" height="640">
      
 ### Cross Validation R2 Score :
