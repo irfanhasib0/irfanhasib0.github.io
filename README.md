@@ -129,7 +129,7 @@ House Price Prediction :: Data Pre-Processing and Hiper-Parameter Tuning
      
 
  
-
+.
 Japanese Job Entrance Problem :: Shakura Bloom Prediction
 ==================================================================================================
 
@@ -141,7 +141,6 @@ Japanese Job Entrance Problem :: Shakura Bloom Prediction
                  - Implementing Nural Network with tensorflow low level API.
                  - Hiper-Parameter Tuning for ANN
 
-     Japanese Job Entrance Problem :: Shakura Bloom Prediction
  
 ### 1.0 Project Flow Chart :
 <img src="docs/Algorihms/sakura_jp.jpg" align="center"
