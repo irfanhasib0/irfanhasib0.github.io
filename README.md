@@ -198,6 +198,7 @@ ILQR :: Implementation of Iterative Linear Quadratic Regulotor from scratch for 
  *  __Simulation Environment :__ AIRSIM a Car Simulator by Microsoft , OpenAI gym Car ENnvironment.
  *  __I0 :__ Input --> Map Points , Output --> Steering Angle, Acclelation, Brake
  *  __Steps :__  
+                 
                  - Map Tracker Module
                  -- Input : Takes Map points as Input
                  -- Trajectory Queue : Gets N next points from map points to follow according to car position and orientation.
