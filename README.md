@@ -1,5 +1,4 @@
-
-
+# 
 Table of Contenct
 ==================
 ### Notes :
@@ -163,17 +162,17 @@ DQN:: Implementation from scratch
 <img src="docs/Algorihms/DQN.jpg" align="center"
      title="Open Image in new tab for good resolution" width="640" height="640">
      
-### Cross Validation R2 Score :
-<img src="docs/Sakura/res.png" align="left"
-     title="(Open Image in new tab for full resolution)" width="240" height="160"/></br>
-
-
-
+### Results :
+<img src="docs/Results/ddpg_rewards.png" align="left"
+     title="(Open Image in new tab for full resolution)" width="320" height="240"/></br>
+<img src="docs/Results/ddpg_pendulumm.gif" align="center"
+     title="(Open Image in new tab for full resolution)" width="320" height="240"/></br>
+     
+     
 DDPG:: Implementation from scratch
 ==================================================================================================
 
-### Notebook : [Pendulum Balancing with DDPG - Notebook (Project Presentation and Code Link)](https://github.com/irfanhasib0/RL-Algorithms/blob/master/DDPG_Pendulum_TF-V-2-ROS.ipynb)
-   
+### Notebook : [Mountain Car with DQN - Notebook (Project Presentation and Code Link)](https://github.com/irfanhasib0/RL-Algorithms/blob/master/Deep_Q_Learning_mc.ipynb)
  *  __Dataset :__ Weather data from japanese meteorological agency
  *  __Steps :__  
                  - Feature Analysis and Data Preprocessing
@@ -184,8 +183,119 @@ DDPG:: Implementation from scratch
 <img src="docs/Algorihms/DDPG.jpg" align="center"
      title="Open Image in new tab for good resolution" width="640" height="640">
      
-### Cross Validation R2 Score :
-<img src="docs/Sakura/res.png" align="left"
+### Results :
+<img src="docs/Results/ddpg_rewards.jpg" align="left"
+     title="(Open Image in new tab for full resolution)" width="240" height="160"/></br>
+<img src="docs/Results/ddpg_pendulum_.gif" align="center"
      title="(Open Image in new tab for full resolution)" width="240" height="160"/></br>
 
 
+
+ILQR :: Implementation of Iterative Linear Quadratic Regulotor from scratch for self driving car simulator
+==================================================================================================
+
+### Notebook : [ILQR Implementation - Notebook (Project Presentation and Code Link)](https://github.com/irfanhasib0/RL-Algorithms/blob/master/DDPG_Pendulum_TF-V-2-ROS.ipynb)
+   
+ *  __Simulation Environment :__ AIRSIM a Car Simulator by Microsoft , OpenAI gym Car ENnvironment.
+ *  __I0 :__ Input --> Map Points , Output --> Steering Angle, Acclelation, Brake
+ *  __Steps :__  
+                 - Map Tracker Module
+                 -- Input : Takes Map points as Input
+                 -- Trajectory Queue : Gets N next points from map points to follow according to car position and orientation.
+                 -- Update Trajectory Queue : Update the queue of points to follow with moving car position and orientation.
+                 -- Output : Next N points to follow from Trajectory Queue
+                 
+                 - Data Preprcessor Module : 
+                 -- Input : Trajectory points wrt Car position from Map tracker module.
+                 -- Full State Calculation : Calculates yaw from ref points and target velocity.
+                 -- Relative Trajectory calculation : Relative Trajectory calculation as Car position nad yaw as                         origin.
+                 -- Output : Adjusts no of points to track in the refference trajectory accrding to current velocity.  
+                 
+                 - ILQR Module
+                 -- Input : Refferance trajectory to follow from Data Processor module.
+                 -- Output : Calculate Optimal steering angle and accelaration with ILQR algorithm shown below.
+                 
+                 OR,
+                 
+                 - MPC Module
+                 -- Input : Refferance trajectory to follow from Data Processor module.
+                 -- Output : Calculate Optimal steering angle and accelaration with MPC algorithm shown below.
+          
+### 1.0 Project Flow Chart :
+<img src="docs/Algorihms/MPC.jpg" align="center"
+     title="Open Image in new tab for good resolution" width="640" height="640">
+<img src="docs/Algorihms/ILQR.jpg" align="center"
+     title="Open Image in new tab for good resolution" width="640" height="640">
+     
+#### Results
+* OpenAI Gym Car Environment 
+* Airsim City Space Environment 
+* Airsim Neighbourhood Environment 
+
+<img src="docs/Results/rec_car_env.gif" align="left"
+     title="(Open Image in new tab for full resolution)" width="400" height="240"/>
+<img src="docs/Results/fig_car_env.gif" align="center"
+     title="(Open Image in new tab for full resolution)" width="400" height="240"/>
+<img src="docs/Results/airsim_cs.gif" align="left"
+     title="(Open Image in new tab for full resolution)" width="400" height="240"/>
+<img src="docs/Results/fig_cs.gif" align="center"
+     title="(Open Image in new tab for full resolution)" width="400" height="240"/>
+<img src="docs/Results/airsim_nh.gif" align="left"
+     title="(Open Image in new tab for full resolution)" width="400" height="240"/>
+<img src="docs/Results/fig_nh.gif" align="center"
+     title="(Open Image in new tab for full resolution)" width="400" height="240"/>
+
+    
+     
+     
+
+MPC :: Implementation of Model Predictive Controller from scratch for self driving car simulator
+==================================================================================================
+
+### Notebook : [Pendulum Balancing with DDPG - Notebook (Project Presentation and Code Link)](https://github.com/irfanhasib0/RL-Algorithms/blob/master/DDPG_Pendulum_TF-V-2-ROS.ipynb)
+   
+ *  __Dataset :__ AIRSIM a Car Simulator by Microsoft , OpenAI gym Car ENnvironment.
+ *  __Steps :__  
+                 - Feature Analysis and Data Preprocessing
+                 - Implementing Nural Network with tensorflow low level API.
+                 - Hiper-Parameter Tuning for ANN
+ 
+### 1.0 Project Flow Chart :
+<img src="docs/Algorihms/MPC.jpg" align="center"
+     title="Open Image in new tab for good resolution" width="640" height="640">
+     
+### Results :
+<img src="docs/Results/rec_car_env.gif" align="left"
+     title="(Open Image in new tab for full resolution)" width="400" height="240"/>
+<img src="docs/Results/fig_car_env.gif" align="center"
+     title="(Open Image in new tab for full resolution)" width="400" height="240"/>
+<img src="docs/Results/airsim_cs.gif" align="left"
+     title="(Open Image in new tab for full resolution)" width="400" height="240"/>
+<img src="docs/Results/fig_cs.gif" align="center"
+     title="(Open Image in new tab for full resolution)" width="400" height="240"/>
+<img src="docs/Results/airsim_nh.gif" align="left"
+     title="(Open Image in new tab for full resolution)" width="400" height="240"/>
+<img src="docs/Results/fig_nh.gif" align="center"
+     title="(Open Image in new tab for full resolution)" width="400" height="240"/>
+
+     
+
+
+
+
+
+
+```python
+from IPython.display import HTML, display
+display(HTML("<table><tr><td><img src='img1'></td><td><img src='img2'></td></tr></table>"))
+
+```
+
+
+<table><tr><td><img src='img1'></td><td><img src='img2'></td></tr></table>
+
+
+
+```python
+<embed src="file_name.pdf" width="800px" height="2100px" />
+```
