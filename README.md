@@ -1,5 +1,4 @@
-# 
-Table of Contenct
+ Table of Content
 ==================
 ### Notes :
 __In this document for every project I have shown the flowchart and Result with a brief description. 
