@@ -233,7 +233,7 @@ ILQR and MPC :: Implementation from scratch for self driving car simulator
 ### 1.0 Project Flow Chart :
 <img src="docs/Algorihms/MPC.jpg" align="center"
      title="Open Image in new tab for good resolution" width="640" height="640">
-<img src="docs/Algorihms/ILQR.jpg" align="center"
+<img src="docs/Algorihms/iLQR.jpg" align="center"
      title="Open Image in new tab for good resolution" width="480" height="480">
      
 #### Results (ILQR) :
