@@ -1,21 +1,36 @@
- Table of Content
-==================
-### Notes :
-__In this document for every project I have shown the flowchart and Result with a brief description. 
-For Detail Presentation and Code please go to the Notebook link Provided for every project!!__
-- (*) Means only organized code with comments
-- (**) Means Code with basic doccumentation.
-- (***) Means Code with Good Doccumentation.
+
+
+Table of Content
+===============================
+
+##### Note :
+__In this document for projects are shown as :__
+   
+   - Notebook with implementation code and detail description.
+   - Flowchart of the project.
+   - Result vedio / gif / graphs.
+   - The no of star after every project means the level of documentation.
+   
+__For detail description and Code please go to the Notebook link Provided for every project!!__
+   
 
 ### Kaggle Competetions and Job Entrance Problem :
- - [House Price Prediction :: Data Pre-Processing, ANN with tensorflow low level API and and Hiper-Parameter Tuning.  (***)](#house-price-prediction--data-pre-processing-and-hiper-parameter-tuning)
+ - [House Price Prediction :: Data Pre-Processing, ANN with tensorflow low level API and and Hiper-Parameter Tuning.  (****)](#house-price-prediction--data-pre-processing-and-hiper-parameter-tuning)
  - [Japanese Job Entrance Problem :: Shakura Bloom Prediction (***)](#japanese-job-entrance-problem--shakura-bloom-prediction)
 
 ### Machine Learning Algorithms from Scratch :
 
  - [Neural Network         :: Implementation from scratch with raw python (*)](#neural-network--nn-implementation-from-scratch)
- - [Decision Tree(ID3)     :: Implementation from scratch with continuous feature support. (***)](#decision-tree--id3-implementation-from-scratch)
+ - [Decision Tree(ID3)     :: Implementation from scratch with continuous feature support. (****)](#decision-tree--id3-implementation-from-scratch)
  - [Naive Bayes            :: Implementation for text classification with text preprocesing from scratch (**)](#naive-bayes--implementation-for-text-classification)
+
+### Reinforcement Learning ALgorithms from scratch :
+ - [DQN(Deep Q Learning) from scratch with Tensorflow-KERAS(**)](#dqn-and-ddpg--implementation-from-scratch)
+ - [DDPG(Deep Deterministic Policy Gradient) from scratch with Tensorflow(**)](#dqn-and-ddpg--implementation-from-scratch)
+ 
+### Control Algorithms Implementation from scratch :
+- [ILQR(Iterative Linear Quadratic Regulator) Implementation from scratch(****)](#ilqr-and-mpc-implementation-from-scratch-for-self-driving-car-simulator)
+- [MPC(Model Predictive Controller) Implementation from scratch(**)](#ilqr-and-mpc-implementation-from-scratch-for-self-driving-car-simulator)
 
 Neural Network :: NN Implementation from scratch
 ================================================
@@ -32,7 +47,7 @@ Neural Network :: NN Implementation from scratch
 <img src="docs/Algorihms/NN_bp.jpg" align="center"
      title="(Open Image in new tab for good resolution)" width="800" height="480">
 
-c. Result of ANN implementation for XOR data - mean sqaure error vs epoch -
+    c. Result of ANN implementation for XOR data - mean sqaure error vs epoch -
 
 <img src="docs/Results/xor_ann.jpg" align="center"
      title="(Open Image in new tab for good resolution)" width="320" height="240">
@@ -142,55 +157,49 @@ Japanese Job Entrance Problem :: Shakura Bloom Prediction
      title="Open Image in new tab for good resolution" width="640" height="640">
      
 ### Cross Validation R2 Score :
-<img src="docs/Sakura/res.png" align="left"
+<img src="docs/Sakura/res.png" align="center"
      title="(Open Image in new tab for full resolution)" width="240" height="160"/></br>
 
 
 
-DQN:: Implementation from scratch
+DQN and DDPG:: Implementation from scratch
 ==================================================================================================
-
 ### Notebook : [Mountain Car with DQN - Notebook (Project Presentation and Code Link)](https://github.com/irfanhasib0/RL-Algorithms/blob/master/Deep_Q_Learning_mc.ipynb)
- *  __Dataset :__ Weather data from japanese meteorological agency
- *  __Steps :__  
-                 - Feature Analysis and Data Preprocessing
-                 - Implementing Nural Network with tensorflow low level API.
-                 - Hiper-Parameter Tuning for ANN
  
-### 1.0 Project Flow Chart :
-<img src="docs/Algorihms/DQN.jpg" align="center"
-     title="Open Image in new tab for good resolution" width="640" height="640">
+### Notebook : [Pendulum with DDPG - Notebook (Project Presentation and Code Link)](https://github.com/irfanhasib0/RL-Algorithms/blob/master/Deep_Q_Learning_mc.ipynb)
+
+* __DQN Environments :__ OpenAI gym --> Mountain Car ENvironment
+* __DDPG Environments :__ OpenAI gym --> Pendulumn Environment
+ 
+                 
+### 1.0 Project Flow Chart for DQN and DDPG :
+
+<img src="docs/Algorihms/_DQN.jpg" align="left"
+     title="Open Image in new tab for good resolution" width="460" height="400">
      
-### Results :
+
+<img src="docs/Algorihms/_DDPG.jpg" align="center"
+     title="Open Image in new tab for good resolution" width="460" height="400"></br>
+     
+
+### Results DQN :
 <img src="docs/Results/ddpg_rewards.png" align="left"
      title="(Open Image in new tab for full resolution)" width="320" height="240"/></br>
-<img src="docs/Results/ddpg_pendulumm.gif" align="center"
+<img src="docs/Results/ddpg_pendulum_.gif" align="center"
      title="(Open Image in new tab for full resolution)" width="320" height="240"/></br>
      
      
-DDPG:: Implementation from scratch
-==================================================================================================
-
-### Notebook : [Mountain Car with DQN - Notebook (Project Presentation and Code Link)](https://github.com/irfanhasib0/RL-Algorithms/blob/master/Deep_Q_Learning_mc.ipynb)
- *  __Dataset :__ Weather data from japanese meteorological agency
- *  __Steps :__  
-                 - Feature Analysis and Data Preprocessing
-                 - Implementing Nural Network with tensorflow low level API.
-                 - Hiper-Parameter Tuning for ANN
- 
-### 1.0 Project Flow Chart :
-<img src="docs/Algorihms/DDPG.jpg" align="center"
-     title="Open Image in new tab for good resolution" width="640" height="640">
-     
-### Results :
-<img src="docs/Results/ddpg_rewards.jpg" align="left"
-     title="(Open Image in new tab for full resolution)" width="240" height="160"/></br>
+### Results DDPG :
+<img src="docs/Results/ddpg_rewards.png" align="left"
+     title="(Open Image in new tab for full resolution)" width="320" height="240"/></br>
 <img src="docs/Results/ddpg_pendulum_.gif" align="center"
-     title="(Open Image in new tab for full resolution)" width="240" height="160"/></br>
+     title="(Open Image in new tab for full resolution)" width="320" height="240"/></br>
+     
+     
 
 
 
-ILQR :: Implementation of Iterative Linear Quadratic Regulotor from scratch for self driving car simulator
+ILQR and MPC :: Implementation from scratch for self driving car simulator
 ==================================================================================================
 
 ### Notebook : [ILQR Implementation - Notebook (Project Presentation and Code Link)](https://github.com/irfanhasib0/RL-Algorithms/blob/master/DDPG_Pendulum_TF-V-2-ROS.ipynb)
@@ -225,9 +234,9 @@ ILQR :: Implementation of Iterative Linear Quadratic Regulotor from scratch for 
 <img src="docs/Algorihms/MPC.jpg" align="center"
      title="Open Image in new tab for good resolution" width="640" height="640">
 <img src="docs/Algorihms/ILQR.jpg" align="center"
-     title="Open Image in new tab for good resolution" width="640" height="640">
+     title="Open Image in new tab for good resolution" width="480" height="480">
      
-#### Results
+#### Results (ILQR) :
 * OpenAI Gym Car Environment 
 * Airsim City Space Environment 
 * Airsim Neighbourhood Environment 
@@ -248,39 +257,6 @@ ILQR :: Implementation of Iterative Linear Quadratic Regulotor from scratch for 
     
      
      
-
-MPC :: Implementation of Model Predictive Controller from scratch for self driving car simulator
-==================================================================================================
-
-### Notebook : [Pendulum Balancing with DDPG - Notebook (Project Presentation and Code Link)](https://github.com/irfanhasib0/RL-Algorithms/blob/master/DDPG_Pendulum_TF-V-2-ROS.ipynb)
-   
- *  __Dataset :__ AIRSIM a Car Simulator by Microsoft , OpenAI gym Car ENnvironment.
- *  __Steps :__  
-                 - Feature Analysis and Data Preprocessing
-                 - Implementing Nural Network with tensorflow low level API.
-                 - Hiper-Parameter Tuning for ANN
- 
-### 1.0 Project Flow Chart :
-<img src="docs/Algorihms/MPC.jpg" align="center"
-     title="Open Image in new tab for good resolution" width="640" height="640">
-     
-### Results :
-<img src="docs/Results/rec_car_env.gif" align="left"
-     title="(Open Image in new tab for full resolution)" width="400" height="240"/>
-<img src="docs/Results/fig_car_env.gif" align="center"
-     title="(Open Image in new tab for full resolution)" width="400" height="240"/>
-<img src="docs/Results/airsim_cs.gif" align="left"
-     title="(Open Image in new tab for full resolution)" width="400" height="240"/>
-<img src="docs/Results/fig_cs.gif" align="center"
-     title="(Open Image in new tab for full resolution)" width="400" height="240"/>
-<img src="docs/Results/airsim_nh.gif" align="left"
-     title="(Open Image in new tab for full resolution)" width="400" height="240"/>
-<img src="docs/Results/fig_nh.gif" align="center"
-     title="(Open Image in new tab for full resolution)" width="400" height="240"/>
-
-     
-
-
 
 
 
