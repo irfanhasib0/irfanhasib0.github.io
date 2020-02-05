@@ -1,4 +1,3 @@
-
 Table of Content
 ===============================
 
@@ -47,7 +46,7 @@ __For detail description and Code please go to the Notebook link Provided for ev
  - Digital Weight Machine : Server based digital wight Machine with AVR Microcontroller
  - [Link of presentation.](#embedded-system-projects--pi-labs-bd-ltd)
 
-### Academic Project and Thesis :
+### Academic Project and Thesis (Undergrad) :
  - Remote rescue robot with AVR Microcontroller
  - Car velocity mseasuring system for drive cycle of Dhaka
  - [Link of presentation.](#academic-project-and-thesis)
@@ -186,7 +185,7 @@ Neural Network :: NN Implementation from scratch
             --For other layers, the output from previous layer.
        
     
-   *  __Updating :__
+   *  __Updating Weights:__
        
           -Updating each weights W = W + alpha*dW/dE
           -Here alpha is the learning rate.
@@ -374,12 +373,8 @@ ILQR and MPC :: Implementation from scratch for self driving car simulator
 
 
 
-```python
-<embed src="file_name.pdf" width="800px" height="2100px" />
-```
-
 DQN and DDPG:: Implementation from scratch
-==================================================================================================
+==============================================================
 ### Notebook : [Mountain Car with DQN - Notebook (Project Presentation and Code Link)](https://github.com/irfanhasib0/RL-Algorithms/blob/master/Deep_Q_Learning_mc.ipynb)
  
 ### Notebook : [Pendulum with DDPG - Notebook (Project Presentation and Code Link)](https://github.com/irfanhasib0/RL-Algorithms/blob/master/Deep_Q_Learning_mc.ipynb)
@@ -427,7 +422,7 @@ DQN and DDPG:: Implementation from scratch
 - Vedio Link (https://youtu.be/lJbyy89X7gM)
 
 
-#### Embedded System Projects : Pi Labs BD LTD
+### Embedded System Projects : Pi Labs BD LTD
 All these projects I did as an employee of Pi Labs BD Ltd. www.pilabsbd.com
 <img src="docs/old/vault_sequrity.jpg" align="left" 
      title="(Open Image in new tab for full resolution)" width="640" height="480"/>
@@ -442,7 +437,12 @@ All these projects I did as an employee of Pi Labs BD Ltd. www.pilabsbd.com
      title="(Open Image in new tab for full resolution)" width="640" height="480"/>
 
 
-#### Academic Project and Thesis:
+
+
+### Academic Project and Thesis:
+
+* My undergrad project of intrumentation and measurement course
+* My undergrad thesis
 
 <img src="docs/old/thesis_project.jpg" align="left"
      title="(Open Image in new tab for full resolution)" width="640" height="480"/>
