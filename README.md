@@ -30,14 +30,18 @@ __For detail description and Code please go to the Notebook link Provided for ev
 - [ILQR(Iterative Linear Quadratic Regulator) Implementation from scratch(****)](#ilqr-and-mpc-implementation-from-scratch-for-self-driving-car-simulator)
 - [MPC(Model Predictive Controller) Implementation from scratch(**)](#ilqr-and-mpc-implementation-from-scratch-for-self-driving-car-simulator)
 
-### CNN Projects :
-- [Yolo with KERAS]
-- [Unet with KERAS]
+### CNN Projects : (Minimal Doccumentation)
+- [Yolo with KERAS and Tensorflow for car number plate localization](#yolo-with-keras-and-tensorflow-nuberplate-detection)
+- [Unet with KERAS for City Space Dataset](#unet-with-keras-for-city-space-dataset)
 
 ### ROS Project : (Not well doccumented)
 
 - [ROS : Simple two linked robot inspired from rrbot(-)](#ros--simple-two-linked-robot-inspired-from-rrbot)
 - [ROS : Writing a script for driving husky robot and getting feed back]
+
+### International Robotics Compititions 
+
+- [University Rover Challenge - 2016](#university-rover-challenge-2016)
 
 ### Embedded System Projects for Pi Labs BD Ltd :
  - Vault Sequirity : IOT based Vault sequitrity System with AVR Microcontroller
@@ -417,6 +421,22 @@ DQN and DDPG:: Implementation from scratch
 
 
 
+Yolo with KERAS and Tensorflow for numberplate detection
+========================================================
+
+### Notebook : [Yolo V3](https://github.com/irfanhasib0/CNN-Projects/blob/master/Yolo_NET_V_1.ipynb)
+
+### Notebook : [Yolo with VGG16](https://github.com/irfanhasib0/CNN-Projects/blob/master/VGG_NET_V_1.ipynb)
+![](docs/Results/yolo.jpg)
+
+Unet with KERAS for City Space Dataset
+========================================================
+### Notebook :[Unet for segmenting City Space Dataset](https://github.com/irfanhasib0/CNN-Projects/blob/master/as_unet_seg-cs.ipynb)
+![](docs/Results/unet_pred.jpg)
+<img src="docs/Results/unet_res.jpg" align="center"
+     title="(Open Image in new tab for full resolution)" width="640" height="320"/>
+     
+
 ROS : Simple two linked robot inspired from rrbot
 =========================================
 - URDF Link(https://github.com/irfanhasib0/ros_ws/tree/master/src/rrbot/rrbot_description)
@@ -445,14 +465,22 @@ All these projects I did as an employee of Pi Labs BD Ltd. www.pilabsbd.com
 
 
 
+
 Academic Project and Thesis:
 =========================
+
 * My undergrad project of intrumentation and measurement course
 * My undergrad thesis
 
-<img src="docs/old/thesis_project.jpg" align="left"
-     title="(Open Image in new tab for full resolution)" width="640" height="480"/>
+![](docs/old/thesis_project.jpg)
 
+ 
+ University Rover Challenge - 2016
+ ==========================
+
+### Critical Design Rivew    : [Video Link](https://www.youtube.com/watch?v=MlN-VFj14LE)
+
+![](docs/old/URC.jpg)
 
 
 ```python
