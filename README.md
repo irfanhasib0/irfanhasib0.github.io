@@ -299,8 +299,9 @@ Naive Bayes :: Implementation for text classification
 " width="640" height="240">
 
 
+
 ILQR and MPC :: Implementation from scratch for self driving car simulator
-==================================================================================================
+=============================================================
 
 ### Notebook : [ILQR Implementation - Notebook (Project Presentation and Code Link)](https://github.com/irfanhasib0/RL-Algorithms/blob/master/DDPG_Pendulum_TF-V-2-ROS.ipynb)
 
@@ -373,8 +374,10 @@ ILQR and MPC :: Implementation from scratch for self driving car simulator
 
 
 
+
 DQN and DDPG:: Implementation from scratch
-==============================================================
+======================================
+
 ### Notebook : [Mountain Car with DQN - Notebook (Project Presentation and Code Link)](https://github.com/irfanhasib0/RL-Algorithms/blob/master/Deep_Q_Learning_mc.ipynb)
  
 ### Notebook : [Pendulum with DDPG - Notebook (Project Presentation and Code Link)](https://github.com/irfanhasib0/RL-Algorithms/blob/master/Deep_Q_Learning_mc.ipynb)
@@ -414,8 +417,8 @@ DQN and DDPG:: Implementation from scratch
 
 
 
-#### ROS : Simple two linked robot inspired from rrbot
-
+ROS : Simple two linked robot inspired from rrbot
+=========================================
 - URDF Link(https://github.com/irfanhasib0/ros_ws/tree/master/src/rrbot/rrbot_description)
 - Controller Link(https://github.com/irfanhasib0/ros_ws/tree/master/src/rrbot/rrbot_control)
 - Gazebo Link(https://github.com/irfanhasib0/ros_ws/tree/master/src/rrbot/rrbot_gazebo)
