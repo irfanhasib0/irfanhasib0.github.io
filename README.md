@@ -422,7 +422,10 @@ DQN and DDPG:: Implementation from scratch
 - Vedio Link (https://youtu.be/lJbyy89X7gM)
 
 
-### Embedded System Projects : Pi Labs BD LTD
+
+Embedded System Projects : Pi Labs BD LTD
+=====================================
+
 All these projects I did as an employee of Pi Labs BD Ltd. www.pilabsbd.com
 <img src="docs/old/vault_sequrity.jpg" align="left" 
      title="(Open Image in new tab for full resolution)" width="640" height="480"/>
@@ -439,8 +442,8 @@ All these projects I did as an employee of Pi Labs BD Ltd. www.pilabsbd.com
 
 
 
-### Academic Project and Thesis:
-
+Academic Project and Thesis:
+=========================
 * My undergrad project of intrumentation and measurement course
 * My undergrad thesis
 
