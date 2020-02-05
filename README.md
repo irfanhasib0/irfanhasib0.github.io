@@ -36,7 +36,7 @@ __For detail description and Code please go to the Notebook link Provided for ev
 
 ### ROS Project : (Not well doccumented)
 
-- [ROS : Simple two linked robot inspired from rrbot(-)](ros--simple-two-linked-robot-inspired-from-rrbot)
+- [ROS : Simple two linked robot inspired from rrbot(-)](#ros--simple-two-linked-robot-inspired-from-rrbot)
 - [ROS : Writing a script for driving husky robot and getting feed back]
 
 ### Embedded System Projects for Pi Labs BD Ltd :
