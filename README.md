@@ -60,8 +60,8 @@ House Price Prediction :: Data Pre-Processing and Hiper-Parameter Tuning
 ### Notebook : [House Price Prediction - Notebook (Project Presentation and Code Link) ](https://github.com/irfanhasib0/Machine-Learning/blob/master/Kaggle/ANN_Tensorflow__Kaggle_Houseprice_prediction.ipynb)
 
 ### Overview :
-<details>
-    <summary><b><I> Click to expand</I></b></summary>
+<details open>
+    <summary><b><I> Click to toggle expand view</I></b></summary>
     
  *  __Dataset :__ House Price Dataset of kaggle.com
  * __Data is preprocessed :__
@@ -111,7 +111,11 @@ Japanese Job Entrance Problem :: Shakura Bloom Prediction
 ==================================================================================================
 
 ### Notebook : [Shakura Bloom Prediction - Notebook (Project Presentation and Code Link)](https://github.com/irfanhasib0/Machine-Learning/blob/master/Kaggle/Sakura_TF_NN_Report.ipynb)
-   
+### Overview
+
+<details open>
+    <summary><b><I> Click to toggle expand view</I></b></summary>
+    
  *  __Dataset :__ Weather data from japanese meteorological agency
  *  __Steps :__  
                  
@@ -146,7 +150,9 @@ Japanese Job Entrance Problem :: Shakura Bloom Prediction
             -2 Optimizer grid search (Each optimizer for learning rates and epochs)
             -3 Learning Rate Optimization
             -4 Epochs, Early stopping, Regularization constant optimization.
-        
+    
+</details>
+
 ### 1.0 Project Flow Chart :
 <img src="docs/Algorihms/sakura_jp.jpg" align="center"
      title="Open Image in new tab for good resolution" width="640" height="640">
@@ -161,10 +167,15 @@ Neural Network :: NN Implementation from scratch
 ### Notebook : [NN Implementation from scratch - Notebook (Project Presentation and Code Link) ](https://github.com/irfanhasib0/Machine-Learning/blob/master/Machine_Learning_Algo_From_Scratch/ANN_From_Scratch_modular_class.ipynb)
 
 ### Overview : 
+
+    
    Here I implemented Neural Network of 3 Layers. I have implemented A Layes Class and functions 
    for Forward propagation,backward propagation and updating weights. I just tested it XOR data.
    It was fitting good.
-   
+
+<details open>
+    <summary><b><I> Click to toggle expand view</I></b></summary>
+    
    *  __Forward Propagation :__
        
           -Output of a neuron : Z = W*X + B , Mentioned as Neuron Output
@@ -206,6 +217,8 @@ Neural Network :: NN Implementation from scratch
           
        
    * __Note :__ In the flowchart Gradient calcultion is shown in back propagation.
+
+</details>
 
 ### Process Flow Chart :
 
@@ -322,6 +335,10 @@ ILQR and MPC :: Implementation from scratch for self driving car simulator
 
  
 ### Overview :
+
+<details open>
+    <summary><b><I> Click to toggle expand view</I></b></summary>
+    
  *  __Simulation Environment :__ 
     
                    - AIRSIM a Car Simulator by Microsoft 
@@ -356,7 +373,8 @@ ILQR and MPC :: Implementation from scratch for self driving car simulator
                  - MPC Module
                  -- Input : Refferance trajectory to follow from Data Processor module.
                  -- Output : Calculate Optimal steering angle and accelaration with MPC algorithm shown below.
-                 
+
+</details>
      
 ### 1.0 Project Flow Chart :
 <img src="docs/Algorihms/MPC.jpg" align="center"
