@@ -191,45 +191,48 @@ Neural Network :: NN Implementation from scratch
     <summary><b><I> Click to toggle expand view</I></b></summary>
 <ul>   
    <li><b> Forward Propagation : </b></li>
-       
-          -Output of a neuron : Z = W*X + B , Mentioned as Neuron Output
-            
-            --W(a,b) a for current layer, b for previous layer
-            --Layer2:Z1 = Layer2:W11 * X_layer1_node1 + Layer2:W21 * X_layer_node_2 + Layer2:Bias
-            --Layer2:Z2 = Layer2:W11 * X_layer1_node1 + Layer2:W21 * X_layer_node_2 + Layer2:Bias
-            
-          -Adding Non-Linearity : A = Activation(Z) [ Act(Z) in the flow chart] , Mentioned as Activation Output.
+          <ul>
+          <li> Output of a neuron : Z = W*X + B , Mentioned as Neuron Output </li>
+            <ul>
+            <li> W(a,b) a for current layer, b for previous layer </li>
+            <li> Layer2:Z1 = Layer2:W11 * X_layer1_node1 + Layer2:W21 * X_layer_node_2 + Layer2:Bias </li>
+            <li> Layer2:Z2 = Layer2:W11 * X_layer1_node1 + Layer2:W21 * X_layer_node_2 + Layer2:Bias </li>
+            </ul>
+          <li> Adding Non-Linearity : A = Activation(Z) [ Act(Z) in the flow chart] , Mentioned as Activation Output. </li>
+          </ul>
           (For detail better under understanding mutual weight indexing W(a,b) see appendix on Nodes)
           
           
 <li><b>  Calulating gradients : </b></li>
-                     
-          -Calculatin dE/dW (dE/dW : grad of error wrt each weights )
-            --dE/dW = dE/dA * dA/DZ * dZ/dw 
-            
-          -Calculatin dE/dA  (dE/dA : grad of error wrt each Activation output )
-            --dE/dA : For Last Layer, if loss function is mean square error, then E = 1/2*(Y - A)^2 so , dE/dA = (A-Y)
-            --dE/dA : For Other Layers dE/dA will be inherited from the each of the node of next layer acccording
-            to mutual weights. 
-            
-            --Layer2:Error1 = layer3:Error1 * Layer3:W11 + Layer3:Error2 * Layer3:W21 
-            
-            --Mathmetically Implmented as Error_l2 = Weights_l3.Transpose() * Error_l3
-          
-          -Calculating dA/dZ (dA/dZ : grad of Activation Output wrt each Neuron output  also mentioned as delta here)
-            --It is just Derivative of sigmoid function in my case : delta = A*(1-A)
-          
-          -Calculating dZ/dW (dZ/dW : grad of Neuron Output wrt each weights )
-            --As Z = W*X +B so dZ/dW = X , where for first layer, X is the input 
-            --For other layers, the output from previous layer.
-       
+          <ul>          
+          <li> Calculatin dE/dW (dE/dW : grad of error wrt each weights ) </li>
+             <ul>
+             <li> dE/dW = dE/dA * dA/DZ * dZ/dw 
+             </ul>
+          <li> Calculatin dE/dA  (dE/dA : grad of error wrt each Activation output ) </li>
+                <ul>
+                <li>dE/dA : For Last Layer, if loss function is mean square error, then E = 1/2*(Y - A)^2 so , dE/dA = (A-Y </li>
+                <li> dE/dA : For Other Layers dE/dA will be inherited from the each of the node of next layer acccording
+                to mutual weights. </li>
+                <li> Layer2:Error1 = layer3:Error1 * Layer3:W11 + Layer3:Error2 * Layer3:W21 </li>
+                <li> Mathmetically Implmented as Error_l2 = Weights_l3.Transpose() * Error_l3 </li>
+                </ul>
+          <li>Calculating dA/dZ (dA/dZ : grad of Activation Output wrt each Neuron output  also mentioned as delta here) </li>
+                <ul>
+                <li> It is just Derivative of sigmoid function in my case : delta = A*(1-A)
+                </ul>
+          <li> Calculating dZ/dW (dZ/dW : grad of Neuron Output wrt each weights ) </li>
+                 <ul>
+                 <li> As Z = W*X +B so dZ/dW = X , where for first layer, X is the input  </li>
+                 <li> For other layers, the output from previous layer. </li> 
+                 </ul>
+          </ul>
     
 <li><b>  Updating Weights: </b></li>
-       
-          -Updating each weights W = W + alpha*dW/dE
-          -Here alpha is the learning rate.
-          
-       
+    <ul>
+    <li> Updating each weights W = W + alpha*dW/dE </li>
+    <li> Here alpha is the learning rate. </li>
+    </ul>  
 <li><b> Note : </b></li> In the flowchart Gradient calcultion is shown in back propagation.
 </ul>
 </details>
@@ -355,10 +358,10 @@ ILQR and MPC :: Implementation from scratch for self driving car simulator
 <ul>
  
 <li><b>  Simulation Environment : </b></li>
-    
-                   - AIRSIM a Car Simulator by Microsoft 
-                   - OpenAI gym Car ENnvironment.
-
+    <ul>
+    <li> AIRSIM a Car Simulator by Microsoft </li>
+    <li> OpenAI gym Car ENnvironment. </li>
+    </ul>
 <li><b> Original Paper of ILQR Part of the Project </b></li>
                     
                     Synthesis and Stabilization of Complex Behaviors through Online Trajectory Optimization By - Y Tassa  
@@ -366,28 +369,33 @@ ILQR and MPC :: Implementation from scratch for self driving car simulator
                     
                     Input --> Map Points , Output --> Steering Angle, Acclelation, Brake
 <li><b>  Steps :  </b></li>
-                 
-                 - Map Tracker Module
-                 -- Input : Takes Map points as Input
-                 -- Trajectory Queue : Gets N next points from map points to follow according to car position and orientation.
-                 -- Update Trajectory Queue : Update the queue of points to follow with moving car position and orientation.
-                 -- Output : Next N points to follow from Trajectory Queue
-                 
-                 - Data Preprcessor Module : 
-                 -- Input : Trajectory points from Map tracker module.
-                 -- Full State Calculation : Calculates yaw from ref points and target velocity.
-                 -- Relative Trajectory calculation : Relative Co-ordinates calculation as Car position nad yaw as                         origin.
-                 -- Output : Adjusts no of points to track in the refference trajectory accrding to current velocity.  
-                 
-                 - ILQR Module
-                 -- Input : Refferance trajectory to follow from Data Processor module.
-                 -- Output : Calculate Optimal steering angle and accelaration with ILQR algorithm shown below.
-                 
+                 <ul>
+                 <li> Map Tracker Module </li>
+                         <ul>
+                         <li> Input : Takes Map points as Input
+                         <li> Trajectory Queue : Gets N next points from map points to follow according to car position and orientation.
+                         <li> Update Trajectory Queue : Update the queue of points to follow with moving car position and orientation.
+                         <li> Output : Next N points to follow from Trajectory Queue
+                         </ul>
+                <li> Data Preprcessor Module : </li>
+                         <ul>
+                         <li> Input : Trajectory points from Map tracker module.
+                         <li> Full State Calculation : Calculates yaw from ref points and target velocity.
+                         <li> Relative Trajectory calculation : Relative Co-ordinates calculation as Car position nad yaw as                         origin.
+                         <li> Output : Adjusts no of points to track in the refference trajectory accrding to current velocity.  
+                         </ul>
+                 <li> ILQR Module </li>
+                          <ul>
+                           <li> Input : Refferance trajectory to follow from Data Processor module. </li>
+                          <li> Output : Calculate Optimal steering angle and accelaration with ILQR algorithm shown below. </li>
+                          </ul>
                  OR,
-                 
-                 - MPC Module
-                 -- Input : Refferance trajectory to follow from Data Processor module.
-                 -- Output : Calculate Optimal steering angle and accelaration with MPC algorithm shown below.
+                 <li> MPC Module</li>
+                              <ul>
+                              <li> Input : Refferance trajectory to follow from Data Processor module. </li>
+                              <li> Output : Calculate Optimal steering angle and accelaration with MPC algorithm shown below. </li>
+                              </ul>
+                 </ul>
 </ul>    
     
 </details>
