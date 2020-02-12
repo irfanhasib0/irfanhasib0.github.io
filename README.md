@@ -63,36 +63,41 @@ House Price Prediction :: Data Pre-Processing and Hiper-Parameter Tuning
 <details open>
     <summary><b><I> Click to toggle expand view</I></b></summary>
     
- *  __Dataset :__ House Price Dataset of kaggle.com
- * __Data is preprocessed :__
-            
-            
-            - 2.0 Correlation Analysis
-            - 2.1 Outlier handling
-            - 2.2 Missing value Handling
-            - 2.3 Catagorical to numerical conversion
-            - 2.4 Unskewing while needed 
-            - 2.5 Data scaling.
-           
- * __ANN Class with tensorflow low level API :__
-            
-            - Method train
-            - Method predict
-            - Method save weights
-            - Method load weights
- * Each preprocessing step's effectiveness is checked by simple linear regression.
- * __Hiperparameter Tuning :__
-            
-            -4.1 Layer Optimization
-            -4.2 Optimizer grid search (Each optimizer for learning rates and epochs)
-            -4.3 Learning Rate Optimization
-            -4.4 Epochs, Early stopping, Regularization constan optimization.
-            -4.5 Activation optimazation
-            -4.6 Batch size optimization
- * Cross-Validation with 3 fold was done for overfitting testing.
- * Test result was submitted in kaggle.com for evaluation screenshot can be found at result section.
- * All the graphs of Data preprocessing and Hiperparameter Tuning can be found in [Notebook](https://github.com/irfanhasib0/Machine-Learning/blob/master/Kaggle/ANN_Tensorflow__Kaggle_Houseprice_prediction.ipynb).
- </details>
+<ul>
+<li><b> Dataset : House Price Dataset of kaggle.com </b></li>
+<li><b>  Data is preprocessed : </b></li>
+            <ul>
+            <li> 2.0 Correlation Analysis </li>
+            <li> 2.1 Outlier handling </li>
+            <li> 2.2 Missing value Handling </li>
+            <li> 2.3 Catagorical to numerical conversion </li>
+            <li> 2.4 Unskewing while needed </li>
+            <li> 2.5 Data scaling </li>
+            </ul>
+<li><b> ANN Class with tensorflow low level API : </b></li>
+            <ul>
+            <li> Method train </li>
+            <li> Method predict </li>
+            <li> Method save weights </li>
+            <li> Method load weights </li>
+            </ul>
+<li><b> Each preprocessing step's effectiveness is checked by simple linear regression </b></li>
+<li><b> Hiperparameter Tuning : </b></li>
+            <ul>
+            <li> 4.1 Layer Optimization </li>
+            <li> 4.2 Optimizer grid search (Each optimizer for learning rates and epochs) </li>
+            <li> 4.3 Learning Rate Optimization </li>
+            <li> 4.4 Epochs, Early stopping, Regularization constan optimization </li>
+            <li> 4.5 Activation optimazation </li>
+            <li> 4.6 Batch size optimization </li>
+            </ul>
+<li> Cross-Validation with 3 fold was done for overfitting testing </li>
+<li> Test result was submitted in kaggle.com for evaluation screenshot can be found at result section </li>
+<li> All the graphs of Data preprocessing and Hiperparameter Tuning can be found in [Notebook](https://github.com/irfanhasib0/Machine-Learning/blob/master/Kaggle/ANN_Tensorflow__Kaggle_Houseprice_prediction.ipynb). </li>
+
+</ul>
+    
+</details>
  
 ### 1.0 Project Flow Chart :
 <img src="docs/Algorihms/kaggle_hp.jpg" align="center"
@@ -115,42 +120,51 @@ Japanese Job Entrance Problem :: Shakura Bloom Prediction
 
 <details open>
     <summary><b><I> Click to toggle expand view</I></b></summary>
+<ul>    
+<li><b> Dataset : </b></li> Weather data from japanese meteorological agency
+<li><b> Steps :</b></li>
+                 <ul>
+                 <li> Feature Analysis and Data Preprocessing </li>
+                 <li> Implementing Nural Network with tensorflow low level API. </li>
+                 <li> Hiper-Parameter Tuning for ANN </li>
+                 </ul>
+<li><b> Data Preprocessing : </b></li>
+         <ul>
+         <li><b> Converting features of a whole year(365/366 samples) to a single vector for adding feature vector.  </b></li>
+                    <ul>
+                     <li>  Converting all the 365 days daya to a single feature</li>
+                        <ul>
+                        <li> 1. Days after bloom can be ignored. As weather before bloom can effect blooom date </li>
+                        <li> 2. Days days before Dj- 'Last day of hibernation' is less significant </li>
+                        <li> 3. Feature with high correlation i.e max temp, hr1 preci can be specially considered for processing </li>
+                        </ul>
+                        <li>  Converting all the 365 days daya to a single feature </li>
+                         <ul>
+                         <li> 1. Mean of first 90 days </li>
+                         <li> 2. Mean of 30-90 th days </li>
+                         <li> 3. mean of Dj-Dj+45 days </li>
+                         <li> 4. Mean Dj-Dj+60 days </li>
+                         <li> 5. Mean of Dj-Dj+75 </li>
+                         </ul>
+                     </ul>
+        <li><b> Feature Selection </b></li>
+               <ul>
+               <li> Co-relation analysis </li>
+               <li> Accuracy of the linear regression after adding each feature </li>
+               </ul>
+       <li><b> Highly Corelated feaure specially anayzing and processing.  </b></li>
+       <li><b> Outlier analysis.  </b></li>
+       <li><b> Scaling the data considering interquantile range  </b></li>
+       </ul>
     
- *  __Dataset :__ Weather data from japanese meteorological agency
- *  __Steps :__  
-                 
-                 - Feature Analysis and Data Preprocessing
-                 - Implementing Nural Network with tensorflow low level API.
-                 - Hiper-Parameter Tuning for ANN
- * __Data Preprocessing :__
-    
-         -Converting features of a whole year(365/366 samples) to a single vector for adding feature vector.
-           --  Converting all the 365 days daya to a single feature
-             --- 1. Days after bloom can be ignored. As weather before bloom can effect blooom date.
-             --- 2. Days days before Dj- 'Last day of hibernation' is less significant
-             --- 3. Feature with high correlation i.e max temp, hr1 preci can be specially considered for processing.
-           --  Converting all the 365 days daya to a single feature
-             --- 1. Mean of first 90 days
-             --- 2. Mean of 30-90 th days
-             --- 3. mean of Dj-Dj+45 days
-             --- 4. Mean Dj-Dj+60 days
-             --- 5. Mean of Dj-Dj+75
-
-         -Feature Selection
-             -- Co-relation analysis.
-             -- Accuracy of the linear regression after adding each feature.
-
-         -Highly Corelated feaure specially anayzing and processing.
-         -Outlier analysis.
-         -Scaling the data considering interquantile range.
-
- * __Hiperparameter Tuning :__
-            
-            -1 Layer Optimization
-            -2 Optimizer grid search (Each optimizer for learning rates and epochs)
-            -3 Learning Rate Optimization
-            -4 Epochs, Early stopping, Regularization constant optimization.
-    
+<li><b> Hiperparameter Tuning : </b></li>
+             <ul>
+             <li> 1. Layer Optimization </li>
+             <li> 2. Optimizer grid search (Each optimizer for learning rates and epochs) </li>
+             <li> 3. Learning Rate Optimization </li>
+             <li> 4. Epochs, Early stopping, Regularization constant optimization. </li>
+             </ul>
+</ul>    
 </details>
 
 ### 1.0 Project Flow Chart :
@@ -175,8 +189,8 @@ Neural Network :: NN Implementation from scratch
 
 <details open>
     <summary><b><I> Click to toggle expand view</I></b></summary>
-    
-   *  __Forward Propagation :__
+<ul>   
+   <li><b> Forward Propagation : </b></li>
        
           -Output of a neuron : Z = W*X + B , Mentioned as Neuron Output
             
@@ -188,7 +202,7 @@ Neural Network :: NN Implementation from scratch
           (For detail better under understanding mutual weight indexing W(a,b) see appendix on Nodes)
           
           
-   *  __Calulating gradients :__
+<li><b>  Calulating gradients : </b></li>
                      
           -Calculatin dE/dW (dE/dW : grad of error wrt each weights )
             --dE/dW = dE/dA * dA/DZ * dZ/dw 
@@ -210,14 +224,14 @@ Neural Network :: NN Implementation from scratch
             --For other layers, the output from previous layer.
        
     
-   *  __Updating Weights:__
+<li><b>  Updating Weights: </b></li>
        
           -Updating each weights W = W + alpha*dW/dE
           -Here alpha is the learning rate.
           
        
-   * __Note :__ In the flowchart Gradient calcultion is shown in back propagation.
-
+<li><b> Note : </b></li> In the flowchart Gradient calcultion is shown in back propagation.
+</ul>
 </details>
 
 ### Process Flow Chart :
@@ -338,19 +352,20 @@ ILQR and MPC :: Implementation from scratch for self driving car simulator
 
 <details open>
     <summary><b><I> Click to toggle expand view</I></b></summary>
-    
- *  __Simulation Environment :__ 
+<ul>
+ 
+<li><b>  Simulation Environment : </b></li>
     
                    - AIRSIM a Car Simulator by Microsoft 
                    - OpenAI gym Car ENnvironment.
 
- * Original Paper of ILQR Part : 
+<li><b> Original Paper of ILQR Part of the Project </b></li>
                     
                     Synthesis and Stabilization of Complex Behaviors through Online Trajectory Optimization By - Y Tassa  
- *  __I0 :__ 
+<li><b>  I0 :   </b></li>
                     
                     Input --> Map Points , Output --> Steering Angle, Acclelation, Brake
- *  __Steps :__  
+<li><b>  Steps :  </b></li>
                  
                  - Map Tracker Module
                  -- Input : Takes Map points as Input
@@ -373,7 +388,8 @@ ILQR and MPC :: Implementation from scratch for self driving car simulator
                  - MPC Module
                  -- Input : Refferance trajectory to follow from Data Processor module.
                  -- Output : Calculate Optimal steering angle and accelaration with MPC algorithm shown below.
-
+</ul>    
+    
 </details>
      
 ### 1.0 Project Flow Chart :
