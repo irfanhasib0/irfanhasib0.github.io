@@ -234,6 +234,7 @@ Neural Network :: NN Implementation from scratch
     <li> Here alpha is the learning rate. </li>
     </ul>  
 <li><b> Note : </b></li> In the flowchart Gradient calcultion is shown in back propagation.
+
 </ul>
 </details>
 
