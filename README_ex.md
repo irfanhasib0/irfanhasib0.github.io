@@ -1,3 +1,4 @@
+
 Table of Content
 ===============================
 
@@ -61,7 +62,13 @@ House Price Prediction :: Data Pre-Processing and Hiper-Parameter Tuning
 
 ### Overview :
 
+<details>
+    <summary> 
+        <b><I>Click here for details</I></b>
+    </summary>
+    
  *  __Dataset :__ House Price Dataset of kaggle.com
+    
  * __Data is preprocessed :__
         - 2.0 Correlation Analysis
         - 2.1 Outlier handling
@@ -69,12 +76,14 @@ House Price Prediction :: Data Pre-Processing and Hiper-Parameter Tuning
         - 2.3 Catagorical to numerical conversion
         - 2.4 Unskewing while needed 
         - 2.5 Data scaling.
+    
  * __ANN Class with tensorflow low level API :__
         - Method train
         - Method predict
         - Method save weights
         - Method load weights
  * Each preprocessing step's effectiveness is checked by simple linear regression.
+    
  * __Hiperparameter Tuning :__
         -4.1 Layer Optimization
         -4.2 Optimizer grid search (Each optimizer for learning rates and epochs)
@@ -82,10 +91,16 @@ House Price Prediction :: Data Pre-Processing and Hiper-Parameter Tuning
         -4.4 Epochs, Early stopping, Regularization constan optimization.
         -4.5 Activation optimazation
         -4.6 Batch size optimization
+    
  * Cross-Validation with 3 fold was done for overfitting testing.
+    
  * Test result was submitted in kaggle.com for evaluation screenshot can be found at result section.
+    
  * All the graphs of Data preprocessing and Hiperparameter Tuning can be found in [Notebook](https://github.com/irfanhasib0/Machine-Learning/blob/master/Kaggle/ANN_Tensorflow__Kaggle_Houseprice_prediction.ipynb).
- 
+
+    
+</details>
+
 ### 1.0 Project Flow Chart :
 <img src="docs/Algorihms/kaggle_hp.jpg" align="center"
      title="Open Image in new tab for good resolution" width="800" height="1000">
@@ -103,14 +118,24 @@ Japanese Job Entrance Problem :: Shakura Bloom Prediction
 ==================================================================================================
 
 ### Notebook : [Shakura Bloom Prediction - Notebook (Project Presentation and Code Link)](https://github.com/irfanhasib0/Machine-Learning/blob/master/Kaggle/Sakura_TF_NN_Report.ipynb)
-   
- *  __Dataset :__ Weather data from japanese meteorological agency
- *  __Steps :__  
-                 - Feature Analysis and Data Preprocessing
-                 - Implementing Nural Network with tensorflow low level API.
-                 - Hiper-Parameter Tuning for ANN
- * __Data Preprocessing :__
+
+### Overview :
+<details>
+    <summary> <b> <I>Click to expand </I></b></summary>
+
     
+ *  __Dataset :__ Weather data from japanese meteorological agency
+
+ 
+
+ *  __Steps :__   
+ 
+     - Feature Analysis and Data Preprocessing 
+     - Implementing Nural Network with tensorflow low level API 
+     - Hiper-Parameter Tuning for ANN
+             
+ * __Data Preprocessing :__ 
+ 
      -Converting features of a whole year(365/366 samples) to a single vector for adding feature vector.
        --  Converting all the 365 days daya to a single feature
          --- 1. Days after bloom can be ignored. As weather before bloom can effect blooom date.
@@ -131,12 +156,16 @@ Japanese Job Entrance Problem :: Shakura Bloom Prediction
      -Outlier analysis.
      -Scaling the data considering interquantile range.
 
+ 
  * __Hiperparameter Tuning :__
         -1 Layer Optimization
         -2 Optimizer grid search (Each optimizer for learning rates and epochs)
         -3 Learning Rate Optimization
         -4 Epochs, Early stopping, Regularization constant optimization.
-        
+    
+
+ </details>
+ 
 ### 1.0 Project Flow Chart :
 <img src="docs/Algorihms/sakura_jp.jpg" align="center"
      title="Open Image in new tab for good resolution" width="640" height="640">
@@ -155,6 +184,9 @@ Neural Network :: NN Implementation from scratch
    for Forward propagation,backward propagation and updating weights. I just tested it XOR data.
    It was fitting good.
    
+   <details>
+   <summary> Click to expand </summary>
+    
    *  __Forward Propagation :__
        
           -Output of a neuron : Z = W*X + B , Mentioned as Neuron Output
@@ -196,7 +228,9 @@ Neural Network :: NN Implementation from scratch
           
        
    * __Note :__ In the flowchart Gradient calcultion is shown in back propagation.
-
+    
+   </details>
+   
 ### Process Flow Chart :
 
     (Open Image in new tab for full resolution)
@@ -213,11 +247,13 @@ Neural Network :: NN Implementation from scratch
      title="(Open Image in new tab for good resolution)" width="320" height="240">
 
 #### Appendix :
+<details>
+ <summary> Click to expand </summary>
 * __Nodes :__
          
          - Every Node/Neuron is considered to have weights for each of previous layers node.
          
-         ```
+         
          Leyer 1 ->2 nodes 
          Layer 2 ->3 Nodes
          So, Layer 2's each of the 3 Nodes will have two weights for Layer 1's each of the 2 nodes.
@@ -233,8 +269,10 @@ Neural Network :: NN Implementation from scratch
               Layer2:W12 --> Layer 2's 1st node's weight for previous layers(Layer 1) 2nd node
               Layer2:W13 --> Layer 2's 1st node's weight for previous layers(Layer 1) 3rd node
          
-         ```
-.
+         
+<details>
+ <summary> Click to expand </summary>
+    
 
 Decision Tree :: ID3 Implementation from scratch
 ====================================================
@@ -312,6 +350,10 @@ ILQR and MPC :: Implementation from scratch for self driving car simulator
 
  
 ### Overview :
+
+<details>
+<summary> Click to expand </summary>
+
  *  __Simulation Environment :__ 
     
    - AIRSIM a Car Simulator by Microsoft 
@@ -320,6 +362,7 @@ ILQR and MPC :: Implementation from scratch for self driving car simulator
  * Original Paper of ILQR Part : Synthesis and Stabilization of Complex Behaviors through Online Trajectory Optimization By - Y Tassa  
  *  __I0 :__ Input --> Map Points , Output --> Steering Angle, Acclelation, Brake
  *  __Steps :__  
+
                  
                  - Map Tracker Module
                  -- Input : Takes Map points as Input
@@ -343,7 +386,8 @@ ILQR and MPC :: Implementation from scratch for self driving car simulator
                  -- Input : Refferance trajectory to follow from Data Processor module.
                  -- Output : Calculate Optimal steering angle and accelaration with MPC algorithm shown below.
                  
-     
+</details>
+   
 ### 1.0 Project Flow Chart :
 <img src="docs/Algorihms/MPC.jpg" align="center"
      title="Open Image in new tab for good resolution" width="700" height="480">
@@ -476,7 +520,7 @@ Academic Project and Thesis:
 
  
  University Rover Challenge - 2016
- ==========================
+ ================================
 
 ### Critical Design Rivew    : [Video Link](https://www.youtube.com/watch?v=MlN-VFj14LE)
 
