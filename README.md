@@ -60,31 +60,39 @@ House Price Prediction :: Data Pre-Processing and Hiper-Parameter Tuning
 ### Notebook : [House Price Prediction - Notebook (Project Presentation and Code Link) ](https://github.com/irfanhasib0/Machine-Learning/blob/master/Kaggle/ANN_Tensorflow__Kaggle_Houseprice_prediction.ipynb)
 
 ### Overview :
-
+<details>
+    <summary><b><I> Click to expand</I></b></summary>
+    
  *  __Dataset :__ House Price Dataset of kaggle.com
  * __Data is preprocessed :__
-        - 2.0 Correlation Analysis
-        - 2.1 Outlier handling
-        - 2.2 Missing value Handling
-        - 2.3 Catagorical to numerical conversion
-        - 2.4 Unskewing while needed 
-        - 2.5 Data scaling.
+            
+            
+            - 2.0 Correlation Analysis
+            - 2.1 Outlier handling
+            - 2.2 Missing value Handling
+            - 2.3 Catagorical to numerical conversion
+            - 2.4 Unskewing while needed 
+            - 2.5 Data scaling.
+           
  * __ANN Class with tensorflow low level API :__
-        - Method train
-        - Method predict
-        - Method save weights
-        - Method load weights
+            
+            - Method train
+            - Method predict
+            - Method save weights
+            - Method load weights
  * Each preprocessing step's effectiveness is checked by simple linear regression.
  * __Hiperparameter Tuning :__
-        -4.1 Layer Optimization
-        -4.2 Optimizer grid search (Each optimizer for learning rates and epochs)
-        -4.3 Learning Rate Optimization
-        -4.4 Epochs, Early stopping, Regularization constan optimization.
-        -4.5 Activation optimazation
-        -4.6 Batch size optimization
+            
+            -4.1 Layer Optimization
+            -4.2 Optimizer grid search (Each optimizer for learning rates and epochs)
+            -4.3 Learning Rate Optimization
+            -4.4 Epochs, Early stopping, Regularization constan optimization.
+            -4.5 Activation optimazation
+            -4.6 Batch size optimization
  * Cross-Validation with 3 fold was done for overfitting testing.
  * Test result was submitted in kaggle.com for evaluation screenshot can be found at result section.
  * All the graphs of Data preprocessing and Hiperparameter Tuning can be found in [Notebook](https://github.com/irfanhasib0/Machine-Learning/blob/master/Kaggle/ANN_Tensorflow__Kaggle_Houseprice_prediction.ipynb).
+ </details>
  
 ### 1.0 Project Flow Chart :
 <img src="docs/Algorihms/kaggle_hp.jpg" align="center"
