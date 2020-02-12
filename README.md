@@ -23,12 +23,12 @@ __For detail description and Code please go to the Notebook link Provided for ev
  - [Naive Bayes            :: Implementation for text classification with text preprocesing from scratch (**)](#naive-bayes--implementation-for-text-classification)
 
 ### Reinforcement Learning ALgorithms from scratch :
- - [DQN(Deep Q Learning) from scratch with Tensorflow-KERAS(**)](#dqn-and-ddpg--implementation-from-scratch)
- - [DDPG(Deep Deterministic Policy Gradient) from scratch with Tensorflow(**)](#dqn-and-ddpg--implementation-from-scratch)
+ - [DQN(Deep Q Learning) from scratch with Tensorflow-KERAS(**)](#dqn-and-ddpg-implementation-from-scratch)
+ - [DDPG(Deep Deterministic Policy Gradient) from scratch with Tensorflow(**)](#dqn-and-ddpg-implementation-from-scratch)
  
 ### Control Algorithms Implementation from scratch :
-- [ILQR(Iterative Linear Quadratic Regulator) Implementation from scratch(****)](#ilqr-and-mpc-implementation-from-scratch-for-self-driving-car-simulator)
-- [MPC(Model Predictive Controller) Implementation from scratch(**)](#ilqr-and-mpc-implementation-from-scratch-for-self-driving-car-simulator)
+- [ILQR(Iterative Linear Quadratic Regulator) Implementation from scratch(****)](#ilqr-and-mpc--implementation-from-scratch-for-self-driving-car-simulator)
+- [MPC(Model Predictive Controller) Implementation from scratch(**)](#ilqr-and-mpc--implementation-from-scratch-for-self-driving-car-simulator)
 
 ### CNN Projects : (Minimal Doccumentation)
 - [Yolo with KERAS and Tensorflow for car number plate localization](#yolo-with-keras-and-tensorflow-nuberplate-detection)
@@ -106,36 +106,38 @@ Japanese Job Entrance Problem :: Shakura Bloom Prediction
    
  *  __Dataset :__ Weather data from japanese meteorological agency
  *  __Steps :__  
+                 
                  - Feature Analysis and Data Preprocessing
                  - Implementing Nural Network with tensorflow low level API.
                  - Hiper-Parameter Tuning for ANN
  * __Data Preprocessing :__
     
-     -Converting features of a whole year(365/366 samples) to a single vector for adding feature vector.
-       --  Converting all the 365 days daya to a single feature
-         --- 1. Days after bloom can be ignored. As weather before bloom can effect blooom date.
-         --- 2. Days days before Dj- 'Last day of hibernation' is less significant
-         --- 3. Feature with high correlation i.e max temp, hr1 preci can be specially considered for processing.
-       --  Converting all the 365 days daya to a single feature
-         --- 1. Mean of first 90 days
-         --- 2. Mean of 30-90 th days
-         --- 3. mean of Dj-Dj+45 days
-         --- 4. Mean Dj-Dj+60 days
-         --- 5. Mean of Dj-Dj+75
+         -Converting features of a whole year(365/366 samples) to a single vector for adding feature vector.
+           --  Converting all the 365 days daya to a single feature
+             --- 1. Days after bloom can be ignored. As weather before bloom can effect blooom date.
+             --- 2. Days days before Dj- 'Last day of hibernation' is less significant
+             --- 3. Feature with high correlation i.e max temp, hr1 preci can be specially considered for processing.
+           --  Converting all the 365 days daya to a single feature
+             --- 1. Mean of first 90 days
+             --- 2. Mean of 30-90 th days
+             --- 3. mean of Dj-Dj+45 days
+             --- 4. Mean Dj-Dj+60 days
+             --- 5. Mean of Dj-Dj+75
 
-     -Feature Selection
-         -- Co-relation analysis.
-         -- Accuracy of the linear regression after adding each feature.
-         
-     -Highly Corelated feaure specially anayzing and processing.
-     -Outlier analysis.
-     -Scaling the data considering interquantile range.
+         -Feature Selection
+             -- Co-relation analysis.
+             -- Accuracy of the linear regression after adding each feature.
+
+         -Highly Corelated feaure specially anayzing and processing.
+         -Outlier analysis.
+         -Scaling the data considering interquantile range.
 
  * __Hiperparameter Tuning :__
-        -1 Layer Optimization
-        -2 Optimizer grid search (Each optimizer for learning rates and epochs)
-        -3 Learning Rate Optimization
-        -4 Epochs, Early stopping, Regularization constant optimization.
+            
+            -1 Layer Optimization
+            -2 Optimizer grid search (Each optimizer for learning rates and epochs)
+            -3 Learning Rate Optimization
+            -4 Epochs, Early stopping, Regularization constant optimization.
         
 ### 1.0 Project Flow Chart :
 <img src="docs/Algorihms/sakura_jp.jpg" align="center"
@@ -314,11 +316,15 @@ ILQR and MPC :: Implementation from scratch for self driving car simulator
 ### Overview :
  *  __Simulation Environment :__ 
     
-   - AIRSIM a Car Simulator by Microsoft 
-   - OpenAI gym Car ENnvironment.
-    
- * Original Paper of ILQR Part : Synthesis and Stabilization of Complex Behaviors through Online Trajectory Optimization By - Y Tassa  
- *  __I0 :__ Input --> Map Points , Output --> Steering Angle, Acclelation, Brake
+                   - AIRSIM a Car Simulator by Microsoft 
+                   - OpenAI gym Car ENnvironment.
+
+ * Original Paper of ILQR Part : 
+                    
+                    Synthesis and Stabilization of Complex Behaviors through Online Trajectory Optimization By - Y Tassa  
+ *  __I0 :__ 
+                    
+                    Input --> Map Points , Output --> Steering Angle, Acclelation, Brake
  *  __Steps :__  
                  
                  - Map Tracker Module
