@@ -540,11 +540,11 @@ DQN and DDPG:: Implementation from scratch
 
 ### 1.0 Detailed Flow Chart for DQN and DDPG : (Please open in New tab for proper resolution)
 
-<img src="docs/Algorihms/_DQN.jpg" align="left"
+<img src="docs/Algorihms/DQNa.jpg" align="left"
      title="Open Image in new tab for good resolution" width="240" height="240">
      
 
-<img src="docs/Algorihms/_DDPG.jpg" align="left"
+<img src="docs/Algorihms/DDPGa.jpg" align="left"
      title="Open Image in new tab for good resolution" width="240" height="240"></br>
 
 ### 2.0 Results 
