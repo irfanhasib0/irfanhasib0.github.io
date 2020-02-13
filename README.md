@@ -1,3 +1,4 @@
+
 Table of Content
 ===============================
 
@@ -13,7 +14,7 @@ __For detail description and Code please go to the Notebook link Provided for ev
    
 
 ### Kaggle Competetions and Job Entrance Problem :
- - [House Price Prediction :: Data Pre-Processing, ANN with tensorflow low level API and and Hiper-Parameter Tuning.  (****)](#house-price-prediction--data-pre-processing-and-hiper-parameter-tuning)
+ - [Kaggle House Price Prediction :: Data Pre-Processing, ANN with tensorflow low level API and and Hiper-Parameter Tuning.  (****)](#house-price-prediction--data-pre-processing-and-hiper-parameter-tuning)
  - [Japanese Job Entrance Problem :: Shakura Bloom Prediction (***)](#japanese-job-entrance-problem--shakura-bloom-prediction)
 
 ### Machine Learning Algorithms from Scratch :
@@ -52,7 +53,7 @@ __For detail description and Code please go to the Notebook link Provided for ev
 
 ### Academic Project and Thesis (Undergrad) :
  - Remote rescue robot with AVR Microcontroller
- - Car velocity mseasuring system for drive cycle of Dhaka
+ - Car velocity mseasuring and logging system for genearting drive cycle of Dhaka
  - [Link of presentation.](#academic-project-and-thesis)
 
 House Price Prediction :: Data Pre-Processing and Hiper-Parameter Tuning
@@ -60,12 +61,22 @@ House Price Prediction :: Data Pre-Processing and Hiper-Parameter Tuning
 ### Notebook : [House Price Prediction - Notebook (Project Presentation and Code Link) ](https://github.com/irfanhasib0/Machine-Learning/blob/master/Kaggle/ANN_Tensorflow__Kaggle_Houseprice_prediction.ipynb)
 
 ### Overview :
-<details open>
-    <summary><b><I> Click to toggle expand view</I></b></summary>
+<div style="background-color:#F8F9F9">
+    <ul style="list-style-type:circle;">
+        <b><I>
+        <li>House Price Dataset from kaggle.com</li>
+        <li>Data Preprocessing</li>
+        <li>ANN Class with tensorflow low level API </li>
+        <li>Hiperparameter Tuning</li>
+        <li>All the graphs of Data preprocessing and Hiperparameter Tuning can be found in <a href https://github.com/irfanhasib0/Machine-Learning/blob/master/Kaggle/ANN_Tensorflow__Kaggle_Houseprice_prediction.ipynb> Notebook </a></li>
+        </b></I>
+    </ul>
+<details false>
+    <summary><b><I><font color="#3498DB"> Click to expand</font></I></b></summary>
     
-<ul>
-<li><b> Dataset : House Price Dataset of kaggle.com </b></li>
-<li><b>  Data is preprocessed : </b></li>
+<ul style="list-style-type:none;" >
+<li><b> Dataset : </b> House Price Dataset of kaggle.com </li>
+<li><b> Data Preprocessing : </b></li>
             <ul>
             <li> 2.0 Correlation Analysis </li>
             <li> 2.1 Outlier handling </li>
@@ -81,7 +92,7 @@ House Price Prediction :: Data Pre-Processing and Hiper-Parameter Tuning
             <li> Method save weights </li>
             <li> Method load weights </li>
             </ul>
-<li><b> Each preprocessing step's effectiveness is checked by simple linear regression </b></li>
+<li> Each preprocessing step's effectiveness is checked by simple linear regression </li>
 <li><b> Hiperparameter Tuning : </b></li>
             <ul>
             <li> 4.1 Layer Optimization </li>
@@ -91,14 +102,15 @@ House Price Prediction :: Data Pre-Processing and Hiper-Parameter Tuning
             <li> 4.5 Activation optimazation </li>
             <li> 4.6 Batch size optimization </li>
             </ul>
+</ul>
+<ul>
 <li> Cross-Validation with 3 fold was done for overfitting testing </li>
 <li> Test result was submitted in kaggle.com for evaluation screenshot can be found at result section </li>
-<li> All the graphs of Data preprocessing and Hiperparameter Tuning can be found in [Notebook](https://github.com/irfanhasib0/Machine-Learning/blob/master/Kaggle/ANN_Tensorflow__Kaggle_Houseprice_prediction.ipynb). </li>
-
-</ul>
-    
+<li> All the graphs of Data preprocessing and Hiperparameter Tuning can be found in <a href https://github.com/irfanhasib0/Machine-Learning/blob/master/Kaggle/ANN_Tensorflow__Kaggle_Houseprice_prediction.ipynb> Notebook </a>  </li>
+</ul>    
 </details>
- 
+</div>
+
 ### 1.0 Project Flow Chart :
 <img src="docs/Algorihms/kaggle_hp.jpg" align="center"
      title="Open Image in new tab for good resolution" width="800" height="1000">
@@ -117,10 +129,19 @@ Japanese Job Entrance Problem :: Shakura Bloom Prediction
 
 ### Notebook : [Shakura Bloom Prediction - Notebook (Project Presentation and Code Link)](https://github.com/irfanhasib0/Machine-Learning/blob/master/Kaggle/Sakura_TF_NN_Report.ipynb)
 ### Overview
-
-<details open>
-    <summary><b><I> Click to toggle expand view</I></b></summary>
-<ul>    
+<div style="background-color:#F8F9F9">
+<ul style="list-style-type:circle;">
+        <b><I>
+        <li>Weather data from japanese meteorological agencym</li>
+        <li>Feature Extraction and Data Preprocessing</li>
+        <li>ANN Class with tensorflow low level API </li>
+        <li>Hiperparameter Tuning</li>
+        <li>All the graphs of Data preprocessing and Hiperparameter Tuning can be found in <a href https://github.com/irfanhasib0/Machine-Learning/blob/master/Kaggle/Sakura_TF_NN_Report.ipynb> Notebook </a></li>
+        </b></I>
+    </ul>
+<details false>
+        <summary><b><I><font color="#3498DB"> Click to expand</font></I></b></summary>
+<ul style="list-style-type:none;">    
 <li><b> Dataset : </b></li> Weather data from japanese meteorological agency
 <li><b> Steps :</b></li>
                  <ul>
@@ -156,7 +177,6 @@ Japanese Job Entrance Problem :: Shakura Bloom Prediction
        <li><b> Outlier analysis.  </b></li>
        <li><b> Scaling the data considering interquantile range  </b></li>
        </ul>
-    
 <li><b> Hiperparameter Tuning : </b></li>
              <ul>
              <li> 1. Layer Optimization </li>
@@ -166,6 +186,7 @@ Japanese Job Entrance Problem :: Shakura Bloom Prediction
              </ul>
 </ul>    
 </details>
+</div>
 
 ### 1.0 Project Flow Chart :
 <img src="docs/Algorihms/sakura_jp.jpg" align="center"
@@ -182,27 +203,34 @@ Neural Network :: NN Implementation from scratch
 
 ### Overview : 
 
-    
-   Here I implemented Neural Network of 3 Layers. I have implemented A Layes Class and functions 
-   for Forward propagation,backward propagation and updating weights. I just tested it XOR data.
-   It was fitting good.
-
-<details open>
-    <summary><b><I> Click to toggle expand view</I></b></summary>
-<ul>   
+<div style="background-color:#F8F9F9">
+   <p>Here I  have implemented Neural Network of 3 Layers. I have implemented A Layes Class and functions 
+   for Forward propagation,backward propagation and updating weights. I just tested it XOR data. It was fitting good.</p>
+<ul style="list-style-type:circle;">
+        <b><I>
+        <li>XOR Data used for testing</li>
+        <li>Forward Propagation</li>
+        <li>Backward Propagation</li>
+        <ul>
+        <li>Calculating Gradients </li>
+        <li>Updating weights</li>
+        </ul>
+        </I></b>
+</ul>
+<details false>
+<summary><b><I><font color="#3498DB"> Click to expand</font></I></b></summary>
+<ul style="list-style-type:none;">  
    <li><b> Forward Propagation : </b></li>
           <ul>
           <li> Output of a neuron : Z = W*X + B , Mentioned as Neuron Output </li>
-            <ul>
+            <ul style="list-style-type:circle;">
             <li> W(a,b) a for current layer, b for previous layer </li>
             <li> Layer2:Z1 = Layer2:W11 * X_layer1_node1 + Layer2:W21 * X_layer_node_2 + Layer2:Bias </li>
             <li> Layer2:Z2 = Layer2:W11 * X_layer1_node1 + Layer2:W21 * X_layer_node_2 + Layer2:Bias </li>
             </ul>
           <li> Adding Non-Linearity : A = Activation(Z) [ Act(Z) in the flow chart] , Mentioned as Activation Output. </li>
+          <li>(For detail better under understanding mutual weight indexing W(a,b) see appendix on Nodes)</li>
           </ul>
-          (For detail better under understanding mutual weight indexing W(a,b) see appendix on Nodes)
-          
-          
 <li><b>  Calulating gradients : </b></li>
           <ul>          
           <li> Calculatin dE/dW (dE/dW : grad of error wrt each weights ) </li>
@@ -227,16 +255,15 @@ Neural Network :: NN Implementation from scratch
                  <li> For other layers, the output from previous layer. </li> 
                  </ul>
           </ul>
-    
 <li><b>  Updating Weights: </b></li>
     <ul>
     <li> Updating each weights W = W + alpha*dW/dE </li>
     <li> Here alpha is the learning rate. </li>
     </ul>  
 <li><b> Note : </b></li> In the flowchart Gradient calcultion is shown in back propagation.
-
 </ul>
 </details>
+</div>
 
 ### Process Flow Chart :
 
@@ -254,43 +281,49 @@ Neural Network :: NN Implementation from scratch
      title="(Open Image in new tab for good resolution)" width="320" height="240">
 
 #### Appendix :
+
 * __Nodes :__
-         
-         - Every Node/Neuron is considered to have weights for each of previous layers node.
-         
-         ```
-         Leyer 1 ->2 nodes 
-         Layer 2 ->3 Nodes
-         So, Layer 2's each of the 3 Nodes will have two weights for Layer 1's each of the 2 nodes.
-         they are -
-         Layer 2 - Node 1: W11 , W12
-         Layer 2 - Node 2: W21 , W22
-         Layer 2 - Node 3: W31 , W32
-         Value of Layer 2:Node1 (Z21) = X1 * Layer2:W11 + X2 * Layer2:W12
-         Mutual Weights: Layer:W(a,b) : 
-             a is the node we are calculating for (current layer)
-             b is the contributing node (from previous layer)
-             i.e 
-              Layer2:W12 --> Layer 2's 1st node's weight for previous layers(Layer 1) 2nd node
-              Layer2:W13 --> Layer 2's 1st node's weight for previous layers(Layer 1) 3rd node
-         
-         ```
-.
+<div style="background-color:#F8F9F9">
+<details>
+    <summary><b><I> Click to toggle expand view </I></b></summary>
+    <ul style="list-style-type:square;">  
+    <li> Every Node/Neuron is considered to have weights for each of previous layers node.</li>
+    </ul>
+         <br>Leyer 1 ->2 nodes 
+         <br>Layer 2 ->3 Nodes
+         <br>So, Layer 2's each of the 3 Nodes will have two weights for Layer 1's each of the 2 nodes.
+         <br>they are -
+         <br>Layer 2 - Node 1: W11 , W12
+         <br>Layer 2 - Node 2: W21 , W22
+         <br>Layer 2 - Node 3: W31 , W32
+         <br>Value of Layer 2:Node1 (Z21) = X1 * Layer2:W11 + X2 * Layer2:W12
+         <br>Mutual Weights: Layer:W(a,b) : 
+             <br>a is the node we are calculating for (current layer)
+             <br>b is the contributing node (from previous layer)
+             <br>i.e 
+              <br>Layer2:W12 --> Layer 2's 1st node's weight for previous layers(Layer 1) 2nd node
+              <br>Layer2:W13 --> Layer 2's 1st node's weight for previous layers(Layer 1) 3rd node
+</details>
+</div>
 
 Decision Tree :: ID3 Implementation from scratch
 ====================================================
 ### Notebook : [ID3 Implementation from scratch - Notebook (Project Presentation and Code Link) ](https://github.com/irfanhasib0/Machine-Learning/blob/master/Machine_Learning_Algo_From_Scratch/ID3_with_continuous_feature_support_exp.py)
+<div style="background-color:#F8F9F9">
+<ul>
+<li><b><I>Dataset     :</li></b></I> Titanic and irish dataset was used for testing ID3.
+<li><b><I> Steps      :</li></b></I>
+                  <ul>
+                  <li>Continuous data spliting based on information gain </li>
+                  <li>Information Gain Calculation  </li>
+                  <li>ID3 Algorithm according to flowchart </li>
+                  </ul>
 
-* __Dataset     :__ Titanic and irish dataset was used for testing ID3.
-* __Steps       :__
-                  -Continuous data spliting based on information gain.
-                  -Information Gain Calculation Function.
-                  -ID3 Algorithm according to flowchart.
+<li><b><I> Tuning     :</li></b></I> Reduced Error Pruining.
+<li><b><I> Prediction :</li></b></I> Accuracy,Precision,Recall Reporting.
+</ul>
+</div>
 
-
-* __Tuning     :__ Reduced Error Pruining.
-* __Prediction :__ Accuracy,Precision,Recall Reporting.
- 
  ### ID3 Flow Chart of Implementation (Open Image in new tab for full resolution)
 
 <img src="docs/Algorihms/ID3.jpg" align="center"
@@ -327,9 +360,21 @@ Naive Bayes :: Implementation for text classification
 
 ### Notebook : [Naive Bayes Implementation from scratch - Notebook (Project Presentation and Code Link) ](https://github.com/irfanhasib0/Machine-Learning/blob/master/Machine_Learning_Algo_From_Scratch/Naive_Bayes_Stack_Exchange.ipynb)
 
-* Archived data from stack exchange is used for classification.
-* Text Preprocessing was done with raw python without nltk.
-	Naive Bayes algorithm applied on the procesed text.
+<div style="background-color:#F8F9F9">
+<ul>
+<li><b><I> Dataset     :</li></b></I> Archived data from stack exchange is used for classification.
+<li><b><I> Steps      :</li></b></I>
+                  <ul>
+                  <li>Text Preprocessing was done with raw python without nltk. </li>
+                  <li>Calculating Attribute Probabilities for each class  </li>
+                  <li>Applying Bayes Theorem for getting class probality </li>
+                  </ul>
+<li><b><I> Tuning     :</li></b></I> The model was Tuned for best alpha values.
+<li><b><I> Prediction :</li></b></I> Accuracy,Precision,Recall Reporting.
+</ul>
+</div>
+
+### Naive Bayes algorithm applied on the procesed text.
 <img src="docs/Algorihms/Naive_Bayes.jpg" align="center"
      title="Open Image in new tab for good resolution" width="640" height="480">
 
@@ -348,15 +393,37 @@ Naive Bayes :: Implementation for text classification
 ILQR and MPC :: Implementation from scratch for self driving car simulator
 =============================================================
 
-### Notebook : [ILQR Implementation - Notebook (Project Presentation and Code Link)](https://github.com/irfanhasib0/RL-Algorithms/blob/master/DDPG_Pendulum_TF-V-2-ROS.ipynb)
+### Notebook : [ILQR Implementation - Notebook (Project Presentation and Code Link)](https://github.com/irfanhasib0/Control-algorithms/blob/master/MPC_GYM_CAR_RACING_V0/ilqr_on_airsim_env_map_tracker_rel-exp.ipynb)
+### Notebook : [MPC Implementation - Notebook (Project Presentation and Code Link)](https://github.com/irfanhasib0/Control-algorithms/blob/master/MPC_GYM_CAR_RACING_V0/mpc_on_car_env_map_tracker_rel.ipynb)
 
 
  
 ### Overview :
+<div style="background-color:#F8F9F9">
+<ul style="list-style-type:none;">
+        <li><b><I> Simulation Platform : </b></I></li>
+            <ul style="list-style-type:circle;">
+                <li> AIRSIM by Microsoft Inc. </li>
+                <li> OpenAI GYM - Car Environment was tested</li>
+            </ul>
+        <li><b><I>IO :</b></I></li> Input --> Map Points , Output --> Steering Angle, Acclelation, Brake
+        <li><b><I>MAP to Trajectory : Steps : </b></I></li>
+            <ul style="list-style-type:circle;">
+                <li>  Environment Module </li>
+                <li>  Map Tracker Module </li>
+                <li>  Data Preprcessor Module</li>
+            </ul>
+        <li><b><I> Optimaization Algorithm : Trajectory to Optimal Steering,Accleration,Brake : </b></I></li>
+            <ul>
+                <li>iLQR using Raw Python and Numpy</li> 
+                <li>MPC using Python , Numpy and CVXPY</li>
+            </ul>
+    </ul>
 
-<details open>
-    <summary><b><I> Click to toggle expand view</I></b></summary>
-<ul>
+        
+<details false>
+    <summary><b><I><font color="#3498DB"> Click to expand</font></I></b></summary>
+<ul style="list-style-type:none;">
  
 <li><b>  Simulation Environment : </b></li>
     <ul>
@@ -364,11 +431,11 @@ ILQR and MPC :: Implementation from scratch for self driving car simulator
     <li> OpenAI gym Car ENnvironment. </li>
     </ul>
 <li><b> Original Paper of ILQR Part of the Project </b></li>
-                    
-                    Synthesis and Stabilization of Complex Behaviors through Online Trajectory Optimization By - Y Tassa  
+                    <ul style="list-style-type:none;"><li>
+                    Synthesis and Stabilization of Complex Behaviors through Online Trajectory Optimization By - Y Tassa</li></ul>
 <li><b>  I0 :   </b></li>
-                    
-                    Input --> Map Points , Output --> Steering Angle, Acclelation, Brake
+                    <ul style="list-style-type:none;"><li>
+                        Input --> Map Points , Output --> Steering Angle, Acclelation, Brake</li></ul>
 <li><b>  Steps :  </b></li>
                  <ul>
                  <li> Map Tracker Module </li>
@@ -398,9 +465,9 @@ ILQR and MPC :: Implementation from scratch for self driving car simulator
                               </ul>
                  </ul>
 </ul>    
-    
 </details>
-     
+</div>
+
 ### 1.0 Project Flow Chart :
 <img src="docs/Algorihms/MPC.jpg" align="center"
      title="Open Image in new tab for good resolution" width="700" height="480">
@@ -443,21 +510,46 @@ DQN and DDPG:: Implementation from scratch
  
 ### Notebook : [Pendulum with DDPG - Notebook (Project Presentation and Code Link)](https://github.com/irfanhasib0/RL-Algorithms/blob/master/Deep_Q_Learning_mc.ipynb)
 
-* __DQN Environments :__ OpenAI gym --> Mountain Car ENvironment
-* __DDPG Environments :__ OpenAI gym --> Pendulumn Environment
  
-                 
-### 1.0 Project Flow Chart for DQN and DDPG :
+<div style="background-color:#F8F9F9"> 
+<ul>
+    <li><b><I> DQN Environments </li></b></I>  OpenAI gym --> Mountain Car ENvironment
+    <li><b><I> DQN Environments </li></b></I>  OpenAI gym --> Pendulumn Environment
+    <li><b><I> DQN Steps </li></b></I>
+    <ul>
+    For each time step of a episode 
+    <li> action : explore -> random | or exploit -> max Q value based on epsilon decay </li>
+    <li> play one step -> store experience </li>
+    <li> sample minibatch </li>
+    <li> target Q values : reward+gamma*Q_network(new_state,new_actions) </li> 
+    <li> train Q network </li>
+    </ul>
+    <li><b><I> DDPG Steps </li></b></I>
+    <ul>
+    For each time step of a episode 
+    <li>actor(state): action + OU Noise </li>
+    <li>play one step -> store experience </li>
+    <li>sample minibatch </li>
+    <li>target Q values : reward+gamma*target_critic(new_state,new_actions) </li>
+    <li>actor loss from critic(state,action)</li>
+    <li>train actor and critic </li>
+    <li>target networks : networks*tau + (1-tau)*target_networks</li>
+    </ul>
+</ul>
+</div>
+     
 
+### 1.0 Detailed Flow Chart for DQN and DDPG : (Please open in New tab for proper resolution)
+<div>
 <img src="docs/Algorihms/_DQN.jpg" align="left"
-     title="Open Image in new tab for good resolution" width="400" height="320">
+     title="Open Image in new tab for good resolution" width="240" height="240">
      
 
-<img src="docs/Algorihms/_DDPG.jpg" align="center"
-     title="Open Image in new tab for good resolution" width="400" height="320"></br>
-     
+<img src="docs/Algorihms/_DDPG.jpg" align="left"
+     title="Open Image in new tab for good resolution" width="240" height="240"></br>
+</div>
 
-### Results 
+### 2.0 Results 
 * a. Results DQN on Mountain Car (Left):
 * b. Results DDPG on Pendulum (Right):
 * c. Tset DQN on Mountain Car (Left):
