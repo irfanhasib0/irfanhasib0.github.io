@@ -1,4 +1,3 @@
-
 Table of Content
 ===============================
 
@@ -61,6 +60,7 @@ House Price Prediction :: Data Pre-Processing and Hiper-Parameter Tuning
 ### Notebook : [House Price Prediction - Notebook (Project Presentation and Code Link) ](https://github.com/irfanhasib0/Machine-Learning/blob/master/Kaggle/ANN_Tensorflow__Kaggle_Houseprice_prediction.ipynb)
 
 ### Overview :
+
 <div style="background-color:#F8F9F9">
     <ul style="list-style-type:circle;">
         <b><I>
@@ -393,8 +393,7 @@ Naive Bayes :: Implementation for text classification
 ILQR and MPC :: Implementation from scratch for self driving car simulator
 =============================================================
 
-### Notebook : [ILQR Implementation - Notebook (Project Presentation and Code Link)](https://github.com/irfanhasib0/Control-algorithms/blob/master/MPC_GYM_CAR_RACING_V0/ilqr_on_airsim_env_map_tracker_rel-exp.ipynb)
-### Notebook : [MPC Implementation - Notebook (Project Presentation and Code Link)](https://github.com/irfanhasib0/Control-algorithms/blob/master/MPC_GYM_CAR_RACING_V0/mpc_on_car_env_map_tracker_rel.ipynb)
+### Notebook : [ILQR Implementation - Notebook (Project Presentation and Code Link)](https://github.com/irfanhasib0/RL-Algorithms/blob/master/DDPG_Pendulum_TF-V-2-ROS.ipynb)
 
 
  
@@ -540,14 +539,13 @@ DQN and DDPG:: Implementation from scratch
      
 
 ### 1.0 Detailed Flow Chart for DQN and DDPG : (Please open in New tab for proper resolution)
-<div>
+
 <img src="docs/Algorihms/_DQN.jpg" align="left"
      title="Open Image in new tab for good resolution" width="240" height="240">
      
 
 <img src="docs/Algorihms/_DDPG.jpg" align="left"
      title="Open Image in new tab for good resolution" width="240" height="240"></br>
-</div>
 
 ### 2.0 Results 
 * a. Results DQN on Mountain Car (Left):
