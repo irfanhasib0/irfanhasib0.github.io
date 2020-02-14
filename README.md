@@ -1,3 +1,4 @@
+
 Table of Content
 ===============================
 
@@ -5,61 +6,104 @@ Table of Content
 __In this document for projects are shown as :__
    
    - Link of Jupyter Notebook with implementation code and detail description.
+   - Overview
    - Flowchart of the project.
    - Result vedio / gif / graphs.
    - The no of star after every project means the level of documentation.
    
 __For detail description and Code please go to the Notebook link Provided for every project!!__
-   
+
+<div><p  style="color:grey;" >
+    <a id="table_of_content_link"></a>  </p>
+</div>
 
 ### Kaggle Competetions and Job Entrance Problem :
- - [Kaggle House Price Prediction :: Data Pre-Processing, ANN with tensorflow low level API and and Hiper-Parameter Tuning.  (****)](#house-price-prediction--data-pre-processing-and-hiper-parameter-tuning)
- - [Japanese Job Entrance Problem :: Shakura Bloom Prediction (***)](#japanese-job-entrance-problem--shakura-bloom-prediction)
+<ul>
+  <li><a style="color:navyblue;font-size:15px;" 
+href ='#house_price_link'> Kaggle House Price Prediction :: Data Pre-Processing, ANN with tensorflow low level API and and Hiper-Parameter Tuning.  (****)</a></li>
+  <li><a style="color:navyblue;font-size:15px;" 
+         href ='#sakura_link'> Japanese Job Entrance Problem :: Shakura Bloom Prediction (****)</a></li>
+</ul>
 
 ### Machine Learning Algorithms from Scratch :
-
- - [Neural Network         :: Implementation from scratch with raw python (**)](#neural-network--nn-implementation-from-scratch)
- - [Decision Tree(ID3)     :: Implementation from scratch with continuous feature support. (****)](#decision-tree--id3-implementation-from-scratch)
- - [Naive Bayes            :: Implementation for text classification with text preprocesing from scratch (**)](#naive-bayes--implementation-for-text-classification)
+<ul>
+  <li><a style="color:navyblue;font-size:15px;" 
+href ='#ann_link'> Neural Network         :: Implementation from scratch with raw python (**)  (****)</a></li>
+  <li><a style="color:navyblue;font-size:15px;" 
+         href ='#id3_link'> Decision Tree(ID3)     :: Implementation from scratch with continuous feature support. (****)</a></li>
+  <li><a style="color:navyblue;font-size:15px;" 
+         href ='#naive_bayes_link'> Naive Bayes            :: Implementation for text classification with text preprocesing from scratch (**)</a></li>
+</ul>
+ 
 
 ### Reinforcement Learning ALgorithms from scratch :
- - [DQN(Deep Q Learning) from scratch with Tensorflow-KERAS(**)](#dqn-and-ddpg-implementation-from-scratch)
- - [DDPG(Deep Deterministic Policy Gradient) from scratch with Tensorflow(**)](#dqn-and-ddpg-implementation-from-scratch)
+<ul>
+  <li><a style="color:navyblue;font-size:15px;" 
+href ='#dqn_ddpg_link'> DQN(Deep Q Learning) from scratch with Tensorflow-KERAS(**)</a></li>
+  <li><a style="color:navyblue;font-size:15px;" 
+href ='#dqn_ddpg_link'> DDPG(Deep Deterministic Policy Gradient) from scratch with Tensorflow(**)</a></li>
+</ul>
+ 
  
 ### Control Algorithms Implementation from scratch :
-- [ILQR(Iterative Linear Quadratic Regulator) Implementation from scratch(****)](#ilqr-and-mpc--implementation-from-scratch-for-self-driving-car-simulator)
-- [MPC(Model Predictive Controller) Implementation from scratch(**)](#ilqr-and-mpc--implementation-from-scratch-for-self-driving-car-simulator)
+
+<ul>
+  <li><a style="color:navyblue;font-size:15px;" 
+href ='#ilqr_mpc_link'> ILQR(Iterative Linear Quadratic Regulator) Implementation from scratch(****)</a></li>
+  <li><a style="color:navyblue;font-size:15px;" 
+href ='#ilqr_mpc_link'> MPC(Model Predictive Controller) Implementation from scratch(**)</a></li>
+</ul>
+ 
+
 
 ### CNN Projects : (Minimal Doccumentation)
-- [Yolo with KERAS and Tensorflow for car number plate localization](#yolo-with-keras-and-tensorflow-nuberplate-detection)
-- [Unet with KERAS for City Space Dataset](#unet-with-keras-for-city-space-dataset)
+<ul>
+  <li><a style="color:navyblue;font-size:15px;" 
+href ='#yolo_link'> Yolo with KERAS and Tensorflow for car number plate localization</a></li>
+  <li><a style="color:navyblue;font-size:15px;" 
+href ='#unet_link'> Unet with KERAS for City Space Dataset</a></li>
+</ul>
+
 
 ### ROS Project : (Not well doccumented)
+<ul>
+  <li><a style="color:navyblue;font-size:15px;" 
+href ='#ros_rrbot_link'> ROS : Simple two linked robot inspired from rrbot(-)</a></li>
+  <li><a style="color:navyblue;font-size:15px;" 
+href ='#ros_husky_link'> ROS : Writing a script for driving husky robot and getting feed back</a></li>
+</ul>
 
-- [ROS : Simple two linked robot inspired from rrbot(-)](#ros--simple-two-linked-robot-inspired-from-rrbot)
-- [ROS : Writing a script for driving husky robot and getting feed back]
 
 ### International Robotics Compititions 
+<ul>
+  <li><a style="color:navyblue;font-size:15px;" 
+href ='#urc_2016_link'> University Rover Challenge - 2016</a></li>
+</ul>
 
-- [University Rover Challenge - 2016](#university-rover-challenge-2016)
 
 ### Embedded System Projects for Pi Labs BD Ltd :
  - Vault Sequirity : IOT based Vault sequitrity System with AVR Microcontroller
  - Safe Box : GPRS based Tracking System with AVR Microcontroller
  - Syringe Pump : RTOS Progmable Infusion Pump with AVR Microcontroller
  - Digital Weight Machine : Server based digital wight Machine with AVR Microcontroller
- - [Link of presentation.](#embedded-system-projects--pi-labs-bd-ltd)
+ - <a style="color:navyblue;font-size:15px;" 
+href ='#pi_project_link'> Presentation Link : Embedded System Projects for Pi Labs BD Lt</a></li>
 
 ### Academic Project and Thesis (Undergrad) :
  - Remote rescue robot with AVR Microcontroller
  - Car velocity mseasuring and logging system for genearting drive cycle of Dhaka
- - [Link of presentation.](#academic-project-and-thesis)
+ - <a style="color:navyblue;font-size:15px;" 
+href ='#buet_project_link'>Presentation Link : Academic Project and Thesis</a></li>
 
-House Price Prediction :: Data Pre-Processing and Hiper-Parameter Tuning
-==================================================================================================
-### Notebook : [House Price Prediction - Notebook (Project Presentation and Code Link) ](https://github.com/irfanhasib0/Machine-Learning/blob/master/Kaggle/ANN_Tensorflow__Kaggle_Houseprice_prediction.ipynb)
+<div>
+<br><h1  style="color:grey;" >
+<a id="house_price_link"></a> 
+    House Price Prediction :: Data Pre-Processing and Hiper-Parameter Tuning</h1></br>
+<a style="color:navyblue;font-size:25px;" href= https://github.com/irfanhasib0/Machine-Learning/blob/master/Kaggle/ANN_Tensorflow__Kaggle_Houseprice_prediction.ipynb>  Notebook : House Price Prediction - Notebook (Project Presentation and Code Link) </a>
 
-### Overview :
+</div>
+
+<h3> 1. Overview :</h3>
 
 <div style="background-color:#F8F9F9">
     <ul style="list-style-type:circle;">
@@ -68,7 +112,7 @@ House Price Prediction :: Data Pre-Processing and Hiper-Parameter Tuning
         <li>Data Preprocessing</li>
         <li>ANN Class with tensorflow low level API </li>
         <li>Hiperparameter Tuning</li>
-        <li>All the graphs of Data preprocessing and Hiperparameter Tuning can be found in <a href https://github.com/irfanhasib0/Machine-Learning/blob/master/Kaggle/ANN_Tensorflow__Kaggle_Houseprice_prediction.ipynb> Notebook </a></li>
+        <li>All the graphs of Data preprocessing and Hiperparameter Tuning can be found in <a href = https://github.com/irfanhasib0/Machine-Learning/blob/master/Kaggle/ANN_Tensorflow__Kaggle_Houseprice_prediction.ipynb> Notebook </a></li>
         </b></I>
     </ul>
 <details false>
@@ -106,29 +150,34 @@ House Price Prediction :: Data Pre-Processing and Hiper-Parameter Tuning
 <ul>
 <li> Cross-Validation with 3 fold was done for overfitting testing </li>
 <li> Test result was submitted in kaggle.com for evaluation screenshot can be found at result section </li>
-<li> All the graphs of Data preprocessing and Hiperparameter Tuning can be found in <a href https://github.com/irfanhasib0/Machine-Learning/blob/master/Kaggle/ANN_Tensorflow__Kaggle_Houseprice_prediction.ipynb> Notebook </a>  </li>
+<li> All the graphs of Data preprocessing and Hiperparameter Tuning can be found in <a href = https://github.com/irfanhasib0/Machine-Learning/blob/master/Kaggle/ANN_Tensorflow__Kaggle_Houseprice_prediction.ipynb> Notebook </a>  </li>
 </ul>    
 </details>
 </div>
 
-### 1.0 Project Flow Chart :
+<h3> 2. Project Flow Chart :</h3>
 <img src="docs/Algorihms/kaggle_hp.jpg" align="center"
      title="Open Image in new tab for good resolution" width="800" height="1000">
 
-### Cross validation(MSLE) and Kaggle Result(RMSLE)
+<h3> 3. Cross validation(MSLE) and Kaggle Result(RMSLE) </h3>
 <img src="docs/ANN_HP/cv.png" align="left"
      title="(Open Image in new tab for full resolution)" width="320" height="240"/>
 <img src="docs/ANN_HP/res.png" align="center"
      title="(Open Image in new tab for full resolution)" width="480" height="320"/></br>
      
-
+<a style="color:navyblue;font-size:15px;" 
+href ='#table_of_content_link'>Go Back to Table of Content</a>
  
+<div>
+<br><h1  style="color:navyblue;" >
+<a id="sakura_link"></a> 
+    Japanese Job Entrance Problem :: Shakura Bloom Prediction</h1></br>
+<a style="color:navyblue;font-size:25px;" href= https://github.com/irfanhasib0/Machine-Learning/blob/master/Kaggle/Sakura_TF_NN_Report.ipynb>   Notebook : Shakura Bloom Prediction - Notebook (Project Presentation and Code Link) </a>
 
-Japanese Job Entrance Problem :: Shakura Bloom Prediction
-==================================================================================================
+</div>
 
-### Notebook : [Shakura Bloom Prediction - Notebook (Project Presentation and Code Link)](https://github.com/irfanhasib0/Machine-Learning/blob/master/Kaggle/Sakura_TF_NN_Report.ipynb)
-### Overview
+
+<h3> 1. Overview </h3>
 <div style="background-color:#F8F9F9">
 <ul style="list-style-type:circle;">
         <b><I>
@@ -188,20 +237,25 @@ Japanese Job Entrance Problem :: Shakura Bloom Prediction
 </details>
 </div>
 
-### 1.0 Project Flow Chart :
+<h3> 2. Project Flow Chart :</h3>
 <img src="docs/Algorihms/sakura_jp.jpg" align="center"
      title="Open Image in new tab for good resolution" width="640" height="640">
      
-### Cross Validation R2 Score :
+<h3> 3. Cross Validation R2 Score :</h3>
 <img src="docs/Sakura/res.png" align="center"
      title="(Open Image in new tab for full resolution)" width="240" height="160"/></br>
 
+<a style="color:navyblue;font-size:15px;" 
+href ='#table_of_content_link'>Go Back to Table of Content</a>
 
-Neural Network :: NN Implementation from scratch
-================================================
-### Notebook : [NN Implementation from scratch - Notebook (Project Presentation and Code Link) ](https://github.com/irfanhasib0/Machine-Learning/blob/master/Machine_Learning_Algo_From_Scratch/ANN_From_Scratch_modular_class.ipynb)
+<div>
+<br><h1  style="color:grey;" >
+<a id="ann_link"></a> 
+   Neural Network :: NN Implementation from scratch</h1></br>
+<a style="color:navyblue;font-size:25px;" href= https://github.com/irfanhasib0/Machine-Learning/blob/master/Machine_Learning_Algo_From_Scratch/ANN_From_Scratch_modular_class.ipynb> Notebook : NN Implementation from scratch - Notebook (Project Presentation and Code Link) </a>
+</div>
 
-### Overview : 
+<h3> 1. Overview :  </h3>
 
 <div style="background-color:#F8F9F9">
    <p>Here I  have implemented Neural Network of 3 Layers. I have implemented A Layes Class and functions 
@@ -265,7 +319,7 @@ Neural Network :: NN Implementation from scratch
 </details>
 </div>
 
-### Process Flow Chart :
+<h3> 2. Process Flow Chart : <h3>
 
     (Open Image in new tab for full resolution)
 
@@ -274,15 +328,15 @@ Neural Network :: NN Implementation from scratch
 <img src="docs/Algorihms/NN_bp.jpg" align="center"
      title="(Open Image in new tab for good resolution)" width="800" height="480">
 
-#### Result : 
+<h3> Result : </h3>
      Result of ANN implementation for XOR data - mean sqaure error vs epoch -
 
 <img src="docs/Results/xor_ann.jpg" align="center"
      title="(Open Image in new tab for good resolution)" width="320" height="240">
 
-#### Appendix :
+<h3> Appendix :</h3>
 
-* __Nodes :__
+<h4> Nodes : </h4>
 <div style="background-color:#F8F9F9">
 <details>
     <summary><b><I> Click to toggle expand view </I></b></summary>
@@ -306,9 +360,19 @@ Neural Network :: NN Implementation from scratch
 </details>
 </div>
 
-Decision Tree :: ID3 Implementation from scratch
-====================================================
-### Notebook : [ID3 Implementation from scratch - Notebook (Project Presentation and Code Link) ](https://github.com/irfanhasib0/Machine-Learning/blob/master/Machine_Learning_Algo_From_Scratch/ID3_with_continuous_feature_support_exp.py)
+<a style="color:navyblue;font-size:15px;" 
+href ='#table_of_content_link'>Go Back to Table of Content</a>
+    
+<div>
+<br><h1  style="color:grey;" >
+<a id="id3_link"></a> 
+    
+   Decision Tree :: ID3 Implementation from scratch</h1></br>
+<a style="color:navyblue;font-size:25px;" href= https://github.com/irfanhasib0/Machine-Learning/blob/master/Machine_Learning_Algo_From_Scratch/ID3_with_continuous_feature_support-updated.ipynb>Notebook : ID3 Implementation from scratch - Notebook (Project Presentation and Code Link)</a>
+</div>
+
+
+<h3> 1. Overview </h3>
 <div style="background-color:#F8F9F9">
 <ul>
 <li><b><I>Dataset     :</li></b></I> Titanic and irish dataset was used for testing ID3.
@@ -324,13 +388,16 @@ Decision Tree :: ID3 Implementation from scratch
 </ul>
 </div>
 
- ### ID3 Flow Chart of Implementation (Open Image in new tab for full resolution)
+
+
+
+<h3> ID3 Flow Chart of Implementation (Open Image in new tab for full resolution) </h3>
 
 <img src="docs/Algorihms/ID3.jpg" align="center"
      title="(Open Image in new tab for full resolution)
 " width="480" height="480">
 
- #### Result of ID3 implementation for iris data - a.Precision Recall and Accuracy and b.True Label vs Prediction -
+<h3> Result of ID3 implementation for iris data - a.Precision Recall and Accuracy and b.True Label vs Prediction - </h3>
 
 
 <img src="docs/Results/iris_ID3.png" align="left"
@@ -343,7 +410,7 @@ Decision Tree :: ID3 Implementation from scratch
 
 
 
- #### Result of ID3 implementation for Titanic data - a.Precision Recall and Accuracy and b.True Label vs Prediction
+<h3> Result of ID3 implementation for Titanic data - a.Precision Recall and Accuracy and b.True Label vs Prediction </h3>
 
 <img src="docs/Results/titanic_ID3.png" align="left"
      title="(Open Image in new tab for full resolution)
@@ -353,12 +420,18 @@ Decision Tree :: ID3 Implementation from scratch
      title="(Open Image in new tab for full resolution)
 " width="480" height="240">
 
-.
+<a style="color:navyblue;font-size:15px;" 
+href ='#table_of_content_link'>Go Back to Table of Content</a>
 
-Naive Bayes :: Implementation for text classification
-==========================================================
+<div>
+<br><h1  style="color:grey;" >
+<a id="naive_bayes_link"></a> 
+   Naive Bayes :: Implementation for text classification</h1></br>
+<a style="color:navyblue;font-size:25px;" href= https://github.com/irfanhasib0/Machine-Learning/blob/master/Machine_Learning_Algo_From_Scratch/Naive_Bayes_Stack_Exchange.ipynb> Naive Bayes Implementation from scratch - Notebook (Project Presentation and Code Link) </a>
+</div>
 
-### Notebook : [Naive Bayes Implementation from scratch - Notebook (Project Presentation and Code Link) ](https://github.com/irfanhasib0/Machine-Learning/blob/master/Machine_Learning_Algo_From_Scratch/Naive_Bayes_Stack_Exchange.ipynb)
+
+<h3> 1. Overview </h3>
 
 <div style="background-color:#F8F9F9">
 <ul>
@@ -374,7 +447,9 @@ Naive Bayes :: Implementation for text classification
 </ul>
 </div>
 
-### Naive Bayes algorithm applied on the procesed text.
+
+
+<h3> Naive Bayes algorithm applied on the procesed text.</h3>
 <img src="docs/Algorihms/Naive_Bayes.jpg" align="center"
      title="Open Image in new tab for good resolution" width="640" height="480">
 
@@ -388,16 +463,19 @@ Naive Bayes :: Implementation for text classification
      title="(Open Image in new tab for full resolution)
 " width="640" height="240">
 
+<a style="color:navyblue;font-size:15px;" 
+href ='#table_of_content_link'>Go Back to Table of Content</a>
 
+<div>
+<br><h1  style="color:grey;" >
+<a id="ilqr_mpc_link"></a> 
+   ILQR and MPC :: Implementation from scratch for self driving car simulator</h1></br>
 
-ILQR and MPC :: Implementation from scratch for self driving car simulator
-=============================================================
+<br><a style="color:navyblue;font-size:25px;" href=https://github.com/irfanhasib0/Control-algorithms/blob/master/MPC_GYM_CAR_RACING_V0/ilqr_on_airsim_env_map_tracker_rel-exp.ipynb> Notebook : ILQR Implementation - Notebook (Project Presentation and Code Link) </a></br>
+<a style="color:navyblue;font-size:25px;" href= https://github.com/irfanhasib0/Control-algorithms/blob/master/MPC_GYM_CAR_RACING_V0/mpc_on_car_env_map_tracker_rel.ipynb> Notebook : MPC Implementation - Notebook (Project Presentation and Code Link)</a>
+</div>
 
-### Notebook : [ILQR Implementation - Notebook (Project Presentation and Code Link)](https://github.com/irfanhasib0/RL-Algorithms/blob/master/DDPG_Pendulum_TF-V-2-ROS.ipynb)
-
-
- 
-### Overview :
+<h3> 1. Overview : </h3>
 <div style="background-color:#F8F9F9">
 <ul style="list-style-type:none;">
         <li><b><I> Simulation Platform : </b></I></li>
@@ -467,7 +545,7 @@ ILQR and MPC :: Implementation from scratch for self driving car simulator
 </details>
 </div>
 
-### 1.0 Project Flow Chart :
+<h3>  2. Project Flow Chart : </h3>
 <img src="docs/Algorihms/MPC.jpg" align="center"
      title="Open Image in new tab for good resolution" width="700" height="480">
 <img src="docs/Algorihms/iLQR_Algorithm_up.jpg" align="center"
@@ -475,7 +553,7 @@ ILQR and MPC :: Implementation from scratch for self driving car simulator
 
 
      
-#### Results (ILQR) :
+<h3> 3. Results (ILQR) : </h3>
 * OpenAI Gym Car Environment 
 * Airsim City Space Environment 
 * Airsim Neighbourhood Environment 
@@ -492,24 +570,26 @@ ILQR and MPC :: Implementation from scratch for self driving car simulator
      title="(Open Image in new tab for full resolution)" width="400" height="240"/>
 <img src="docs/Results/fig_nh.gif" align="center"
      title="(Open Image in new tab for full resolution)" width="400" height="240"/>
-#### Appendix : Map Tracker 
+<h3> Appendix : Map Tracker </h3>
 <img src="docs/Algorihms/map_tracker.jpg" align="center"
      title="Open Image in new tab for good resolution" width="700" height="480">
      
      
 
+<a style="color:navyblue;font-size:15px;" 
+href ='#table_of_content_link'>Go Back to Table of Content</a>
+
+<div>
+<br><h1  style="color:grey;" >
+<a id="dqn_ddpg_link"></a> 
+   DQN and DDPG:: Implementation from scratch</h1></br>
+<br><a style="color:navyblue;font-size:25px;" href= https://github.com/irfanhasib0/RL-Algorithms/blob/master/Deep_Q_Learning_mc.ipynb> Notebook : Mountain Car with DQN - Notebook (Project Presentation and Code Link) </a></br>
+<a style="color:navyblue;font-size:25px;" href= https://github.com/irfanhasib0/RL-Algorithms/blob/master/Deep_Q_Learning_mc.ipynb> Notebook : Pendulum with DDPG - Notebook (Project Presentation and Code Link) </a>
+</div>
 
 
+<h3> 1.  Overview </h3>
 
-
-DQN and DDPG:: Implementation from scratch
-======================================
-
-### Notebook : [Mountain Car with DQN - Notebook (Project Presentation and Code Link)](https://github.com/irfanhasib0/RL-Algorithms/blob/master/Deep_Q_Learning_mc.ipynb)
- 
-### Notebook : [Pendulum with DDPG - Notebook (Project Presentation and Code Link)](https://github.com/irfanhasib0/RL-Algorithms/blob/master/Deep_Q_Learning_mc.ipynb)
-
- 
 <div style="background-color:#F8F9F9"> 
 <ul>
     <li><b><I> DQN Environments </li></b></I>  OpenAI gym --> Mountain Car ENvironment
@@ -538,7 +618,7 @@ DQN and DDPG:: Implementation from scratch
 </div>
      
 
-### 1.0 Detailed Flow Chart for DQN and DDPG : (Please open in New tab for proper resolution)
+<h3> 2. Detailed Flow Chart for DQN and DDPG : (Please open in New tab for proper resolution) </h3>
 
 <img src="docs/Algorihms/DQNa.jpg" align="left"
      title="Open Image in new tab for good resolution" width="240" height="240">
@@ -547,7 +627,8 @@ DQN and DDPG:: Implementation from scratch
 <img src="docs/Algorihms/DDPGa.jpg" align="left"
      title="Open Image in new tab for good resolution" width="240" height="240"></br>
 
-### 2.0 Results 
+<h3> 3. Results </h3>
+
 * a. Results DQN on Mountain Car (Left):
 * b. Results DDPG on Pendulum (Right):
 * c. Tset DQN on Mountain Car (Left):
@@ -563,38 +644,53 @@ DQN and DDPG:: Implementation from scratch
 <img src="docs/Results/pend.gif" align="center"
      title="(Open Image in new tab for full resolution)" width="240" height="240"/>
      
-     
+<a style="color:navyblue;font-size:15px;" 
+href ='#table_of_content_link'>Go Back to Table of Content</a>
 
+<div>
+<br><h1  style="color:grey;" >
+<a id="yolo_link"></a> 
+   Yolo with KERAS and Tensorflow for numberplate detection</h1></br>
+<br><a style="color:navyblue;font-size:25px;" href= https://github.com/irfanhasib0/CNN-Projects/blob/master/Yolo_NET_V_1.ipynb> Notebook : Yolo-V3 </a></br>
+<a style="color:navyblue;font-size:25px;" href= https://github.com/irfanhasib0/CNN-Projects/blob/master/VGG_NET_V_1.ipynb> Notebook : Yolo with VGG16 </a>
+</div>
 
-
-
-Yolo with KERAS and Tensorflow for numberplate detection
-========================================================
-
-### Notebook : [Yolo V3](https://github.com/irfanhasib0/CNN-Projects/blob/master/Yolo_NET_V_1.ipynb)
-
-### Notebook : [Yolo with VGG16](https://github.com/irfanhasib0/CNN-Projects/blob/master/VGG_NET_V_1.ipynb)
 ![](docs/Results/yolo.jpg)
 
-Unet with KERAS for City Space Dataset
-========================================================
-### Notebook :[Unet for segmenting City Space Dataset](https://github.com/irfanhasib0/CNN-Projects/blob/master/as_unet_seg-cs.ipynb)
+<div>
+<br><h1  style="color:grey;" >
+<a id="unet_link"></a> 
+   Unet with KERAS for City Space Dataset</h1></br>
+<br><a style="color:navyblue;font-size:25px;" href= https://github.com/irfanhasib0/CNN-Projects/blob/master/as_unet_seg-cs.ipynb> Notebook :Unet for segmenting City Space Dataset </a></br>
+
+</div>
+
 ![](docs/Results/unet_pred.jpg)
 <img src="docs/Results/unet_res.jpg" align="center"
      title="(Open Image in new tab for full resolution)" width="640" height="320"/>
-     
+ <a style="color:navyblue;font-size:15px;" 
+href ='#table_of_content_link'>Go Back to Table of Content</a>    
 
-ROS : Simple two linked robot inspired from rrbot
-=========================================
+<div>
+<br><h1  style="color:grey;" >
+<a id="ros_rrbot_link"></a> 
+   ROS : Simple two linked robot inspired from rrbot</h1></br>
+<br>
+</div>
+
 - URDF Link(https://github.com/irfanhasib0/ros_ws/tree/master/src/rrbot/rrbot_description)
 - Controller Link(https://github.com/irfanhasib0/ros_ws/tree/master/src/rrbot/rrbot_control)
 - Gazebo Link(https://github.com/irfanhasib0/ros_ws/tree/master/src/rrbot/rrbot_gazebo)
 - Vedio Link (https://youtu.be/lJbyy89X7gM)
 
 
+<div>
+<br><h1  style="color:grey;" >
+<a id="pi_project_link"></a> 
+   Embedded System Projects : Pi Labs BD LTD</h1></br>
+<br>
+</div>
 
-Embedded System Projects : Pi Labs BD LTD
-=====================================
 
 All these projects I did as an employee of Pi Labs BD Ltd. www.pilabsbd.com
 <img src="docs/old/vault_sequrity.jpg" align="left" 
@@ -612,22 +708,36 @@ All these projects I did as an employee of Pi Labs BD Ltd. www.pilabsbd.com
 
 
 
-
-Academic Project and Thesis:
-=========================
+<div>
+<br><h1  style="color:grey;" >
+<a id = "buet_project_link"></a> 
+   Academic Project and Thesis:</h1></br>
+<br>
+</div>
 
 * My undergrad project of intrumentation and measurement course
 * My undergrad thesis
 
 ![](docs/old/thesis_project.jpg)
 
- 
- University Rover Challenge - 2016
- ==========================
+
+
+<a style="color:navyblue;font-size:15px;" 
+href ='#table_of_content_link'>Go Back to Table of Content</a>
+
+<div>
+<br><h1  style="color:grey;" >
+<a id = "urc_2016_link"></a> 
+   University Rover Challenge - 2016</h1></br>
+<br>
+</div>
 
 ### Critical Design Rivew    : [Video Link](https://www.youtube.com/watch?v=MlN-VFj14LE)
 
 ![](docs/old/URC.jpg)
+
+<a style="color:navyblue;font-size:15px;" 
+href ='#table_of_content_link'>Go Back to Table of Content</a>
 
 
 ```python
