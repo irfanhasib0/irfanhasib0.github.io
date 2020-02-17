@@ -1,9 +1,9 @@
-
 Table of Content
 ===============================
 
+
 ##### Note :
-__In this document for projects are shown as :__
+__In this document for each projects is shown as :__
    
    - Link of Jupyter Notebook with implementation code and detail description.
    - Overview
@@ -95,6 +95,28 @@ href ='#pi_project_link'> Presentation Link : Embedded System Projects for Pi La
  - <a style="color:navyblue;font-size:15px;" 
 href ='#buet_project_link'>Presentation Link : Academic Project and Thesis</a></li>
 
+<style>
+h1 {color:grey;}
+h3 {color:#48C9B0;}
+a  {color:navyblue;}
+
+#ul_style {
+    color:gray ;
+    list-style-type:circle;
+    } 
+    
+#div_style {
+background-color:#F8F9F9;
+}
+
+#ul_st {
+    color : #641E16;
+    }
+
+</style>
+
+
+
 <div>
 <br><h1  style="color:grey;" >
 <a id="house_price_link"></a> 
@@ -104,16 +126,16 @@ href ='#buet_project_link'>Presentation Link : Academic Project and Thesis</a></
 </div>
 
 <h3> 1. Overview :</h3>
-
-<div style="background-color:#F8F9F9">
-    <ul style="list-style-type:circle;">
+     
+<div id=div_style>
+    <ul id=ul_style>
         <b><I>
         <li>House Price Dataset from kaggle.com</li>
         <li>Data Preprocessing</li>
         <li>ANN Class with tensorflow low level API </li>
         <li>Hiperparameter Tuning</li>
         <li>All the graphs of Data preprocessing and Hiperparameter Tuning can be found in <a href = https://github.com/irfanhasib0/Machine-Learning/blob/master/Kaggle/ANN_Tensorflow__Kaggle_Houseprice_prediction.ipynb> Notebook </a></li>
-        </b></I>
+        </I></b>
     </ul>
 <details false>
     <summary><b><I><font color="#3498DB"> Click to expand</font></I></b></summary>
@@ -178,15 +200,15 @@ href ='#table_of_content_link'>Go Back to Table of Content</a>
 
 
 <h3> 1. Overview </h3>
-<div style="background-color:#F8F9F9">
-<ul style="list-style-type:circle;">
+<div id=div_style>
+<ul id=ul_style>
         <b><I>
         <li>Weather data from japanese meteorological agencym</li>
         <li>Feature Extraction and Data Preprocessing</li>
         <li>ANN Class with tensorflow low level API </li>
         <li>Hiperparameter Tuning</li>
-        <li>All the graphs of Data preprocessing and Hiperparameter Tuning can be found in <a href https://github.com/irfanhasib0/Machine-Learning/blob/master/Kaggle/Sakura_TF_NN_Report.ipynb> Notebook </a></li>
-        </b></I>
+        <li>All the graphs of Data preprocessing and Hiperparameter Tuning can be found in <a href = https://github.com/irfanhasib0/Machine-Learning/blob/master/Kaggle/Sakura_TF_NN_Report.ipynb> Notebook </a></li>
+        </I></b>
     </ul>
 <details false>
         <summary><b><I><font color="#3498DB"> Click to expand</font></I></b></summary>
@@ -257,10 +279,10 @@ href ='#table_of_content_link'>Go Back to Table of Content</a>
 
 <h3> 1. Overview :  </h3>
 
-<div style="background-color:#F8F9F9">
+<div id=div_style>
    <p>Here I  have implemented Neural Network of 3 Layers. I have implemented A Layes Class and functions 
    for Forward propagation,backward propagation and updating weights. I just tested it XOR data. It was fitting good.</p>
-<ul style="list-style-type:circle;">
+<ul id=ul_style>
         <b><I>
         <li>XOR Data used for testing</li>
         <li>Forward Propagation</li>
@@ -321,12 +343,13 @@ href ='#table_of_content_link'>Go Back to Table of Content</a>
 
 <h3> 2. Process Flow Chart : <h3>
 
-    (Open Image in new tab for full resolution)
+<p>(Open Image in new tab for full resolution)</p>
 
-<img src="docs/Algorihms/NN_fp.jpg" align="left"
-     title="Schematics" width="800" height="480"/>
-<img src="docs/Algorihms/NN_bp.jpg" align="center"
-     title="(Open Image in new tab for good resolution)" width="800" height="480">
+<img src="docs/Algorihms/NN_FP_brief.jpg" align="left"
+     title="Schematics" width="480" height="480"/>
+<img src="docs/Algorihms/NN_BP_brief.jpg" align="left"
+     title="Schematics" width="480" height="480"/>
+
 
 <h3> Result : </h3>
      Result of ANN implementation for XOR data - mean sqaure error vs epoch -
@@ -337,7 +360,7 @@ href ='#table_of_content_link'>Go Back to Table of Content</a>
 <h3> Appendix :</h3>
 
 <h4> Nodes : </h4>
-<div style="background-color:#F8F9F9">
+<div id=div_style>
 <details>
     <summary><b><I> Click to toggle expand view </I></b></summary>
     <ul style="list-style-type:square;">  
@@ -373,8 +396,8 @@ href ='#table_of_content_link'>Go Back to Table of Content</a>
 
 
 <h3> 1. Overview </h3>
-<div style="background-color:#F8F9F9">
-<ul>
+<div id=div_style>
+<ul id=ul_style>
 <li><b><I>Dataset     :</li></b></I> Titanic and irish dataset was used for testing ID3.
 <li><b><I> Steps      :</li></b></I>
                   <ul>
@@ -433,8 +456,8 @@ href ='#table_of_content_link'>Go Back to Table of Content</a>
 
 <h3> 1. Overview </h3>
 
-<div style="background-color:#F8F9F9">
-<ul>
+<div id=div_style>
+<ul id=ul_style>
 <li><b><I> Dataset     :</li></b></I> Archived data from stack exchange is used for classification.
 <li><b><I> Steps      :</li></b></I>
                   <ul>
@@ -476,8 +499,8 @@ href ='#table_of_content_link'>Go Back to Table of Content</a>
 </div>
 
 <h3> 1. Overview : </h3>
-<div style="background-color:#F8F9F9">
-<ul style="list-style-type:none;">
+<div id=div_style>
+<ul id=ul_style>
         <li><b><I> Simulation Platform : </b></I></li>
             <ul style="list-style-type:circle;">
                 <li> AIRSIM by Microsoft Inc. </li>
@@ -590,8 +613,8 @@ href ='#table_of_content_link'>Go Back to Table of Content</a>
 
 <h3> 1.  Overview </h3>
 
-<div style="background-color:#F8F9F9"> 
-<ul>
+<div id=div_style> 
+<ul id=ul_style>
     <li><b><I> DQN Environments </li></b></I>  OpenAI gym --> Mountain Car ENvironment
     <li><b><I> DQN Environments </li></b></I>  OpenAI gym --> Pendulumn Environment
     <li><b><I> DQN Steps </li></b></I>
@@ -620,12 +643,12 @@ href ='#table_of_content_link'>Go Back to Table of Content</a>
 
 <h3> 2. Detailed Flow Chart for DQN and DDPG : (Please open in New tab for proper resolution) </h3>
 
-<img src="docs/Algorihms/DQNa.jpg" align="left"
-     title="Open Image in new tab for good resolution" width="240" height="240">
+<img src="docs/Algorihms/DQN_Brief.jpg" align="left"
+     title="Open Image in new tab for good resolution" width="480" height="240">
      
 
-<img src="docs/Algorihms/DDPGa.jpg" align="left"
-     title="Open Image in new tab for good resolution" width="240" height="240"></br>
+<img src="docs/Algorihms/DDPG_Brief.jpg" align="right"
+     title="Open Image in new tab for good resolution" width="500" height="240"></br>
 
 <h3> 3. Results </h3>
 
