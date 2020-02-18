@@ -1,3 +1,4 @@
+
 Table of Content
 ===============================
 
@@ -341,13 +342,11 @@ href ='#table_of_content_link'>Go Back to Table of Content</a>
 </details>
 </div>
 
-<h3> 2. Process Flow Chart : <h3>
+<h3> 2. Process Flow Chart : (Open Image in new tab for full resolution)</h3>
 
-<p>(Open Image in new tab for full resolution)</p>
-
-<img src="docs/Algorihms/NN_FP_brief.jpg" align="left"
+<img src="docs/Algorihms/NN_FP_Brief.jpg" align="left"
      title="Schematics" width="480" height="480"/>
-<img src="docs/Algorihms/NN_BP_brief.jpg" align="left"
+<img src="docs/Algorihms/NN_BP_Brief.jpg" align="left"
      title="Schematics" width="480" height="480"/>
 
 
@@ -473,6 +472,7 @@ href ='#table_of_content_link'>Go Back to Table of Content</a>
 
 
 <h3> Naive Bayes algorithm applied on the procesed text.</h3>
+
 <img src="docs/Algorihms/Naive_Bayes.jpg" align="center"
      title="Open Image in new tab for good resolution" width="640" height="480">
 
