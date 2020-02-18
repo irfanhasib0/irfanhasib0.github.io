@@ -1,4 +1,3 @@
-
 Table of Content
 ===============================
 
@@ -113,9 +112,28 @@ background-color:#F8F9F9;
 #ul_st {
     color : #641E16;
     }
-
+    
 </style>
 
+
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+.row {
+  display: flex;
+}
+
+/* Create three equal columns that sits next to each other */
+.column {
+  flex: 33.33%;
+  padding: 5px;
+}
+</style>
 
 
 <div>
@@ -344,17 +362,20 @@ href ='#table_of_content_link'>Go Back to Table of Content</a>
 
 <h3> 2. Process Flow Chart : (Open Image in new tab for full resolution)</h3>
 
-<img src="docs/Algorihms/NN_FP_Brief.jpg" align="left"
-     title="Schematics" width="480" height="480"/>
-<img src="docs/Algorihms/NN_BP_Brief.jpg" align="left"
-     title="Schematics" width="480" height="480"/>
 
+
+
+<img src="docs/Algorihms/NN_FP_Brief.jpg" align="left" alt="Schematics" width="48%" />
+
+<img src="docs/Algorihms/NN_BP_Brief.jpg" align="left" alt="Schematics" width="48%" />
 
 <h3> Result : </h3>
      Result of ANN implementation for XOR data - mean sqaure error vs epoch -
 
-<img src="docs/Results/xor_ann.jpg" align="center"
-     title="(Open Image in new tab for good resolution)" width="320" height="240">
+<img src="docs/Results/banknote_ann_loss.png" align="left"
+     title="(Open Image in new tab for good resolution)" width="48%">
+<img src="docs/Results/banknote_ann.png" align="left"
+     title="(Open Image in new tab for good resolution)" width="48%">
 
 <h3> Appendix :</h3>
 
@@ -761,6 +782,47 @@ href ='#table_of_content_link'>Go Back to Table of Content</a>
 
 <a style="color:navyblue;font-size:15px;" 
 href ='#table_of_content_link'>Go Back to Table of Content</a>
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+</style>
+</head>
+<body>
+
+<h2>Images Side by Side</h2>
+<p>How to create side-by-side images with the CSS float property:</p>
+
+<div class="row">
+  <div class="column">
+    <img src="docs/algorihms/NN_FP_Brief.jpg" alt="Snow" style="width:30%">
+  </div>
+  <div class="column">
+    <img src="docs/algorihms/NN_FP_Brief.jpg" alt="Forest" style="width:30%">
+  </div>
+  
+</div>
+
+</body>
+</html>
+
 
 
 ```python
