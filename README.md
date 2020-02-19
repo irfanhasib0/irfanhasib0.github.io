@@ -135,6 +135,11 @@ background-color:#F8F9F9;
 }
 </style>
 
+<img src="docs/Algorihms/kaggle_hp.jpg" align="center"
+     title="Open Image in new tab for good resolution" width="20%" >
+<img src="docs/Algorihms/sakura_jp.jpg" align="center"
+     title="Open Image in new tab for good resolution" width="20%" >
+
 
 <div>
 <br><h1  style="color:grey;" >
@@ -436,7 +441,7 @@ href ='#table_of_content_link'>Go Back to Table of Content</a>
 
 <h3> ID3 Flow Chart of Implementation (Open Image in new tab for full resolution) </h3>
 
-<img src="docs/Algorihms/ID3.jpg" align="center"
+<img src="docs/Algorihms/ID3_Simple.jpg" align="center"
      title="(Open Image in new tab for full resolution)
 " width="480" height="480">
 
@@ -445,11 +450,11 @@ href ='#table_of_content_link'>Go Back to Table of Content</a>
 
 <img src="docs/Results/iris_ID3.png" align="left"
      title="(Open Image in new tab for good resolution)
-" width="320" height="240">
+" width="30%" >
 
 <img src="docs/Results/irispred.jpg" align="center"
      title="(Open Image in new tab for good resolution)
-" width="480" height="240">
+" width="60%" >
 
 
 
@@ -457,11 +462,11 @@ href ='#table_of_content_link'>Go Back to Table of Content</a>
 
 <img src="docs/Results/titanic_ID3.png" align="left"
      title="(Open Image in new tab for full resolution)
-" width="320" height="240">
+" width="30%" >
 
 <img src="docs/Results/titanicpred.jpg" align="center"
      title="(Open Image in new tab for full resolution)
-" width="480" height="240">
+" width="60%" >
 
 <a style="color:navyblue;font-size:15px;" 
 href ='#table_of_content_link'>Go Back to Table of Content</a>
@@ -469,7 +474,7 @@ href ='#table_of_content_link'>Go Back to Table of Content</a>
 <div>
 <br><h1  style="color:grey;" >
 <a id="naive_bayes_link"></a> 
-   Naive Bayes :: Implementation for text classification</h1></br>
+   Naive Bayes and KNN :: Implementation for text classification</h1></br>
 <a style="color:navyblue;font-size:25px;" href= https://github.com/irfanhasib0/Machine-Learning/blob/master/Machine_Learning_Algo_From_Scratch/Naive_Bayes_Stack_Exchange.ipynb> Naive Bayes Implementation from scratch - Notebook (Project Presentation and Code Link) </a>
 </div>
 
@@ -485,6 +490,13 @@ href ='#table_of_content_link'>Go Back to Table of Content</a>
                   <li>Calculating Attribute Probabilities for each class  </li>
                   <li>Applying Bayes Theorem for getting class probality </li>
                   </ul>
+<li><b><I> Steps      :</li></b></I>
+                  <ul>
+                  <li>Text Preprocessing was done with raw python without nltk. </li>
+                  <li>Calculating Attribute Probability vector for each sample  </li>
+                  <li>Calculating Cosine/eucleidian/  </li>
+                  <li>Applying Bayes Theorem for getting class probality </li>
+                  </ul>
 <li><b><I> Tuning     :</li></b></I> The model was Tuned for best alpha values.
 <li><b><I> Prediction :</li></b></I> Accuracy,Precision,Recall Reporting.
 </ul>
@@ -492,23 +504,33 @@ href ='#table_of_content_link'>Go Back to Table of Content</a>
 
 
 
-<h3> Naive Bayes algorithm applied on the procesed text.</h3>
+<h3> Naive Bayes and K Nearest Neighbour algorithm applied on the procesed text.</h3>
 
-<img src="docs/Algorihms/Naive_Bayes.jpg" align="center"
-     title="Open Image in new tab for good resolution" width="640" height="480">
+<img src="docs/Algorihms/Naive_Bayes.jpg" align="left"
+     title="Open Image in new tab for good resolution" width="50%" >
+<img src="docs/Algorihms/KNN_Algorithm.jpg" align="left"
+     title="Open Image in new tab for good resolution" width="50%" >
 
-* Result of Naive Bayes implementation for Stack Exchange data - a.Precision Recall and Accuracy and b.True Label vs Prediction
+
+<h3> Result of Naive Bayes implementation for Stack Exchange data - 
+    a.Precision Recall and Accuracy  
+    b.True Label vs Prediction <h3>
+
 
 <img src="docs/Results/stack_exchange_NB.png" align="left"
-     title="(Open Image in new tab for full resolution)
-" width="320" height="240">
+     title="(Open Image in new tab for full resolution)" width="30%" >
 
-<img src="docs/Results/stack_exchange_NB_pred.png" align="center"
-     title="(Open Image in new tab for full resolution)
-" width="640" height="240">
+<img src="docs/Results/stack_exchange_NB_pred.jpg" align="left"
+     title="(Open Image in new tab for full resolution)" width="60%" >
 
-<a style="color:navyblue;font-size:15px;" 
-href ='#table_of_content_link'>Go Back to Table of Content</a>
+<img src="docs/Results/stack_exchange_KNN.png" align="left"
+     title="(Open Image in new tab for full resolution)" width="30%" >
+
+<img src="docs/Results/stack_exchange_KNN_pred.jpg" align="left"
+     title="(Open Image in new tab for full resolution)" width="60%" >
+
+
+<a style="color:navyblue;font-size:15px;" href ='#table_of_content_link'>Go Back to Table of Content</a>
 
 <div>
 <br><h1  style="color:grey;" >
@@ -665,11 +687,11 @@ href ='#table_of_content_link'>Go Back to Table of Content</a>
 <h3> 2. Detailed Flow Chart for DQN and DDPG : (Please open in New tab for proper resolution) </h3>
 
 <img src="docs/Algorihms/DQN_Brief.jpg" align="left"
-     title="Open Image in new tab for good resolution" width="480" height="240">
+     title="Open Image in new tab for good resolution" width="50%" >
      
 
 <img src="docs/Algorihms/DDPG_Brief.jpg" align="right"
-     title="Open Image in new tab for good resolution" width="500" height="240"></br>
+     title="Open Image in new tab for good resolution" width="50%" ></br>
 
 <h3> 3. Results </h3>
 
@@ -679,14 +701,14 @@ href ='#table_of_content_link'>Go Back to Table of Content</a>
 * d. Test DDPG on Pendulum (Right):
 
 <img src="docs/Results/DQN_MC.png" align="left"
-     title="(Open Image in new tab for full resolution)" width="240" height="240"/>
+     title="(Open Image in new tab for full resolution)" width="24%" />
 <img src="docs/Results/DDPG_PEND.jpg" align="left"
-     title="(Open Image in new tab for full resolution)" width="240" height="240"/>
+     title="(Open Image in new tab for full resolution)" width="24%" />
      
 <img src="docs/Results/mc.gif" align="center"
-     title="(Open Image in new tab for full resolution)" width="240" height="240"/>
+     title="(Open Image in new tab for full resolution)" width="24%" />
 <img src="docs/Results/pend.gif" align="center"
-     title="(Open Image in new tab for full resolution)" width="240" height="240"/>
+     title="(Open Image in new tab for full resolution)" width="24%" />
      
 <a style="color:navyblue;font-size:15px;" 
 href ='#table_of_content_link'>Go Back to Table of Content</a>
