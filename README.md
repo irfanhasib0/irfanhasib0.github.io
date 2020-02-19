@@ -135,11 +135,6 @@ background-color:#F8F9F9;
 }
 </style>
 
-<img src="docs/Algorihms/kaggle_hp.jpg" align="center"
-     title="Open Image in new tab for good resolution" width="20%" >
-<img src="docs/Algorihms/sakura_jp.jpg" align="center"
-     title="Open Image in new tab for good resolution" width="20%" >
-
 
 <div>
 <br><h1  style="color:grey;" >
@@ -487,15 +482,18 @@ href ='#table_of_content_link'>Go Back to Table of Content</a>
 <li><b><I> Steps      :</li></b></I>
                   <ul>
                   <li>Text Preprocessing was done with raw python without nltk. </li>
-                  <li>Calculating Attribute Probabilities for each class  </li>
-                  <li>Applying Bayes Theorem for getting class probality </li>
+                  <li>Calculating Attribute(word) Probabilities given each class  </li>
+                  <li>Calculating Attribute(word) Probabilities given each Samples  </li>
+                  <li>Applying Bayes Theorem for getting class probalities </li>
+                  <li>Max class probality is the predicted label </li>
                   </ul>
 <li><b><I> Steps      :</li></b></I>
                   <ul>
                   <li>Text Preprocessing was done with raw python without nltk. </li>
                   <li>Calculating Attribute Probability vector for each sample  </li>
-                  <li>Calculating Cosine/eucleidian/  </li>
-                  <li>Applying Bayes Theorem for getting class probality </li>
+                  <li>Calculating Cosine/Eucleidian/Humming Distances from test sample to each of train sample </li>
+                  <li>Taking labels of K min distance samples from train data  </li>
+                  <li>Taking mode of K labels as prediction (tie breaks by random choise) </li>
                   </ul>
 <li><b><I> Tuning     :</li></b></I> The model was Tuned for best alpha values.
 <li><b><I> Prediction :</li></b></I> Accuracy,Precision,Recall Reporting.
@@ -517,16 +515,16 @@ href ='#table_of_content_link'>Go Back to Table of Content</a>
     b.True Label vs Prediction <h3>
 
 
-<img src="docs/Results/stack_exchange_NB.png" align="left"
+<img src="docs/Results/Stack_Exchange_NB.png" align="left"
      title="(Open Image in new tab for full resolution)" width="30%" >
 
-<img src="docs/Results/stack_exchange_NB_pred.jpg" align="left"
+<img src="docs/Results/Stack_Exchange_NB_pred.jpg" align="left"
      title="(Open Image in new tab for full resolution)" width="60%" >
 
-<img src="docs/Results/stack_exchange_KNN.png" align="left"
+<img src="docs/Results/Stack_Exchange_KNN.png" align="left"
      title="(Open Image in new tab for full resolution)" width="30%" >
 
-<img src="docs/Results/stack_exchange_KNN_pred.jpg" align="left"
+<img src="docs/Results/Stack_Exchange_KNN_pred.jpg" align="left"
      title="(Open Image in new tab for full resolution)" width="60%" >
 
 
