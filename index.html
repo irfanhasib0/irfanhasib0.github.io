@@ -13017,6 +13017,45 @@ ul.typeahead-list  > li > a.pull-right {
 .highlight .vm { color: #19177C } /* Name.Variable.Magic */
 .highlight .il { color: #666666 } /* Literal.Number.Integer.Long */
     </style>
+<style type="text/css">
+    
+/* Temporary definitions which will become obsolete with Notebook release 5.0 */
+.ansi-black-fg { color: #3E424D; }
+.ansi-black-bg { background-color: #3E424D; }
+.ansi-black-intense-fg { color: #282C36; }
+.ansi-black-intense-bg { background-color: #282C36; }
+.ansi-red-fg { color: #E75C58; }
+.ansi-red-bg { background-color: #E75C58; }
+.ansi-red-intense-fg { color: #B22B31; }
+.ansi-red-intense-bg { background-color: #B22B31; }
+.ansi-green-fg { color: #00A250; }
+.ansi-green-bg { background-color: #00A250; }
+.ansi-green-intense-fg { color: #007427; }
+.ansi-green-intense-bg { background-color: #007427; }
+.ansi-yellow-fg { color: #DDB62B; }
+.ansi-yellow-bg { background-color: #DDB62B; }
+.ansi-yellow-intense-fg { color: #B27D12; }
+.ansi-yellow-intense-bg { background-color: #B27D12; }
+.ansi-blue-fg { color: #208FFB; }
+.ansi-blue-bg { background-color: #208FFB; }
+.ansi-blue-intense-fg { color: #0065CA; }
+.ansi-blue-intense-bg { background-color: #0065CA; }
+.ansi-magenta-fg { color: #D160C4; }
+.ansi-magenta-bg { background-color: #D160C4; }
+.ansi-magenta-intense-fg { color: #A03196; }
+.ansi-magenta-intense-bg { background-color: #A03196; }
+.ansi-cyan-fg { color: #60C6C8; }
+.ansi-cyan-bg { background-color: #60C6C8; }
+.ansi-cyan-intense-fg { color: #258F8F; }
+.ansi-cyan-intense-bg { background-color: #258F8F; }
+.ansi-white-fg { color: #C5C1B4; }
+.ansi-white-bg { background-color: #C5C1B4; }
+.ansi-white-intense-fg { color: #A1A6B2; }
+.ansi-white-intense-bg { background-color: #A1A6B2; }
+
+.ansi-bold { font-weight: bold; }
+
+    </style>
 
 
 <style type="text/css">
@@ -13518,7 +13557,7 @@ href ='#table_of_content_link'>Go Back to Table of Content</a></p>
 
 <br><a style="color:navyblue;font-size:25px;" href=https://github.com/irfanhasib0/Control-algorithms/blob/master/MPC_GYM_CAR_RACING_V0/ilqr_on_airsim_env_map_tracker_rel-exp.ipynb> Notebook : ILQR Implementation - Notebook (Project Presentation and Code Link) </a></br>
 <a style="color:navyblue;font-size:25px;" href= https://github.com/irfanhasib0/Control-algorithms/blob/master/MPC_GYM_CAR_RACING_V0/mpc_on_car_env_map_tracker_rel.ipynb> Notebook : MPC Implementation - Notebook (Project Presentation and Code Link)</a>
-</div><p><h3> 1. Overview : </h3></p>
+</div><h3> 1. Overview : </h3>
 <div id=div_style>
 <ul id=ul_style>
         <li><b><I> Simulation Platform : </b></I></li>
@@ -13586,23 +13625,238 @@ href ='#table_of_content_link'>Go Back to Table of Content</a></p>
                  </ul>
 </ul>    
 </details>
-</div><p><h3>  2. Project Flow Chart : </h3>
+</div>
+
+<h3 style='color:teal'> MPC modeling </h3>
+$\begin{align*}
+State\;Space :z &= [x, y, v,\phi]        &where,x: x-position, y:y-position, v:velocity, φ: yaw angle\\
+Action\;Space:u &= [a, \delta]          &where,a: accellation, δ: steering angle\\
+\end{align*}$
+
+<h3 style='color:teal'>Cost and Constraints : </h3>
+$\begin{align*}
+&\color{navy} {Cost :}\\
+&min\ Q_f(z_{T,ref}-z_{T})^2+Q\Sigma({z_{t,ref}-z_{t}})^2+R\Sigma{u_t}^2+R_d\Sigma({u_{t+1}-u_{t}})^2\\
+&z_{ref}\;:\;target\;states\\
+\end{align*}$
+$\begin{align*}
+\color{navy} {Constraints :}&\\
+z_{t+1}&=Az_t+Bu+C\\
+Maximum\;steering\; speed &=abs[u_{t+1}-u_{t}]{<}du_{max}\\
+Maximum\;steering\;angle &=u_{t}{<}u_{max}\\
+Initial\;state &= z_0 = z_{0,ob}\\
+Maximum\;and\;minimum \;speed &= v_{min} {<} v_t {<} v_{max}\\
+Maximum\;and minimum\;input &=u_{min} {<} u_t {<} u_{max}\\
+\end{align*}$
+
+<h3 style='color:teal'>State Space model for Car system</h3><p>$\begin{align*}
+z_{t+1}=Az_t+Bu+C\;where,\\
+\end{align*}$
+$\begin{equation*}
+A = 
+\begin{bmatrix} 
+1 &amp; 0 &amp; cos(\bar{\phi})dt &amp; -\bar{v}sin(\bar{\phi})dt\\
+0 &amp; 1 &amp; sin(\bar{\phi})dt &amp; \bar{v}cos(\bar{\phi})dt \\
+0 &amp; 0 &amp; 1 &amp; 0 \\
+0 &amp; 0 &amp;\frac{tan(\bar{\delta})}{L}dt &amp; 1 \\
+\end{bmatrix}
+\end{equation*}$
+$\begin{equation*}
+B =
+\begin{bmatrix} 
+0 &amp; 0 \\
+0 &amp; 0 \\
+dt &amp; 0 \\
+0 &amp; \frac{\bar{v}}{Lcos^2(\bar{\delta})}dt \\
+\end{bmatrix}
+C =
+\begin{bmatrix} 
+\bar{v}sin(\bar{\phi})\bar{\phi}dt\\
+-\bar{v}cos(\bar{\phi})\bar{\phi}dt\\
+0\\
+-\frac{\bar{v}\bar{\delta}}{Lcos^2(\bar{\delta})}dt\\
+\end{bmatrix}
+\end{equation*}$</p>
+<details> 
+    <h3 style='color:teal' >Car Steering Model with Linearization </h3>
+    <summary style='color:blue'><h4><b><I> Expand to see derivation</b></I></h4></summary>
+$\begin{align*}
+ \dot{x} &= vcos(\phi)                      &\\
+ \dot{y} &= vsin(\phi)       & \dot{z} &=\frac{\partial }{\partial t} z = f(z, u) = A'z+B'u\\
+ \dot{v} &= a                               &\\
+ \dot{\phi} &= \frac{vtan(\delta)}{L}       &\\
+\end{align*}$
+
+where
+
+$\begin{equation*}
+A' =
+\begin{bmatrix}
+\frac{\partial }{\partial x}vcos(\phi) & 
+\frac{\partial }{\partial y}vcos(\phi) & 
+\frac{\partial }{\partial v}vcos(\phi) &
+\frac{\partial }{\partial \phi}vcos(\phi)\\
+\frac{\partial }{\partial x}vsin(\phi) & 
+\frac{\partial }{\partial y}vsin(\phi) & 
+\frac{\partial }{\partial v}vsin(\phi) &
+\frac{\partial }{\partial \phi}vsin(\phi)\\
+\frac{\partial }{\partial x}a& 
+\frac{\partial }{\partial y}a& 
+\frac{\partial }{\partial v}a&
+\frac{\partial }{\partial \phi}a\\
+\frac{\partial }{\partial x}\frac{vtan(\delta)}{L}& 
+\frac{\partial }{\partial y}\frac{vtan(\delta)}{L}& 
+\frac{\partial }{\partial v}\frac{vtan(\delta)}{L}&
+\frac{\partial }{\partial \phi}\frac{vtan(\delta)}{L}\\
+\end{bmatrix}
+　=
+\begin{bmatrix}
+0 & 0 & cos(\bar{\phi}) & -\bar{v}sin(\bar{\phi})\\
+0 & 0 & sin(\bar{\phi}) & \bar{v}cos(\bar{\phi}) \\
+0 & 0 & 0 & 0 \\
+0 & 0 &\frac{tan(\bar{\delta})}{L} & 0 \\
+\end{bmatrix}
+\end{equation*}$
+
+$\begin{equation*}
+B' =
+\begin{bmatrix}
+\frac{\partial }{\partial a}vcos(\phi) &
+\frac{\partial }{\partial \delta}vcos(\phi)\\
+\frac{\partial }{\partial a}vsin(\phi) &
+\frac{\partial }{\partial \delta}vsin(\phi)\\
+\frac{\partial }{\partial a}a &
+\frac{\partial }{\partial \delta}a\\
+\frac{\partial }{\partial a}\frac{vtan(\delta)}{L} &
+\frac{\partial }{\partial \delta}\frac{vtan(\delta)}{L}\\
+\end{bmatrix}
+　=
+\begin{bmatrix}
+0 & 0 \\
+0 & 0 \\
+1 & 0 \\
+0 & \frac{\bar{v}}{Lcos^2(\bar{\delta})} \\
+\end{bmatrix}
+\end{equation*}$
+<p>
+<br>Forward Euler Discretization with sampling time dt.
+Using first degree Tayer expantion around zbar and ubar</br>
+</p>
+$\begin{align*}
+z_{k+1}&=z_k+f(z_k,u_k)dt\\
+z_{k+1}&=z_k+(f(\bar{z},\bar{u})+A'z_k+B'u_k-A'\bar{z}-B'\bar{u})d\\
+z_{k+1}&=(I + dtA')z_k+(dtB')u_k + (f(\bar{z},\bar{u})-A'\bar{z}-B'\bar{u})dt\\
+z_{k+1}&=Az_k+Bu_k +C\\
+\end{align*}$
+<p><br>
+So,
+</br></p>
+$\begin{equation*}
+A = (I + dtA')
+=
+\begin{bmatrix} 
+1 & 0 & cos(\bar{\phi})dt & -\bar{v}sin(\bar{\phi})dt\\
+0 & 1 & sin(\bar{\phi})dt & \bar{v}cos(\bar{\phi})dt \\
+0 & 0 & 1 & 0 \\
+0 & 0 &\frac{tan(\bar{\delta})}{L}dt & 1 \\
+\end{bmatrix}
+\end{equation*}$
+$\begin{equation*}
+B = dtB'
+=
+\begin{bmatrix} 
+0 & 0 \\
+0 & 0 \\
+dt & 0 \\
+0 & \frac{\bar{v}}{Lcos^2(\bar{\delta})}dt \\
+\end{bmatrix}
+\end{equation*}$
+
+$\begin{equation*}
+C = (f(\bar{z},\bar{u})-A'\bar{z}-B'\bar{u})dt\\
+= dt(
+\begin{bmatrix} 
+\bar{v}cos(\bar{\phi})\\
+\bar{v}sin(\bar{\phi}) \\
+\bar{a}\\
+\frac{\bar{v}tan(\bar{\delta})}{L}\\
+\end{bmatrix}
+-
+\begin{bmatrix} 
+\bar{v}cos(\bar{\phi})-\bar{v}sin(\bar{\phi})\bar{\phi}\\
+\bar{v}sin(\bar{\phi})+\bar{v}cos(\bar{\phi})\bar{\phi}\\
+0\\
+\frac{\bar{v}tan(\bar{\delta})}{L}\\
+\end{bmatrix}
+-
+\begin{bmatrix} 
+0\\
+0 \\
+\bar{a}\\
+\frac{\bar{v}\bar{\delta}}{Lcos^2(\bar{\delta})}\\
+\end{bmatrix}
+)\\
+=
+\begin{bmatrix} 
+\bar{v}sin(\bar{\phi})\bar{\phi}dt\\
+-\bar{v}cos(\bar{\phi})\bar{\phi}dt\\
+0\\
+-\frac{\bar{v}\bar{\delta}}{Lcos^2(\bar{\delta})}dt\\
+\end{bmatrix}
+\end{equation*}$
+</details><h3 style='color:teal'>Iterative Linear Quadratic Regulator :</h3>
+<h4 style='color:navy'> 1. U as a function of Previous U , X and Previous X : </h4>
+$\begin{equation}
+u{'}(i) = u(i) + k(i) +K(i)(x{'}(i) - x(i))\\
+\end{equation}$
+
+<details>
+<summary><h4 style='color:navy'> 2. Calcualting K and k : (Expand to see) </h4></summary>
+$\begin{align*}
+\color{navy}{Step\;A.}\;&\color{navy}{Getting\;Q[i]s\;from\;l[i]s\;and\;V[i]s:}\\\\
+Q_x &= l_x(t) + f_x(t).T, V_x \\
+Q_u &= l_u(t) + f_u(t).T, V_x \\
+Q_{xx} &= l_{xx}(t) + f_x(t).T * (V_{xx} * f_x(t) )  \\
+Q_{ux} &= l_{ux}(t) + f_u(t).T * (V_{xx} * f_x(t) )) \\
+Q_{uu} &= l_{uu}(t) + (f_u(t).T *(V_{xx} * f_u(t) ) \\\\
+\end{align*}$
+$\begin{align*}
+&\color{navy}{Step\;B.\;Getting\;K[i]s\;from\;Q[i]s:}\\\\
+&Q_{uu\_evals}, Q_{uu\_evecs} = np.linalg.eig(Q_{uu})\\
+&Q_{uu\_evals}[Q_{uu_evals} < 0] = 0.0\\
+&Q_{uu\_inv} = Q_{uu_evecs} * \\&(np.diag(1.0/Q_uu_evals), Q_uu_evecs.T)\\              
+&k(t) = -1. * (Q_{uu\_inv} * Q_u)\\
+&K(t) = -1. * (Q_{uu\_inv} * Q_{ux})
+\end{align*}$
+$\begin{align*}
+&\color{navy}{Step\;C.\;Getting\;V[i+1]s\;from\;K[i]s:}\\\\
+V_x &= Q_x - (K[t].T * (Q_{uu} * k[t]))\\
+V_{xx} &= Q_{xx} - (K[t].T * (Q_{uu} * K[t]))\\\\\\\\\\
+\end{align*}$
+<h4 style='color:navy'> 3. Step A , B and C run iteratively fo find optimal K and k.</h4>
+</details>
+
+<h4 style='color:navy'> 4. For detail derivation please see the paper :</h4> <p style='color:gray'>Synthesis and Stabilization of Complex Behaviors through Online Trajectory Optimization
+by -Yuval Tassa 
+    <br> citations(369) according to February 27 2020, Published on - 2012</p>
+
+<h3>  2. Project Flow Chart : </h3>
 <img src="docs/Algorihms/MPC_Brief.jpg" align="center"
-     title="Open Image in new tab for good resolution" width="100%" ></p>
-<p><details>
+     title="Open Image in new tab for good resolution" width="100%" >
+
+<details>
      <summary><b><I><font color="#3498DB"> Click to expand</font></I></b></summary>
 <img src="docs/Algorihms/MPC_Detail.jpg" align="center"
      title="Open Image in new tab for good resolution" width="80%" >
 </details>
-<img src="docs/Algorihms/iLQR_Algorithm_up.jpg" align="center"
-     title="Open Image in new tab for good resolution" width="70%" ></p>
-<p><h3> 3. Results (ILQR) : </h3></p>
-<ul>
-<li>OpenAI Gym Car Environment </li>
-<li>Airsim City Space Environment </li>
-<li>Airsim Neighbourhood Environment </li>
-</ul>
-<p><img src="docs/Results/rec_car_env.gif" align="left"
+
+
+<h3> 3. Results (ILQR) : </h3>
+* OpenAI Gym Car Environment 
+* Airsim City Space Environment 
+* Airsim Neighbourhood Environment 
+
+<img src="docs/Results/rec_car_env.gif" align="left"
      title="(Open Image in new tab for full resolution)" width="30%" />
 <img src="docs/Results/fig_car_env.gif" align="center"
      title="(Open Image in new tab for full resolution)" width="30%" />
@@ -13613,11 +13867,22 @@ href ='#table_of_content_link'>Go Back to Table of Content</a></p>
 <img src="docs/Results/airsim_nh.gif" align="left"
      title="(Open Image in new tab for full resolution)" width="30%" />
 <img src="docs/Results/fig_nh.gif" align="center"
-     title="(Open Image in new tab for full resolution)" width="30%" /></p>
-<p><h3> Appendix : Map Tracker </h3>
-<img src="docs/Algorihms/map_tracker.jpg" align="center"
-     title="Open Image in new tab for good resolution" width="700" height="480"></p>
-<p><a style="color:navyblue;font-size:15px;" 
+     title="(Open Image in new tab for full resolution)" width="30%" />
+
+
+<h3>Inspired from - </h3><p>-<a href="https://github.com/AtsushiSakai/PythonRobotics/blob/f51a73f47cb922a12659f8ce2d544c347a2a8156/PathTracking/model_predictive_speed_and_steer_control/model_predictive_speed_and_steer_control.py#L247-L301">AtsushiSakai/PythonRobotics</a></p>
+<h3> Reference </h3><ul>
+<li><a href="https://github.com/AtsushiSakai/PythonRobotics/blob/eb6d1cbe6fc90c7be9210bf153b3a04f177cc138/PathTracking/model_predictive_speed_and_steer_control/model_predictive_speed_and_steer_control.py#L80-L102">AtsushiSakai/PythonRobotics</a></li>
+<li>Synthesis and Stabilization of Complex Behaviors through
+Online Trajectory Optimization
+by -Yuval Tassa</li>
+</ul>
+<p><h3> Appendix : Map Tracker and iLQR</h3>
+<img src="docs/Algorihms/map_tracker.jpg" 
+     title="Open Image in new tab for good resolution" width="40%" >
+<img src="docs/Algorihms/iLQR_Algorithm_up.jpg" 
+     title="Open Image in new tab for good resolution" width="40%" >
+<a style="color:navyblue;font-size:15px;" 
 href ='#table_of_content_link'>Go Back to Table of Content</a></p>
 
 </div>
