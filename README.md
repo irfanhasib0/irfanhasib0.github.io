@@ -91,10 +91,16 @@ href ='#pi_project_link'> Presentation Link : Embedded System Projects for Pi La
 
 ### Academic Project and Thesis (Undergrad) :
  - Remote rescue robot with AVR Microcontroller
- - Car velocity mseasuring and logging system for genearting drive cycle of Dhaka
+ - Car velocity measuring and logging system for genarting drive cycle of Dhaka
  - <a style="color:navyblue;font-size:15px;" 
 href ='#buet_project_link'>Presentation Link : Academic Project and Thesis</a></li>
 
+### Embedded System & Robotics Projects Personal (Undergrad) :
+<ul>
+ <li> Hobby CNC machine ‘Ourtech v 2.0’ and 'Ourtech v1.0', Desktop CNC Machine.
+ <li> Interfacing ov7670 camera sensor with atmega 32 and using object tracking algorithm on AVR platform (Feb-May - 2013)
+ <li> Software platform for controlling visually instructed Robotic arm with openCV, python and Raspberry pi (Apr-Sep,2014)
+<li><a href ='#embedded_project_link'>Presentation Link : Embedded System & Robotics Projects Personal</a></li>
 <style>
 h1 {color:grey;}
 h3 {color:#48C9B0;}
@@ -370,7 +376,7 @@ href ='#table_of_content_link'>Go Back to Table of Content</a>
 <img src="docs/Algorihms/NN_BP_Brief.jpg" align="left" alt="Schematics" width="48%" />
 
 <h3> Result : </h3>
-     Result of ANN implementation for XOR data - mean sqaure error vs epoch -
+     Result of ANN implementation for Bank Note data - mean sqaure error vs epoch -
 
 <img src="docs/Results/banknote_ann_loss.png" align="left"
      title="(Open Image in new tab for good resolution)" width="48%">
@@ -515,7 +521,7 @@ href ='#table_of_content_link'>Go Back to Table of Content</a>
     b.True Label vs Prediction <h3>
 
 
-<img src="docs/Results/Stack_Exchange_NB.png" align="left"
+<img src="docs/Results/Stack_Exchange_NB_.png" align="left"
      title="(Open Image in new tab for full resolution)" width="30%" >
 
 <img src="docs/Results/Stack_Exchange_NB_pred.jpg" align="left"
@@ -561,7 +567,7 @@ href ='#table_of_content_link'>Go Back to Table of Content</a>
             </ul>
     </ul>
 
-        
+      
 <details false>
     <summary><b><I><font color="#3498DB"> Click to expand</font></I></b></summary>
 <ul style="list-style-type:none;">
@@ -609,12 +615,233 @@ href ='#table_of_content_link'>Go Back to Table of Content</a>
 </details>
 </div>
 
-<h3>  2. Project Flow Chart : </h3>
-<img src="docs/Algorihms/MPC.jpg" align="center"
-     title="Open Image in new tab for good resolution" width="700" height="480">
-<img src="docs/Algorihms/iLQR_Algorithm_up.jpg" align="center"
-     title="Open Image in new tab for good resolution" width="700" height="480">
+<h3 style='color:teal'> MPC modeling </h3>
+$\begin{align*}
+State\;Space :z &= [x, y, v,\phi]        &where,x: x-position, y:y-position, v:velocity, φ: yaw angle\\
+Action\;Space:u &= [a, \delta]          &where,a: accellation, δ: steering angle\\
+\end{align*}$
 
+<h3 style='color:teal'>Cost and Constraints : </h3>
+$\begin{align*}
+&\color{navy} {Cost :}\\
+&min\ Q_f(z_{T,ref}-z_{T})^2+Q\Sigma({z_{t,ref}-z_{t}})^2+R\Sigma{u_t}^2+R_d\Sigma({u_{t+1}-u_{t}})^2\\
+&z_{ref}\;:\;target\;states\\
+\end{align*}$
+$\begin{align*}
+\color{navy} {Constraints :}&\\
+z_{t+1}&=Az_t+Bu+C\\
+Maximum\;steering\; speed &=abs[u_{t+1}-u_{t}]{<}du_{max}\\
+Maximum\;steering\;angle &=u_{t}{<}u_{max}\\
+Initial\;state &= z_0 = z_{0,ob}\\
+Maximum\;and\;minimum \;speed &= v_{min} {<} v_t {<} v_{max}\\
+Maximum\;and minimum\;input &=u_{min} {<} u_t {<} u_{max}\\
+\end{align*}$
+
+<h3 style='color:teal'>State Space model for Car system</h3>
+
+$\begin{align*}
+z_{t+1}=Az_t+Bu+C\;where,\\
+\end{align*}$
+$\begin{equation*}
+A = 
+\begin{bmatrix} 
+1 & 0 & cos(\bar{\phi})dt & -\bar{v}sin(\bar{\phi})dt\\
+0 & 1 & sin(\bar{\phi})dt & \bar{v}cos(\bar{\phi})dt \\
+0 & 0 & 1 & 0 \\
+0 & 0 &\frac{tan(\bar{\delta})}{L}dt & 1 \\
+\end{bmatrix}
+\end{equation*}$
+$\begin{equation*}
+B =
+\begin{bmatrix} 
+0 & 0 \\
+0 & 0 \\
+dt & 0 \\
+0 & \frac{\bar{v}}{Lcos^2(\bar{\delta})}dt \\
+\end{bmatrix}
+C =
+\begin{bmatrix} 
+\bar{v}sin(\bar{\phi})\bar{\phi}dt\\
+-\bar{v}cos(\bar{\phi})\bar{\phi}dt\\
+0\\
+-\frac{\bar{v}\bar{\delta}}{Lcos^2(\bar{\delta})}dt\\
+\end{bmatrix}
+\end{equation*}$
+
+<details> 
+    <h3 style='color:teal' >Car Steering Model with Linearization </h3>
+    <summary style='color:blue'><h4><b><I> Expand to see derivation</b></I></h4></summary>
+$\begin{align*}
+ \dot{x} &= vcos(\phi)                      &\\
+ \dot{y} &= vsin(\phi)       & \dot{z} &=\frac{\partial }{\partial t} z = f(z, u) = A'z+B'u\\
+ \dot{v} &= a                               &\\
+ \dot{\phi} &= \frac{vtan(\delta)}{L}       &\\
+\end{align*}$
+    
+where
+
+$\begin{equation*}
+A' =
+\begin{bmatrix}
+\frac{\partial }{\partial x}vcos(\phi) & 
+\frac{\partial }{\partial y}vcos(\phi) & 
+\frac{\partial }{\partial v}vcos(\phi) &
+\frac{\partial }{\partial \phi}vcos(\phi)\\
+\frac{\partial }{\partial x}vsin(\phi) & 
+\frac{\partial }{\partial y}vsin(\phi) & 
+\frac{\partial }{\partial v}vsin(\phi) &
+\frac{\partial }{\partial \phi}vsin(\phi)\\
+\frac{\partial }{\partial x}a& 
+\frac{\partial }{\partial y}a& 
+\frac{\partial }{\partial v}a&
+\frac{\partial }{\partial \phi}a\\
+\frac{\partial }{\partial x}\frac{vtan(\delta)}{L}& 
+\frac{\partial }{\partial y}\frac{vtan(\delta)}{L}& 
+\frac{\partial }{\partial v}\frac{vtan(\delta)}{L}&
+\frac{\partial }{\partial \phi}\frac{vtan(\delta)}{L}\\
+\end{bmatrix}
+　=
+\begin{bmatrix}
+0 & 0 & cos(\bar{\phi}) & -\bar{v}sin(\bar{\phi})\\
+0 & 0 & sin(\bar{\phi}) & \bar{v}cos(\bar{\phi}) \\
+0 & 0 & 0 & 0 \\
+0 & 0 &\frac{tan(\bar{\delta})}{L} & 0 \\
+\end{bmatrix}
+\end{equation*}$
+
+$\begin{equation*}
+B' =
+\begin{bmatrix}
+\frac{\partial }{\partial a}vcos(\phi) &
+\frac{\partial }{\partial \delta}vcos(\phi)\\
+\frac{\partial }{\partial a}vsin(\phi) &
+\frac{\partial }{\partial \delta}vsin(\phi)\\
+\frac{\partial }{\partial a}a &
+\frac{\partial }{\partial \delta}a\\
+\frac{\partial }{\partial a}\frac{vtan(\delta)}{L} &
+\frac{\partial }{\partial \delta}\frac{vtan(\delta)}{L}\\
+\end{bmatrix}
+　=
+\begin{bmatrix}
+0 & 0 \\
+0 & 0 \\
+1 & 0 \\
+0 & \frac{\bar{v}}{Lcos^2(\bar{\delta})} \\
+\end{bmatrix}
+\end{equation*}$
+<p>
+<br>Forward Euler Discretization with sampling time dt.
+Using first degree Tayer expantion around zbar and ubar</br>
+</p>
+$\begin{align*}
+z_{k+1}&=z_k+f(z_k,u_k)dt\\
+z_{k+1}&=z_k+(f(\bar{z},\bar{u})+A'z_k+B'u_k-A'\bar{z}-B'\bar{u})d\\
+z_{k+1}&=(I + dtA')z_k+(dtB')u_k + (f(\bar{z},\bar{u})-A'\bar{z}-B'\bar{u})dt\\
+z_{k+1}&=Az_k+Bu_k +C\\
+\end{align*}$
+<p><br>
+So,
+</br></p>
+$\begin{equation*}
+A = (I + dtA')
+=
+\begin{bmatrix} 
+1 & 0 & cos(\bar{\phi})dt & -\bar{v}sin(\bar{\phi})dt\\
+0 & 1 & sin(\bar{\phi})dt & \bar{v}cos(\bar{\phi})dt \\
+0 & 0 & 1 & 0 \\
+0 & 0 &\frac{tan(\bar{\delta})}{L}dt & 1 \\
+\end{bmatrix}
+\end{equation*}$
+$\begin{equation*}
+B = dtB'
+=
+\begin{bmatrix} 
+0 & 0 \\
+0 & 0 \\
+dt & 0 \\
+0 & \frac{\bar{v}}{Lcos^2(\bar{\delta})}dt \\
+\end{bmatrix}
+\end{equation*}$
+
+$\begin{equation*}
+C = (f(\bar{z},\bar{u})-A'\bar{z}-B'\bar{u})dt\\
+= dt(
+\begin{bmatrix} 
+\bar{v}cos(\bar{\phi})\\
+\bar{v}sin(\bar{\phi}) \\
+\bar{a}\\
+\frac{\bar{v}tan(\bar{\delta})}{L}\\
+\end{bmatrix}
+-
+\begin{bmatrix} 
+\bar{v}cos(\bar{\phi})-\bar{v}sin(\bar{\phi})\bar{\phi}\\
+\bar{v}sin(\bar{\phi})+\bar{v}cos(\bar{\phi})\bar{\phi}\\
+0\\
+\frac{\bar{v}tan(\bar{\delta})}{L}\\
+\end{bmatrix}
+-
+\begin{bmatrix} 
+0\\
+0 \\
+\bar{a}\\
+\frac{\bar{v}\bar{\delta}}{Lcos^2(\bar{\delta})}\\
+\end{bmatrix}
+)\\
+=
+\begin{bmatrix} 
+\bar{v}sin(\bar{\phi})\bar{\phi}dt\\
+-\bar{v}cos(\bar{\phi})\bar{\phi}dt\\
+0\\
+-\frac{\bar{v}\bar{\delta}}{Lcos^2(\bar{\delta})}dt\\
+\end{bmatrix}
+\end{equation*}$
+</details>
+
+<h3 style='color:teal'>Iterative Linear Quadratic Regulator :</h3>
+<h4 style='color:navy'> 1. U as a function of Previous U , X and Previous X : </h4>
+$\begin{equation}
+u{'}(i) = u(i) + k(i) +K(i)(x{'}(i) - x(i))\\
+\end{equation}$
+
+<details>
+<summary><h4 style='color:navy'> 2. Calcualting K and k : (Expand to see) </h4></summary>
+$\begin{align*}
+\color{navy}{Step\;A.}\;&\color{navy}{Getting\;Q[i]s\;from\;l[i]s\;and\;V[i]s:}\\\\
+Q_x &= l_x(t) + f_x(t).T, V_x \\
+Q_u &= l_u(t) + f_u(t).T, V_x \\
+Q_{xx} &= l_{xx}(t) + f_x(t).T * (V_{xx} * f_x(t) )  \\
+Q_{ux} &= l_{ux}(t) + f_u(t).T * (V_{xx} * f_x(t) )) \\
+Q_{uu} &= l_{uu}(t) + (f_u(t).T *(V_{xx} * f_u(t) ) \\\\
+\end{align*}$
+$\begin{align*}
+&\color{navy}{Step\;B.\;Getting\;K[i]s\;from\;Q[i]s:}\\\\
+&Q_{uu\_evals}, Q_{uu\_evecs} = np.linalg.eig(Q_{uu})\\
+&Q_{uu\_evals}[Q_{uu_evals} < 0] = 0.0\\
+&Q_{uu\_inv} = Q_{uu_evecs} * \\&(np.diag(1.0/Q_uu_evals), Q_uu_evecs.T)\\              
+&k(t) = -1. * (Q_{uu\_inv} * Q_u)\\
+&K(t) = -1. * (Q_{uu\_inv} * Q_{ux})
+\end{align*}$
+$\begin{align*}
+&\color{navy}{Step\;C.\;Getting\;V[i+1]s\;from\;K[i]s:}\\\\
+V_x &= Q_x - (K[t].T * (Q_{uu} * k[t]))\\
+V_{xx} &= Q_{xx} - (K[t].T * (Q_{uu} * K[t]))\\\\\\\\\\
+\end{align*}$
+<h4 style='color:navy'> 3. Step A , B and C run iteratively fo find optimal K and k.</h4>
+</details>
+
+<h4 style='color:navy'> 4. For detail derivation please see the paper :</h4> <p style='color:gray'>Synthesis and Stabilization of Complex Behaviors through Online Trajectory Optimization
+by -Yuval Tassa 
+    <br> citations(369) according to February 27 2020, Published on - 2012</p>
+    
+<h3>  2. Project Flow Chart : </h3>
+<img src="docs/Algorihms/MPC_Brief.jpg" align="center"
+     title="Open Image in new tab for good resolution" width="100%" >
+
+<details>
+     <summary><b><I><font color="#3498DB"> Click to expand</font></I></b></summary>
+<img src="docs/Algorihms/MPC_Detail.jpg" align="center"
+     title="Open Image in new tab for good resolution" width="80%" >
+</details>
 
      
 <h3> 3. Results (ILQR) : </h3>
@@ -623,23 +850,35 @@ href ='#table_of_content_link'>Go Back to Table of Content</a>
 * Airsim Neighbourhood Environment 
 
 <img src="docs/Results/rec_car_env.gif" align="left"
-     title="(Open Image in new tab for full resolution)" width="400" height="240"/>
+     title="(Open Image in new tab for full resolution)" width="30%" />
 <img src="docs/Results/fig_car_env.gif" align="center"
-     title="(Open Image in new tab for full resolution)" width="400" height="240"/>
+     title="(Open Image in new tab for full resolution)" width="30%" />
 <img src="docs/Results/airsim_cs.gif" align="left"
-     title="(Open Image in new tab for full resolution)" width="400" height="240"/>
+     title="(Open Image in new tab for full resolution)" width="30%" />
 <img src="docs/Results/fig_cs.gif" align="center"
-     title="(Open Image in new tab for full resolution)" width="400" height="240"/>
+     title="(Open Image in new tab for full resolution)" width="30%" />
 <img src="docs/Results/airsim_nh.gif" align="left"
-     title="(Open Image in new tab for full resolution)" width="400" height="240"/>
+     title="(Open Image in new tab for full resolution)" width="30%" />
 <img src="docs/Results/fig_nh.gif" align="center"
-     title="(Open Image in new tab for full resolution)" width="400" height="240"/>
-<h3> Appendix : Map Tracker </h3>
-<img src="docs/Algorihms/map_tracker.jpg" align="center"
-     title="Open Image in new tab for good resolution" width="700" height="480">
+     title="(Open Image in new tab for full resolution)" width="30%" />
      
      
+<h3>Inspired from - </h3>
 
+-[AtsushiSakai/PythonRobotics](https://github.com/AtsushiSakai/PythonRobotics/blob/f51a73f47cb922a12659f8ce2d544c347a2a8156/PathTracking/model_predictive_speed_and_steer_control/model_predictive_speed_and_steer_control.py#L247-L301)
+
+<h3> Reference </h3>
+
+- [AtsushiSakai/PythonRobotics](https://github.com/AtsushiSakai/PythonRobotics/blob/eb6d1cbe6fc90c7be9210bf153b3a04f177cc138/PathTracking/model_predictive_speed_and_steer_control/model_predictive_speed_and_steer_control.py#L80-L102)
+- Synthesis and Stabilization of Complex Behaviors through
+Online Trajectory Optimization
+by -Yuval Tassa
+
+<h3> Appendix : Map Tracker and iLQR</h3>
+<img src="docs/Algorihms/map_tracker.jpg" 
+     title="Open Image in new tab for good resolution" align="left" width="40%" >
+<img src="docs/Algorihms/iLQR_Algorithm_up.jpg" 
+     title="Open Image in new tab for good resolution" aligh="left" width="60%" >
 <a style="color:navyblue;font-size:15px;" 
 href ='#table_of_content_link'>Go Back to Table of Content</a>
 
@@ -699,14 +938,14 @@ href ='#table_of_content_link'>Go Back to Table of Content</a>
 * d. Test DDPG on Pendulum (Right):
 
 <img src="docs/Results/DQN_MC.png" align="left"
-     title="(Open Image in new tab for full resolution)" width="24%" />
+     title="(Open Image in new tab for full resolution)" width="25%" />
 <img src="docs/Results/DDPG_PEND.jpg" align="left"
-     title="(Open Image in new tab for full resolution)" width="24%" />
+     title="(Open Image in new tab for full resolution)" width="25%" />
      
-<img src="docs/Results/mc.gif" align="center"
-     title="(Open Image in new tab for full resolution)" width="24%" />
-<img src="docs/Results/pend.gif" align="center"
-     title="(Open Image in new tab for full resolution)" width="24%" />
+<img src="docs/Results/mc.gif" align="left"
+     title="(Open Image in new tab for full resolution)" width="25%" />
+<img src="docs/Results/pend.gif" align="left"
+     title="(Open Image in new tab for full resolution)" width="25%" />
      
 <a style="color:navyblue;font-size:15px;" 
 href ='#table_of_content_link'>Go Back to Table of Content</a>
@@ -719,19 +958,20 @@ href ='#table_of_content_link'>Go Back to Table of Content</a>
 <a style="color:navyblue;font-size:25px;" href= https://github.com/irfanhasib0/CNN-Projects/blob/master/VGG_NET_V_1.ipynb> Notebook : Yolo with VGG16 </a>
 </div>
 
-![](docs/Results/yolo.jpg)
-
+<img src="docs/Results/yolo.jpg" align="center"
+     title="(Open Image in new tab for full resolution)" width="100%" />
+     
 <div>
 <br><h1  style="color:grey;" >
 <a id="unet_link"></a> 
    Unet with KERAS for City Space Dataset</h1></br>
 <br><a style="color:navyblue;font-size:25px;" href= https://github.com/irfanhasib0/CNN-Projects/blob/master/as_unet_seg-cs.ipynb> Notebook :Unet for segmenting City Space Dataset </a></br>
-
 </div>
 
-![](docs/Results/unet_pred.jpg)
+<img src="docs/Results/unet_pred.jpg" align="center"
+     title="(Open Image in new tab for full resolution)" width="100%" />
 <img src="docs/Results/unet_res.jpg" align="center"
-     title="(Open Image in new tab for full resolution)" width="640" height="320"/>
+     title="(Open Image in new tab for full resolution)" width="50%" />
  <a style="color:navyblue;font-size:15px;" 
 href ='#table_of_content_link'>Go Back to Table of Content</a>    
 
@@ -742,11 +982,12 @@ href ='#table_of_content_link'>Go Back to Table of Content</a>
 <br>
 </div>
 
-- URDF Link(https://github.com/irfanhasib0/ros_ws/tree/master/src/rrbot/rrbot_description)
-- Controller Link(https://github.com/irfanhasib0/ros_ws/tree/master/src/rrbot/rrbot_control)
-- Gazebo Link(https://github.com/irfanhasib0/ros_ws/tree/master/src/rrbot/rrbot_gazebo)
-- Vedio Link (https://youtu.be/lJbyy89X7gM)
-
+<ul>
+<li> <a href= "https://github.com/irfanhasib0/ros_ws/tree/master/src/rrbot/rrbot_description">URDF Link</a> </li>
+<li> <a href="https://github.com/irfanhasib0/ros_ws/tree/master/src/rrbot/rrbot_control">Controller Link </a> </li>
+<li> <a href="https://github.com/irfanhasib0/ros_ws/tree/master/src/rrbot/rrbot_gazebo"> Gazebo Link</a> </li>
+<li> <a href="https://youtu.be/lJbyy89X7gM">Vedio Link</a> </li>
+</ul>
 
 <div>
 <br><h1  style="color:grey;" >
@@ -757,18 +998,15 @@ href ='#table_of_content_link'>Go Back to Table of Content</a>
 
 
 All these projects I did as an employee of Pi Labs BD Ltd. www.pilabsbd.com
-<img src="docs/old/vault_sequrity.jpg" align="left" 
-     title="(Open Image in new tab for full resolution)" width="640" height="480"/>
-     
-<img src="docs/old/safe_box.jpg" align="left"
-     title="(Open Image in new tab for full resolution)" width="640" height="480"/>
-     
-<img src="docs/old/syringe_pump.jpg" align="left"
-     title="(Open Image in new tab for full resolution)" width="640" height="480"/>
-     
-<img src="docs/old/weight_machine.jpg" align="left"
-     title="(Open Image in new tab for full resolution)" width="640" height="480"/>
 
+
+<img src="docs/old/vault_sequrity.jpg" align="left" alt="(Open Image in new tab for full resolution)" width="50%" />
+     
+<img src="docs/old/safe_box.jpg"  alt="(Open Image in new tab for full resolution)" width="50%" />
+     
+<img src="docs/old/syringe_pump.jpg" align="left" alt="(Open Image in new tab for full resolution)" width="50%" />
+     
+<img src="docs/old/weight_machine.jpg" alt="(Open Image in new tab for full resolution)" width="50%" />
 
 
 
@@ -782,8 +1020,8 @@ All these projects I did as an employee of Pi Labs BD Ltd. www.pilabsbd.com
 * My undergrad project of intrumentation and measurement course
 * My undergrad thesis
 
-![](docs/old/thesis_project.jpg)
 
+<img src="docs/old/thesis_project.jpg" alt="(Open Image in new tab for full resolution)" width="80%" />
 
 
 <a style="color:navyblue;font-size:15px;" 
@@ -798,51 +1036,27 @@ href ='#table_of_content_link'>Go Back to Table of Content</a>
 
 ### Critical Design Rivew    : [Video Link](https://www.youtube.com/watch?v=MlN-VFj14LE)
 
-![](docs/old/URC.jpg)
-
+<img src="docs/old/URC.jpg" alt="(Open Image in new tab for full resolution)" width="80%" />
 <a style="color:navyblue;font-size:15px;" 
 href ='#table_of_content_link'>Go Back to Table of Content</a>
 
-<!DOCTYPE html>
-<html>
-<head>
-<style>
-* {
-  box-sizing: border-box;
-}
-
-.column {
-  float: left;
-  width: 33.33%;
-  padding: 5px;
-}
-
-/* Clearfix (clear floats) */
-.row::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-</style>
-</head>
-<body>
-
-<h2>Images Side by Side</h2>
-<p>How to create side-by-side images with the CSS float property:</p>
-
-<div class="row">
-  <div class="column">
-    <img src="docs/algorihms/NN_FP_Brief.jpg" alt="Snow" style="width:30%">
-  </div>
-  <div class="column">
-    <img src="docs/algorihms/NN_FP_Brief.jpg" alt="Forest" style="width:30%">
-  </div>
-  
+<div>
+<br><h1  style="color:grey;" >
+<a id = "embedded_project_link"></a> 
+   Embedded System & Robotics Projects Personal (Undergrad) :</h1></br>
+<br>
 </div>
-
-</body>
-</html>
-
+<ul>
+ <li> Hobby CNC machine ‘Ourtech v 2.0’ and 'Ourtech v1.0', Desktop CNC Machine.<a href = 'https://www.youtube.com/watch?v=xU7YMPpZMYs'>Video Link</a></li>
+ <li> Interfacing ov7670 camera sensor with atmega 32 and using object tracking algorithm on AVR platform (Feb-May - 2013)<a href='https://youtu.be/tKWbYbAJSEs'>Video Link</a></li>
+ <li> Software platform for controlling Robotic arm with openCV, python and Raspberry pi (Apr-Sep,2014)<a href='https://www.youtube.com/watch?v=hj1Wc6-8-7w'>Video Link</a></li>
+</ul>
+    
+  <img src="docs/old/CNC.jpg" align="center" alt="(Open Image in new tab for full resolution)" width="50%" />
+ 
+  <img src="docs/old/Robot_Arm.jpg" align="left" alt="(Open Image in new tab for full resolution)" width="50%" />
+ 
+  <img src="docs/old/Robot_Arm_Soft.jpg" align="left" alt="(Open Image in new tab for full resolution)" width="50%" />
 
 
 ```python
