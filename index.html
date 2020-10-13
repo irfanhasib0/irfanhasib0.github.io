@@ -13115,6 +13115,8 @@ href ='#ilqr_mpc_link'> MPC(Model Predictive Controller) Implementation from scr
 href ='#yolo_link'> Yolo with KERAS and Tensorflow for car number plate localization</a></li>
   <li><a style="color:navyblue;font-size:15px;" 
 href ='#unet_link'> Unet with KERAS for City Space Dataset</a></li>
+  <li><a style="color:navyblue;font-size:15px;" 
+href ='#flownet_link'> FlowNet with KERAS for Kitti Dataset</a></li>
 </ul><h3 id="ROS-Project-:-(Not-well-doccumented)">ROS Project : (Not well doccumented)<a class="anchor-link" href="#ROS-Project-:-(Not-well-doccumented)">&#182;</a></h3><ul>
   <li><a style="color:navyblue;font-size:15px;" 
 href ='#ros_rrbot_link'> ROS : Simple two linked robot inspired from rrbot(-)</a></li>
@@ -13898,19 +13900,67 @@ href ='#table_of_content_link'>Go Back to Table of Content</a></p>
 <li>c. Tset DQN on Mountain Car (Left):</li>
 <li>d. Test DDPG on Pendulum (Right):</li>
 </ul>
-<p><img src="docs/Results/DQN_MC.png" align="left"
+<p><img src="docs/Results/dqn_mcar.png" align="left"
      title="(Open Image in new tab for full resolution)" width="25%" />
-<img src="docs/Results/DDPG_PEND.jpg" align="left"
+<img src="docs/Results/ddpg_pendulum.png" align="left"
+     title="(Open Image in new tab for full resolution)" width="25%" />
+<img src="docs/Results/bipedal_ppo.png" align="left"
+     title="(Open Image in new tab for full resolution)" width="25%" />
+<img src="docs/Results/lunar_ppo.png" align="left"
      title="(Open Image in new tab for full resolution)" width="25%" /></p>
 <p><img src="docs/Results/mc.gif" align="left"
      title="(Open Image in new tab for full resolution)" width="25%" />
 <img src="docs/Results/pend.gif" align="left"
+     title="(Open Image in new tab for full resolution)" width="25%" />
+<img src="docs/Results/bipedal_ppo.gif" align="left"
+     title="(Open Image in new tab for full resolution)" width="25%" />
+<img src="docs/Results/lunar_ppo.gif" align="left"
      title="(Open Image in new tab for full resolution)" width="25%" /></p>
 <p><a style="color:navyblue;font-size:15px;" 
 href ='#table_of_content_link'>Go Back to Table of Content</a></p>
 
 </div>
 </div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[6]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">cv2</span>
+<span class="n">img1</span><span class="o">=</span><span class="n">cv2</span><span class="o">.</span><span class="n">imread</span><span class="p">(</span><span class="s1">&#39;docs/Results/DQN_MC.png&#39;</span><span class="p">)</span>
+<span class="n">img2</span><span class="o">=</span><span class="n">cv2</span><span class="o">.</span><span class="n">imread</span><span class="p">(</span><span class="s1">&#39;docs/Results/DDPG_PEND.jpg&#39;</span><span class="p">)</span>
+<span class="n">img3</span><span class="o">=</span><span class="n">cv2</span><span class="o">.</span><span class="n">imread</span><span class="p">(</span><span class="s1">&#39;docs/Results/bipedal_ppo.png&#39;</span><span class="p">)</span>
+<span class="n">img1</span><span class="o">=</span><span class="n">cv2</span><span class="o">.</span><span class="n">resize</span><span class="p">(</span><span class="n">img1</span><span class="p">,(</span><span class="n">img3</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span><span class="n">img3</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]))</span>
+<span class="n">img2</span><span class="o">=</span><span class="n">cv2</span><span class="o">.</span><span class="n">resize</span><span class="p">(</span><span class="n">img2</span><span class="p">,(</span><span class="n">img3</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span><span class="n">img3</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]))</span>
+<span class="n">cv2</span><span class="o">.</span><span class="n">imwrite</span><span class="p">(</span><span class="s1">&#39;docs/Results/dqn_mcar.png&#39;</span><span class="p">,</span><span class="n">img1</span><span class="p">)</span>
+<span class="n">cv2</span><span class="o">.</span><span class="n">imwrite</span><span class="p">(</span><span class="s1">&#39;docs/Results/ddpg_pendulum.png&#39;</span><span class="p">,</span><span class="n">img2</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[6]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>True</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
@@ -13937,6 +13987,22 @@ href ='#table_of_content_link'>Go Back to Table of Content</a></p>
 </div><p><img src="docs/Results/unet_pred.jpg" align="center"
      title="(Open Image in new tab for full resolution)" width="100%" />
 <img src="docs/Results/unet_res.jpg" align="center"
+     title="(Open Image in new tab for full resolution)" width="50%" />
+ <a style="color:navyblue;font-size:15px;" 
+href ='#table_of_content_link'>Go Back to Table of Content</a></p>
+<p><div>
+<br><h1  style="color:grey;" >
+<a id="flownet_link"></a> 
+  Flow-Net with KERAS and Tensorflow</h1></br>
+<br><a style="color:navyblue;font-size:25px;" href= https://github.com/irfanhasib0/Deep-Learning-For-Robotics/blob/master/FlowNet/Flow-Net-v2.ipynb> Notebook :FlowNwt for Optical Flow Kitti Dataset </a></br>
+</div>
+<img src="docs/Results/of_true-1.png" align="left"
+     title="(Open Image in new tab for full resolution)" width="50%" />
+<img src="docs/Results/of_pred-1.png" align="left"
+     title="(Open Image in new tab for full resolution)" width="50%" /></p>
+<p><img src="docs/Results/of_true-2.png" align="left"
+     title="(Open Image in new tab for full resolution)" width="50%" />
+<img src="docs/Results/of_pred-2.png" align="left"
      title="(Open Image in new tab for full resolution)" width="50%" />
  <a style="color:navyblue;font-size:15px;" 
 href ='#table_of_content_link'>Go Back to Table of Content</a></p>
