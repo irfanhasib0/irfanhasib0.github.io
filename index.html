@@ -13901,8 +13901,8 @@ href ='#table_of_content_link'>Go Back to Table of Content</a></p>
 <h3> --- </h3><h3> 3. Results </h3><ul>
 <li>a. Results DQN on Mountain Car</li>
 <li>b. Results DDPG on Pendulum </li>
-<li>c. Results DQN on Mountain Car </li>
-<li>d. Results DQN on Mountain Car</li>
+<li>c. Results PPO on Bipedal Walker</li>
+<li>d. Results PPO on Lunar Lander</li>
 </ul>
 <p><img src="docs/Results/dqn_mcar.png" align="left"
      title="(Open Image in new tab for full resolution)" width="25%" />
@@ -13925,46 +13925,6 @@ href ='#table_of_content_link'>Go Back to Table of Content</a></p>
 
 </div>
 </div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[6]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">cv2</span>
-<span class="n">img1</span><span class="o">=</span><span class="n">cv2</span><span class="o">.</span><span class="n">imread</span><span class="p">(</span><span class="s1">&#39;docs/Results/DQN_MC.png&#39;</span><span class="p">)</span>
-<span class="n">img2</span><span class="o">=</span><span class="n">cv2</span><span class="o">.</span><span class="n">imread</span><span class="p">(</span><span class="s1">&#39;docs/Results/DDPG_PEND.jpg&#39;</span><span class="p">)</span>
-<span class="n">img3</span><span class="o">=</span><span class="n">cv2</span><span class="o">.</span><span class="n">imread</span><span class="p">(</span><span class="s1">&#39;docs/Results/bipedal_ppo.png&#39;</span><span class="p">)</span>
-<span class="n">img1</span><span class="o">=</span><span class="n">cv2</span><span class="o">.</span><span class="n">resize</span><span class="p">(</span><span class="n">img1</span><span class="p">,(</span><span class="n">img3</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span><span class="n">img3</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]))</span>
-<span class="n">img2</span><span class="o">=</span><span class="n">cv2</span><span class="o">.</span><span class="n">resize</span><span class="p">(</span><span class="n">img2</span><span class="p">,(</span><span class="n">img3</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span><span class="n">img3</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]))</span>
-<span class="n">cv2</span><span class="o">.</span><span class="n">imwrite</span><span class="p">(</span><span class="s1">&#39;docs/Results/dqn_mcar.png&#39;</span><span class="p">,</span><span class="n">img1</span><span class="p">)</span>
-<span class="n">cv2</span><span class="o">.</span><span class="n">imwrite</span><span class="p">(</span><span class="s1">&#39;docs/Results/ddpg_pendulum.png&#39;</span><span class="p">,</span><span class="n">img2</span><span class="p">)</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt output_prompt">Out[6]:</div>
-
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>True</pre>
-</div>
-
-</div>
-
-</div>
-</div>
-
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
