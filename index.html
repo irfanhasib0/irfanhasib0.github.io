@@ -13080,44 +13080,44 @@ div#notebook {
 <h2 id="Table-of-Content">Table of Content<a class="anchor-link" href="#Table-of-Content">&#182;</a></h2><p>===============================</p>
 <div><p  style="color:grey;" >
     <a id="table_of_content_link"></a>  </p>
-</div><nav>
-<h3> Machine Learning Algorithms from Scratch : </h3>
+</div><style>
+.columns
+{   
+    -moz-column-width: 21.5em; /* Firefox */
+    -webkit-column-width: 21.5em; /* webkit, Safari, Chrome */
+    column-width: 21.5em;
+}
+/*remove standard list and bullet formatting from ul*/
+.columns ul
+{
+    margin: 20px;
+    padding: 0;
+    list-style-type: none;
+}
+/* correct webkit/chrome uneven margin on the first column*/
+
+</style><div class="columns">
+<h5> Machine Learning Algorithms from Scratch  </h5>
 <ul class="col1">
   <li><a style="color:navyblue;font-size:15px;" 
 href ='#ann_link'> Neural Network</a></li>
   <li><a style="color:navyblue;font-size:15px;" 
-         href ='#id3_link'> Decision Tree(ID3)</a></li>
+         href ='#id3_link'> Decision Tree(ID3), SVM</a></li>
   <li><a style="color:navyblue;font-size:15px;" 
-         href ='#naive_bayes_link'> Naive Bayes</a></li>
+         href ='#naive_bayes_link'> Naive Bayes, KNN</a></li>
 </ul>
 
-<h3> Feature Engineering and Model Tuning : </h3>
-<ul class="col1">
-  <li><a style="color:navyblue;font-size:15px;" 
-href ='#house_price_link'> Kaggle House Price Prediction.</a></li>
-  <li><a style="color:navyblue;font-size:15px;" 
-         href ='#sakura_link'> Shakura Bloom Prediction.</a></li>
-</ul>
-</nav><h3> Reinforcement Learning ALgorithms from scratch : </h3>
+
+
+<h5> Reinforcement Learning ALgorithms from scratch  </h5>
 <ul>
   <li><a style="color:navyblue;font-size:15px;" 
-href ='#dqn_ddpg_link'> DQN </a></li>
+href ='#dqn_ddpg_link'> DQN, DDPG </a></li>
   <li><a style="color:navyblue;font-size:15px;" 
-href ='#dqn_ddpg_link'> DDPG </a></li>
+href ='#dqn_ddpg_link'> PPO, A2C </a></li>
 </ul>
 
-
-<h3> Control Algorithms Implementation from scratch : </h3>
-<ul>
-  <li><a style="color:navyblue;font-size:15px;" 
-href ='#ilqr_mpc_link'> Iterative Linear Quadratic Regulator (ILQR) </a></li>
-  <li><a style="color:navyblue;font-size:15px;" 
-href ='#ilqr_mpc_link'> Model Predictive Controller (MPC) </a></li>
-</ul>
-
-
-
-<h3> CNN Projects : (Minimal Doccumentation) : </h3>
+<h5> CNN Projects : (Minimal Doccumentation)  </h5>
 <ul>
   <li><a style="color:navyblue;font-size:15px;" 
 href ='#yolo_link'> Yolo </a></li>
@@ -13126,46 +13126,69 @@ href ='#unet_link'> Unet </a></li>
   <li><a style="color:navyblue;font-size:15px;" 
 href ='#flownet_link'> FlowNet </a></li>
 </ul>
-
-
-<h3> ROS Project : (Not well doccumented) : </h3>
+</div><div class="columns">
+<h5> Control Algorithms Implementation from scratch  </h5>
 <ul>
   <li><a style="color:navyblue;font-size:15px;" 
-href ='#ros_rrbot_link'> ROS : Simple two linked robot inspired from rrbot(-)</a></li>
+href ='#ilqr_mpc_link'> ILQR </a></li>
   <li><a style="color:navyblue;font-size:15px;" 
-href ='#ros_husky_link'> ROS : Writing a script for driving husky robot and getting feed back</a></li>
+href ='#ilqr_mpc_link'> MPC </a></li>
 </ul>
 
+<h5> Feature Engineering and Model Tuning  </h5>
+<ul class="col1">
+  <li><a style="color:navyblue;font-size:15px;" 
+href ='#house_price_link'> Kaggle House Price Prediction.</a></li>
+  <li><a style="color:navyblue;font-size:15px;" 
+         href ='#sakura_link'> Shakura Bloom Prediction.</a></li>
+</ul>
 
-<h3> International Robotics Compititions : </h3>
+<h5> ROS & Robotics </h5>
+<ul>
+  <li><a style="color:navyblue;font-size:15px;" 
+href ='#ros_rrbot_link'> ROS : Simple two linked robot</a></li>
+  <li><a style="color:navyblue;font-size:15px;" 
+href ='#ros_husky_link'> ROS : Husky robot driver</a></li>
+</ul>
+</div><div class="columns">
+<h5> International Robotics Compititions </h5>
 <ul>
   <li><a style="color:navyblue;font-size:15px;" 
 href ='#urc_2016_link'> University Rover Challenge - 2016</a></li>
+    <li>-</li>
+    <li>-</li>
+    <li></li>
 </ul>
 
 
-<h3> Embedded System Projects for Pi Labs BD Ltd : </h3><ul>
-<li>Vault Sequirity : IOT based Vault sequitrity System with AVR Microcontroller</li>
-<li>Safe Box : GPRS based Tracking System with AVR Microcontroller</li>
-<li>Syringe Pump : Progmable Infusion Pump with AVR Microcontroller using FreeRTOS</li>
-<li>Digital Weight Machine : Server based digital wight Machine with AVR Microcontroller</li>
-<li><a style="color:navyblue;font-size:15px;" 
-href ='#pi_project_link'> Details </a>&lt;/li&gt;</li>
+<h5> Embedded System Projects for Pi Labs BD Ltd </h5>
+ <ul>
+ <li>Vault Sequirity System</li>
+ <li>Programmable Syringe Infusion Pump</li>
+ <li>GPRS based Monitoring System.</li>
+ <li>Sening product weights to server.</li>
+ - <a style="color:navyblue;font-size:15px;" 
+href ='#pi_project_link'> Details </a></li>
 </ul>
-<h3> Academic Project and Thesis (Undergrad) : </h3><ul>
-<li>Remote rescue robot with AVR Microcontroller</li>
-<li>Car velocity measuring and logging system for genarting drive cycle of Dhaka</li>
-<li><a style="color:navyblue;font-size:15px;" 
-href ='#buet_project_link'>Details </a>&lt;/li&gt;</li>
+
+<h5> Academic Project and Thesis (Undergrad) </h5>
+<ul>
+ <li>Remote rescue robot</li>
+ <li>Car velocity logging system</li>
+ - <a style="color:navyblue;font-size:15px;" 
+href ='#buet_project_link'>Details </a></li>
 </ul>
-<p><h3> Embedded System & Robotics Projects Personal (Undergrad) : </h3></p>
+</div><p><h5> Embedded System & Robotics Projects Personal (Undergrad) </h5></p>
 <p><ul>
- <li> Hobby CNC machine ‘Ourtech v 2.0’ and 'Ourtech v1.0', Desktop CNC Machine.
- <li> Interfacing ov7670 camera sensor with atmega 32 and using object tracking algorithm on AVR platform (Feb-May - 2013)
- <li> Software platform for controlling visually instructed Robotic arm with openCV, python and Raspberry pi (Apr-Sep,2014)</p>
+ <li> Hobby CNC machine.
+ <li> Interfacing OV7670 camera sensor with atmega AVR (Feb-May - 2013)
+ <li> Software platform for controlling Robotic ARM(Apr-Sep,2014)</p>
 <li><a href ='#embedded_project_link'>Details </a></li><style>
+
+
 h1 {color:grey;}
 h3 {color:#48C9B0;}
+h5 {color:#48C9B0;}
 a  {color:navyblue;}
 
 #ul_style {
@@ -13347,21 +13370,26 @@ href ='#table_of_content_link'>Go Back to Table of Content</a></p>
 <p><img src="docs/Results/banknote_svm_pred.png" align="center"
      title="(Open Image in new tab for good resolution)
 " width="60%" ></p>
-<p>&lt;!--</p>
-<h3> Result of ID3 implementation for Titanic data - a.Precision Recall and Accuracy and b.True Label vs Prediction </h3><p><img src="docs/Results/titanic_ID3.png" align="left"
+<!--
+<h3> Result of ID3 implementation for Titanic data - a.Precision Recall and Accuracy and b.True Label vs Prediction </h3>
+
+<img src="docs/Results/titanic_ID3.png" align="left"
      title="(Open Image in new tab for full resolution)
-" width="30%" ></p>
-<p><img src="docs/Results/titanicpred.jpg" align="center"
+" width="30%" >
+
+<img src="docs/Results/titanicpred.jpg" align="center"
      title="(Open Image in new tab for full resolution)
 " width="60%" >
---&gt;
-<a style="color:navyblue;font-size:15px;" 
+-->
+
+<p><a style="color:navyblue;font-size:15px;" 
 href ='#table_of_content_link'>Go Back to Table of Content</a></p>
 <div>
 <br><h1  style="color:grey;" >
 <a id="naive_bayes_link"></a> 
    Naive Bayes and KNN :: Implementation for text classification</h1></br>
 <a style="color:navyblue;font-size:25px;" href= https://github.com/irfanhasib0/Machine-Learning/blob/master/Machine_Learning_Algo_From_Scratch/Naive_Bayes_Stack_Exchange.ipynb> Naive Bayes Implementation from scratch - Notebook (Project Presentation and Code Link) </a>
+<a style="color:navyblue;font-size:25px;" href= https://github.com/irfanhasib0/Machine-Learning/blob/master/Machine_Learning_Algo_From_Scratch/KNN_Stack_Exchange.ipynb> KNN Implementation from scratch - Notebook (Project Presentation and Code Link) </a>
 </div><h3> 1. Overview </h3><div id=div_style>
 <ul id=ul_style>
 <li><b><I> Dataset     :</li></b></I> Archived data from stack exchange is used for classification.
@@ -13556,12 +13584,19 @@ href ='#table_of_content_link'>Go Back to Table of Content</a></p>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<div>
+<p><div>
 <br><h1  style="color:grey;" >
-<a id="dqn_ddpg_link"></a> DQN , DDPG, PPO A2C Implementation from scratch</h1></br>
-<br><a style="color:navyblue;font-size:25px;" href= https://github.com/irfanhasib0/RL-Algorithms/blob/master/Deep_Q_Learning_mc.ipynb> Notebook : Mountain Car with DQN - Notebook (Project Presentation and Code Link) </a></br>
-<a style="color:navyblue;font-size:25px;" href= https://github.com/irfanhasib0/RL-Algorithms/blob/master/Deep_Q_Learning_mc.ipynb> Notebook : Pendulum with DDPG - Notebook (Project Presentation and Code Link) </a>
-</div><h3> 1.  Overview </h3><div id=div_style> 
+<a id="dqn_ddpg_link"></a> DQN , DDPG, PPO A2C Implementation from scratch</h1></br></p>
+<p><a style="color:navyblue;font-size:15px;" href= https://github.com/irfanhasib0/RL-Algorithms/blob/master/Deep_Q_Learning_mc.ipynb> Notebook : Mountain Car with DQN - Notebook (Project Presentation and Code Link) </a>&lt;/br&gt;</p>
+<p><a style="color:navyblue;font-size:15px;" href= https://github.com/irfanhasib0/RL-Algorithms/blob/master/Deep_Q_Learning_mc.ipynb> Notebook : Pendulum with DDPG - Notebook (Project Presentation and Code Link) </a>&lt;/br&gt;</p>
+<p>&lt;a style="color:navyblue;font-size:15px;" href= <a href="https://github.com/irfanhasib0/RL-Algorithms/blob/master/5.1">https://github.com/irfanhasib0/RL-Algorithms/blob/master/5.1</a> PPO_Bipedal_Walker-mod.ipynb.ipynb&gt; Notebook : Bipedal Walker with PPO - Notebook (Project Presentation and Code Link) &lt;/a&gt;
+&lt;/div&gt;&lt;/br&gt;</p>
+<p>&lt;a style="color:navyblue;font-size:15px;" href= <a href="https://github.com/irfanhasib0/RL-Algorithms/blob/master/5.1">https://github.com/irfanhasib0/RL-Algorithms/blob/master/5.1</a> PPO_Lun ar_Lander.ipynb.ipynb&gt; Notebook : Lunar Lander with PPO - Notebook (Project Presentation and Code Link) &lt;/a&gt;
+&lt;/div&gt;&lt;/br&gt;</p>
+<h3> 1.  Overview </h3>
+<details false>
+    <summary><b><I><font color="#3498DB"> Click to expand</font></I></b></summary>
+<div id=div_style> 
 <ul id=ul_style>
     <li><b><I> DQN Environments </li></b></I>  OpenAI gym --> Mountain Car ENvironment
     <li><b><I> DQN Environments </li></b></I>  OpenAI gym --> Pendulumn Environment
@@ -13586,7 +13621,11 @@ href ='#table_of_content_link'>Go Back to Table of Content</a></p>
     <li>target networks : networks*tau + (1-tau)*target_networks</li>
     </ul>
 </ul>
-</div><h3> 2. Detailed Flow Chart for DQN and DDPG : (Please open in New tab for proper resolution) </h3><p><img src="docs/Algorihms/DQN_Brief.jpg" align="left"
+</div>
+</details>
+
+
+<h3> 2. Detailed Flow Chart for DQN and DDPG : (Please open in New tab for proper resolution) </h3><p><img src="docs/Algorihms/DQN_Brief.jpg" align="left"
      title="Open Image in new tab for good resolution" width="50%" >
 <img src="docs/Algorihms/DDPG_Brief.jpg" align="right"
      title="Open Image in new tab for good resolution" width="50%" >
