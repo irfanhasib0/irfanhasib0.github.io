@@ -13992,7 +13992,7 @@ As bloom typically occurs within march or 1st week of april so weather of the fi
 4. Mean Dj-Dj+60 days
 5. Mean of Dj-Dj+75
 </code></pre>
-<p><img src="Report/Opt_dj.png" alt="title"></p>
+<p><img src="img/sakura/Opt_dj.png" alt="title"></p>
 
 </div>
 </div>
@@ -14250,7 +14250,7 @@ Intution behind monthly grouing :
     Bellow R2 score before and monthly spitting is shown.
     Where a simple nn with one layer lr-0.1 and epoc -500 used for quick testing.
 </code></pre>
-<p><img src="Report/split_steps.png" alt="Plot"></p>
+<p><img src="img/sakura/split_steps.png" alt="Plot"></p>
 
 </div>
 </div>
@@ -14271,9 +14271,9 @@ Below is the Plot of change of R2 Score after adding each additional features fr
 7. ---
 
 </code></pre>
-<p><img src="Report/feat_steps.png" alt="Plot"></p>
+<p><img src="img/sakura/feat_steps.png" alt="Plot"></p>
 <p>The df with corrsponing r2 score values can give a better understanding of precise changes ---</p>
-<p><img src="Report/feat_df.png" alt="Plot"></p>
+<p><img src="img/sakura/feat_df.png" alt="Plot"></p>
 
 </div>
 </div>
@@ -14650,19 +14650,19 @@ Test shape       : (5, 7) (5, 1)
 2. 2 Layer was resulting little less (with 3,6,9 hidden nodes) r2 score and was taking more time to train.
 So simple model with one layer was preferred.
 </code></pre>
-<p><img src="Report/Layer_a.png" alt="Layers">
-<img src="Report/Layer_c.png" alt="Layers"></p>
+<p><img src="img/sakura/Layer_a.png" alt="Layers">
+<img src="img/sakura/Layer_c.png" alt="Layers"></p>
 <h4 id="Learning-Rate-:-0.01">Learning Rate : 0.01<a class="anchor-link" href="#Learning-Rate-:-0.01">&#182;</a></h4>
 <pre><code>1. lr-0.1 was learning very fast with a little less r2_score than 0.01
 2. lr-0.01 was perforing good with maximum r2 score
 3. lr-0.001 was very very slow needed 30000 epocs to train.
 </code></pre>
-<p><img src="Report/lr_a.png" alt="Layers">
-<img src="Report/lr_c.png" alt="Layers"></p>
+<p><img src="img/sakura/lr_a.png" alt="Layers">
+<img src="img/sakura/lr_c.png" alt="Layers"></p>
 
 <pre><code>1. Afer 2400 epocs validation error was increasing. 2500 epoc was optimum.
 </code></pre>
-<h4 id="Epoc-:-3200">Epoc : 3200<a class="anchor-link" href="#Epoc-:-3200">&#182;</a></h4><p><img src="Report/1_layer_3000_epoc_0.01_lr_EP_.png" alt="Layers"></p>
+<h4 id="Epoc-:-3200">Epoc : 3200<a class="anchor-link" href="#Epoc-:-3200">&#182;</a></h4><p><img src="img/sakura/1_layer_3000_epoc_0.01_lr_EP_.png" alt="Layers"></p>
 <h4 id="Batch-size-:-10">Batch size : 10<a class="anchor-link" href="#Batch-size-:-10">&#182;</a></h4>
 <pre><code>1. Bach size 10 (4 batches in  40 train data) was prforming best. lower or higher batch size was giveng higher error.
 </code></pre>

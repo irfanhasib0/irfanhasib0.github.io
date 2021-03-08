@@ -13099,11 +13099,15 @@ div#notebook {
 <h6> Machine Learning Algorithms from Scratch  </h6>
 <ul class="col1">
   <li><a style="color:navyblue;font-size:15px;" 
-href ='#ann_link'> Neural Network</a></li>
+         href ='#ann_link'> Neural Network</a></li>
   <li><a style="color:navyblue;font-size:15px;" 
-         href ='#id3_link'> Decision Tree(ID3), SVM</a></li>
+         href ='#id3_link'> Decision Tree(ID3)</a></li>
   <li><a style="color:navyblue;font-size:15px;" 
-         href ='#naive_bayes_link'> Naive Bayes, KNN</a></li>
+         href ='#id3_link'> SVM</a></li>
+  <li><a style="color:navyblue;font-size:15px;" 
+         href ='#naive_bayes_link'> Naive Bayes</a></li>
+  <li><a style="color:navyblue;font-size:15px;" 
+         href ='#naive_bayes_link'> KNN</a></li>
 </ul>
 
 
@@ -13234,7 +13238,7 @@ background-color:#F8F9F9;
    for Forward propagation,backward propagation and updating weights. I just tested it XOR data. It was fitting good.</p>
 <ul id=ul_style>
         <b><I>
-        <li>XOR Data used for testing</li>
+        <li>Banknote Dataset used for testing</li>
         <li>Forward Propagation</li>
         <li>Backward Propagation</li>
         <ul>
@@ -13261,11 +13265,11 @@ background-color:#F8F9F9;
           <ul>          
           <li> Calculatin dE/dW (dE/dW : grad of error wrt each weights ) </li>
              <ul>
-             <li> dE/dW = dE/dA * dA/DZ * dZ/dw 
+             <li> dE/dW = dE/dA * dA/DZ * dZ/dW 
              </ul>
           <li> Calculatin dE/dA  (dE/dA : grad of error wrt each Activation output ) </li>
                 <ul>
-                <li>dE/dA : For Last Layer, if loss function is mean square error, then E = 1/2*(Y - A)^2 so , dE/dA = (A-Y </li>
+                <li>dE/dA : For Last Layer, if loss function is mean square error, then E = 1/2*(Y - A)^2 so , dE/dA = (A-Y) </li>
                 <li> dE/dA : For Other Layers dE/dA will be inherited from the each of the node of next layer acccording
                 to mutual weights. </li>
                 <li> Layer2:Error1 = layer3:Error1 * Layer3:W11 + Layer3:Error2 * Layer3:W21 </li>
@@ -13283,14 +13287,13 @@ background-color:#F8F9F9;
           </ul>
 <li><b>  Updating Weights: </b></li>
     <ul>
-    <li> Updating each weights W = W + alpha*dW/dE </li>
+    <li> Updating each weights W = W - alpha*dE/dW </li>
     <li> Here alpha is the learning rate. </li>
     </ul>  
 <li><b> Note : </b></li> In the flowchart Gradient calcultion is shown in back propagation.
 </ul>
 </details>
-</div><h3> 2. Process Flow Chart : (Open Image in new tab for full resolution)</h3><p><img src="docs/Algorihms/NN_FP_Brief.jpg" align="left" alt="Schematics" width="48%" /></p>
-<p><img src="docs/Algorihms/NN_BP_Brief.jpg" align="left" alt="Schematics" width="48%" /></p>
+</div><h3> 2. Process Flow Chart : (Open Image in new tab for full resolution)</h3><p><img src="docs/Algorihms/NN_Brief.jpg" align="left" alt="Schematics" width="98%" /></p>
 <h3> Result : </h3>
      Result of ANN implementation for Bank Note data - mean sqaure error vs epoch -
 
@@ -13327,11 +13330,13 @@ href ='#table_of_content_link'>Go Back to Table of Content</a></p>
 <br><h1  style="color:grey;" >
 <a id="id3_link"></a> 
 
-   ID3 and SVM Implementation from scratch</h1></br>
-<a style="color:navyblue;font-size:25px;" href= https://github.com/irfanhasib0/Machine-Learning/blob/master/Machine_Learning_Algo_From_Scratch/ID3_with_continuous_feature_support-V1.0.ipynb>Notebook : ID3 Implementation from scratch - Notebook (Project Presentation and Code Link)</a>
+   Descision Tree, SVM, Logistic Regression Implementation from scratch</h1></br>
+<a style="color:navyblue;font-size:15px;" href= https://github.com/irfanhasib0/Machine-Learning/blob/master/Machine_Learning_Algo_From_Scratch/ID3_with_continuous_feature_support-V1.0.ipynb>Notebook : ID3 Implementation from scratch - Notebook (Project Presentation and Code Link)</a>
 
-<a style="color:navyblue;font-size:25px;" href= https://github.com/irfanhasib0/Machine-Learning/blob/master/Machine_Learning_Algo_From_Scratch/SVM.ipynb>Notebook : SVM Implementation from scratch - Notebook (Project Presentation and Code Link)</a>
-</div><h3> 1. Overview </h3>
+<a style="color:navyblue;font-size:15px;" href= https://github.com/irfanhasib0/Machine-Learning/blob/master/Machine_Learning_Algo_From_Scratch/SVM.ipynb>Notebook : SVM Implementation from scratch - Notebook (Project Presentation and Code Link)</a>
+</div><p>&lt;a style="color:navyblue;font-size:15px;" href= <a href="https://github.com/irfanhasib0/Machine-Learning/blob/master/Machine_Learning_Algo_From_Scratch/Logistic">https://github.com/irfanhasib0/Machine-Learning/blob/master/Machine_Learning_Algo_From_Scratch/Logistic</a> Regression.ipynb&gt;Notebook : Logistic Regression Implementation from scratch - Notebook (Project Presentation and Code Link)&lt;/a&gt;
+&lt;/div&gt;</p>
+<h3> 1. Overview </h3>
 <div id=div_style>
 <ul id=ul_style>
 <li><b><I>Dataset     :</li></b></I> Titanic and irish dataset was used for testing ID3.
@@ -13352,10 +13357,12 @@ href ='#table_of_content_link'>Go Back to Table of Content</a></p>
 
 <h3> ID3 Flow Chart of Implementation (Open Image in new tab for full resolution) </h3><p><img src="docs/Algorihms/ID3_Simple.jpg" align="left"
      title="(Open Image in new tab for full resolution)
-" width="480" height="480"></p>
-<p><img src="docs/Algorihms/svm.png" align="center"
+" width="100%"></p>
+<h3> SVM and Logistic Regression Flow Chart of Implementation (Open Image in new tab for full resolution) </h3>
+<img src="docs/Algorihms/Logistic Regression.jpg" align="center"
      title="(Open Image in new tab for full resolution)
-" width="480" height="480"></p>
+" width="100%">
+
 <h3> Result of ID3 implementation for iris data - a.Precision Recall and Accuracy and b.True Label vs Prediction - </h3><p><img src="docs/Results/iris_ID3.png" align="left"
      title="(Open Image in new tab for good resolution)
 " width="30%" ></p>
@@ -13366,6 +13373,12 @@ href ='#table_of_content_link'>Go Back to Table of Content</a></p>
      title="(Open Image in new tab for good resolution)
 " width="30%" ></p>
 <p><img src="docs/Results/banknote_svm_pred.png" align="center"
+     title="(Open Image in new tab for good resolution)
+" width="60%" ></p>
+<h3> Result of Logitic Regression implementation for banknote data - a.Precision Recall and Accuracy and b.True Label vs Prediction - </h3><p><img src="docs/Results/banknote_logr.png" align="left"
+     title="(Open Image in new tab for good resolution)
+" width="30%" ></p>
+<p><img src="docs/Results/banknote_logr_pred.png" align="center"
      title="(Open Image in new tab for good resolution)
 " width="60%" ></p>
 <!--
@@ -13582,19 +13595,18 @@ href ='#table_of_content_link'>Go Back to Table of Content</a></p>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><div>
+<div>
 <br><h1  style="color:grey;" >
-<a id="dqn_ddpg_link"></a> DQN , DDPG, PPO A2C Implementation from scratch</h1></br></p>
-<p><a style="color:navyblue;font-size:15px;" href= https://github.com/irfanhasib0/RL-Algorithms/blob/master/Deep_Q_Learning_mc.ipynb> Notebook : Mountain Car with DQN - Notebook (Project Presentation and Code Link) </a>&lt;/br&gt;</p>
-<p><a style="color:navyblue;font-size:15px;" href= https://github.com/irfanhasib0/RL-Algorithms/blob/master/Deep_Q_Learning_mc.ipynb> Notebook : Pendulum with DDPG - Notebook (Project Presentation and Code Link) </a>&lt;/br&gt;</p>
-<p>&lt;a style="color:navyblue;font-size:15px;" href= <a href="https://github.com/irfanhasib0/RL-Algorithms/blob/master/5.1">https://github.com/irfanhasib0/RL-Algorithms/blob/master/5.1</a> PPO_Bipedal_Walker-mod.ipynb.ipynb&gt; Notebook : Bipedal Walker with PPO - Notebook (Project Presentation and Code Link) &lt;/a&gt;
-&lt;/div&gt;&lt;/br&gt;</p>
-<p>&lt;a style="color:navyblue;font-size:15px;" href= <a href="https://github.com/irfanhasib0/RL-Algorithms/blob/master/5.1">https://github.com/irfanhasib0/RL-Algorithms/blob/master/5.1</a> PPO_Lun ar_Lander.ipynb.ipynb&gt; Notebook : Lunar Lander with PPO - Notebook (Project Presentation and Code Link) &lt;/a&gt;
-&lt;/div&gt;&lt;/br&gt;</p>
-<h3> 1.  Overview </h3>
-<details false>
-    <summary><b><I><font color="#3498DB"> Click to expand</font></I></b></summary>
-<div id=div_style> 
+<a id="dqn_ddpg_link"></a> DQN , DDPG, PPO A2C Implementation from scratch</h1></br>
+
+<a style="color:navyblue;font-size:15px;" href= https://github.com/irfanhasib0/RL-Algorithms/blob/master/Deep_Q_Learning_mc.ipynb> Notebook : Mountain Car with DQN - Notebook (Project Presentation and Code Link) </a>
+
+ <a style="color:navyblue;font-size:15px;" href= https://github.com/irfanhasib0/RL-Algorithms/blob/master/Deep_Q_Learning_mc.ipynb> Notebook : Pendulum with DDPG - Notebook (Project Presentation and Code Link) </a>
+
+ <a style="color:navyblue;font-size:15px;" href= https://github.com/irfanhasib0/RL-Algorithms/blob/master/5.1 PPO_Bipedal_Walker-mod.ipynb.ipynb> Notebook : Bipedal Walker with PPO - Notebook (Project Presentation and Code Link) </a>
+</div><p>&lt;a style="color:navyblue;font-size:15px;" href= <a href="https://github.com/irfanhasib0/RL-Algorithms/blob/master/5.1">https://github.com/irfanhasib0/RL-Algorithms/blob/master/5.1</a> PPO_Lun ar_Lander.ipynb.ipynb&gt; Notebook : Lunar Lander with PPO - Notebook (Project Presentation and Code Link) &lt;/a&gt;
+&lt;/div&gt;</p>
+<h3> 1.  Overview </h3><div id=div_style> 
 <ul id=ul_style>
     <li><b><I> DQN Environments </li></b></I>  OpenAI gym --> Mountain Car ENvironment
     <li><b><I> DQN Environments </li></b></I>  OpenAI gym --> Pendulumn Environment
@@ -13619,18 +13631,14 @@ href ='#table_of_content_link'>Go Back to Table of Content</a></p>
     <li>target networks : networks*tau + (1-tau)*target_networks</li>
     </ul>
 </ul>
-</div>
-</details>
-
-
-<h3> 2. Detailed Flow Chart for DQN and DDPG : (Please open in New tab for proper resolution) </h3><p><img src="docs/Algorihms/DQN_Brief.jpg" align="left"
-     title="Open Image in new tab for good resolution" width="50%" >
-<img src="docs/Algorihms/DDPG_Brief.jpg" align="right"
-     title="Open Image in new tab for good resolution" width="50%" >
-<img src="docs/Algorihms/PPO_Brief.jpg" align="left"
-     title="Open Image in new tab for good resolution" width="50%" >
-<img src="docs/Algorihms/A2C_Brief.jpg" align="right"
-     title="Open Image in new tab for good resolution" width="50%" ></p>
+</div><h3> 2. Detailed Flow Chart for DQN and DDPG : (Please open in New tab for proper resolution) </h3><p><img src="docs/Algorihms/DQN_Brief.jpg" align="left"
+     title="Open Image in new tab for good resolution" width="49%" >
+<img src="docs/Algorihms/DDPG_Brief.jpg" align="left"
+     title="Open Image in new tab for good resolution" width="49%" ></p>
+<p><img src="docs/Algorihms/PPO_Brief.jpg" align="left"
+     title="Open Image in new tab for good resolution" width="48%" >
+<img src="docs/Algorihms/A2C_Brief.jpg" align="left"
+     title="Open Image in new tab for good resolution" width="49%" ></p>
 <h3> --- </h3><h3> 3. Results </h3><ul>
 <li>a. Results DQN on Mountain Car</li>
 <li>b. Results DDPG on Pendulum </li>
@@ -13738,7 +13746,7 @@ href ='#table_of_content_link'>Go Back to Table of Content</a></p>
 </ul>    
 </details>
 </div>
-
+<div>
 <h3 style='color:teal'> MPC modeling </h3>
 $\begin{align*}
 State\;Space :z &= [x, y, v,\phi]        &where,x: x-position, y:y-position, v:velocity, φ: yaw angle\\
@@ -13947,6 +13955,7 @@ V_{xx} &= Q_{xx} - (K[t].T * (Q_{uu} * K[t]))\\\\\\\\\\
 \end{align*}$
 <h4 style='color:navy'> 3. Step A , B and C run iteratively fo find optimal K and k.</h4>
 </details>
+</div>
 
 <h4 style='color:navy'> 4. For detail derivation please see the paper :</h4> <p style='color:gray'>Synthesis and Stabilization of Complex Behaviors through Online Trajectory Optimization
 by -Yuval Tassa 

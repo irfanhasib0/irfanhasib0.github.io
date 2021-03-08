@@ -14231,7 +14231,7 @@ data with outlier. It scales the data by using the following formula.&lt;br&gt;
 <h3 id="Preprocessing-steps-Vs-Error"><em>Preprocessing steps Vs Error</em><a class="anchor-link" href="#Preprocessing-steps-Vs-Error">&#182;</a></h3>
 <pre><code> The plot below shows rmsle after adding each preprocessing step.
 </code></pre>
-<p><img src="img/rmsle_df.png" alt="title"><br></p>
+<p><img src="img/house_price/rmsle_df.png" alt="title"><br></p>
 
 </div>
 </div>
@@ -14363,8 +14363,8 @@ Mean R2 Correlation 0.9224937146777661
 2. Two Layer fitted properly
 3. Three Layer over fitted.
 </code></pre>
-<p><img src="img/_layer_1.png" alt="title">
-<img src="img/layer_2.png" alt="title"></p>
+<p><img src="img/house_price/_layer_1.png" alt="title">
+<img src="img/house_price/layer_2.png" alt="title"></p>
 
 </div>
 </div>
@@ -14406,7 +14406,7 @@ Set of values of hyperparameters for testing-
         -Epochs -        [1000]
 
 </code></pre>
-<p><img src="img/opt_lr_1.png" alt="title"><br></p>
+<p><img src="img/house_price/opt_lr_1.png" alt="title"><br></p>
 <h4 id="Step-1-:-observations-:">Step 1 : observations :<a class="anchor-link" href="#Step-1-:-observations-:">&#182;</a></h4>
 <pre><code>        Optimizer         Best laerning rate
         ---------         ------------------
@@ -14424,8 +14424,8 @@ Set of values of hyperparameters for testing-
 
 
 </code></pre>
-<p><img src="img/opt_lr_2.png" alt="title"><br>
-<img src="img/opt_lr_2_df.png" alt="title"><br></p>
+<p><img src="img/house_price/opt_lr_2.png" alt="title"><br>
+<img src="img/house_price/opt_lr_2_df.png" alt="title"><br></p>
 <h4 id="Step-2---observations">Step 2 - observations<a class="anchor-link" href="#Step-2---observations">&#182;</a></h4>
 <pre><code>RMSprop is working best with minimum train and validation error, increasing or decreasing
 epochs can be considered for more confident decision.
@@ -14441,7 +14441,7 @@ epochs can be considered for more confident decision.
 
 
 </code></pre>
-<p><img src="img/opt_lr_ep.png" alt="title"><br></p>
+<p><img src="img/house_price/opt_lr_ep.png" alt="title"><br></p>
 <h4 id="Step-3-:-observations">Step 3 : observations<a class="anchor-link" href="#Step-3-:-observations">&#182;</a></h4>
 <pre><code>     - For RMSprop,Adam,Adagrad optimizer- 1000 epoch was good enough
      - Only Adadelta and Gradient Descent seem to improve with 1500 epoch but 
@@ -14460,8 +14460,8 @@ epochs can be considered for more confident decision.
 3. lr-0.00001 converges very slow.
 (Please notice the range of plot along Y axis for comparison)
 </code></pre>
-<p><img src="img/lr_2.png" alt="title">
-<img src="img/lr_1.png" alt="title"></p>
+<p><img src="img/house_price/lr_2.png" alt="title">
+<img src="img/house_price/lr_1.png" alt="title"></p>
 
 </div>
 </div>
@@ -14493,7 +14493,7 @@ and convergence.
 
                    For 67% train data and 33% validation data error vs epoch
 </code></pre>
-<p><img src="img/epoc_exp.png" alt="title"><br></p>
+<p><img src="img/house_price/epoc_exp.png" alt="title"><br></p>
 
 <pre><code>-For maximum accuracy 99% of the train data was used. As validation data was 1 % only so 
 plotting validation error was meaningless. Train error vs epoch plot shows that for 99% 
@@ -14503,11 +14503,11 @@ occurs at lower epoch that is about 500 epoch.
 550 decreased kaggle score. This also reconfirms this decision of 500 epoch for 99% split.
 
 </code></pre>
-<p><img src="img/epoc_exp_tr_0.99_s.png" alt="title"><br></p>
+<p><img src="img/house_price/epoc_exp_tr_0.99_s.png" alt="title"><br></p>
 
 <pre><code>Beta value 0.1 is stable.
 </code></pre>
-<p><img src="img/reg_beta.png" alt="title"><br></p>
+<p><img src="img/house_price/reg_beta.png" alt="title"><br></p>
 
 </div>
 </div>
@@ -14520,8 +14520,8 @@ occurs at lower epoch that is about 500 epoch.
 more logical, but tanh and sigmoid is kept for just comparison.
 
 </code></pre>
-<p><img src="img/act.png" alt="title"><br>
-   <img src="img/act_1_df.png" alt="title"><br></p>
+<p><img src="img/house_price/act.png" alt="title"><br>
+   <img src="img/house_price/act_1_df.png" alt="title"><br></p>
 <h4 id="Observations">Observations<a class="anchor-link" href="#Observations">&#182;</a></h4>
 <pre><code>   From the above plot it is clear that 'none' that means no activation function works
    best. Adding relu activation was not improving the models performance.
@@ -15029,13 +15029,13 @@ Function : grid_search_params
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">pickle</span>
 <span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
 <span class="k">if</span> <span class="n">grid_search</span><span class="o">==</span><span class="kc">True</span> <span class="ow">and</span> <span class="n">save_search</span><span class="o">==</span><span class="kc">True</span><span class="p">:</span>
-    <span class="n">f</span><span class="o">=</span><span class="nb">open</span><span class="p">(</span><span class="s1">&#39;img/opt_lr_loss_dfs&#39;</span><span class="p">,</span><span class="s1">&#39;wb&#39;</span><span class="p">)</span>
+    <span class="n">f</span><span class="o">=</span><span class="nb">open</span><span class="p">(</span><span class="s1">&#39;img/house_price/opt_lr_loss_dfs&#39;</span><span class="p">,</span><span class="s1">&#39;wb&#39;</span><span class="p">)</span>
     <span class="n">pickle</span><span class="o">.</span><span class="n">dump</span><span class="p">(</span><span class="n">loss_dfs</span><span class="p">,</span><span class="n">f</span><span class="p">)</span>
     <span class="n">f</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
-    <span class="n">f</span><span class="o">=</span><span class="nb">open</span><span class="p">(</span><span class="s1">&#39;img/opt_lr_loss_vals&#39;</span><span class="p">,</span><span class="s1">&#39;wb&#39;</span><span class="p">)</span>
+    <span class="n">f</span><span class="o">=</span><span class="nb">open</span><span class="p">(</span><span class="s1">&#39;img/house_price/opt_lr_loss_vals&#39;</span><span class="p">,</span><span class="s1">&#39;wb&#39;</span><span class="p">)</span>
     <span class="n">pickle</span><span class="o">.</span><span class="n">dump</span><span class="p">(</span><span class="n">loss_vals</span><span class="p">,</span><span class="n">f</span><span class="p">)</span>
     <span class="n">f</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
-<span class="n">f</span><span class="o">=</span><span class="nb">open</span><span class="p">(</span><span class="s1">&#39;img/opt_lr_loss_vals&#39;</span><span class="p">,</span><span class="s1">&#39;rb&#39;</span><span class="p">)</span>
+<span class="n">f</span><span class="o">=</span><span class="nb">open</span><span class="p">(</span><span class="s1">&#39;img/house_price/opt_lr_loss_vals&#39;</span><span class="p">,</span><span class="s1">&#39;rb&#39;</span><span class="p">)</span>
 <span class="n">loss_vals</span><span class="o">=</span><span class="n">pickle</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="n">f</span><span class="p">)</span>
 <span class="n">f</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
 
@@ -15168,13 +15168,13 @@ Function get_cross_val_errors:
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">pickle</span>
 <span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
 <span class="k">if</span> <span class="n">cross_val</span><span class="o">==</span><span class="s1">&#39;_True&#39;</span><span class="p">:</span>
-    <span class="n">f</span><span class="o">=</span><span class="nb">open</span><span class="p">(</span><span class="s1">&#39;img/cr_loss_dfs&#39;</span><span class="p">,</span><span class="s1">&#39;wb&#39;</span><span class="p">)</span>
+    <span class="n">f</span><span class="o">=</span><span class="nb">open</span><span class="p">(</span><span class="s1">&#39;img/house_price/cr_loss_dfs&#39;</span><span class="p">,</span><span class="s1">&#39;wb&#39;</span><span class="p">)</span>
     <span class="n">pickle</span><span class="o">.</span><span class="n">dump</span><span class="p">(</span><span class="n">cr_loss_dfs</span><span class="p">,</span><span class="n">f</span><span class="p">)</span>
     <span class="n">f</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
-    <span class="n">f</span><span class="o">=</span><span class="nb">open</span><span class="p">(</span><span class="s1">&#39;img/cr_loss_vals&#39;</span><span class="p">,</span><span class="s1">&#39;wb&#39;</span><span class="p">)</span>
+    <span class="n">f</span><span class="o">=</span><span class="nb">open</span><span class="p">(</span><span class="s1">&#39;img/house_price/cr_loss_vals&#39;</span><span class="p">,</span><span class="s1">&#39;wb&#39;</span><span class="p">)</span>
     <span class="n">pickle</span><span class="o">.</span><span class="n">dump</span><span class="p">(</span><span class="n">cr_loss_vals</span><span class="p">,</span><span class="n">f</span><span class="p">)</span>
     <span class="n">f</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
-<span class="n">f</span><span class="o">=</span><span class="nb">open</span><span class="p">(</span><span class="s1">&#39;img/cr_loss_vals&#39;</span><span class="p">,</span><span class="s1">&#39;rb&#39;</span><span class="p">)</span>
+<span class="n">f</span><span class="o">=</span><span class="nb">open</span><span class="p">(</span><span class="s1">&#39;img/house_price/cr_loss_vals&#39;</span><span class="p">,</span><span class="s1">&#39;rb&#39;</span><span class="p">)</span>
 <span class="n">cr_loss_vals</span><span class="o">=</span><span class="n">pickle</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="n">f</span><span class="p">)</span>
 <span class="n">f</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
 <span class="n">err_df</span><span class="o">=</span><span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">cr_loss_vals</span><span class="p">,</span><span class="n">index</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;train&#39;</span><span class="p">,</span><span class="s1">&#39;val&#39;</span><span class="p">])</span><span class="o">.</span><span class="n">transpose</span><span class="p">()</span>
@@ -15389,8 +15389,8 @@ Function get_cross_val_errors:
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Results-:">Results :<a class="anchor-link" href="#Results-:">&#182;</a></h3><h3 id="Kaggle-Score-for-ANN-(trained-with-99%-train-data)-:-0.12076-,-below-is-the-screenshot">Kaggle Score for ANN (trained with 99% train data) : 0.12076 , below is the screenshot<a class="anchor-link" href="#Kaggle-Score-for-ANN-(trained-with-99%-train-data)-:-0.12076-,-below-is-the-screenshot">&#182;</a></h3><p><img src="img/Kaggle_ANN_2.png" alt="title"><br></p>
-<h3 id="Kaggle-Score-for-Linear-regression-with-l2-regulariaion-:-0.11624-,-Position-669-(when-submitted)-,Screenshot-is-below">Kaggle Score for Linear regression with l2 regulariaion : 0.11624 , Position 669 (when submitted) ,Screenshot is below<a class="anchor-link" href="#Kaggle-Score-for-Linear-regression-with-l2-regulariaion-:-0.11624-,-Position-669-(when-submitted)-,Screenshot-is-below">&#182;</a></h3><p><img src="img/Kaggle_lr.png" alt="title"><br></p>
+<h3 id="Results-:">Results :<a class="anchor-link" href="#Results-:">&#182;</a></h3><h3 id="Kaggle-Score-for-ANN-(trained-with-99%-train-data)-:-0.12076-,-below-is-the-screenshot">Kaggle Score for ANN (trained with 99% train data) : 0.12076 , below is the screenshot<a class="anchor-link" href="#Kaggle-Score-for-ANN-(trained-with-99%-train-data)-:-0.12076-,-below-is-the-screenshot">&#182;</a></h3><p><img src="img/house_price/Kaggle_ANN_2.png" alt="title"><br></p>
+<h3 id="Kaggle-Score-for-Linear-regression-with-l2-regulariaion-:-0.11624-,-Position-669-(when-submitted)-,Screenshot-is-below">Kaggle Score for Linear regression with l2 regulariaion : 0.11624 , Position 669 (when submitted) ,Screenshot is below<a class="anchor-link" href="#Kaggle-Score-for-Linear-regression-with-l2-regulariaion-:-0.11624-,-Position-669-(when-submitted)-,Screenshot-is-below">&#182;</a></h3><p><img src="img/house_price/Kaggle_lr.png" alt="title"><br></p>
 
 </div>
 </div>
