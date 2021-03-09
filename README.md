@@ -1,109 +1,115 @@
-Table of Content
-===============================
+<a id="table_of_content_link"></a> 
+<div class="columns">
+<h6> Machine Learning Algorithms from Scratch  </h6>
+<ul>
+  <li><a style="color:navyblue;font-size:15px;" 
+         href ='#ann_link'> Neural Network</a></li>
+  <li><a style="color:navyblue;font-size:15px;" 
+         href ='#id3_link'> Decision Tree(ID3)</a></li>
+  <li><a style="color:navyblue;font-size:15px;" 
+         href ='#id3_link'> SVM, Logistic Regression</a></li>
+  <li><a style="color:navyblue;font-size:15px;" 
+         href ='#naive_bayes_link'> Naive Bayes, KNN</a></li>
+</ul>
+    
+<h6> RL Algorithms from scratch  </h6>
+<ul>
+  <li><a style="color:navyblue;font-size:15px;" 
+href ='#dqn_ddpg_link'> DQN </a></li>
+  <li><a style="color:navyblue;font-size:15px;" 
+href ='#dqn_ddpg_link'> DDPG </a></li>
+  <li><a style="color:navyblue;font-size:15px;" 
+href ='#dqn_ddpg_link'> PPO </a></li>
+  <li><a style="color:navyblue;font-size:15px;" 
+href ='#dqn_ddpg_link'> A2C </a></li>
+</ul>
 
+<h6> CNN based ALgorithms with Tensorflow  </h6>
+<ul>
+  <li><a style="color:navyblue;font-size:15px;" 
+href ='#yolo_link'> Yolo-V2.0 : Object Detection </a></li>
+  <li><a style="color:navyblue;font-size:15px;" 
+href ='#unet_link'> Unet : Semantic Segmentation </a></li>
+  <li><a style="color:navyblue;font-size:15px;" 
+href ='#flownet_link'> FlowNet : Optical Flow Estimation </a></li>
+  <li><a style="color:navyblue;font-size:15px;" 
+href ='#disp_link'> Disparity Estimation </a></li>
+</ul>
+</div> 
 
-##### Note :
-__In this document for each projects is shown as :__
-   
-   - Link of Jupyter Notebook with implementation code and detail description.
-   - Overview
-   - Flowchart of the project.
-   - Result vedio / gif / graphs.
-   - The no of star after every project means the level of documentation.
-   
-__For detail description and Code please go to the Notebook link Provided for every project!!__
+<div class="columns">
+<h6> Control Algorithms from scratch  </h6>
+<ul>
+  <li><a style="color:navyblue;font-size:15px;" 
+href ='#ilqr_mpc_link'> ILQR </a></li>
+  <li><a style="color:navyblue;font-size:15px;" 
+href ='#ilqr_mpc_link'> MPC </a></li>
+</ul>
 
-<div><p  style="color:grey;" >
-    <a id="table_of_content_link"></a>  </p>
+<h6> Feature Engineering and Model Tuning  </h6>
+<ul class="col1">
+  <li><a style="color:navyblue;font-size:15px;" 
+href ='#house_price_link'> Kaggle House Price Prediction.</a></li>
+  <li><a style="color:navyblue;font-size:15px;" 
+         href ='#sakura_link'> Shakura Bloom Prediction.</a></li>
+</ul>
+
+<h6> ROS & Robotics </h6>
+<ul>
+  <li><a style="color:navyblue;font-size:15px;" 
+href ='#ros_rrbot_link'> ROS : Simple two linked robot</a></li>
+  <li><a style="color:navyblue;font-size:15px;" 
+href ='#ros_husky_link'> ROS : Husky robot driver</a></li>
+</ul>
 </div>
 
-### Kaggle Competetions and Job Entrance Problem :
-<ul>
-  <li><a style="color:navyblue;font-size:15px;" 
-href ='#house_price_link'> Kaggle House Price Prediction :: Data Pre-Processing, ANN with tensorflow low level API and and Hiper-Parameter Tuning.  (****)</a></li>
-  <li><a style="color:navyblue;font-size:15px;" 
-         href ='#sakura_link'> Japanese Job Entrance Problem :: Shakura Bloom Prediction (****)</a></li>
-</ul>
-
-### Machine Learning Algorithms from Scratch :
-<ul>
-  <li><a style="color:navyblue;font-size:15px;" 
-href ='#ann_link'> Neural Network         :: Implementation from scratch with raw python (**)  (****)</a></li>
-  <li><a style="color:navyblue;font-size:15px;" 
-         href ='#id3_link'> Decision Tree(ID3)     :: Implementation from scratch with continuous feature support. (****)</a></li>
-  <li><a style="color:navyblue;font-size:15px;" 
-         href ='#naive_bayes_link'> Naive Bayes            :: Implementation for text classification with text preprocesing from scratch (**)</a></li>
-</ul>
- 
-
-### Reinforcement Learning ALgorithms from scratch :
-<ul>
-  <li><a style="color:navyblue;font-size:15px;" 
-href ='#dqn_ddpg_link'> DQN(Deep Q Learning) from scratch with Tensorflow-KERAS(**)</a></li>
-  <li><a style="color:navyblue;font-size:15px;" 
-href ='#dqn_ddpg_link'> DDPG(Deep Deterministic Policy Gradient) from scratch with Tensorflow(**)</a></li>
-</ul>
- 
- 
-### Control Algorithms Implementation from scratch :
-
-<ul>
-  <li><a style="color:navyblue;font-size:15px;" 
-href ='#ilqr_mpc_link'> ILQR(Iterative Linear Quadratic Regulator) Implementation from scratch(****)</a></li>
-  <li><a style="color:navyblue;font-size:15px;" 
-href ='#ilqr_mpc_link'> MPC(Model Predictive Controller) Implementation from scratch(**)</a></li>
-</ul>
- 
-
-
-### CNN Projects : (Minimal Doccumentation)
-<ul>
-  <li><a style="color:navyblue;font-size:15px;" 
-href ='#yolo_link'> Yolo with KERAS and Tensorflow for car number plate localization</a></li>
-  <li><a style="color:navyblue;font-size:15px;" 
-href ='#unet_link'> Unet with KERAS for City Space Dataset</a></li>
-</ul>
-
-
-### ROS Project : (Not well doccumented)
-<ul>
-  <li><a style="color:navyblue;font-size:15px;" 
-href ='#ros_rrbot_link'> ROS : Simple two linked robot inspired from rrbot(-)</a></li>
-  <li><a style="color:navyblue;font-size:15px;" 
-href ='#ros_husky_link'> ROS : Writing a script for driving husky robot and getting feed back</a></li>
-</ul>
-
-
-### International Robotics Compititions 
+<div class="columns">
+<h6> International Robotics Compititions </h6>
 <ul>
   <li><a style="color:navyblue;font-size:15px;" 
 href ='#urc_2016_link'> University Rover Challenge - 2016</a></li>
+    <li>-</li>
+    <li>-</li>
+    <li>-</li>
+    <li>-</li>
 </ul>
 
 
-### Embedded System Projects for Pi Labs BD Ltd :
- - Vault Sequirity : IOT based Vault sequitrity System with AVR Microcontroller
- - Safe Box : GPRS based Tracking System with AVR Microcontroller
- - Syringe Pump : RTOS Progmable Infusion Pump with AVR Microcontroller
- - Digital Weight Machine : Server based digital wight Machine with AVR Microcontroller
+<h6> Embedded System Projects for Pi Labs BD Ltd </h6>
+ <ul>
+ <li>-Vault Sequirity System</li>
+ <li>-Programmable Syringe Infusion Pump</li>
+ <li>-GPRS based Monitoring System.</li>
+ <li>-Sening product weights to server.</li>
  - <a style="color:navyblue;font-size:15px;" 
-href ='#pi_project_link'> Presentation Link : Embedded System Projects for Pi Labs BD Lt</a></li>
+href ='#pi_project_link'> Details </a></li>
+</ul>
 
-### Academic Project and Thesis (Undergrad) :
- - Remote rescue robot with AVR Microcontroller
- - Car velocity measuring and logging system for genarting drive cycle of Dhaka
- - <a style="color:navyblue;font-size:15px;" 
-href ='#buet_project_link'>Presentation Link : Academic Project and Thesis</a></li>
-
-### Embedded System & Robotics Projects Personal (Undergrad) :
+<h6> Academic Project and Thesis (Undergrad) </h6>
 <ul>
- <li> Hobby CNC machine ‘Ourtech v 2.0’ and 'Ourtech v1.0', Desktop CNC Machine.
- <li> Interfacing ov7670 camera sensor with atmega 32 and using object tracking algorithm on AVR platform (Feb-May - 2013)
- <li> Software platform for controlling visually instructed Robotic arm with openCV, python and Raspberry pi (Apr-Sep,2014)
-<li><a href ='#embedded_project_link'>Presentation Link : Embedded System & Robotics Projects Personal</a></li>
+ <li>-Remote rescue robot</li>
+ <li>-Car velocity logging system</li>
+ - <a style="color:navyblue;font-size:15px;" 
+href ='#buet_project_link'>Details </a></li>
+</ul>
+</div>
+
+<h6> Robotics Projects Personal (Undergrad) </h6>
+<ul>
+ <li>-Hobby CNC machine.
+ <li>-Interfacing OV7670 camera sensor with atmega AVR (Feb-May - 2013)
+ <li>-Software platform for controlling Robotic ARM(Apr-Sep,2014)
+<li><a href ='#embedded_project_link'>Details </a></li>
+
+
 <style>
+
+    
 h1 {color:grey;}
 h3 {color:#48C9B0;}
+h4 {color:#9FE2BF;}
+h5 {color:lightsalmon;}
+h6 {color:royalblue;}
 a  {color:navyblue;}
 
 #ul_style {
@@ -140,14 +146,215 @@ background-color:#F8F9F9;
   padding: 5px;
 }
 </style>
+    
+<style>
+.columns
+{   
+    -moz-column-width: 21.5em; /* Firefox */
+    -webkit-column-width: 21.5em; /* webkit, Safari, Chrome */
+    column-width: 21.5em;
+}
+/*remove standard list and bullet formatting from ul*/
+.columns ul
+{
+    margin: 20px;
+    padding: 0;
+    list-style-type: none;
+}
+/* correct webkit/chrome uneven margin on the first column*/
+</style>
+
+<div>
+<h1  style="color:grey;" >
+<a id="ann_link"></a> 
+   Neural Network Implementation from scratch</h1></br>
+<h3> 1. Overview :  </h3>
+</div>
+
+<div id=div_style>
+   <p>Here I  have implemented Neural Network of 3 Layers. I have implemented A Layes Class and functions 
+   for Forward propagation,backward propagation and updating weights. I just tested it Banknote dataset. It was fitting good.</p>
+<ul id=ul_style>
+        <b><I>
+        <li>Banknote Dataset used for testing</li>
+        <li>Forward Propagation</li>
+        <li>Backward Propagation</li>
+        <ul>
+        <li>Calculating Gradients </li>
+        <li>Updating weights</li>
+        </ul>
+        </I></b>
+</ul>
+</div>
+
+<h3> 2. ANN Flow Chart : (Open Image in new tab for full resolution)</h3>
+
+
+<img src="docs/Algorihms/NN_Brief.jpg" align="left" alt="Schematics" width="98%" />
+<a style="color:navyblue;font-size:15px;" href= https://github.com/irfanhasib0/Machine-Learning/blob/master/Machine_Learning_Algo_From_Scratch/ANN_From_Scratch_modular_class-V1.0.ipynb> GitHub : NN Implementation from scratch - Notebook </a>
+
+<iframe src="ANN.html" name="targetframe" allowTransparency="true" scrolling="yes" frameborder="0" height="300" width="100%" ></iframe>
+
+<h5> 3. Result of ANN implementation for Bank Note data- a.Precision, Recall and Accuracy and b.True Label vs Prediction </h5>
+
+<img src="docs/Results/banknote_ann.png" align="left"
+     title="(Open Image in new tab for good resolution)" width="30%">
+<img src="docs/Results/banknote_ann_pred.png" align="left"
+     title="(Open Image in new tab for good resolution)" width="70%">
+
+
+<a style="color:navyblue;font-size:15px;" 
+href ='#table_of_content_link'>Go Back to Table of Content</a>
+
+<h1  style="color:grey;" >
+<a id="id3_link"></a> 
+   Descision Tree, SVM, Logistic Regression Implementation from scratch</h1>
+
+<h3> 1. Overview </h3>
+<div id=div_style>
+<ul id=ul_style>
+<li><b><I>Dataset     :</li></b></I> Titanic and irish dataset was used for testing ID3.
+<li><b><I> Steps      :</li></b></I>
+                  <ul>
+                  <li>Continuous data spliting based on information gain </li>
+                  <li>Information Gain Calculation  </li>
+                  <li>ID3 Algorithm according to flowchart </li>
+                  </ul>
+
+<li><b><I> Tuning     :</li></b></I> Reduced Error Pruining.
+<li><b><I> Prediction :</li></b></I> Accuracy,Precision,Recall Reporting.
+</ul>
+</div>
+
+<h3> 2.1 ID3 Flow Chart of Implementation (Open Image in new tab for full resolution) </h3>
+
+<img src="docs/Algorihms/ID3_Simple.jpg" align="left"
+     title="(Open Image in new tab for full resolution)
+" width="100%">
+    
+<a style="color:navyblue;font-size:15px;" href= https://github.com/irfanhasib0/Machine-Learning/blob/master/Machine_Learning_Algo_From_Scratch/ID3_with_continuous_feature_support-V1.0.ipynb>GitHub : ID3 Implementation from scratch - Notebook</a>
+
+<iframe src="ID3.html" name="targetframe" allowTransparency="true" scrolling="yes" frameborder="0" height="300" width="100%" ></iframe>
+
+<h5> 3. Result of ID3 implementation for iris data - a.Precision, Recall and Accuracy and b.True Label vs Prediction - </h5>
+
+<img src="docs/Results/iris_ID3.png" align="left"
+     title="(Open Image in new tab for good resolution)
+" width="30%" >
+
+<img src="docs/Results/irispred.jpg" align="center"
+     title="(Open Image in new tab for good resolution)
+" width="60%" >
+
+<h3> 2.2 (a)SVM  (b)Logistic Regression Flow Chart of Implementation (Open Image in new tab for full resolution) </h3>
+<img src="docs/Algorihms/Logistic Regression.jpg" align="center"
+     title="(Open Image in new tab for full resolution)
+" width="100%">
+
+<a style="color:navyblue;font-size:15px;" href= https://github.com/irfanhasib0/Machine-Learning/blob/master/Machine_Learning_Algo_From_Scratch/SVM.ipynb>(a) GitHub : SVM Implementation from scratch - Notebook </a>
+
+<iframe src="SVM.html" name="targetframe" allowTransparency="true" scrolling="yes" frameborder="0" height="300" width="100%" ></iframe>
+
+<h5> 3.1 Result of SVM implementation for banknote data - a.Precision, Recall and Accuracy and b.True Label vs Prediction </h5>
+
+<img src="docs/Results/banknote_svm.png" align="left"
+     title="(Open Image in new tab for good resolution)
+" width="30%" >
+
+<img src="docs/Results/banknote_svm_pred.png" align="center"
+     title="(Open Image in new tab for good resolution)
+" width="60%" >
+
+<a style="color:navyblue;font-size:15px;" href= https://github.com/irfanhasib0/Machine-Learning/blob/master/Machine_Learning_Algo_From_Scratch/Logistic_Regression.ipynb> (b) GitHub : Logistic Regression Implementation from scratch - Notebook</a>
+
+<iframe src="LogReg.html" name="targetframe" allowTransparency="true" scrolling="yes" frameborder="0" height="300" width="100%" ></iframe>
+
+<h5> 3.2 Result of Logitic Regression implementation for banknote data - a.Precision, Recall and Accuracy and b.True Label vs Prediction </h5>
+
+<img src="docs/Results/banknote_logr.png" align="left"
+     title="(Open Image in new tab for good resolution)
+" width="30%" >
+
+<img src="docs/Results/banknote_logr_pred.png" align="center"
+     title="(Open Image in new tab for good resolution)
+" width="60%" >
+
+
+<a style="color:navyblue;font-size:15px;" 
+href ='#table_of_content_link'>Go Back to Table of Content</a>
+
+<div>
+<br><h1  style="color:grey;" >
+<a id="naive_bayes_link"></a> 
+   Naive Bayes and KNN Implementation for text classification</h1></br>
+</div>
+
+<h3> 1. Overview </h3>
+<div id=div_style>
+<ul id=ul_style>
+<li><b><I> Dataset     :</li></b></I> Archived data from stack exchange is used for classification.
+<li><b><I> Steps      :</li></b></I>
+                  <ul>
+                  <li>Text Preprocessing was done with raw python without nltk. </li>
+                  <li>Calculating Attribute(word) Probabilities given each class  </li>
+                  <li>Calculating Attribute(word) Probabilities given each Samples  </li>
+                  <li>Applying Bayes Theorem for getting class probalities </li>
+                  <li>Max class probality is the predicted label </li>
+                  </ul>
+<li><b><I> Steps      :</li></b></I>
+                  <ul>
+                  <li>Text Preprocessing was done with raw python without nltk. </li>
+                  <li>Calculating Attribute Probability vector for each sample  </li>
+                  <li>Calculating Cosine/Eucleidian/Humming Distances from test sample to each of train sample </li>
+                  <li>Taking labels of K min distance samples from train data  </li>
+                  <li>Taking mode of K labels as prediction (tie breaks by random choise) </li>
+                  </ul>
+<li><b><I> Tuning     :</li></b></I> The model was Tuned for best alpha values.
+<li><b><I> Prediction :</li></b></I> Accuracy,Precision,Recall Reporting.
+</ul>
+</div>
+
+<h3> 2. (a)Naive Bayes (b)K Nearest Neighbour algorithm Flow Chart</h3>
+
+<img src="docs/Algorihms/Naive_Bayes.jpg" align="left"
+     title="Open Image in new tab for good resolution" width="50%" >
+<img src="docs/Algorihms/KNN_Algorithm.jpg" align="left"
+     title="Open Image in new tab for good resolution" width="50%" >
+
+<a style="color:navyblue;font-size:15px;" href= https://github.com/irfanhasib0/Machine-Learning/blob/master/Machine_Learning_Algo_From_Scratch/Naive_Bayes_Stack_Exchange.ipynb> (a) GitHub : Naive Bayes Implementation from scratch - Notebook </a>
+ 
+<iframe src="NB.html" name="targetframe" allowTransparency="true" scrolling="yes" frameborder="0" height="300" width="100%" ></iframe>
+
+<a style="color:navyblue;font-size:15px;" href= https://github.com/irfanhasib0/Machine-Learning/blob/master/Machine_Learning_Algo_From_Scratch/KNN_Stack_Exchange.ipynb> (b) GitHub : KNN Implementation from scratch - Notebook</a>
+
+<iframe src="KNN.html" name="targetframe" allowTransparency="true" scrolling="yes" frameborder="0" height="300" width="100%" ></iframe>
+
+<h5> 3.1 Result of Naive Bayes implementation for Stack Exchange data - a.Precision Recall and Accuracy b.True Label vs Prediction <h5>
+    
+<img src="docs/Results/Stack_Exchange_NB_.png" align="left"
+     title="(Open Image in new tab for full resolution)" width="30%" >
+
+<img src="docs/Results/Stack_Exchange_NB_pred.jpg" align="left"
+     title="(Open Image in new tab for full resolution)" width="70%" >
+
+<h5> 3.2 Result of KNN implementation for Stack Exchange data- a.Precision Recall and Accuracy b.True Label vs  Prediction <h5>
+
+<img src="docs/Results/Stack_Exchange_KNN.png" align="left"
+     title="(Open Image in new tab for full resolution)" width="30%" >
+
+<img src="docs/Results/Stack_Exchange_KNN_pred.jpg" align="left"
+     title="(Open Image in new tab for full resolution)" width="70%" >
+
+
+<a style="color:navyblue;font-size:15px;" href ='#table_of_content_link'>Go Back to Table of Content</a>
 
 
 <div>
 <br><h1  style="color:grey;" >
 <a id="house_price_link"></a> 
     House Price Prediction :: Data Pre-Processing and Hiper-Parameter Tuning</h1></br>
-<a style="color:navyblue;font-size:25px;" href= https://github.com/irfanhasib0/Machine-Learning/blob/master/Kaggle/ANN_Tensorflow__Kaggle_Houseprice_prediction.ipynb>  Notebook : House Price Prediction - Notebook (Project Presentation and Code Link) </a>
-
+<a style="color:navyblue;font-size:15px;" href= https://github.com/irfanhasib0/Machine-Learning/blob/master/Kaggle/ANN_Tensorflow_Kaggle_Houseprice_prediction.ipynb>  Notebook : House Price Prediction - Notebook (Project Presentation and Code Link) </a>
+<iframe src="house_price.html" name="targetframe" allowTransparency="true" scrolling="yes" frameborder="0" height="300" width="100%" ></iframe>
 </div>
 
 <h3> 1. Overview :</h3>
@@ -204,22 +411,18 @@ background-color:#F8F9F9;
 
 <h3> 2. Project Flow Chart :</h3>
 <img src="docs/Algorihms/kaggle_hp.jpg" align="center"
-     title="Open Image in new tab for good resolution" width="800" height="1000">
-
-<h3> 3. Cross validation(MSLE) and Kaggle Result(RMSLE) </h3>
-<img src="docs/ANN_HP/cv.png" align="left"
-     title="(Open Image in new tab for full resolution)" width="320" height="240"/>
-<img src="docs/ANN_HP/res.png" align="center"
-     title="(Open Image in new tab for full resolution)" width="480" height="320"/></br>
+     title="Open Image in new tab for good resolution" width="100%" height="1000">
      
 <a style="color:navyblue;font-size:15px;" 
 href ='#table_of_content_link'>Go Back to Table of Content</a>
- 
+
+
 <div>
 <br><h1  style="color:navyblue;" >
 <a id="sakura_link"></a> 
     Japanese Job Entrance Problem :: Shakura Bloom Prediction</h1></br>
-<a style="color:navyblue;font-size:25px;" href= https://github.com/irfanhasib0/Machine-Learning/blob/master/Kaggle/Sakura_TF_NN_Report.ipynb>   Notebook : Shakura Bloom Prediction - Notebook (Project Presentation and Code Link) </a>
+<a style="color:navyblue;font-size:15px;" href= https://github.com/irfanhasib0/Machine-Learning/blob/master/Kaggle/Sakura_TF_NN_Report.ipynb>   Notebook : Shakura Bloom Prediction - Notebook (Project Presentation and Code Link) </a>
+<iframe src="sakura.html" name="targetframe" allowTransparency="true" scrolling="yes" frameborder="0" height="300" width="100%" ></iframe>
 
 </div>
 
@@ -282,271 +485,112 @@ href ='#table_of_content_link'>Go Back to Table of Content</a>
              </ul>
 </ul>    
 </details>
-</div>
+
 
 <h3> 2. Project Flow Chart :</h3>
 <img src="docs/Algorihms/sakura_jp.jpg" align="center"
-     title="Open Image in new tab for good resolution" width="640" height="640">
-     
-<h3> 3. Cross Validation R2 Score :</h3>
-<img src="docs/Sakura/res.png" align="center"
-     title="(Open Image in new tab for full resolution)" width="240" height="160"/></br>
-
+     title="Open Image in new tab for good resolution" width="70%">
 <a style="color:navyblue;font-size:15px;" 
 href ='#table_of_content_link'>Go Back to Table of Content</a>
+</div>
 
 <div>
 <br><h1  style="color:grey;" >
-<a id="ann_link"></a> 
-   Neural Network :: NN Implementation from scratch</h1></br>
-<a style="color:navyblue;font-size:25px;" href= https://github.com/irfanhasib0/Machine-Learning/blob/master/Machine_Learning_Algo_From_Scratch/ANN_From_Scratch_modular_class.ipynb> Notebook : NN Implementation from scratch - Notebook (Project Presentation and Code Link) </a>
+<a id="dqn_ddpg_link"></a> DQN , DDPG, PPO A2C Implementation from scratch</h1></br>
+<h5> GitHub Code Links :
+<ul>
+<li><a style="color:navyblue;font-size:15px;" href= https://github.com/irfanhasib0/RL-Algorithms/blob/master/1.0_Multi_Arm_Bandit.ipynb>  Multi Arm Bandit - Notebook </a></li>
+<li><a style="color:navyblue;font-size:15px;" href= https://github.com/irfanhasib0/RL-Algorithms/blob/master/2.1_Value_Iteration.ipynb>   Value Iteration - Notebook  </a></li>
+<li><a style="color:navyblue;font-size:15px;" href= https://github.com/irfanhasib0/RL-Algorithms/blob/master/3.0_DQN_Mountain_Car.ipynb>  Mountain Car with DQN - Notebook  </a></li>
+<li><a style="color:navyblue;font-size:15px;" href= https://github.com/irfanhasib0/RL-Algorithms/blob/master/4.0_DDPG_Pendulum-mod.ipynb> Pendulum with DDPG - Notebook</a></li>
+<li><a style="color:navyblue;font-size:15px;" href= https://github.com/irfanhasib0/RL-Algorithms/blob/master/5.1_PPO_Bipedal_Walker-mod.ipynb.ipynb>  Bipedal Walker with PPO - Notebook</a></li>
+<li><a style="color:navyblue;font-size:15px;" href= https://github.com/irfanhasib0/RL-Algorithms/blob/master/5.1_PPO_Lunar_Lander.ipynb>  Lunar Lander with PPO - Notebook </a></li>
+</ul>
 </div>
 
-<h3> 1. Overview :  </h3>
 
-<div id=div_style>
-   <p>Here I  have implemented Neural Network of 3 Layers. I have implemented A Layes Class and functions 
-   for Forward propagation,backward propagation and updating weights. I just tested it XOR data. It was fitting good.</p>
+<h3> 1.  Overview </h3>
+
+<div id=div_style> 
 <ul id=ul_style>
-        <b><I>
-        <li>XOR Data used for testing</li>
-        <li>Forward Propagation</li>
-        <li>Backward Propagation</li>
-        <ul>
-        <li>Calculating Gradients </li>
-        <li>Updating weights</li>
-        </ul>
-        </I></b>
-</ul>
-<details false>
-<summary><b><I><font color="#3498DB"> Click to expand</font></I></b></summary>
-<ul style="list-style-type:none;">  
-   <li><b> Forward Propagation : </b></li>
-          <ul>
-          <li> Output of a neuron : Z = W*X + B , Mentioned as Neuron Output </li>
-            <ul style="list-style-type:circle;">
-            <li> W(a,b) a for current layer, b for previous layer </li>
-            <li> Layer2:Z1 = Layer2:W11 * X_layer1_node1 + Layer2:W21 * X_layer_node_2 + Layer2:Bias </li>
-            <li> Layer2:Z2 = Layer2:W11 * X_layer1_node1 + Layer2:W21 * X_layer_node_2 + Layer2:Bias </li>
-            </ul>
-          <li> Adding Non-Linearity : A = Activation(Z) [ Act(Z) in the flow chart] , Mentioned as Activation Output. </li>
-          <li>(For detail better under understanding mutual weight indexing W(a,b) see appendix on Nodes)</li>
-          </ul>
-<li><b>  Calulating gradients : </b></li>
-          <ul>          
-          <li> Calculatin dE/dW (dE/dW : grad of error wrt each weights ) </li>
-             <ul>
-             <li> dE/dW = dE/dA * dA/DZ * dZ/dw 
-             </ul>
-          <li> Calculatin dE/dA  (dE/dA : grad of error wrt each Activation output ) </li>
-                <ul>
-                <li>dE/dA : For Last Layer, if loss function is mean square error, then E = 1/2*(Y - A)^2 so , dE/dA = (A-Y </li>
-                <li> dE/dA : For Other Layers dE/dA will be inherited from the each of the node of next layer acccording
-                to mutual weights. </li>
-                <li> Layer2:Error1 = layer3:Error1 * Layer3:W11 + Layer3:Error2 * Layer3:W21 </li>
-                <li> Mathmetically Implmented as Error_l2 = Weights_l3.Transpose() * Error_l3 </li>
-                </ul>
-          <li>Calculating dA/dZ (dA/dZ : grad of Activation Output wrt each Neuron output  also mentioned as delta here) </li>
-                <ul>
-                <li> It is just Derivative of sigmoid function in my case : delta = A*(1-A)
-                </ul>
-          <li> Calculating dZ/dW (dZ/dW : grad of Neuron Output wrt each weights ) </li>
-                 <ul>
-                 <li> As Z = W*X +B so dZ/dW = X , where for first layer, X is the input  </li>
-                 <li> For other layers, the output from previous layer. </li> 
-                 </ul>
-          </ul>
-<li><b>  Updating Weights: </b></li>
+    <li><b><I> DQN Environments </li></b></I>  OpenAI gym --> Mountain Car ENvironment
+    <li><b><I> DQN Environments </li></b></I>  OpenAI gym --> Pendulumn Environment
+    <li><b><I> DQN Steps </li></b></I>
     <ul>
-    <li> Updating each weights W = W + alpha*dW/dE </li>
-    <li> Here alpha is the learning rate. </li>
-    </ul>  
-<li><b> Note : </b></li> In the flowchart Gradient calcultion is shown in back propagation.
-</ul>
-</details>
-</div>
-
-<h3> 2. Process Flow Chart : (Open Image in new tab for full resolution)</h3>
-
-
-
-
-<img src="docs/Algorihms/NN_FP_Brief.jpg" align="left" alt="Schematics" width="48%" />
-
-<img src="docs/Algorihms/NN_BP_Brief.jpg" align="left" alt="Schematics" width="48%" />
-
-<h3> Result : </h3>
-     Result of ANN implementation for Bank Note data - mean sqaure error vs epoch -
-
-<img src="docs/Results/banknote_ann_loss.png" align="left"
-     title="(Open Image in new tab for good resolution)" width="48%">
-<img src="docs/Results/banknote_ann.png" align="left"
-     title="(Open Image in new tab for good resolution)" width="48%">
-
-<h3> Appendix :</h3>
-
-<h4> Nodes : </h4>
-<div id=div_style>
-<details>
-    <summary><b><I> Click to toggle expand view </I></b></summary>
-    <ul style="list-style-type:square;">  
-    <li> Every Node/Neuron is considered to have weights for each of previous layers node.</li>
+    For each time step of a episode 
+    <li> action : explore -> random | or exploit -> max Q value based on epsilon decay </li>
+    <li> play one step -> store experience </li>
+    <li> sample minibatch </li>
+    <li> target Q values : reward+gamma*Q_network(new_state,new_actions) </li> 
+    <li> train Q network </li>
     </ul>
-         <br>Leyer 1 ->2 nodes 
-         <br>Layer 2 ->3 Nodes
-         <br>So, Layer 2's each of the 3 Nodes will have two weights for Layer 1's each of the 2 nodes.
-         <br>they are -
-         <br>Layer 2 - Node 1: W11 , W12
-         <br>Layer 2 - Node 2: W21 , W22
-         <br>Layer 2 - Node 3: W31 , W32
-         <br>Value of Layer 2:Node1 (Z21) = X1 * Layer2:W11 + X2 * Layer2:W12
-         <br>Mutual Weights: Layer:W(a,b) : 
-             <br>a is the node we are calculating for (current layer)
-             <br>b is the contributing node (from previous layer)
-             <br>i.e 
-              <br>Layer2:W12 --> Layer 2's 1st node's weight for previous layers(Layer 1) 2nd node
-              <br>Layer2:W13 --> Layer 2's 1st node's weight for previous layers(Layer 1) 3rd node
-</details>
-</div>
-
-<a style="color:navyblue;font-size:15px;" 
-href ='#table_of_content_link'>Go Back to Table of Content</a>
-    
-<div>
-<br><h1  style="color:grey;" >
-<a id="id3_link"></a> 
-    
-   Decision Tree :: ID3 Implementation from scratch</h1></br>
-<a style="color:navyblue;font-size:25px;" href= https://github.com/irfanhasib0/Machine-Learning/blob/master/Machine_Learning_Algo_From_Scratch/ID3_with_continuous_feature_support-updated.ipynb>Notebook : ID3 Implementation from scratch - Notebook (Project Presentation and Code Link)</a>
-</div>
-
-
-<h3> 1. Overview </h3>
-<div id=div_style>
-<ul id=ul_style>
-<li><b><I>Dataset     :</li></b></I> Titanic and irish dataset was used for testing ID3.
-<li><b><I> Steps      :</li></b></I>
-                  <ul>
-                  <li>Continuous data spliting based on information gain </li>
-                  <li>Information Gain Calculation  </li>
-                  <li>ID3 Algorithm according to flowchart </li>
-                  </ul>
-
-<li><b><I> Tuning     :</li></b></I> Reduced Error Pruining.
-<li><b><I> Prediction :</li></b></I> Accuracy,Precision,Recall Reporting.
+    <li><b><I> DDPG Steps </li></b></I>
+    <ul>
+    For each time step of a episode 
+    <li>actor(state): action + OU Noise </li>
+    <li>play one step -> store experience </li>
+    <li>sample minibatch </li>
+    <li>target Q values : reward+gamma*target_critic(new_state,new_actions) </li>
+    <li>actor loss from critic(state,action)</li>
+    <li>train actor and critic </li>
+    <li>target networks : networks*tau + (1-tau)*target_networks</li>
+    </ul>
 </ul>
 </div>
 
+<div>
+<h3> 2. Detailed Flow Chart for DQN and DDPG : (Please open in New tab for proper resolution) </h3>
 
-
-
-<h3> ID3 Flow Chart of Implementation (Open Image in new tab for full resolution) </h3>
-
-<img src="docs/Algorihms/ID3_Simple.jpg" align="center"
-     title="(Open Image in new tab for full resolution)
-" width="480" height="480">
-
-<h3> Result of ID3 implementation for iris data - a.Precision Recall and Accuracy and b.True Label vs Prediction - </h3>
-
-
-<img src="docs/Results/iris_ID3.png" align="left"
-     title="(Open Image in new tab for good resolution)
-" width="30%" >
-
-<img src="docs/Results/irispred.jpg" align="center"
-     title="(Open Image in new tab for good resolution)
-" width="60%" >
-
-
-
-<h3> Result of ID3 implementation for Titanic data - a.Precision Recall and Accuracy and b.True Label vs Prediction </h3>
-
-<img src="docs/Results/titanic_ID3.png" align="left"
-     title="(Open Image in new tab for full resolution)
-" width="30%" >
-
-<img src="docs/Results/titanicpred.jpg" align="center"
-     title="(Open Image in new tab for full resolution)
-" width="60%" >
-
-<a style="color:navyblue;font-size:15px;" 
-href ='#table_of_content_link'>Go Back to Table of Content</a>
+<img src="docs/Algorihms/DQN_Brief.jpg" align="left"
+     title="Open Image in new tab for good resolution" width="50%" >
+<img src="docs/Algorihms/DDPG_Brief.jpg" align="left"
+     title="Open Image in new tab for good resolution" width="50%" ></br>
+<img src="docs/Algorihms/PPO_A2C_Brief.jpg" align="left"
+     title="Open Image in new tab for good resolution" width="100%" >
+</div>
 
 <div>
-<br><h1  style="color:grey;" >
-<a id="naive_bayes_link"></a> 
-   Naive Bayes and KNN :: Implementation for text classification</h1></br>
-<a style="color:navyblue;font-size:25px;" href= https://github.com/irfanhasib0/Machine-Learning/blob/master/Machine_Learning_Algo_From_Scratch/Naive_Bayes_Stack_Exchange.ipynb> Naive Bayes Implementation from scratch - Notebook (Project Presentation and Code Link) </a>
+<h3> 3. Results </h3>
+
+* a. Results DQN on Mountain Car
+* b. Results DDPG on Pendulum 
+* c. Results PPO on Bipedal Walker
+* d. Results PPO on Lunar Lander
+
+<img src="docs/Results/dqn_mcar.png" align="left"
+     title="(Open Image in new tab for full resolution)" width="25%" />
+<img src="docs/Results/ddpg_pendulum.png" align="left"
+     title="(Open Image in new tab for full resolution)" width="25%" />
+<img src="docs/Results/bipedal_ppo.png" align="left"
+     title="(Open Image in new tab for full resolution)" width="25%" />
+<img src="docs/Results/lunar_ppo.png" align="left"
+     title="(Open Image in new tab for full resolution)" width="25%" />
+     
+<img src="docs/Results/mc.gif" align="left"
+     title="(Open Image in new tab for full resolution)" width="25%" />
+<img src="docs/Results/pend.gif" align="left"
+     title="(Open Image in new tab for full resolution)" width="25%" />
+<img src="docs/Results/bipedal_ppo.gif" align="left"
+     title="(Open Image in new tab for full resolution)" width="25%" />
+<img src="docs/Results/lunar_ppo.gif" align="left"
+     title="(Open Image in new tab for full resolution)" width="25%" />
+     
+<a style="color:navyblue;font-size:15px;" 
+href ='#table_of_content_link'>Go Back to Table of Content</a>
 </div>
-
-
-<h3> 1. Overview </h3>
-
-<div id=div_style>
-<ul id=ul_style>
-<li><b><I> Dataset     :</li></b></I> Archived data from stack exchange is used for classification.
-<li><b><I> Steps      :</li></b></I>
-                  <ul>
-                  <li>Text Preprocessing was done with raw python without nltk. </li>
-                  <li>Calculating Attribute(word) Probabilities given each class  </li>
-                  <li>Calculating Attribute(word) Probabilities given each Samples  </li>
-                  <li>Applying Bayes Theorem for getting class probalities </li>
-                  <li>Max class probality is the predicted label </li>
-                  </ul>
-<li><b><I> Steps      :</li></b></I>
-                  <ul>
-                  <li>Text Preprocessing was done with raw python without nltk. </li>
-                  <li>Calculating Attribute Probability vector for each sample  </li>
-                  <li>Calculating Cosine/Eucleidian/Humming Distances from test sample to each of train sample </li>
-                  <li>Taking labels of K min distance samples from train data  </li>
-                  <li>Taking mode of K labels as prediction (tie breaks by random choise) </li>
-                  </ul>
-<li><b><I> Tuning     :</li></b></I> The model was Tuned for best alpha values.
-<li><b><I> Prediction :</li></b></I> Accuracy,Precision,Recall Reporting.
-</ul>
-</div>
-
-
-
-<h3> Naive Bayes and K Nearest Neighbour algorithm applied on the procesed text.</h3>
-
-<img src="docs/Algorihms/Naive_Bayes.jpg" align="left"
-     title="Open Image in new tab for good resolution" width="50%" >
-<img src="docs/Algorihms/KNN_Algorithm.jpg" align="left"
-     title="Open Image in new tab for good resolution" width="50%" >
-
-
-<h3> Result of Naive Bayes implementation for Stack Exchange data - 
-    a.Precision Recall and Accuracy  
-    b.True Label vs Prediction <h3>
-
-
-<img src="docs/Results/Stack_Exchange_NB_.png" align="left"
-     title="(Open Image in new tab for full resolution)" width="30%" >
-
-<img src="docs/Results/Stack_Exchange_NB_pred.jpg" align="left"
-     title="(Open Image in new tab for full resolution)" width="60%" >
-
-<img src="docs/Results/Stack_Exchange_KNN.png" align="left"
-     title="(Open Image in new tab for full resolution)" width="30%" >
-
-<img src="docs/Results/Stack_Exchange_KNN_pred.jpg" align="left"
-     title="(Open Image in new tab for full resolution)" width="60%" >
-
-
-<a style="color:navyblue;font-size:15px;" href ='#table_of_content_link'>Go Back to Table of Content</a>
 
 <div>
 <br><h1  style="color:grey;" >
 <a id="ilqr_mpc_link"></a> 
    ILQR and MPC :: Implementation from scratch for self driving car simulator</h1></br>
 
-<br><a style="color:navyblue;font-size:25px;" href=https://github.com/irfanhasib0/Control-algorithms/blob/master/MPC_GYM_CAR_RACING_V0/ilqr_on_airsim_env_map_tracker_rel-exp.ipynb> Notebook : ILQR Implementation - Notebook (Project Presentation and Code Link) </a></br>
-<a style="color:navyblue;font-size:25px;" href= https://github.com/irfanhasib0/Control-algorithms/blob/master/MPC_GYM_CAR_RACING_V0/mpc_on_car_env_map_tracker_rel.ipynb> Notebook : MPC Implementation - Notebook (Project Presentation and Code Link)</a>
+<br><a style="color:navyblue;font-size:15px;" href=https://github.com/irfanhasib0/Control-algorithms/blob/master/MPC_GYM_CAR_RACING_V0/ilqr_on_airsim_env_map_tracker_rel-exp.ipynb> Notebook : ILQR Implementation - Notebook (Project Presentation and Code Link) </a></br>
+
+<a style="color:navyblue;font-size:15px;" href= https://github.com/irfanhasib0/Control-algorithms/blob/master/MPC_GYM_CAR_RACING_V0/mpc_on_car_env_map_tracker_rel.ipynb> Notebook : MPC Implementation - Notebook (Project Presentation and Code Link)</a>
 </div>
 
-<h3> 1. Overview : </h3>
 <div id=div_style>
+<h3> 1. Overview : </h3>
 <ul id=ul_style>
         <li><b><I> Simulation Platform : </b></I></li>
             <ul style="list-style-type:circle;">
@@ -615,6 +659,7 @@ href ='#table_of_content_link'>Go Back to Table of Content</a>
 </details>
 </div>
 
+<div>
 <h3 style='color:teal'> MPC modeling </h3>
 $\begin{align*}
 State\;Space :z &= [x, y, v,\phi]        &where,x: x-position, y:y-position, v:velocity, φ: yaw angle\\
@@ -828,7 +873,9 @@ V_{xx} &= Q_{xx} - (K[t].T * (Q_{uu} * K[t]))\\\\\\\\\\
 \end{align*}$
 <h4 style='color:navy'> 3. Step A , B and C run iteratively fo find optimal K and k.</h4>
 </details>
+</div>
 
+<div>
 <h4 style='color:navy'> 4. For detail derivation please see the paper :</h4> <p style='color:gray'>Synthesis and Stabilization of Complex Behaviors through Online Trajectory Optimization
 by -Yuval Tassa 
     <br> citations(369) according to February 27 2020, Published on - 2012</p>
@@ -881,91 +928,28 @@ by -Yuval Tassa
      title="Open Image in new tab for good resolution" aligh="left" width="60%" >
 <a style="color:navyblue;font-size:15px;" 
 href ='#table_of_content_link'>Go Back to Table of Content</a>
-
-<div>
-<br><h1  style="color:grey;" >
-<a id="dqn_ddpg_link"></a> 
-   DQN and DDPG:: Implementation from scratch</h1></br>
-<br><a style="color:navyblue;font-size:25px;" href= https://github.com/irfanhasib0/RL-Algorithms/blob/master/Deep_Q_Learning_mc.ipynb> Notebook : Mountain Car with DQN - Notebook (Project Presentation and Code Link) </a></br>
-<a style="color:navyblue;font-size:25px;" href= https://github.com/irfanhasib0/RL-Algorithms/blob/master/Deep_Q_Learning_mc.ipynb> Notebook : Pendulum with DDPG - Notebook (Project Presentation and Code Link) </a>
 </div>
-
-
-<h3> 1.  Overview </h3>
-
-<div id=div_style> 
-<ul id=ul_style>
-    <li><b><I> DQN Environments </li></b></I>  OpenAI gym --> Mountain Car ENvironment
-    <li><b><I> DQN Environments </li></b></I>  OpenAI gym --> Pendulumn Environment
-    <li><b><I> DQN Steps </li></b></I>
-    <ul>
-    For each time step of a episode 
-    <li> action : explore -> random | or exploit -> max Q value based on epsilon decay </li>
-    <li> play one step -> store experience </li>
-    <li> sample minibatch </li>
-    <li> target Q values : reward+gamma*Q_network(new_state,new_actions) </li> 
-    <li> train Q network </li>
-    </ul>
-    <li><b><I> DDPG Steps </li></b></I>
-    <ul>
-    For each time step of a episode 
-    <li>actor(state): action + OU Noise </li>
-    <li>play one step -> store experience </li>
-    <li>sample minibatch </li>
-    <li>target Q values : reward+gamma*target_critic(new_state,new_actions) </li>
-    <li>actor loss from critic(state,action)</li>
-    <li>train actor and critic </li>
-    <li>target networks : networks*tau + (1-tau)*target_networks</li>
-    </ul>
-</ul>
-</div>
-     
-
-<h3> 2. Detailed Flow Chart for DQN and DDPG : (Please open in New tab for proper resolution) </h3>
-
-<img src="docs/Algorihms/DQN_Brief.jpg" align="left"
-     title="Open Image in new tab for good resolution" width="50%" >
-     
-
-<img src="docs/Algorihms/DDPG_Brief.jpg" align="right"
-     title="Open Image in new tab for good resolution" width="50%" ></br>
-
-<h3> 3. Results </h3>
-
-* a. Results DQN on Mountain Car (Left):
-* b. Results DDPG on Pendulum (Right):
-* c. Tset DQN on Mountain Car (Left):
-* d. Test DDPG on Pendulum (Right):
-
-<img src="docs/Results/DQN_MC.png" align="left"
-     title="(Open Image in new tab for full resolution)" width="25%" />
-<img src="docs/Results/DDPG_PEND.jpg" align="left"
-     title="(Open Image in new tab for full resolution)" width="25%" />
-     
-<img src="docs/Results/mc.gif" align="left"
-     title="(Open Image in new tab for full resolution)" width="25%" />
-<img src="docs/Results/pend.gif" align="left"
-     title="(Open Image in new tab for full resolution)" width="25%" />
-     
-<a style="color:navyblue;font-size:15px;" 
-href ='#table_of_content_link'>Go Back to Table of Content</a>
 
 <div>
 <br><h1  style="color:grey;" >
 <a id="yolo_link"></a> 
-   Yolo with KERAS and Tensorflow for numberplate detection</h1></br>
-<br><a style="color:navyblue;font-size:25px;" href= https://github.com/irfanhasib0/CNN-Projects/blob/master/Yolo_NET_V_1.ipynb> Notebook : Yolo-V3 </a></br>
-<a style="color:navyblue;font-size:25px;" href= https://github.com/irfanhasib0/CNN-Projects/blob/master/VGG_NET_V_1.ipynb> Notebook : Yolo with VGG16 </a>
+   Yolo-V2.0 with KERAS and Tensorflow for Object detection</h1></br>
+<br><a style="color:navyblue;font-size:15px;" https://github.com/irfanhasib0/CNN-Projects/blob/master/CNN_Basic/Minimal_yolo_v_3_functioned-exp_mod-v-1.0.ipynb> GitHub : Yolo-V3 Implementation Notebook </a></br>
 </div>
 
-<img src="docs/Results/yolo.jpg" align="center"
-     title="(Open Image in new tab for full resolution)" width="100%" />
-     
+<img src="docs/Algorihms/yolo_algo.jpg" align="center"
+     title="(Open Image in new tab for full resolution)" width="80%" />
+     <img src="docs/Results/yolo_out_1.gif" align="left"
+     title="(Open Image in new tab for full resolution)" width="48%" />
+     <img src="docs/Results/yolo_out_2.gif" align="right"
+     title="(Open Image in new tab for full resolution)" width="48%" />
+   
 <div>
+    
 <br><h1  style="color:grey;" >
 <a id="unet_link"></a> 
-   Unet with KERAS for City Space Dataset</h1></br>
-<br><a style="color:navyblue;font-size:25px;" href= https://github.com/irfanhasib0/CNN-Projects/blob/master/as_unet_seg-cs.ipynb> Notebook :Unet for segmenting City Space Dataset </a></br>
+   U-Net with KERAS for City Space Dataset</h1></br>
+<br><a style="color:navyblue;font-size:15px;" href= https://github.com/irfanhasib0/CNN-Projects/blob/master/as_unet_seg-cs.ipynb> GitHub :Unet for segmenting City Space Dataset </a></br>
 </div>
 
 <img src="docs/Results/unet_pred.jpg" align="center"
@@ -974,6 +958,46 @@ href ='#table_of_content_link'>Go Back to Table of Content</a>
      title="(Open Image in new tab for full resolution)" width="50%" />
  <a style="color:navyblue;font-size:15px;" 
 href ='#table_of_content_link'>Go Back to Table of Content</a>    
+
+<div>
+<h1  style="color:grey;" >
+<a id="flownet_link"></a> 
+  Flow-Net with KERAS and Tensorflow</h1></br>
+<br><a style="color:navyblue;font-size:15px;" href= https://github.com/irfanhasib0/CNN-Projects/blob/master/CNN_Basic/visual_odometry_deepvo%20-%20M-Flow%20-%20V-1.0.ipynb> Notebook :FlowNet for Optical Flow Kitti Dataset </a></br>
+</div>
+Top row : Train ; Bottom Row : Validation ;
+Left : Ground Truth ; Right : Prediction
+<img src="docs/Results/of_true-1.png" align="left"
+     title="(Open Image in new tab for full resolution)" width="50%" />
+<img src="docs/Results/of_pred-1.png" align="left"
+     title="(Open Image in new tab for full resolution)" width="50%" />
+     
+<img src="docs/Results/of_true-2.png" align="left"
+     title="(Open Image in new tab for full resolution)" width="50%" />
+<img src="docs/Results/of_pred-2.png" align="left"
+     title="(Open Image in new tab for full resolution)" width="50%" />
+ <a style="color:navyblue;font-size:15px;" 
+href ='#table_of_content_link'>Go Back to Table of Content</a> 
+
+<h1  style="color:grey;" >
+<a id="disp_link"></a> 
+  Monocular Disparity with CNN based Encode-Decoder with KERAS and Tensorflow</h1></br>
+<a style="color:navyblue;font-size:15px;" https://github.com/irfanhasib0/CNN-Projects/blob/master/CNN_Basic/visual_odometry_deepvo%20-%20M-Depth%20-%20V-2.0.ipynb> Notebook : Single View Depth Estimation </a>
+</div>
+
+Top row : Train ; Bottom Row : Validation ;
+Left : Ground Truth ; Right : Prediction
+<img src="docs/Results/disp_train_gt.png" align="left"
+     title="(Open Image in new tab for full resolution)" width="50%" />
+<img src="docs/Results/disp_train_pred.png" align="left"
+     title="(Open Image in new tab for full resolution)" width="50%" />
+     
+<img src="docs/Results/disp_val_gt.png" align="left"
+     title="(Open Image in new tab for full resolution)" width="50%" />
+<img src="docs/Results/disp_val_pred.png" align="left"
+     title="(Open Image in new tab for full resolution)" width="50%" />
+ <a style="color:navyblue;font-size:15px;" 
+href ='#table_of_content_link'>Go Back to Table of Content</a> 
 
 <div>
 <br><h1  style="color:grey;" >
