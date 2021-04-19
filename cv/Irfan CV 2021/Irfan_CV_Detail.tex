@@ -1,0 +1,233 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Twenty Seconds Resume/CV
+% LaTeX Template
+% Version 1.1 (8/1/17)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Carmine Spagnuolo (cspagnuolo@unisa.it) with major modifications by 
+% Vel (vel@LaTeXTemplates.com)
+%
+% License:
+% The MIT License (see included LICENSE file)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[letterpaper]{twentysecondcv} % a4paper for A4
+
+%----------------------------------------------------------------------------------------
+%	 PERSONAL INFORMATION
+%----------------------------------------------------------------------------------------
+
+% If you don't need one or more of the below, just remove the content leaving the command, e.g. \cvnumberphone{}
+\usepackage{xunicode}
+\profilepic{irfan.jpg} % Profile picture
+
+\cvname{Irfan Mohammad Al Hasib} % Your name
+%\cvjobtitle{Deep Learning Engineer} % Job title/career
+%\cvjobtitle{Machine Learning Engineer} % Job title/career
+%\cvjobtitle{ML Research Engineer} % Job title/career
+\cvjobtitle{\large Artificial Intelligence Engineer} % Job title/career
+%\cvjobtitle{Data Scientist} % Job title/career
+
+\cvdate{19 November 1993} % Date of birth
+\cvaddress{66-13, Horikawacho, Saiwai-ku, Kawasaki, Kanagawa, Building: Kawasaki Technopia Horikawacho Heights, Room : 606, Postal Code : 212-0013} % Shortaddress/location, use \newline if more than 1 line is required
+\cvnumberphone{+81 070 3832 6371} % Phone number
+\cvsite{\href{https://irfanhasib0.github.io/}{\color{blue}https://irfanhasib0.github.io/}} % Personal website
+\cvmail{irfanhasib.me@gmail.com} % Email address
+\cvlinkedin{\href{https://www.linkedin.com/in/irfanhasib/}{\color{gray}www.linkedin.com/in/irfanhasib/}}
+
+%----------------------------------------------------------------------------------------
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	 ABOUT ME
+%----------------------------------------------------------------------------------------
+
+\aboutme{I am a passionate engineer, always seeking to learn something new.}
+%I am interested in designing smarter systems for advancement of humanity } % To have no About Me section, just remove all the text and leave \aboutme{}
+
+%----------------------------------------------------------------------------------------
+%	 SKILLS
+%----------------------------------------------------------------------------------------
+
+% Skill bar section, each skill must have a value between 0 an 6 (float)
+
+\cv{
+\section{\large Deep Learning}\subsection{\small Deep Neural Network\newline Convolutional Neural Network \newline Reinforcement Learning\newline Proficient in Tensorflow \& KERAS
+\newline Familiar with Basic Pytorch
+\newline Proficient in Python, Numpy, Pandas, Sklearn}
+
+\section{\large Machine Learning} \subsection{\small  
+Linear and Logistic Regression \newline 
+Decision Tree, CART, Bagging and Boosting algorithms : Random Forest, AdaBoost, GBoosting, XGboost, Stacking, Ensemble \newline 
+SVM,Naive Bias, kNN, K Means Clustering}
+\section{\large Computer Vision}\subsection{\small CNN based SOTA Algo. : YOLO, SSD, U-Net, ResNet, Inception, R-CNN \newline
+CV Algo. : HOG, Haar, SURF, SIFT, ORB, 0pt. Flow, Segmentation, Detection, Tracking}
+\section{\large Reinforcement Learning}\subsection{\small Value Iteration, Policy Gradient, MDP . \newline SOTA Algo. : DQN, DDPG, PPO, A2C, A3C
+}
+}
+
+\makeprofile % Print the sidebar
+%----------------------------------------------------------------------------------------
+
+
+%----------------------------------------------------------------------------------------
+%	 INTERESTSs
+%----------------------------------------------------------------------------------------
+\section{Experience}\\
+
+{\bfseries \itshape \color{gray} Artificial Intelligence Engineer \\
+Hiperdyne Corporation}\\
+{ \href {www.hiperdyne.com}{\itshape \color{blue} www.hiperdyne.com}}{\color{golden}  ( July, 2019- Till Present) }
+
+\begin{multline}
+>>  Implementation of state of the art Reinforcement Learning algorithms for solenoid valve position (Set Point) controlling using observing sensor values (Process Value) for Oil Refinery Plant. After more than a year of research and optimization, eventually the performance of the AI solution exceeded the performance of human experts in respective industry. The whole system relied on a MQTT sensor Network which made it dynamic and responsive. \\
+>>  AI based scoring system for optimal oil shipping plan selection. The industry had options for transportation ship, supply refinery with certain capacities and delivery port with varying demand. The system utilized the Inventory data (supply and demand) and Ship Schedules(Ship and available routes) and applying concepts of Q learning to predict long-run feasibility score for for each plan at a certain inventory status.\\
+>>  Early prediction of "After Burn" phenomenon level in refinery from sensor Values using Deep Learning based techniques, for taking early measures to benefit production.\\
+>>  Deep Learning based dimensionality reduction techniques have been applied to high dimensional sensor values to produce 2 dimensional output. this lower dimensional output was used to plot and visualize latent space of interest that showed the transition of the production phase and helped the operator to take necessary measures much earlier.\\
+\end{multline}
+
+{\bfseries \itshape \color{gray} Jr. Research Engineer (Product development and Research Dept.) \\
+Pi Labs Bangladesh Ltd. }\\
+{ \href {www.pilabsbd.com}{\itshape \color{blue} www.pilabsbd.com}}{\color{golden}  ( August, 2017- September, 2018) }
+
+\begin{multline}
+>>Programmable Syringe Infusion Pump Development. An automatic syringe infusion pump that can be programmed by setting amount of fluid to be pushed in a certain time period. The whole system was developed on AVR micro controller platform and FreeRTOS based sytem. \\
+>>IOT Based Security and Monitoring System Development. Many standalone sensor units were developed on ESP8266 platform with minimal power consumption and could be place at remote places that periodically report security status on a raspberry pi based server\\
+>>Box tracking system based on utilization of GPRS signal transmitted from the box at regular interval with location information.\\
+>> Online weight machine for a supply shop. It will automatically send the weight and bar code to the system server while packaging.
+\end{multline}
+
+\section{Mars Rover Challenge}
+
+\begin{twentyshort} % Environment for a short list with no descriptions
+	\twentyitemshort{\color{golden} 2016}{\normalfont Participated along with my team, Interplaneter in \href{http://urc.marssociety.org/}{\color{blue}University Rover challenge }, 2016 at Utah, USA. Our team attained 5th position in Phobos final. I was in charge of Robotic Arm Design and deployment. The Competition is organized by  \href{https://www.marssociety.org/}{\color{blue}Mars Society}, USA anually for college students world wide. \href{http://urc.marssociety.org/home/about-urc/urc2016-scores}{\color{blue}URC 2016 Result},Critical Design Review \href{https://www.youtube.com/watch?v=MlN-VFj14LE}{\color{blue}YouTube}}
+	
+	%\twentyitemshort{1998}{All-Time Best Fantasy Novel before 1990.}
+	%\twentyitemshort{<dates>}{<title/description>}
+\end{twentyshort}
+
+
+
+%\Requiredpackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=cyan,
+}
+
+\section{Machine Learning Project}
+
+\begin{twentyshort} % Environment for a short list with no descriptions
+    \twentyitemshort{\color{golden} 2020}{\normalfont Machine Learning Algorithms implementation from Scratch (DNN, SVM , Descision Tree, Logistic Regression, Naive Bias, kNN) using Python and Numpy. I believe implementing from scratch effective way to study wand understand an algorithm.
+    \href{https://irfanhasib0.github.io/}{\color{blue}GitHub link}}
+    \twentyitemshort{\color{golden} 2020}{\normalfont Reinforcement Learning Algorithms from Scratch (DQN, DDPG, A2C, PPO) using Python and Tensorflow. \href{https://irfanhasib0.github.io/}{\color{blue}GitHub  link}}
+    \twentyitemshort{\color{golden} 2019}{\normalfont I have implemented YOLO( object detection), U-Net(semantic segmentation), Flow-Net(optical flow), Disparity estimator. \href{irfanhasib0.github.io/}{\color{blue} GitHub link}}
+    \twentyitemshort{\color{golden} 2019}{\normalfont Kaggle Competition :  House Price Prediction using state of the art data preprocessing methods and hyperparameter tuning. \href{https://irfanhasib0.github.io/}{\color{blue} GitHub link}}
+\end{twentyshort}
+   
+\newpage
+
+\cvnpage{
+
+\section{\large Data Analysis:}\subsection{\small Standard Data Preprocessing Pipeline, SMOTE, Correlation \& Feature Importance Analysis, Confusion Matrix, AUC \& ROC, Data Visualization Tools, VAE, PCA, t-SNE, SVD, FFT, Wavelet Transform }
+
+\section{\large Engineering Mathematics:}\subsection{\small Linear Algebra, Vector \& Matrix, Transformations, Eigen-decomposition, Differential Calculus, Engineering Mathematics}
+
+\section{\large Probability and Statictics :}\subsection{\small Data Distributions, Bayes Theorem, Entropy, Cross Entropy, KL-divergence, Information Gain , Relevant theorems of Probability, Statistics and Information Theory.}
+
+\section{\large Programming}
+\subsection{\small Python : Advanced Level (3 year +) \newline C++ : Intermediate Level (1.5 year)
+\newline HTML, CSS, Java Script : Basic (Few Months)}
+
+\section{\large Embedded System \& IoT } \subsection{\small AVR Microcontroller (C++), Basic ARM \newline ESP 8266, Raspberry Pi (Python, C++)}
+
+\section{\large Robotics:}\subsection{\small Path Planning Algorithms\newline Robot Vision Algorithms \newline Robot Operating System (ROS)
+\newline Visual Odometry and SLAM \newline Embedded System Design }
+
+\section{\large Development Platform} \subsection{\small Linux : Intermediate Level (2 year +) \newline GitHub : Intermediate Level (3 year +) \newline DBMS (SQL) : Developing ( Approx. 1 year)  
+\newline AWS : Developing (Approx. 6 months)  
+\newline Docker : Basic (Roughly a month)
+\newline Web Development : Basic (Roughly a month)
+\newline Spark \& Hadoop : Basic (Roughly a month) }
+
+\section{\large Data Structure and Algorithms}\subsection{\small Graph Search Algorithms \newline Sorting, Search and Tree based Algorithms}
+
+\section{\large Design Software} \subsection{\small Proteus for Circuit Design \newline SolidWorks for CAD Design \newline draw.io for Flow Chart \newline MS Word, MS Excel, MS Power Point}
+
+}
+\makeprofilenpage
+
+\section{Robotics Project}
+
+\begin{twentyshort}
+    \twentyitemshort{\color{golden} 2019}{\normalfont Implementing optimal steering angle estimator from road co-ordinates using Model Predictive Controller (MPC) and Iterative Linear Quadratic Regulator (ILQR) algorithms from scratch. Tested the on AirSim environment and OpenAI car racing environment.\href{https://irfanhasib0.github.io/\#ilqr_mpc_link}{\color{blue}GitHub link}
+    (ILQR Paper : Synthesis and Stabilization of Complex Behaviors through Online Trajectory Optimization.- by Tassa Et al.). }
+    \twentyitemshort{\color{golden} 2018}{\normalfont Designed a simple two link Robot using URDF and written driver codes for ROS in Python. \href{https://www.youtube.com/watch?v=lJbyy89X7gM&ab_channel=IrfanHasib}{\color{blue} YouTube link}}
+    \twentyitemshort{\color{golden} 2017}{\normalfont Built a programmable (G- code) Desktop CNC Machine using  AVR Platform, for G-code parsing I have used an open source called GRBL. \href{https://youtu.be/xU7YMPpZMYs?list=TLPQMTAwMzIwMjGHI57V0cC9IA}{\color{blue}YouTube link}}
+    \twentyitemshort{\color{golden} 2014}{\normalfont Visually instructed Robotic arm in AVR Platform. I have build a simple object tracker using IR sensor array \href{https://www.youtube.com/watch?v=eevrzHHSlP4youtube}{\color{blue}YouTube link 1 } I also built a software platform that enables it to be controlled by Joy-Stick controller and added some real time computer vision based object tracking and localization based algorithm support to the video feed for operator. \href{https://www.youtube.com/watch?v=hj1Wc6-8-7w}{\color{blue}link 2} (apologise for poor video quality)}
+\end{twentyshort}
+
+
+\section{Education}
+
+\begin{twenty} % Environment for a list with descriptions
+%Bangladesh University of Engineering & Technology (BUET)
+%Mechanical Engineering
+%CGPA: 3.23 out of 4.00
+%HSC (Science)
+%Rajuk Uttara Model College, Uttara, Dhaka 1207
+%GPA: 5.00 out of 5.00 (Without Optional Subject)
+%Year of 
+	\twentyitem{\color{golden} \small 2017}{B.Sc. in Mechanical Engineering\\ {\normalfont Bangladesh University of Engineering and Technology (BUET) }}{}{\emph{CGPA: 3.23 out of 4.00}}
+	\twentyitem{\color{golden} \small 2011}{HSC (Science)\\ {\normalfont Rajuk Uttara Model College, Uttara, Dhaka 1207}}{}{\emph{GPA: 5.00 out of 5.00}}
+	\twentyitem{\color{golden} \small 2009}{SSC (Science)\\ {\normalfont Rajuk Uttara Model College, Uttara, Dhaka 1207}}{}{\emph{GPA: 5.00 out of 5.00}}
+\end{twenty}	
+
+\begin{twenty} % Environment for a list with descriptions
+	\twentyitem{\color{golden} \small }{Language}{}{English   : Business level proficiency in English\\ Japanese : Passed NAT-N5}
+\end{twenty}
+
+\section{Academic Project}
+
+\begin{twentyshort} % Environment for a short list with no descriptions
+	\twentyitemshort{\color{golden} 2015}{\normalfont A Remote control Surveillance robot.The robot was able to pick up small objects from hole. It could also send temperature, pressure and video feed from an remote place using Bluetooth signal for surveillance support.\href{https://irfanhasib0.github.io/\#buet_project_link}{\color{blue}(Undergrad Project)}}
+	\twentyitemshort{\color{golden} 2016}{\normalfont For undergrad thesis we  developed a precision velocity measurement system. Our approach was to use sensor fusion for combining GPS (Ublox-NEO 6) and IMU Sensor(MPU6050) data. We used Kalman filter as sensor fusion algorithm to exploit the instantaneous uncertainty information of different signal source. 
+	\href{https://irfanhasib0.github.io/\#buet_project_link}{\color{blue}(Undergrad : Project and Thesis)}}
+	%\twentyitemshort{<dates>}{<title/description>}
+\end{twentyshort}
+%\section{Language}
+
+
+
+\section{Co-Curricular activities}
+
+\begin{twentyshort}
+     \twentyitemshort{\color{golden} 2016}{\itshape \color{gray} Founding President at BUET ROBOTICS SOCIETY (BRS)}
+     \twentyitemshort{\color{golden} 2016}{\normalfont Co-organized Annual Robotics Competition for BRS}
+      
+\end{twentyshort}
+
+\section{Publications}\\
+\begin{twentyshort} \twentyitemshort{\color{golden} 2016}{\normalfont Development of a two wheeled self balancing robot with speech recognition and navigation algorithm, \href{https://aip.scitation.org/doi/abs/10.1063/1.4958446}{\color{blue}Journal : AIP Conference Proceedings}}
+% AIP Conference Proceedings 1754, 060005 (2016);	
+	%\twentyitemshort{<dates>}{<title/description>}
+\end{twentyshort}
+\begin{twentyshort} \twentyitemshort{\color{golden} 2019}{\normalfont Integrating data mining and microsimulation modelling to reduce traffic congestion: A case study of signalized intersections in Dhaka, Bangladesh \href{https://www.mdpi.com/2413-8851/3/2/41}{\color{blue}Journal : Urban Science}}
+\end{twentyshort}
+
+\begin{twentyshort} \twentyitemshort{\color{golden} 2021}{\normalfont My most recent research work as main author on Visual Odometry and Auxiliary Task guidance is under review for a renowned conference.}
+\end{twentyshort}
+\end{document} 
+
+
+
+
