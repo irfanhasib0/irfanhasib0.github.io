@@ -13194,7 +13194,7 @@ a  {color:navyblue;}
     } 
 
 #div_style {
-background-color:#F8F9F9;
+background-color:#FFFFFF;
 }
 
 #ul_st {
@@ -13265,11 +13265,11 @@ href ='#table_of_content_link'>Go Back to Table of Content</a>
     </b></I>
 </ul>
 
-<h3> 1. Overview :  </h3>
 </div>
 
 <div id=div_style>
-   <p>Here I  have implemented Neural Network of 3 Layers. I have implemented a <b><I>Layer Class</b></I>. A stack of Layer objects can be used to build a Network. (1) Layer->Forward propagation, (2) Layer->backward propagation, (3) Layer->update weights </b></I> functions are implemented for Layer object. I have tested it with Banknote dataset. It was fitting good. Result can be found in Results section</p>
+<h3> 1. Overview :  </h3></br>
+<p>Neural Network of 3 Layers is implemented here. A <b><I>Layer Class</b></I> is the backbone of the implementation. A stack of Layer objects can be used to build a Network. (1) Layer :: "forward_propagation", (2) Layer :: "backward_propagation", (3) Layer :: "update_weights" </b></I>, these functions are implemented for a Layer object. I have tested it with Banknote dataset. It was fitting good. Result can be found in Results section</p>
 </div>
 
 <h3> 2. Flow Chart (ANN) : (Open Image in new tab for full resolution)</h3><p><img src="docs/Algorihms/NN_Brief.jpg" align="left" alt="Schematics" width="98%" /></p>
@@ -13295,7 +13295,7 @@ href ='#table_of_content_link'>Go Back to Table of Content</a></p>
     <li>section 3: Code </li>
     <li>Section 4:Result (Results can be found after code demonstration for each algorithm) </li>
     </b></I>
-</ul><h3> 1. Overview </h3>
+</ul><h3> 1. Overview </h3></br>
 <div id=div_style>
  Titanic and irish dataset was used for testing the ID3 implementation. Function for (1) Continuous data spliting based on information gain, (2) Information Gain Calculation,  (3) ID3 Algorithm (4) Prediction from built tree are main part of the implementation. For preventing overfitting reduced error pruining was applied. Accuracy,Precision,Recall is reported in Result section.
 </div>
@@ -13328,19 +13328,23 @@ href ='#table_of_content_link'>Go Back to Table of Content</a></p>
     <li>section 3: Code (3.1 SVM, 3.2 Logistic Regression) </li>
     <li>Section 4: Result(4.1 SVM ,4.2 Logistic Regression) </li>
     </b></I>
-</ul><h3> 1. Overview </h3><div id=div_style>
+</ul><h3> 1. Overview </h3></br>
+
+<div id=div_style>
  For Logistic Regression and SVM implementation banknote dataset is used for testing. SVM and LogisticRegression Class is implemented accordingly for the respective algorithms. For each of the 2 class predict, calc loss, calc grads, update weights functions are implemented. Both of the algorithms showed good accuracy for banknote dataset after minimal parameter tuning. Results can be found in respective results section.
-</div><h3> 2.0 SVM(Left), Logistic Regression(Right) Flow Chart of Implementation (Open Image in new tab for full resolution) </h3>
+</div>
+
+<h3> 2.0 SVM(Left), Logistic Regression(Right) Flow Chart of Implementation (Open Image in new tab for full resolution) </h3>
 <img src="docs/Algorihms/Logistic Regression.jpg" align="center"
      title="(Open Image in new tab for full resolution)
 " width="100%">
 
-</br><h3> 3.1 Implementation Code SVM <h3>
+<h3> 3.1 Implementation Code SVM <h3>
 <a style="color:royalblue;font-size:15px;" href= https://github.com/irfanhasib0/Machine-Learning/blob/master/Machine_Learning_Algo_From_Scratch/SVM.ipynb>(a) GitHub : SVM Implementation from scratch - Notebook </a>
 
 <iframe src="SVM.html" name="targetframe" allowTransparency="true" scrolling="yes" frameborder="0" height="300" width="100%" ></iframe>
 
-</br><h3> 3.1 Implementation Code Logistic Regression <h3>
+<h3> 3.1 Implementation Code Logistic Regression <h3>
 <a style="color:royalblue;font-size:15px;" href= https://github.com/irfanhasib0/Machine-Learning/blob/master/Machine_Learning_Algo_From_Scratch/Logistic_Regression.ipynb> (b) GitHub : Logistic Regression Implementation from scratch - Notebook</a>
 
 <iframe src="LogReg.html" name="targetframe" allowTransparency="true" scrolling="yes" frameborder="0" height="300" width="100%" ></iframe>
@@ -13352,14 +13356,14 @@ href ='#table_of_content_link'>Go Back to Table of Content</a></p>
 <p><img src="docs/Results/banknote_svm_pred.png" align="center"
      title="(Open Image in new tab for good resolution)
 " width="60%" ></p>
-<h5> 4.2 Result of Logitic Regression implementation - a.Precision, Recall and Accuracy and b.True Label vs Prediction </h5><p><img src="docs/Results/banknote_logr.png" align="left"
+<h3> 4.2 Result of Logitic Regression implementation - a.Precision, Recall and Accuracy and b.True Label vs Prediction </h3><p><img src="docs/Results/banknote_logr.png" align="left"
      title="(Open Image in new tab for good resolution)
 " width="30%" ></p>
 <p><img src="docs/Results/banknote_logr_pred.png" align="center"
      title="(Open Image in new tab for good resolution)
 " width="60%" ></p>
 <div>
-<br><h1  style="color:grey;" >
+<h1  style="color:grey;" >
 <a id="naive_bayes_link"></a> 
    Naive Bayes and KNN Implementation for text classification</h1></br>
 </div>
@@ -13374,7 +13378,7 @@ href ='#table_of_content_link'>Go Back to Table of Content</a>
     <li>SEction 3: Result (4.1 Naive Bias, 4.2 KNN)</li>
     </b></I>
 </ul>
-<h3> 1. Overview </h3>
+<h3> 1. Overview </h3></br>
 <div id=div_style>
 <ul id=ul_style>
 <li><b><I> Dataset     :</li></b></I> Archived data from stack exchange is used for classification.
@@ -13400,10 +13404,10 @@ href ='#table_of_content_link'>Go Back to Table of Content</a>
      title="Open Image in new tab for good resolution" width="50%" >
 <img src="docs/Algorihms/KNN_Algorithm.jpg" align="left"
      title="Open Image in new tab for good resolution" width="50%" ></p>
-<p>&lt;/br&gt;<h3> 3.1 Implementation Code Naive Bias </h3>
+<p><h3> 3.1 Implementation Code Naive Bias </h3>
 <a style="color:royalblue;font-size:15px;" href= https://github.com/irfanhasib0/Machine-Learning/blob/master/Machine_Learning_Algo_From_Scratch/Naive_Bayes_Stack_Exchange.ipynb> (a) GitHub : Naive Bayes Implementation from scratch - Notebook </a></p>
 <p><iframe src="NB.html" name="targetframe" allowTransparency="true" scrolling="yes" frameborder="0" height="300" width="100%" ></iframe></p>
-<p>&lt;/br&gt;<h3> 3.2 Implementation Code K Nearest Neighbour </h3>
+<p><h3> 3.2 Implementation Code K Nearest Neighbour </h3>
 <a style="color:royalblue;font-size:15px;" href= https://github.com/irfanhasib0/Machine-Learning/blob/master/Machine_Learning_Algo_From_Scratch/KNN_Stack_Exchange.ipynb> (b) GitHub : KNN Implementation from scratch - Notebook</a></p>
 <p><iframe src="KNN.html" name="targetframe" allowTransparency="true" scrolling="yes" frameborder="0" height="300" width="100%" ></iframe></p>
 <p><h3> 4.1 Result of Naive Bayes implementation - a.Precision Recall and Accuracy b.True Label vs Prediction <h3></p>
@@ -13429,15 +13433,29 @@ href ='#table_of_content_link'>Go Back to Table of Content</a>
 <a id="yolo_link"></a> Yolo-V2.0 with KERAS and Tensorflow for Object detection</h1>
 <a style="color:navyblue;font-size:15px;" href ='#table_of_content_link'>Go Back to Table of Content</a></br>
 
-</br><a style="color:royalblue;font-size:20px;" href=https://github.com/irfanhasib0/CNN-Projects/blob/master/CNN_Basic/Minimal_yolo_coco-v-2.0-exp-COCO.ipynb> GitHub Link : Yolo-V2 Implementation Notebook </a></br></br>
+<ul id="ul_1">
+    <b><I>
+    <li>Section 1: Overview </li>
+    <li>Section 2. Flowchart</li>
+    <li>Section 3. Code </li>
+    <li>Section 4. Result</li>
+    </b></I>
+</ul>
+</div><div id=div_style>
+<h3>1. Overview </h3></br>
+Yolo V-2.0 is implemented here and tested with COCO dataset. It is one of the SOTA algorithm for object detection. The algorithm is showed in the figure in algorithm section. Python code can be found in code section.
 </div><div>
+<h3>2. Flowchart </h3>    
 <img src="docs/Algorihms/yolo_algo.jpg" align="left"
 title="(Open Image in new tab for full resolution)" width="100%"/>
-</div><p><!-- Place this tag where you want the button to render. -->
-<a class="github-button" href="https://github.com/irfanhasib0/CNN-Projects" data-icon="octicon-star" aria-label="Star irfanhasib0/CNN-Projects on GitHub">Star</a></p>
-<p><h3> Code YOLO-V2.0 tested with COCO dataset </h3></p>
-<p><iframe src="yolo_v2.html" name="targetframe" allowTransparency="true" scrolling="yes" frameborder="0" height="300" width="100%" ></iframe></p>
-<p><h3> Prediction Results: </h3></p>
+</div><div>
+<h3>2. Code YOLO-V2.0 for COCO dataset </h3>
+<!-- Place this tag where you want the button to render. -->
+<a class="github-button" href="https://github.com/irfanhasib0/CNN-Projects" data-icon="octicon-star" aria-label="Star irfanhasib0/CNN-Projects on GitHub">Star</a>
+</br><a style="color:royalblue;font-size:20px;" href=https://github.com/irfanhasib0/CNN-Projects/blob/master/CNN_Basic/Minimal_yolo_coco-v-2.0-exp-COCO.ipynb> GitHub Link : Yolo-V2 </a>
+<iframe src="yolo_v2.html" name="targetframe" allowTransparency="true" scrolling="yes" frameborder="0" height="300" width="100%" ></iframe>
+</div><div>
+<h3>3. Results: </h3>
 <div class="row">
 <div class="column">
 <img src="docs/Results/yolo_out_1.gif" align="left" 
@@ -13447,16 +13465,34 @@ title="(Open Image in new tab for full resolution)" width="50%"/></br>
 <img src="docs/Results/yolo_out_2.gif" align="left" 
 title="(Open Image in new tab for full resolution)" width="50%"/>
 </div>   
+</div>
 </div><div>
 <h1  style="color:grey;">
 <a id="unet_link"></a>U-Net with KERAS for City Space Dataset</h1>
 <a style="color:navyblue;font-size:15px;" href ='#table_of_content_link'>Go Back to Table of Content</a></br>
 
-<br><a style="color:royalblue;font-size:20px;" href= https://github.com/irfanhasib0/CNN-Projects/blob/master/as_unet_seg-cs.ipynb> GitHub :Unet for segmenting City Space Dataset </a></br>
-<div>
+<ul id="ul_1">
+    <b><I>
+    <li>Section 1: Overview </li>
+    <li>Section 2. Network Architecture</li>
+    <li>Section 3. Code </li>
+    <li>Section 4. Result</li>
+    </b></I>
+</ul>
+</div><div id=div_style>
+<h3>1. Overview </h3></br>
+
+U-Net is implemented here and tested with CityScapes dataset. It is one of the SOTA algorithm for semantic segmentation. The network architecture is showed in the figure of Network Architecture section. Python code can be found in code section.
+</div><div>
+<h3>2. Network Architecture </h3>
 <img src="docs/Algorihms/unet_algo.jpg" align="center"
 title="(Open Image in new tab for full resolution)" width="60%"/>
-</div>
+</div><div>
+<h3>3. Code of U-Net for CityScapes dataset  </h3>
+<br><a style="color:royalblue;font-size:20px;" href= https://github.com/irfanhasib0/CNN-Projects/blob/master/as_unet_seg-cs.ipynb> GitHub :Unet for segmenting City Space Dataset </a></br>
+<iframe src="unet_cityscapes.html" name="targetframe" allowTransparency="true" scrolling="yes" frameborder="0" height="300" width="100%" ></iframe>
+</div><div>
+<h3>4. Result </h3>
 <img src="docs/Results/unet_pred_cs.png" align="center"
      title="(Open Image in new tab for full resolution)" width="100%" />
 </div><div>
@@ -13465,8 +13501,23 @@ title="(Open Image in new tab for full resolution)" width="60%"/>
   Flow-Net with KERAS and Tensorflow</h1>
 <a style="color:navyblue;font-size:15px;" href ='#table_of_content_link'>Go Back to Table of Content</a></br>
 
-<br><a style="color:royalblue;font-size:20px;" href= https://github.com/irfanhasib0/CNN-Projects/blob/master/CNN_Basic/visual_odometry_deepvo%20-%20M-Flow%20-%20V-1.0.ipynb> GitHub Link :FlowNet for Optical Flow Kitti Dataset </a></br>
+<ul id="ul_1">
+    <b><I>
+    <li>Section 1: Overview </li>
+    <li>Section 3. Code </li>
+    <li>Section 4. Result</li>
+    </b></I>
+</ul>
+</div><div id=div_style>
+<h3>1. Overview </h3></br>
 
+FlowNet is one of the most popular architecture for optical flow prediction. Here the implementation code and results on KITTI Flow Dataset is presented below </h3>
+</div><div>
+<h3>2. Code </h3>
+<br><a style="color:royalblue;font-size:20px;" href= https://github.com/irfanhasib0/CNN-Projects/blob/master/CNN_Basic/visual_odometry_deepvo%20-%20M-Flow%20-%20V-1.0.ipynb> GitHub Link :FlowNet for Optical Flow Kitti Dataset </a></br>
+<iframe src="flownets_kitti_flow.html" name="targetframe" allowTransparency="true" scrolling="yes" frameborder="0" height="300" width="100%" ></iframe>
+</div><div>
+<h3>3. Result </h3>
 Train GT, Train prediction, Test GT, Test Prediction
 
 <img src="docs/Results/of_true-1.png" align="left"
@@ -13484,9 +13535,23 @@ Train GT, Train prediction, Test GT, Test Prediction
   Monocular Disparity using KERAS and Tensorflow</h1>
 <a style="color:navyblue;font-size:15px;" href ='#table_of_content_link'>Go Back to Table of Content</a></br> 
 
-</br><a style="color:royalblue;font-size:20px;" href=https://github.com/irfanhasib0/CNN-Projects/blob/master/CNN_Basic/visual_odometry_deepvo%20-%20M-Depth%20-%20V-2.0.ipynb> GitHub Link : Single View Depth Estimation </a></br>
+<ul id="ul_1">
+    <b><I>
+    <li>Section 1: Overview </li>
+    <li>Section 3. Code </li>
+    <li>Section 4. Result</li>
+    </b></I>
+</ul>
+</div><div id=div_style>
+<h3>1. Overview </h3></br>
 
-
+Slightly modified Architecture of FlowNet is used for monocular depth estimation. It still performed satisfactorily. The implementation code and results on KITTI Flow Dataset(on disp ground truth)  is presented below </h3>
+</div><div>
+<h3> Code </h3>
+</br><a style="color:royalblue;font-size:20px;" href=https://github.com/irfanhasib0/CNN-Projects/blob/master/CNN_Basic/FlaowNetS_KITTI_Disp_Data.ipynb> GitHub Link : Single View Depth Estimation </a></br>
+<iframe src="flownets_kitti_disp.html" name="targetframe" allowTransparency="true" scrolling="yes" frameborder="0" height="300" width="100%" ></iframe>
+</div><div>
+<h3> Result </h3>
 Top row : Train ; Bottom Row : Validation ;
 Left : Ground Truth ; Right : Prediction
 <img src="docs/Results/disp_train_gt.png" align="left"
@@ -13511,7 +13576,7 @@ Left : Ground Truth ; Right : Prediction
 <a id="dqn_ddpg_link"></a> DQN , DDPG, PPO A2C Implementation from scratch</h1></br>
 <a style="color:navyblue;font-size:15px;" href ='#table_of_content_link'>Go Back to Table of Content</a>
 
-<h5> GitHub Code Links :
+<h3> GitHub Code Links : </h3>
 <ul>
 <li><a style="color:navyblue;font-size:15px;" href= https://github.com/irfanhasib0/RL-Algorithms/blob/master/1.0_Multi_Arm_Bandit.ipynb>  Multi Arm Bandit - Notebook </a></li>
 <li><a style="color:navyblue;font-size:15px;" href= https://github.com/irfanhasib0/RL-Algorithms/blob/master/2.1_Value_Iteration.ipynb>   Value Iteration - Notebook  </a></li>
