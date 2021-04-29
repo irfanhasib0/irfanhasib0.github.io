@@ -13077,8 +13077,9 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
+<p><h3> Table of Content </h3></p>
 <div id="div_style"> 
-   I am Irfan. My works on Artificial Intelligence, Computer Vision, Machine Learning and Robotics can be found here. I have used Python and C++ in these works. For detailed algorithm, code and results please see the respective sections. The page have many graphical contents, it may take 5-30 seconds to load based on internet connection.  
+   I am Irfan. I am a passionate Engineer, always seeking to learn something new. My works on Artificial Intelligence, Computer Vision, Machine Learning and Robotics can be found here. I have used Python and C++ in these works. For detailed algorithm, code and results of each project, please see respective sections. The page have many graphical contents, it may take 5-30 seconds to load based on internet connection.  
  E-mail : <a href="mailto:irfanhasib.me@gmail.com">irfanhasib.me@gmail.com</a>
 <a id="table_of_content_link"></a> 
 <h3> Table of Content </h3>  
@@ -13272,7 +13273,7 @@ href ='#table_of_content_link'>Go Back to Table of Content</a>
 
 </div><div id=div_style>
 <h3> 1. Overview :  </h3></br>
-<p>Neural Network of 3 Layers is implemented here. A <b><I>Layer Class</b></I> is the backbone of the implementation. A stack of Layer objects can be used to build a Network. (1) Layer :: "forward_propagation", (2) Layer :: "backward_propagation", (3) Layer :: "update_weights" </b></I>, these functions are implemented for a Layer object. I have tested it with Banknote dataset. It was fitting good. Result can be found in Results section</p>
+<p>Code for Multi Layer Neural Network is implemented here from scratch, using raw Python programming language. Object oriented programming is used to better organize the code and making it user frendly. A <b><I>Layer and Network Object</b></I> is the backbone of the implementation. A stack of Layer objects can be used to build a Network. Network object has the following fucntions(1) Layer :: "forward_propagation", (2) Layer :: "backward_propagation", (3) Layer :: "update_weights" </b></I>. I have tested it with Banknote dataset. It was fitting good. Result can be found in Results section</p>
 </div><h3> 2. Flow Chart (ANN) : (Open Image in new tab for full resolution)</h3><p><img src="docs/Algorihms/NN_Brief.jpg" align="left" alt="Schematics" width="100%" /></p>
 <p><!-- Place this tag where you want the button to render. -->
 <a class="github-button" href="https://github.com/irfanhasib0/Machine-Learning" data-icon="octicon-star" aria-label="Star irfanhasib0/Machine-Learning on GitHub">Star</a></p>
@@ -13298,7 +13299,7 @@ href ='#table_of_content_link'>Go Back to Table of Content</a></p>
     </b></I>
 </ul><h3> 1. Overview </h3></br>
 <div id=div_style>
- Titanic and irish dataset was used for testing the ID3 implementation. Function for (1) Continuous data spliting based on information gain, (2) Information Gain Calculation,  (3) ID3 Algorithm (4) Prediction from built tree are main part of the implementation. For preventing overfitting reduced error pruining was applied. Accuracy,Precision,Recall is reported in Result section.
+ A fundamental descision tree based classifier is implemented here using ID3 algorithm with Python from scratch. Titanic and irish dataset was used for testing the algorithm. Function for (1) Continuous data spliting based on information gain, (2) Information Gain Calculation,  (3) ID3 Algorithm (4) Prediction from the built tree, are main part of the implementation. For preventing overfitting reduced error pruining was applied. Accuracy,Precision,Recall is reported in Result section.
 </div>
 
 <h3> 2. ID3 Flow Chart of Implementation (Open Image in new tab for full resolution) </h3><p><img src="docs/Algorihms/ID3_Simple.jpg" align="left"
@@ -13332,7 +13333,7 @@ href ='#table_of_content_link'>Go Back to Table of Content</a></p>
 </ul><h3> 1. Overview </h3></br>
 
 <div id=div_style>
- For Logistic Regression and SVM implementation banknote dataset is used for testing. SVM and LogisticRegression Class is implemented accordingly for the respective algorithms. For each of the 2 class predict, calc loss, calc grads, update weights functions are implemented. Both of the algorithms showed good accuracy for banknote dataset after minimal parameter tuning. Results can be found in respective results section.
+      SVM and Logisitic Regression code from scratch is presented below. SvmC object with the functions (a) SvnC.predict (b) SvmC.calc_gradients (c) SvmC.update_weights is implemented. LogisticRegression object also have the same functions. Banknote dataset is used for testing both of the algorithms. SVM and LogisticRegression Class is implemented accordingly for the respective algorithms. For each of the 2 class predict, calc loss, calc grads, update weights functions are implemented. Both of the algorithms showed good accuracy for banknote dataset after minimal parameter tuning. Results can be found in respective results section.
 </div>
 
 <h3> 2.0 SVM(Left), Logistic Regression(Right) Flow Chart of Implementation (Open Image in new tab for full resolution) </h3>
@@ -13383,17 +13384,17 @@ href ='#table_of_content_link'>Go Back to Table of Content</a>
 <div id=div_style>
 <ul id=ul_style>
 <li><b><I> Dataset     :</li></b></I> Archived data from stack exchange is used for classification.
-<li><b><I> Steps      :</li></b></I>
+<li><b><I> Naive Bias Steps      :</li></b></I>
                   <ul>
-                  <li>Text Preprocessing was done with raw python without nltk. </li>
+                  <li>Text Preprocessing was done with raw python. </li>
                   <li>Calculating Attribute(word) Probabilities given each class  </li>
                   <li>Calculating Attribute(word) Probabilities given each Samples  </li>
                   <li>Applying Bayes Theorem for getting class probalities </li>
                   <li>Max class probality is the predicted label </li>
                   </ul>
-<li><b><I> Steps      :</li></b></I>
+<li><b><I> KNN Steps      :</li></b></I>
                   <ul>
-                  <li>Text Preprocessing was done with raw python without nltk. </li>
+                  <li>Text Preprocessing was done with raw python. </li>
                   <li>Calculating Attribute Probability vector for each sample  </li>
                   <li>Calculating Cosine/Eucleidian/Humming Distances from test sample to each of train sample </li>
                   <li>Taking labels of K min distance samples from train data  </li>
