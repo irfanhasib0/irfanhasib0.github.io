@@ -13145,7 +13145,7 @@ href ='#house_price_link'> Kaggle House Price Prediction.</a></li>
   <li><a style="color:navyblue;font-size:15px;" 
 href ='#ros_rrbot_link'> ROS : Simple two linked robot</a></li>
   <li><a style="color:navyblue;font-size:15px;" 
-href ='#ros_husky_link'> ROS : Husky robot driver</a></li>
+href ='#ros_husky_link'> ROS : Husky and URbot(UR5) robot driver</a></li>
 </ul>
 </div>
 </div><div class="row">
@@ -14291,20 +14291,42 @@ All these projects I did as an employee of Pi Labs BD Ltd. www.pilabsbd.com
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><div>
+<div>
 <br><h1  style="color:grey;" >
 <a id="ros_rrbot_link"></a> 
-   ROS : Simple two linked robot inspired from rrbot</h1></br>
+   ROS : Custom 2 Link robot robot inspired from rrbot</h1>
 <br>
-</div>
+
 <a style="color:navyblue;font-size:15px;" 
-href ='#table_of_content_link'>Go Back to Table of Content</a>&lt;/br&gt;</p>
+href ='#table_of_content_link'>Go Back to Table of Content</a></br>
+
+I have developed a simple 2 link robot inspired from  <a style="color:royalblue;font-size:15px;"  href="http://gazebosim.org/tutorials?tut=ros_urdf"> rrbot </a>.It is capable of obtaining Laser Scan values from laser sensor and Camera feed from both overhead camera and camera attached to arm front. I have provided the URDF and Gazebo config files and python driver code for publishing driving command and listening to sensor values.
 <ul id ="ul_1">
-<li> <a  style="color:royalblue;font-size:20px;" href= "https://github.com/irfanhasib0/ros_ws/tree/master/src/rrbot/rrbot_description">Robot description file (URDF) Link</a> </li>
-<li> <a  style="color:royalblue;font-size:20px;" href="https://github.com/irfanhasib0/ros_ws/tree/master/src/rrbot/rrbot_control">Controller Code(Launch file) Link </a> </li>
-<li> <a  style="color:royalblue;font-size:20px;" href="https://github.com/irfanhasib0/ros_ws/tree/master/src/rrbot/rrbot_gazebo"> Gazebo config Link</a> </li>
-<li> <a  style="color:royalblue;font-size:20px;" href="https://youtu.be/lJbyy89X7gM">Video Link</a> </li>
-</ul><iframe width="50%"  src="https://youtu.be/lJbyy89X7gM"> </iframe>
+<li> <a style="color:royalblue;font-size:20px;" href="https://github.com/irfanhasib0/ros_ws/tree/master/src/run_gui_hk.py"> Simple 2 Link robot : Driver (Python3) </li>
+<li> <a  style="color:royalblue;font-size:20px;" href= "https://github.com/irfanhasib0/ros_ws/tree/master/src/rrbot/rrbot_description">Simple 2 Link robot : description file (URDF) Link</a> </li>
+<li> <a  style="color:royalblue;font-size:20px;" href="https://github.com/irfanhasib0/ros_ws/tree/master/src/rrbot/rrbot_control">Simple 2 Link robot : Controller Code(Launch file) Link </a> </li>
+<li> <a  style="color:royalblue;font-size:20px;" href="https://github.com/irfanhasib0/ros_ws/tree/master/src/rrbot/rrbot_gazebo"> Simple 2 Link robot : Gazebo config Link</a> </li>
+<li> <a  style="color:royalblue;font-size:20px;" href="https://youtu.be/lJbyy89X7gM">Simple 2 Link robot : YouTube Link</a> </li>
+</ul>
+<ul>
+<iframe width="50%"  src="https://www.youtube.com/embed/lJbyy89X7gM&ab_channel=IrfanHasib" align="center"> </iframe>
+<br><h1  style="color:grey;" >
+<a id="ros_rrbot_link"></a> 
+   ROS : Custom 2 link Robot, Husky, URbot driver in Python</h1>
+<br>
+Husky is a tarain travelling robot which is developed by <a style="color:royalblue;font-size:15px;" href="https://clearpathrobotics.com/husky-unmanned-ground-vehicle-robot/" >Clearpath Robotics </a>
+URbot(UR-5) is one of the robotic arms developed by <a style="color:royalblue;font-size:15px;" href="https://www.universal-robots.com/products/ur5-robot/" >Universal-Robots. </a> Below are the GitHub link of the basic driver code capable of publishing driving commands and listening to sensor valued using ROS which I have written for them. <br>
+
+<li> <a style="color:royalblue;font-size:20px;" href="https://github.com/irfanhasib0/ros_ws/tree/master/src/husky_mod/husky_control"> Husky Controller(Lunch File) </li>
+
+<li> <a style="color:royalblue;font-size:20px;" href="https://github.com/irfanhasib0/ros_ws/tree/master/src/run_gui_hk.py"> Husky Driver (Python3) </li> 
+<li> <a style="color:royalblue;font-size:20px;" href="https://github.com/irfanhasib0/ros_ws/tree/master/src/run_gui_ur.py"> Universal Robots (UR5) Driver (Python3)  </li>
+
+</ul>
+<img src="docs/Algorihms/ros_husky_1.jpg" align="left" width="42.8%" />
+<img src="docs/Algorihms/ros_ur_1.jpg" align="left" width="57.2%" />
+
+</div>
 </div>
 </div>
 </div>
@@ -14353,8 +14375,8 @@ href ='#table_of_content_link'>Go Back to Table of Content</a>
 </br>
 
 <h3> Critical Design Rivew: <a href ='https://www.youtube.com/watch?v=MlN-VFj14LE'>Video Link</a></h3>
-
 <img src="docs/old/URC.jpg" alt="(Open Image in new tab for full resolution)" width="80%" />
+<iframe src="https://www.youtube.com/watch?v=MlN-VFj14LE" width="50%" align="center"></iframe>
 </div>
 </div>
 </div>
