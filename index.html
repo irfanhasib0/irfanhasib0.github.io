@@ -13408,10 +13408,8 @@ href ='#table_of_content_link'>Go Back to Table of Content</a>
                   </ul>
 <li><b><I> Tuning     :</li></b></I> The model was Tuned for best alpha values.
 <li><b><I> Prediction :</li></b></I> Accuracy,Precision,Recall Reporting.
-</div><h3> 2. (a)Naive Bayes (b)K Nearest Neighbour algorithm Flow Chart</h3><p><img src="docs/Algorihms/Naive_Bayes.jpg" align="left"
-     title="Open Image in new tab for good resolution" width="50%" >
-<img src="docs/Algorihms/KNN_Algorithm.jpg" align="left"
-     title="Open Image in new tab for good resolution" width="50%" ></p>
+</div><h3> 2. (a)Naive Bayes (b)K Nearest Neighbour algorithm Flow Chart</h3><p><img src="docs/Algorihms/NB_KNN_Algorithm.jpg" align="center"
+     title="Open Image in new tab for good resolution" width="90%" ></p>
 <p><h3> 3.1 Implementation Code Naive Bias </h3>
 <a style="color:royalblue;font-size:15px;" href= https://github.com/irfanhasib0/Machine-Learning/blob/master/Machine_Learning_Algo_From_Scratch/Naive_Bayes_Stack_Exchange.ipynb> (a) GitHub : Naive Bayes Implementation from scratch - Notebook </a></p>
 <p><iframe src="NB.html" name="targetframe" allowTransparency="true" scrolling="yes" frameborder="0" height="300" width="100%" ></iframe></p>
@@ -13585,69 +13583,48 @@ Left : Ground Truth ; Right : Prediction
 <a id="dqn_ddpg_link"></a> DQN , DDPG, PPO A2C Implementation from scratch</h1></br>
 <a style="color:navyblue;font-size:15px;" href ='#table_of_content_link'>Go Back to Table of Content</a>
 
-<h3> GitHub Code Links : </h3>
+<ul id="ul_1">
+    <b><I>
+    <li>Section 1: GitHub Code Links </li>
+    <li>Section 2: Overview </li>
+    <li>Section 3. Flowchart</li>
+    <li>Section 4. PPO Code </li>
+    <li>Section 5. Result</li>
+    </b></I>
+</ul>
+
+<h3> 1. GitHub Code Links : </h3>
 <ul>
 <li><a style="color:navyblue;font-size:15px;" href= https://github.com/irfanhasib0/RL-Algorithms/blob/master/1.0_Multi_Arm_Bandit.ipynb>  Multi Arm Bandit - Notebook </a></li>
 <li><a style="color:navyblue;font-size:15px;" href= https://github.com/irfanhasib0/RL-Algorithms/blob/master/2.1_Value_Iteration.ipynb>   Value Iteration - Notebook  </a></li>
-<li><a style="color:navyblue;font-size:15px;" href= https://github.com/irfanhasib0/RL-Algorithms/blob/master/3.0_DQN_Mountain_Car.ipynb>  Mountain Car with DQN - Notebook  </a></li>
-<li><a style="color:navyblue;font-size:15px;" href= https://github.com/irfanhasib0/RL-Algorithms/blob/master/4.0_DDPG_Pendulum-mod.ipynb> Pendulum with DDPG - Notebook</a></li>
-<li><a style="color:navyblue;font-size:15px;" href= https://github.com/irfanhasib0/RL-Algorithms/blob/master/5.1_PPO_Bipedal_Walker-mod.ipynb>  Bipedal Walker with PPO - Notebook</a></li>
-<li><a style="color:navyblue;font-size:15px;" href= https://github.com/irfanhasib0/RL-Algorithms/blob/master/5.2_PPO_Lunar_Lander.ipynb>  Lunar Lander with PPO - Notebook </a></li>
+<li><a style="color:navyblue;font-size:15px;" href= https://github.com/irfanhasib0/RL-Algorithms/blob/master/3.0_DQN_Mountain_Car.ipynb>  DQN for Mountain Car - Notebook  </a></li>
+<li><a style="color:navyblue;font-size:15px;" href= https://github.com/irfanhasib0/RL-Algorithms/blob/master/4.0_DDPG_Pendulum-mod.ipynb> DDPG for Pendulum - Notebook</a></li>
+<li><a style="color:navyblue;font-size:15px;" href= https://github.com/irfanhasib0/RL-Algorithms/blob/master/5.1_PPO_Bipedal_Walker-mod.ipynb>  PPO for Bipedal Walker - Notebook</a></li>
+<li><a style="color:navyblue;font-size:15px;" href= https://github.com/irfanhasib0/RL-Algorithms/blob/master/5.2_PPO_Lunar_Lander.ipynb>  PPO for Lunar Lander - Notebook </a></li>
 </ul>
-</div><h3> 1.  Overview </h3><div id=div_style> 
-<ul id=ul_style>
-    <li><b><I> DQN Environments </li></b></I>  OpenAI gym --> Mountain Car ENvironment
-    <li><b><I> DDPG Environments </li></b></I>  OpenAI gym --> Pendulumn Environment
-    <li><b><I> PPO Environments </li></b></I>  OpenAI gym --> Bipedal Walker and Lunar Lander Environment
-    <li><b><I> DQN Steps </li></b></I>
-    <details false>
-            <summary><b><I><font color="#3498DB"> Click to expand</font></I></b></summary>
-    <ul>
-    For each time step of a episode 
-    <li> action : explore -> random | or exploit -> max Q value based on epsilon decay </li>
-    <li> play one step -> store experience </li>
-    <li> sample minibatch </li>
-    <li> target Q values : reward+gamma*Q_network(new_state,new_actions) </li> 
-    <li> train Q network </li>
-    </ul>
-    </details>
-    <li><b><I> DDPG Steps </li></b></I>
-    <details false>
-            <summary><b><I><font color="#3498DB"> Click to expand</font></I></b></summary>
-    <ul>
-    For each time step of a episode 
-    <li>actor(state): action + OU Noise </li>
-    <li>play one step -> store experience </li>
-    <li>sample minibatch </li>
-    <li>target Q values : reward+gamma*target_critic(new_state,new_actions) </li>
-    <li>actor loss from critic(state,action)</li>
-    <li>train actor and critic </li>
-    <li>target networks : networks*tau + (1-tau)*target_networks</li>
-    </ul>
-    </details>
-</ul>
-</div><div>
+</div>
+<h3> 2.  Overview </h3>
 
+<div id=div_style> 
+ DQN implemented and tested on OpenAI gym Mountain Car ENvironment, DDPG implemented and tested on  OpenAI gym Pendulumn Environment, PPO implemented and tested on OpenAI gym Bipedal Walker and Lunar Lander Environment. All these algorithms are implemnted from scratch using TensorFlow, Numpy and Python.
+</div>
+<div>
 <!-- Place this tag where you want the button to render. -->
 <a class="github-button" href="https://github.com/irfanhasib0/RL-Algorithms" data-icon="octicon-star" aria-label="Star irfanhasib0/RL-Algorithms on GitHub">Star</a></br>
 
-<h3> 2.1 Detailed Flow Chart for DQN and DDPG : (Please open in New tab for proper resolution) </h3>
+<h3> 3. Detailed Flow Chart for DQN and DDPG : (Please Zoom or Open in New tab for proper resolution) </h3>
 
 
-<img src="docs/Algorihms/DQN_Brief.jpg" align="left"
-     title="Open Image in new tab for good resolution" width="50%" >
-<img src="docs/Algorihms/DDPG_Brief.jpg" align="left"
-     title="Open Image in new tab for good resolution" width="50%" ></br>
-<img src="docs/Algorihms/PPO_A2C_Brief.jpg" align="left"
-     title="Open Image in new tab for good resolution" width="100%" >
+<img src="docs/Algorihms/RL_Brief.jpg" align="left"
+     title="Open Image in new tab for good resolution" width="100%" height="200%">
 
 <!-- Place this tag where you want the button to render. -->
 <a class="github-button" href="https://github.com/irfanhasib0/RL-Algorithms" data-icon="octicon-star" aria-label="Star irfanhasib0/RL-Algorithms on GitHub">Star</a>
 
-<h3> 2.2 Code PPO for bipedal environment </h3>
+<h3> 4. Code PPO for bipedal environment </h3>
 <iframe src="ppo_biped.html" name="targetframe" allowTransparency="true" scrolling="yes" frameborder="0" height="300" width="100%" ></iframe>
-</div><div>
-<h3> 3. Results </h3>
+
+<h3> 5. Results </h3>
 
 * a. Results DQN on Mountain Car
 * b. Results DDPG on Pendulum 
@@ -13753,7 +13730,7 @@ href ='#table_of_content_link'>Go Back to Table of Content</a>
 
 <h3> 2. Project Flow Chart :</h3>
 <img src="docs/Algorihms/kaggle_hp.jpg" align="center"
-     title="Open Image in new tab for good resolution" width="100%" height="1000">
+     title="Open Image in new tab for good resolution" width="80%" height="1000">
 
 </div><div>
 <br><h1  style="color:navyblue;" >
@@ -13834,7 +13811,7 @@ href ='#table_of_content_link'>Go Back to Table of Content</a>
 
 <h3> 2. Project Flow Chart :</h3>
 <img src="docs/Algorihms/sakura_jp.jpg" align="center"
-     title="Open Image in new tab for good resolution" width="70%">
+     title="Open Image in new tab for good resolution" width="60%">
 </div>
 </div>
 </div>
@@ -14302,7 +14279,7 @@ href ='#table_of_content_link'>Go Back to Table of Content</a><br>
 I have developed a simple 2 link robot inspired from  <a style="color:royalblue;font-size:15px;"  href=http://gazebosim.org/tutorials?tut=ros_urdf> rrbot </a>.It is capable of obtaining Laser Scan values from laser sensor and Camera feed from both overhead camera and camera attached to arm front. I have provided the URDF and Gazebo config files and python driver code for publishing driving command and listening to sensor values.
 
 <ul id ="ul_1">
-<li> <a style="color:royalblue;font-size:20px;" href="https://github.com/irfanhasib0/ros_ws/tree/master/src/run_gui_hk.py"> Simple 2 Link robot : Driver (Python3) </a> </li>
+<li> <a style="color:royalblue;font-size:20px;" href="https://github.com/irfanhasib0/ros_ws/blob/master/run_gui.py"> Simple 2 Link robot : Driver (Python3) </a> </li>
 <li> <a  style="color:royalblue;font-size:20px;" href= "https://github.com/irfanhasib0/ros_ws/tree/master/src/rrbot/rrbot_description">Simple 2 Link robot : description file (URDF) Link</a> </li>
 <li> <a  style="color:royalblue;font-size:20px;" href="https://github.com/irfanhasib0/ros_ws/tree/master/src/rrbot/rrbot_control">Simple 2 Link robot : Controller Code(Launch file) Link </a> </li>
 <li> <a  style="color:royalblue;font-size:20px;" href="https://github.com/irfanhasib0/ros_ws/tree/master/src/rrbot/rrbot_gazebo"> Simple 2 Link robot : Gazebo config Link</a> </li>
@@ -14323,13 +14300,13 @@ URbot(UR-5) is one of the robotic arms developed by <a style="color:royalblue;fo
 
 <ul id="ul_1">    
 <li> <a style="color:royalblue;font-size:20px;" href="https://github.com/irfanhasib0/ros_ws/tree/master/src/husky_mod/husky_control"> Husky Controller(Lunch File)</a> </li>
-<li> <a style="color:royalblue;font-size:20px;" href="https://github.com/irfanhasib0/ros_ws/tree/master/src/run_gui_hk.py"> Husky Driver (Python3) </a></li> 
-<li> <a style="color:royalblue;font-size:20px;" href="https://github.com/irfanhasib0/ros_ws/tree/master/src/run_gui_ur.py"> Universal Robots (UR5) Driver (Python3)  </a></li>
+<li> <a style="color:royalblue;font-size:20px;" href="https://github.com/irfanhasib0/ros_ws/blob/master/run_gui_hk.py"> Husky Driver (Python3) </a></li> 
+<li> <a style="color:royalblue;font-size:20px;" href="https://github.com/irfanhasib0/ros_ws/blob/master/run_gui_ur.py"> Universal Robots (UR5) Driver (Python3)  </a></li>
 </ul>
 
 
-<img src="docs/Algorihms/ros_husky_1.jpg" align="left" width="42.8%"/>
-<img src="docs/Algorihms/ros_ur_1.jpg" align="left" width="57.2%"/>
+<img src="docs/Algorihms/ros.jpg" align="left" width="100%"/>
+
 
 </div>
 </div>
