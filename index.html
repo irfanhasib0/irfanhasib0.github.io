@@ -13278,7 +13278,7 @@ href ='#table_of_content_link'>Go Back to Table of Content</a>
 </ul>
 
 </div><div id=div_style>
-<h3> 1. Overview :  </h3></br>
+<h3> 1. Overview :  </h3><br>
 <p>Code for Multi Layer Neural Network is implemented here from scratch, using raw Python programming language. Object oriented programming is used to better organize the code and making it user frendly. A <b><I>Layer and a Network Object</b></I> is the backbone of the implementation. A stack of Layer objects can be used to build a Network. Network object has the following fucntions(1) Layer :: "forward_propagation", (2) Layer :: "backward_propagation", (3) Layer :: "update_weights" </b></I>. I have tested it with Banknote dataset. It was fitting good. Result can be found in Results section</p>
 </div><h3> 2. Flow Chart (ANN) : (Open Image in new tab for full resolution)</h3><p><img src="docs/Algorihms/NN_Brief.jpg" align="left" alt="Schematics" width="100%" /></p>
 <p><!-- Place this tag where you want the button to render. -->
@@ -13388,26 +13388,7 @@ href ='#table_of_content_link'>Go Back to Table of Content</a>
 </ul>
 <h3> 1. Overview </h3></br>
 <div id=div_style>
-<ul id=ul_style>
-<li><b><I> Dataset     :</li></b></I> Archived data from stack exchange is used for classification.
-<li><b><I> Naive Bias Steps      :</li></b></I>
-                  <ul>
-                  <li>Text Preprocessing was done with raw python. </li>
-                  <li>Calculating Attribute(word) Probabilities given each class  </li>
-                  <li>Calculating Attribute(word) Probabilities given each Samples  </li>
-                  <li>Applying Bayes Theorem for getting class probalities </li>
-                  <li>Max class probality is the predicted label </li>
-                  </ul>
-<li><b><I> KNN Steps      :</li></b></I>
-                  <ul>
-                  <li>Text Preprocessing was done with raw python. </li>
-                  <li>Calculating Attribute Probability vector for each sample  </li>
-                  <li>Calculating Cosine/Eucleidian/Humming Distances from test sample to each of train sample </li>
-                  <li>Taking labels of K min distance samples from train data  </li>
-                  <li>Taking mode of K labels as prediction (tie breaks by random choise) </li>
-                  </ul>
-<li><b><I> Tuning     :</li></b></I> The model was Tuned for best alpha values.
-<li><b><I> Prediction :</li></b></I> Accuracy,Precision,Recall Reporting.
+ The steps for Naive Bias algorithm are as follows - (1) Calculating Attribute(word) Probabilities given each class. (2) Calculating Attribute(word) Probabilities given each Samples. (3) Applying Bayes Theorem for getting class probalities. (4) Max class probality is the predicted label. Algorithm Steps for KNN are - (1) Calculating Attribute Probability vector for each sample (2) Calculating Cosine/Eucleidian/Humming Distances from test sample to each of train sample (3) Taking labels of K min distance samples from train data. Taking mode of K labels as prediction (tie breaks by random choise). The model was Tuned for best alpha values. Archived data from stack exchange is used for testing the implementations. Accuracy,Precision and Recall are reported.
 </div><h3> 2. (a)Naive Bayes (b)K Nearest Neighbour algorithm Flow Chart</h3><p><img src="docs/Algorihms/NB_KNN_Algorithm.jpg" align="center"
      title="Open Image in new tab for good resolution" width="90%" ></p>
 <p><h3> 3.1 Implementation Code Naive Bias </h3>
@@ -14276,7 +14257,7 @@ ROS : Custom 2 Link robot robot inspired from rrbot</h1><br>
 <a style="color:navyblue;font-size:15px;" 
 href ='#table_of_content_link'>Go Back to Table of Content</a><br>
 
-I have developed a simple 2 link robot inspired from  <a style="color:royalblue;font-size:15px;"  href=http://gazebosim.org/tutorials?tut=ros_urdf> rrbot </a>.It is capable of obtaining Laser Scan values from laser sensor and Camera feed from both overhead camera and camera attached to arm front. I have provided the URDF and Gazebo config files and python driver code for publishing driving command and listening to sensor values.
+I have developed a simple 2 link robot inspired from  <a style="color:royalblue;font-size:15px;"  href='http://gazebosim.org/tutorials?tut=ros_urdf'> rrbot </a>.It is capable of obtaining Laser Scan values from laser sensor and Camera feed from both overhead camera and camera attached to arm front. I have provided the URDF and Gazebo config files and python driver code for publishing driving command and listening to sensor values.
 
 <ul id ="ul_1">
 <li> <a style="color:royalblue;font-size:20px;" href="https://github.com/irfanhasib0/ros_ws/blob/master/run_gui.py"> Simple 2 Link robot : Driver (Python3) </a> </li>
@@ -14295,8 +14276,8 @@ I have developed a simple 2 link robot inspired from  <a style="color:royalblue;
 <a style="color:navyblue;font-size:15px;" 
 href ='#table_of_content_link'>Go Back to Table of Content</a><br>
 
-Husky is a tarain travelling robot which is developed by <a style="color:royalblue;font-size:15px;" href="https://clearpathrobotics.com/husky-unmanned-ground-vehicle-robot/" >Clearpath Robotics </a>
-URbot(UR-5) is one of the robotic arms developed by <a style="color:royalblue;font-size:15px;" href="https://www.universal-robots.com/products/ur5-robot/" >Universal-Robots. </a> Below are the GitHub link of the basic driver code capable of publishing driving commands and listening to sensor valued using ROS which I have written for them. <br>
+Husky is a terrain travelling robot, developed by <a style="color:royalblue;font-size:15px;" href="https://clearpathrobotics.com/husky-unmanned-ground-vehicle-robot/" >Clearpath Robotics. </a>
+URbot(UR-5) is one of the robotic arms developed by <a style="color:royalblue;font-size:15px;" href="https://www.universal-robots.com/products/ur5-robot/" >Universal-Robots. </a> Below are the GitHub link of the basic driver code I have developed for these two robots. The driver software is capable of publishing driving commands and listening to sensor valued using ROS. <br>
 
 <ul id="ul_1">    
 <li> <a style="color:royalblue;font-size:20px;" href="https://github.com/irfanhasib0/ros_ws/tree/master/src/husky_mod/husky_control"> Husky Controller(Lunch File)</a> </li>
