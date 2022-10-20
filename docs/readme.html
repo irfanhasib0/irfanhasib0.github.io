@@ -14565,70 +14565,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<html>
-<head>
-<meta name="viewport" content="width=device-width, initial-scale=1">   
-<style type="text/css">
-h1 {color:grey;}
-h3 {color:#48C9B0;}
-h2 {color:lightsalmon;}
-h4 {color:darkgrey;}
-h5 {color:lightsalmon;}
-h6 {color:blue;}
-a  {color:blue;}
-<h1 id="ul_1-%7B">ul_1 {<a class="anchor-link" href="#ul_1-%7B">&#182;</a></h1><p>list-style-type: circle;
-}</p>
-<h1 id="ul_style-%7B">ul_style {<a class="anchor-link" href="#ul_style-%7B">&#182;</a></h1><pre><code>color:gray ;
-list-style-type:circle;
-} 
-
-</code></pre>
-<h1 id="div_1-%7B">div_1 {<a class="anchor-link" href="#div_1-%7B">&#182;</a></h1><p>color:#303030 ;
-background-color:#FFFFFF;
-}</p>
-<h1 id="div_style-%7B">div_style {<a class="anchor-link" href="#div_style-%7B">&#182;</a></h1><p>background-color:#FFFFFF;
-}</p>
-<h1 id="ul_st-%7B">ul_st {<a class="anchor-link" href="#ul_st-%7B">&#182;</a></h1><pre><code>color : #641E16;
-}
-
-
-</code></pre>
-<ul>
-<li>{
-box-sizing: border-box;</li>
-</ul>
-<p>}</p>
-<p>.column {
-  float: left;
-  width: 33.33%;
-}</p>
-<p>/* Clear floats after the columns */
-.row:after {
-  content: &quot;&quot;;
-  display: table;
-  clear: both;
-}</p>
-<p>.row {
-  display: flex;
-}</p>
-<p>/<em>-moz-column-width: 22em; </em>//* Firefox <em>/
-/</em>-webkit-column-width: 22em; <em>//</em> webkit, Safari, Chrome <em>/
-/</em>column-width: 22em;<em>/
-body{
-    background-color: #FFFFFF
-}
-/</em>remove standard list and bullet formatting from ul<em>/
-.columns1 ul
-{
-    margin: 20px;
-    padding: 0;
-    list-style-type: none;
-}
-/</em> correct webkit/chrome uneven margin on the first column*/
-</style></p>
-</head>
-<body>
-<a id="table_of_content_link"></a> 
+<p><a id="table_of_content_link"></a></p>
 <h2><b><I> Projects </I></b></h2> 
 <div id="div_1"> 
    <I>This is Irfan. Currently(2022) I am working as an AI Engineer in Japan. I always seek to learn something new. I am enthusiastic about - Artificial Intelligence, Computer Vision, Machine Learning and Robotics etc. Some of my works in these fields are organized in this page. Python, C++, little bit of React (js) is mosly used in these works. The detailed algorithms code and results for each project is demonstrated below in respective sections. I have designed the flowcharts to precisely demonstrate how each of these algorithms work. Some people may find it redundant but it helps me to dump my knowledge this way. The page has many graphical contents, please be patient while loading.
@@ -14755,8 +14692,66 @@ href ='#urc_2016_link'> University Rover Challenge - 2016</a></li>
 </div>
 </div>
 <script async defer src="https://buttons.github.io/buttons.js"></script>
-</body>
-</html>
+<meta name="viewport" content="width=device-width, initial-scale=1">   
+<style>
+h1 {color:grey;}
+h3 {color:#48C9B0;}
+h2 {color:lightsalmon;}
+h4 {color:darkgrey;}
+h5 {color:lightsalmon;}
+h6 {color:blue;}
+a  {color:blue;}
+<h1 id="ul_1-%7B">ul_1 {<a class="anchor-link" href="#ul_1-%7B">&#182;</a></h1><p>list-style-type: circle;
+}</p>
+<h1 id="ul_style-%7B">ul_style {<a class="anchor-link" href="#ul_style-%7B">&#182;</a></h1><pre><code>color:gray ;
+list-style-type:circle;
+} 
+
+</code></pre>
+<h1 id="div_1-%7B">div_1 {<a class="anchor-link" href="#div_1-%7B">&#182;</a></h1><p>color:#303030 ;
+background-color:#FFFFFF;
+}</p>
+<h1 id="div_style-%7B">div_style {<a class="anchor-link" href="#div_style-%7B">&#182;</a></h1><p>background-color:#FFFFFF;
+}</p>
+<h1 id="ul_st-%7B">ul_st {<a class="anchor-link" href="#ul_st-%7B">&#182;</a></h1><pre><code>color : #641E16;
+}
+</code></pre>
+<p></style></p>
+<style>
+
+* {
+  box-sizing: border-box;
+}
+
+.row {
+  display: flex;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  -moz-column-width: 22em;
+  -webkit-column-width: 22em;
+  column-width: 22em;
+}
+
+
+
+/*-moz-column-width: 22em; *//* Firefox */
+/*-webkit-column-width: 22em; *//* webkit, Safari, Chrome */
+/*column-width: 22em;*/
+body{
+    background-color: #FFFFFF
+}
+/*remove standard list and bullet formatting from ul*/
+.columns1 ul
+{
+    margin: 20px;
+    padding: 0;
+    list-style-type: none;
+}
+/* correct webkit/chrome uneven margin on the first column*/
+</style>
 
 </div>
 </div>
@@ -14781,7 +14776,7 @@ href ='#table_of_content_link'>Go Back to Table of Content</a>
 </div>
 <div id=div_style>
 <h3> 1. Overview :  </h3><br>
-<p>A simple multi layer neural network is implemented here from scratch, using raw Python programming language. I preffered OOP for encapsulation and pproper organization. Layer object and Network object are the backbone of this implementation. A stack of Layer objects can be used to build a Network. Network object has the following fucntions(1) Layer :: "forward_propagation", (2) Layer :: "backward_propagation", (3) Layer :: "update_weights" </b></I>. I have tested it with Banknote dataset. It was fitting good. Result can be found in Results section</p>
+<p>A simple multi layer neural network is implemented here from scratch, using raw Python programming language. I preffered OOP for encapsulation and pproper organization. Layer object are the backbone of this implementation while Network object used to organize it all together. A stack of Layer objects can be used to build a Network. Network object has the following fucntions(1) Layer :: "forward_propagation", (2) Layer :: "backward_propagation", (3) Layer :: "update_weights" </b></I>. I have tested it with Banknote dataset. It was fitting good. Result can be found in Results section</p>
 </div>
 <h3> 2. Flow Chart (ANN) : (Open Image in new tab for full resolution)</h3>
 <img src="docs/Algorihms/NN_Brief.jpg" align="left" alt="Schematics" width="100%" />
