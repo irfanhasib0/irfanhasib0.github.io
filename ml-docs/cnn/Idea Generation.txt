@@ -1,0 +1,35 @@
+Gradient classifiaction:
+
+1. Right dirrection, Right Magnitude
+2. Right Dirrection, Very Low magnitude
+3. Right Dirrection, Very High magnitude
+4. Wrong Dirrection. (Can be classified later)
+
+Need to find out a way to classify gradients to these 4 categories.
+We can compare with auxiliary task gradients.
+In tha case how confident we are about auxiliary task ?
+
+Overall confidence analysis ::
+1. Can analyze stepness of loss ?
+2. Can analyse train vs valid loss for auxiliary task ?
+
+Node wise confidence analysis ::
+1. Can analyze for how long gradient is updating in a certain dirrection ?
+2. Can analyze for how consistently one gradient is updating ? or is it just fluctuating between dirrections ?
+
+How to find, how confidently each task learning ?
+1. The capability of auxiliary for helping will change (mostly decay) with time. 
+2. The capability of auxiliary for helping will change (mostly decay) as we go for deeper layer, as more deep layers will learn task specific details.
+
+Cosine similarity can give an idea of current 'effectiveness of auxiliary task'.
+
+Cosine similarity remembering ::
+
+we can add up cosine similarity for each layer with time : cos = alpha*curr_cos + (1-alpha)*cos
+
+1. It will make cos stable with time 
+        i. cancel out noise.
+        ii. reinforce monotonous update.
+
+2. We can consider mean cosine similarity for multiple auxiliary tasks for determining how similar is the main tasks gradient right now with all other tasks.
+

@@ -1,0 +1,26 @@
+1. State Space Z = AX + BU, Steve Brunton lecture + ILQR code + MPC
+2. Linear algebra : Linear and Non-Linear transformation , Determinant, Eigen Vector, Change of basis ( 3blue 1 brown)
+3. SVD, PCA
+4. ADAMM, BADAMM
+5. Lagrange Multiplier, Dual Gradient Descent
+
+Machine Learning
+1. Linear Regression, Logistic Regression, Least Square
+2. NN forward and backward prop, Optimizers : Adam,RMSProp
+3. Naive Bias, KNN
+4. ID3, Cart-4.5, Gradient Boosting, XGBoost
+5. CNN : GradCAM, Saliency analysis
+6. Info gain, Entropy, KL- Divergence, Beta Distribution
+7. LSTM,GRU,GAN
+
+1. Multi Arm Bandit, Value Iteration, Policy Iteration,Importance Sampling
+2. DQN,DDPG,PER,A2C,A3C,PPO
+3. Visualization
+
+
+1. Entropy, Information gain, Importance Sampling, Bayes Therem, Quantile based spliting
+
+Coding
+
+The big o
+Data Structures
