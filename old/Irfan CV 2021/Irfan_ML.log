@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2023.1.9)  18 APR 2023 15:07
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2023.1.9)  18 APR 2023 15:04
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**Irfan_ML_V2.tex
-(./Irfan_ML_V2.tex
+**Irfan_ML.tex
+(./Irfan_ML.tex
 LaTeX2e <2020-02-02> patch level 2
 L3 programming layer <2020-02-14> (./twentysecondcv.cls
 Document Class: twentysecondcv 2017/01/08 CV class
@@ -638,8 +638,8 @@ File: l3backend-pdfmode.def 2020-02-03 L3 backend support: PDF mode
 \l__kernel_color_stack_int=\count279
 \l__pdf_internal_box=\box58
 )
-(./Irfan_ML_V2.aux)
-\openout1 = `Irfan_ML_V2.aux'.
+No file Irfan_ML.aux.
+\openout1 = `Irfan_ML.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 47.
 LaTeX Font Info:    ... okay on input line 47.
@@ -659,7 +659,7 @@ LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 47.
 LaTeX Font Info:    ... okay on input line 47.
 \c@mv@tabular=\count280
 \c@mv@boldtabular=\count281
- ABD: EveryShipout initializing macros
+ABD: EveryShipout initializing macros
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count282
@@ -701,10 +701,8 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 47.
 LaTeX Info: Redefining \pageref on input line 47.
 LaTeX Info: Redefining \nameref on input line 47.
-
-(./Irfan_ML_V2.out) (./Irfan_ML_V2.out)
 \@outlinefile=\write4
-\openout4 = `Irfan_ML_V2.out'.
+\openout4 = `Irfan_ML.out'.
 
 
 *geometry* driver: auto-detecting
@@ -787,16 +785,6 @@ LaTeX Font Info:    Font shape `T1/ClearSans-TLF/regular/n' will be
 
 Overfull \hbox (3.5164pt too wide) in paragraph at lines 75--75
 [][]| 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 75--75
-[]\T1/ClearSans-TLF/regular/n/10 6-1-5 Mayebaran-ishi, Fun-
- []
-
-
-Underfull \hbox (badness 1616) in paragraph at lines 75--75
-\T1/ClearSans-TLF/regular/n/10 abashi, Chiba Build-ing: Al-bis
  []
 
 
@@ -920,28 +908,28 @@ Overfull \hbox (11.53178pt too wide) in paragraph at lines 75--75
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 77--78
+Underfull \hbox (badness 10000) in paragraph at lines 82--83
 
  []
 
 LaTeX Font Info:    Font shape `T1/ClearSans-TLF/b/n' in size <10> not availabl
 e
 (Font)              Font shape `T1/ClearSans-TLF/bold/n' tried instead on input
- line 80.
+ line 95.
 LaTeX Font Info:    Font shape `T1/ClearSans-TLF/bold/n' will be
-(Font)              scaled to size 10.0pt on input line 80.
+(Font)              scaled to size 10.0pt on input line 95.
 LaTeX Font Info:    Font shape `T1/ClearSans-TLF/b/it' in size <10> not availab
 le
 (Font)              Font shape `T1/ClearSans-TLF/bold/it' tried instead on inpu
-t line 80.
+t line 95.
 LaTeX Font Info:    Font shape `T1/ClearSans-TLF/bold/it' will be
-(Font)              scaled to size 10.0pt on input line 80.
+(Font)              scaled to size 10.0pt on input line 95.
 LaTeX Font Info:    Font shape `T1/ClearSans-TLF/m/it' in size <10> not availab
 le
 (Font)              Font shape `T1/ClearSans-TLF/regular/it' tried instead on i
-nput line 82.
+nput line 97.
 LaTeX Font Info:    Font shape `T1/ClearSans-TLF/regular/it' will be
-(Font)              scaled to size 10.0pt on input line 82.
+(Font)              scaled to size 10.0pt on input line 97.
 
 ! LaTeX Error: Environment multline undefined.
 
@@ -949,33 +937,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.84 \begin{multline}
-                     
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-! LaTeX Error: \begin{document} ended by \end{multline}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.90 \end{multline}
-                   
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-! LaTeX Error: Environment multline undefined.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.98 \begin{multline}
+l.99 \begin{multline}
                      
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -995,7 +957,7 @@ Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 99--105
+Underfull \hbox (badness 10000) in paragraph at lines 100--105
 
  []
 
@@ -1006,7 +968,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.115 \begin{multline}
+l.114 \begin{multline}
                       
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -1019,23 +981,23 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.120 \end{multline}
+l.119 \end{multline}
                     
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 124--137
+Underfull \hbox (badness 10000) in paragraph at lines 123--129
 
  []
 
 
 Package hyperref Warning: Option `colorlinks' has already been used,
-(hyperref)                setting the option has no effect on input line 144.
+(hyperref)                setting the option has no effect on input line 138.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 148--155
+Underfull \hbox (badness 10000) in paragraph at lines 142--149
 
  []
 
@@ -1049,13 +1011,13 @@ See the xcolor package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.196 \makeprofilenpage
+l.189 \makeprofilenpage
                        
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-Overfull \hbox (4.25401pt too wide) in paragraph at lines 196--196
+Overfull \hbox (4.25401pt too wide) in paragraph at lines 189--189
 \T1/ClearSans-TLF/regular/n/9 HTML, CSS, Java Script : Ba-sic (Few Months)[] 
  []
 
@@ -1066,13 +1028,13 @@ See the xcolor package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.196 \makeprofilenpage
+l.189 \makeprofilenpage
                        
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-Overfull \hbox (19.79091pt too wide) in paragraph at lines 196--196
+Overfull \hbox (19.79091pt too wide) in paragraph at lines 189--189
 []\T1/ClearSans-TLF/bold/n/9 Standard Data Pre-pro-cess-ing Pipeline, SMOTE,
  []
 
@@ -1083,7 +1045,7 @@ See the xcolor package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.196 \makeprofilenpage
+l.189 \makeprofilenpage
                        
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -1095,19 +1057,19 @@ See the xcolor package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.196 \makeprofilenpage
+l.189 \makeprofilenpage
                        
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-Overfull \hbox (3.98396pt too wide) in paragraph at lines 196--196
+Overfull \hbox (3.98396pt too wide) in paragraph at lines 189--189
 []\T1/ClearSans-TLF/regular/n/9 Data Dis-tri-bu-tions, Bayes The-o-rem, En-trop
 y,
  []
 
 
-Overfull \hbox (12.80394pt too wide) in paragraph at lines 196--196
+Overfull \hbox (12.80394pt too wide) in paragraph at lines 189--189
 \T1/ClearSans-TLF/regular/n/9 Gain , Rel-e-vant the-o-rems of Prob-a-bil-ity, S
 tatis-
  []
@@ -1119,7 +1081,7 @@ See the xcolor package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.196 \makeprofilenpage
+l.189 \makeprofilenpage
                        
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -1131,7 +1093,7 @@ See the xcolor package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.196 \makeprofilenpage
+l.189 \makeprofilenpage
                        
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -1143,14 +1105,14 @@ See the xcolor package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.196 \makeprofilenpage
+l.189 \makeprofilenpage
                        
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-Overfull \hbox (8.55598pt too wide) in paragraph at lines 196--196
-\T1/ClearSans-TLF/regular/n/9 Web De-vel-op-ment : Ba-sic (Ap-prox. 6 months) 
+Overfull \hbox (4.50508pt too wide) in paragraph at lines 189--189
+\T1/ClearSans-TLF/regular/n/9 Web De-vel-op-ment : Ba-sic (Roughly a month) 
  []
 
 
@@ -1160,7 +1122,7 @@ See the xcolor package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.196 \makeprofilenpage
+l.189 \makeprofilenpage
                        
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -1172,70 +1134,84 @@ See the xcolor package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.196 \makeprofilenpage
+l.189 \makeprofilenpage
                        
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 197--200
+Underfull \hbox (badness 10000) in paragraph at lines 190--193
 
  []
 
 
-Underfull \hbox (badness 3758) in paragraph at lines 204--204
+Underfull \hbox (badness 3758) in paragraph at lines 198--198
 []\T1/ClearSans-TLF/regular/n/10 Implementing op-ti-mal steer-ing an-gle es-ti-
 ma-tor from road co-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 203--209
+Underfull \hbox (badness 10000) in paragraph at lines 196--203
 
  []
 
 LaTeX Font Info:    Font shape `T1/ClearSans-TLF/m/n' in size <8> not available
 
 (Font)              Font shape `T1/ClearSans-TLF/regular/n' tried instead on in
-put line 221.
+put line 215.
 LaTeX Font Info:    Font shape `T1/ClearSans-TLF/regular/n' will be
-(Font)              scaled to size 8.0pt on input line 221.
+(Font)              scaled to size 8.0pt on input line 215.
 
-Underfull \hbox (badness 10000) in paragraph at lines 213--233
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 236--242
+Underfull \hbox (badness 10000) in paragraph at lines 207--227
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 245--252
+Underfull \hbox (badness 10000) in paragraph at lines 230--237
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 240--245
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 246--253
 
  []
 
 [2]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 260.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 260.
- (./Irfan_ML_V2.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 260.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 260.
-Package rerunfilecheck Info: File `Irfan_ML_V2.out' has not changed.
-(rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 256.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 256.
+ (./Irfan_ML.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 256.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 256.
 
+
+Package rerunfilecheck Warning: File `Irfan_ML.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `Irfan_ML.out':
+(rerunfilecheck)             Before: <no file>
+(rerunfilecheck)             After:  D41D8CD98F00B204E9800998ECF8427E;0.
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
  )
 (\end occurred when \ifx on line 99 was incomplete) 
 Here is how much of TeX's memory you used:
- 17531 strings out of 481239
- 330082 string characters out of 5920378
- 592327 words of memory out of 5000000
+ 17525 strings out of 481239
+ 329959 string characters out of 5920378
+ 593063 words of memory out of 5000000
  32427 multiletter control sequences out of 15000+600000
  589319 words of font info for 44 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 68i,16n,64p,801b,876s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 68i,16n,64p,798b,876s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-di
 st/fonts/enc/dvips/clearsans/clr_zxbkm4.enc}</usr/share/texlive/texmf-dist/font
 s/type1/intel/clearsans/ClearSans-Bold.pfb></usr/share/texlive/texmf-dist/fonts
@@ -1243,10 +1219,10 @@ s/type1/intel/clearsans/ClearSans-Bold.pfb></usr/share/texlive/texmf-dist/fonts
 fonts/type1/intel/clearsans/ClearSans-Italic.pfb></usr/share/texlive/texmf-dist
 /fonts/type1/intel/clearsans/ClearSans-Regular.pfb></usr/share/texlive/texmf-di
 st/fonts/type1/public/marvosym/marvosym.pfb>
-Output written on Irfan_ML_V2.pdf (2 pages, 224964 bytes).
+Output written on Irfan_ML.pdf (2 pages, 226240 bytes).
 PDF statistics:
- 80 PDF objects out of 1000 (max. 8388607)
- 69 compressed objects within 1 object stream
+ 76 PDF objects out of 1000 (max. 8388607)
+ 65 compressed objects within 1 object stream
  3 named destinations out of 1000 (max. 500000)
  18 words of extra memory for PDF output out of 10000 (max. 10000000)
 
