@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2024.3.16)  16 APR 2024 21:03
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2023.6.1)  30 JAN 2024 22:07
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -633,9 +633,7 @@ l.113 ...sname\relax\expandafter\notXeTeXformat\fi
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
-)
-Package hyperref Info: Option `colorlinks' set `true' on input line 51.
- (/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdfmode.def
+) (/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdfmode.def
 File: l3backend-pdfmode.def 2020-02-03 L3 backend support: PDF mode
 \l__kernel_color_stack_int=\count279
 \l__pdf_internal_box=\box58
@@ -643,22 +641,22 @@ File: l3backend-pdfmode.def 2020-02-03 L3 backend support: PDF mode
 (./Irfan_ML_V3.aux)
 \openout1 = `Irfan_ML_V3.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 55.
-LaTeX Font Info:    ... okay on input line 55.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 55.
-LaTeX Font Info:    ... okay on input line 55.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 55.
-LaTeX Font Info:    ... okay on input line 55.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 55.
-LaTeX Font Info:    ... okay on input line 55.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 55.
-LaTeX Font Info:    ... okay on input line 55.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 55.
-LaTeX Font Info:    ... okay on input line 55.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 55.
-LaTeX Font Info:    ... okay on input line 55.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 55.
-LaTeX Font Info:    ... okay on input line 55.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 47.
+LaTeX Font Info:    ... okay on input line 47.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 47.
+LaTeX Font Info:    ... okay on input line 47.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 47.
+LaTeX Font Info:    ... okay on input line 47.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 47.
+LaTeX Font Info:    ... okay on input line 47.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 47.
+LaTeX Font Info:    ... okay on input line 47.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 47.
+LaTeX Font Info:    ... okay on input line 47.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 47.
+LaTeX Font Info:    ... okay on input line 47.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 47.
+LaTeX Font Info:    ... okay on input line 47.
 \c@mv@tabular=\count280
 \c@mv@boldtabular=\count281
  ABD: EveryShipout initializing macros
@@ -685,9 +683,9 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
 ABD: EverySelectfont initializing macros
-LaTeX Info: Redefining \selectfont on input line 55.
+LaTeX Info: Redefining \selectfont on input line 47.
 \AtBeginShipoutBox=\box60
-Package hyperref Info: Link coloring ON on input line 55.
+Package hyperref Info: Link coloring OFF on input line 47.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
@@ -700,9 +698,9 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count288
 )
-LaTeX Info: Redefining \ref on input line 55.
-LaTeX Info: Redefining \pageref on input line 55.
-LaTeX Info: Redefining \nameref on input line 55.
+LaTeX Info: Redefining \ref on input line 47.
+LaTeX Info: Redefining \pageref on input line 47.
+LaTeX Info: Redefining \nameref on input line 47.
 
 (./Irfan_ML_V3.out) (./Irfan_ML_V3.out)
 \@outlinefile=\write4
@@ -746,104 +744,104 @@ LaTeX Info: Redefining \nameref on input line 55.
 <irfan.jpg, id=7, 91.0602pt x 113.9457pt>
 File: irfan.jpg Graphic file (type jpg)
 <use irfan.jpg>
-Package pdftex.def Info: irfan.jpg  used on input line 82.
+Package pdftex.def Info: irfan.jpg  used on input line 74.
 (pdftex.def)             Requested size: 142.26378pt x 178.04317pt.
 LaTeX Font Info:    Font shape `T1/ClearSans-TLF/m/n' in size <14.4> not availa
 ble
 (Font)              Font shape `T1/ClearSans-TLF/regular/n' tried instead on in
-put line 82.
+put line 74.
 LaTeX Font Info:    Font shape `T1/ClearSans-TLF/regular/n' will be
-(Font)              scaled to size 14.4pt on input line 82.
+(Font)              scaled to size 14.4pt on input line 74.
 
-Overfull \hbox (1.74628pt too wide) in paragraph at lines 82--82
+Overfull \hbox (1.74628pt too wide) in paragraph at lines 74--74
 []\T1/ClearSans-TLF/regular/n/14.4 Machine Learn-ing En-gi-neer[] 
  []
 
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 82.
+(Font)              <7> on input line 74.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 82.
+(Font)              <5> on input line 74.
 
 LaTeX Font Warning: Font shape `T1/ClearSans-TLF/m/sc' undefined
-(Font)              using `T1/ClearSans-TLF/m/n' instead on input line 82.
+(Font)              using `T1/ClearSans-TLF/m/n' instead on input line 74.
 
 LaTeX Font Info:    Font shape `T1/ClearSans-TLF/m/sc' in size <14.4> not avail
 able
 (Font)              Font shape `T1/ClearSans-TLF/regular/n' tried instead on in
-put line 82.
+put line 74.
 LaTeX Font Info:    Font shape `T1/ClearSans-TLF/regular/n' will be
-(Font)              scaled to size 14.4pt on input line 82.
-LaTeX Font Info:    Trying to load font information for U+mvs on input line 82.
+(Font)              scaled to size 14.4pt on input line 74.
+LaTeX Font Info:    Trying to load font information for U+mvs on input line 74.
 
 (/usr/share/texlive/texmf-dist/tex/latex/marvosym/umvs.fd)
-Overfull \hbox (4.3538pt too wide) in paragraph at lines 82--82
+Overfull \hbox (4.3538pt too wide) in paragraph at lines 74--74
 [][]| 
  []
 
 LaTeX Font Info:    Font shape `T1/ClearSans-TLF/m/sc' in size <10> not availab
 le
 (Font)              Font shape `T1/ClearSans-TLF/regular/n' tried instead on in
-put line 82.
+put line 74.
 LaTeX Font Info:    Font shape `T1/ClearSans-TLF/regular/n' will be
-(Font)              scaled to size 10.0pt on input line 82.
+(Font)              scaled to size 10.0pt on input line 74.
 
-Overfull \hbox (3.5164pt too wide) in paragraph at lines 82--82
+Overfull \hbox (3.5164pt too wide) in paragraph at lines 74--74
 [][]| 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 82--82
+Underfull \hbox (badness 10000) in paragraph at lines 74--74
 []\T1/ClearSans-TLF/regular/n/10 6-1-5 Mayebaran-ishi, Fun-
  []
 
 
-Underfull \hbox (badness 1616) in paragraph at lines 82--82
+Underfull \hbox (badness 1616) in paragraph at lines 74--74
 \T1/ClearSans-TLF/regular/n/10 abashi, Chiba Build-ing: Al-bis
  []
 
 
-Overfull \hbox (3.29912pt too wide) in paragraph at lines 82--82
+Overfull \hbox (3.29912pt too wide) in paragraph at lines 74--74
 [][]| 
  []
 
 
-Overfull \hbox (4.95634pt too wide) in paragraph at lines 82--82
+Overfull \hbox (4.95634pt too wide) in paragraph at lines 74--74
 [][]| 
  []
 
 LaTeX Font Info:    Font shape `T1/ClearSans-TLF/m/sc' in size <12> not availab
 le
 (Font)              Font shape `T1/ClearSans-TLF/regular/n' tried instead on in
-put line 82.
+put line 74.
 LaTeX Font Info:    Font shape `T1/ClearSans-TLF/regular/n' will be
-(Font)              scaled to size 12.0pt on input line 82.
+(Font)              scaled to size 12.0pt on input line 74.
 
-Overfull \hbox (4.14384pt too wide) in paragraph at lines 82--82
+Overfull \hbox (4.14384pt too wide) in paragraph at lines 74--74
 [][]| 
  []
 
 
-Overfull \hbox (4.3543pt too wide) in paragraph at lines 82--82
+Overfull \hbox (4.3543pt too wide) in paragraph at lines 74--74
 [][]| 
  []
 
 
-Overfull \hbox (5.68494pt too wide) in paragraph at lines 82--82
-[][][][]\T1/ClearSans-TLF/regular/n/10 www.linkedin.com/in/irfanhasib/[][][]| 
+Overfull \hbox (5.68494pt too wide) in paragraph at lines 74--74
+[][][]\T1/ClearSans-TLF/regular/n/10 www.linkedin.com/in/irfanhasib/[][]| 
  []
 
 LaTeX Font Info:    Font shape `T1/ClearSans-TLF/m/n' in size <20.74> not avail
 able
 (Font)              Font shape `T1/ClearSans-TLF/regular/n' tried instead on in
-put line 82.
+put line 74.
 LaTeX Font Info:    Font shape `T1/ClearSans-TLF/regular/n' will be
-(Font)              scaled to size 20.74pt on input line 82.
+(Font)              scaled to size 20.74pt on input line 74.
 LaTeX Font Info:    Font shape `T1/ClearSans-TLF/m/n' in size <12> not availabl
 e
 (Font)              Font shape `T1/ClearSans-TLF/regular/n' tried instead on in
-put line 82.
+put line 74.
 LaTeX Font Info:    Font shape `T1/ClearSans-TLF/regular/n' will be
-(Font)              scaled to size 12.0pt on input line 82.
+(Font)              scaled to size 12.0pt on input line 74.
 
 ! Package xcolor Error: Undefined color `myblack'.
 
@@ -851,7 +849,7 @@ See the xcolor package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.82 \makeprofile
+l.74 \makeprofile
                   % Print the sidebar
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -859,17 +857,17 @@ If that doesn't work, type  X <return>  to quit.
 LaTeX Font Info:    Font shape `T1/ClearSans-TLF/m/n' in size <9> not available
 
 (Font)              Font shape `T1/ClearSans-TLF/regular/n' tried instead on in
-put line 82.
+put line 74.
 LaTeX Font Info:    Font shape `T1/ClearSans-TLF/regular/n' will be
-(Font)              scaled to size 9.0pt on input line 82.
+(Font)              scaled to size 9.0pt on input line 74.
 LaTeX Font Info:    Font shape `T1/ClearSans-TLF/b/n' in size <9> not available
 
 (Font)              Font shape `T1/ClearSans-TLF/bold/n' tried instead on input
- line 82.
+ line 74.
 LaTeX Font Info:    Font shape `T1/ClearSans-TLF/bold/n' will be
-(Font)              scaled to size 9.0pt on input line 82.
+(Font)              scaled to size 9.0pt on input line 74.
 
-Overfull \hbox (11.31148pt too wide) in paragraph at lines 82--82
+Overfull \hbox (11.31148pt too wide) in paragraph at lines 74--74
 \T1/ClearSans-TLF/regular/n/9 Proficient in \T1/ClearSans-TLF/bold/n/9 Python, 
 Numpy, Pan-das, Sklearn[] 
  []
@@ -881,13 +879,13 @@ See the xcolor package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.82 \makeprofile
+l.74 \makeprofile
                   % Print the sidebar
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-Overfull \hbox (4.87178pt too wide) in paragraph at lines 82--82
+Overfull \hbox (4.87178pt too wide) in paragraph at lines 74--74
 \T1/ClearSans-TLF/bold/n/9 sion Tree, CART, Ran-dom For-est, Ad-aBoost,
  []
 
@@ -898,18 +896,18 @@ See the xcolor package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.82 \makeprofile
+l.74 \makeprofile
                   % Print the sidebar
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-Overfull \hbox (0.32156pt too wide) in paragraph at lines 82--82
+Overfull \hbox (0.32156pt too wide) in paragraph at lines 74--74
 \T1/ClearSans-TLF/bold/n/9 ResNet, Mo-bileNet, Ef-fi-cient-Net. CV : HOG,
  []
 
 
-Overfull \hbox (1.08006pt too wide) in paragraph at lines 82--82
+Overfull \hbox (1.08006pt too wide) in paragraph at lines 74--74
 \T1/ClearSans-TLF/bold/n/9 Haar, SURF, SIFT, ORB, 0pt. Flow, Seg-men-
  []
 
@@ -920,100 +918,105 @@ See the xcolor package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.82 \makeprofile
+l.74 \makeprofile
                   % Print the sidebar
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-Overfull \hbox (11.53178pt too wide) in paragraph at lines 82--82
+Overfull \hbox (11.53178pt too wide) in paragraph at lines 74--74
 []\T1/ClearSans-TLF/bold/n/9 Value It-er-a-tion, Pol-icy Gra-di-ent, MDP, TD/MC
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 84--85
+Underfull \hbox (badness 10000) in paragraph at lines 76--77
 
  []
 
 LaTeX Font Info:    Font shape `T1/ClearSans-TLF/b/n' in size <10> not availabl
 e
 (Font)              Font shape `T1/ClearSans-TLF/bold/n' tried instead on input
- line 88.
+ line 79.
 LaTeX Font Info:    Font shape `T1/ClearSans-TLF/bold/n' will be
-(Font)              scaled to size 10.0pt on input line 88.
+(Font)              scaled to size 10.0pt on input line 79.
 LaTeX Font Info:    Font shape `T1/ClearSans-TLF/b/it' in size <10> not availab
 le
 (Font)              Font shape `T1/ClearSans-TLF/bold/it' tried instead on inpu
-t line 88.
+t line 79.
 LaTeX Font Info:    Font shape `T1/ClearSans-TLF/bold/it' will be
-(Font)              scaled to size 10.0pt on input line 88.
+(Font)              scaled to size 10.0pt on input line 79.
 LaTeX Font Info:    Font shape `T1/ClearSans-TLF/m/it' in size <10> not availab
 le
 (Font)              Font shape `T1/ClearSans-TLF/regular/it' tried instead on i
-nput line 90.
+nput line 81.
 LaTeX Font Info:    Font shape `T1/ClearSans-TLF/regular/it' will be
-(Font)              scaled to size 10.0pt on input line 90.
+(Font)              scaled to size 10.0pt on input line 81.
 
-! LaTeX Error: Environment multiline undefined.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.92 \begin{multiline}
-                      
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-! LaTeX Error: \begin{document} ended by \end{multiline}.
+! LaTeX Error: Environment multline undefined.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.95 \end{multiline}
-                    
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-! LaTeX Error: Environment multiline undefined.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.101 \begin{multiline}
-                       
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-! LaTeX Error: \begin{document} ended by \end{multiline}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.108 \end{multiline}
+l.83 \begin{multline}
                      
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
+! LaTeX Error: \begin{document} ended by \end{multline}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.90 \end{multline}
+                   
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
 ! LaTeX Error: Environment multline undefined.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.116 \begin{multline}
+l.98 \begin{multline}
+                     
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! LaTeX Error: \begin{document} ended by \end{multline}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.104 \end{multline}
+                    
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 99--105
+
+ []
+
+
+! LaTeX Error: Environment multline undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.115 \begin{multline}
                       
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -1026,56 +1029,175 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.122 \end{multline}
+l.120 \end{multline}
                     
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
+! Misplaced alignment tab character &.
+\twentyitemshort #1#2->#1&
+                          \parbox [t]{0.83\textwidth }{\textbf {#2}}\\ 
+l.129 ...atch?v=MlN-VFj14LE}{\color{blue}YouTube}}
+                                                  
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
 
-Underfull \hbox (badness 10000) in paragraph at lines 117--123
+
+Underfull \hbox (badness 10000) in paragraph at lines 129--130
 
  []
 
+! Misplaced \crcr.
+\endtabular* ->\crcr 
+                     \egroup \egroup $\egroup 
+l.131 \end{twentyshort}
+                       
+I can't figure out why you would want to use a tab mark
+or \cr or \span just now. If something like a right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
 
-! LaTeX Error: Environment multline undefined.
+! Too many }'s.
+\endtabular* ->\crcr \egroup 
+                             \egroup $\egroup 
+l.131 \end{twentyshort}
+                       
+You've closed more groups than you opened.
+Such booboos are generally harmless, so keep going.
+
+! Too many }'s.
+\endtabular* ->\crcr \egroup \egroup 
+                                     $\egroup 
+l.131 \end{twentyshort}
+                       
+You've closed more groups than you opened.
+Such booboos are generally harmless, so keep going.
+
+! Extra }, or forgotten $.
+<recently read> \egroup 
+                        
+l.131 \end{twentyshort}
+                       
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+
+! LaTeX Error: \begin{document} ended by \end{tabular*}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.133 \begin{multline}
-                      
+l.131 \end{twentyshort}
+                       
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
+! Missing $ inserted.
+<inserted text> 
+                $
+l.131 \end{twentyshort}
+                       
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
 
-! LaTeX Error: \begin{document} ended by \end{multline}.
+! Extra \endgroup.
+<recently read> \endgroup 
+                          
+l.131 \end{twentyshort}
+                       
+Things are pretty mixed up, but I think the worst is over.
+
+
+! LaTeX Error: \begin{document} ended by \end{twentyshort}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.138 \end{multline}
-                    
+l.131 \end{twentyshort}
+                       
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
+! Extra \endgroup.
+<recently read> \endgroup 
+                          
+l.131 \end{twentyshort}
+                       
+Things are pretty mixed up, but I think the worst is over.
 
-Underfull \hbox (badness 10000) in paragraph at lines 142--145
 
+Package hyperref Warning: Option `colorlinks' has already been used,
+(hyperref)                setting the option has no effect on input line 139.
+
+! Improper \prevdepth.
+\newpage ...everypar {}\fi \par \ifdim \prevdepth 
+                                                  >\z@ \vskip -\ifdim \prevd...
+l.162 \newpage
+              
+You can refer to \spacefactor only in horizontal mode;
+you can refer to \prevdepth only in vertical mode; and
+neither of these is meaningful inside \write. So
+I'm forgetting what you said and using zero instead.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.162 \newpage
+              
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.162 \newpage
+              
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing \cr inserted.
+<inserted text> 
+                \cr 
+l.162 \newpage
+              
+I'm guessing that you meant to end an alignment here.
+
+! Missing { inserted.
+<inserted text> 
+                {
+l.162 \newpage
+              
+I've put in what seems to be necessary to fix
+the current column of the current alignment.
+Try to go on, since this might almost work.
+
+
+Overfull \hbox (1234.46906pt too wide) in alignment at lines 142--162
+[] []
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 148--151
-
- []
-
-[1
-
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./irfan.jpg>]
 
 ! Package xcolor Error: Undefined color `myblack'.
 
@@ -1083,206 +1205,193 @@ See the xcolor package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.184 \makeprofilenpage
+l.195 \makeprofilenpage
                        
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-Overfull \hbox (20.68985pt too wide) in paragraph at lines 184--184
+! Package xcolor Error: Undefined color `myblack'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.195 \makeprofilenpage
+                       
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package xcolor Error: Undefined color `myblack'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.195 \makeprofilenpage
+                       
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package xcolor Error: Undefined color `myblack'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.195 \makeprofilenpage
+                       
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package xcolor Error: Undefined color `myblack'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.195 \makeprofilenpage
+                       
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package xcolor Error: Undefined color `myblack'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.195 \makeprofilenpage
+                       
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package xcolor Error: Undefined color `myblack'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.195 \makeprofilenpage
+                       
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package xcolor Error: Undefined color `myblack'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.195 \makeprofilenpage
+                       
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package xcolor Error: Undefined color `myblack'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.195 \makeprofilenpage
+                       
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Overfull \hbox (20.68985pt too wide) in paragraph at lines 195--195
 \T1/ClearSans-TLF/regular/n/9 Web De-vel-op-ment, Re-act JS : Ba-sic (few month
-s)[] 
+s)[]
  []
 
 
-! Package xcolor Error: Undefined color `myblack'.
-
-See the xcolor package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.184 \makeprofilenpage
-                       
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-Overfull \hbox (19.79091pt too wide) in paragraph at lines 184--184
-[]\T1/ClearSans-TLF/bold/n/9 Standard Data Pre-pro-cess-ing Pipeline, SMOTE,
+Overfull \hbox (3.87192pt too wide) in paragraph at lines 195--195
+[][][]  []\T1/ClearSans-TLF/bold/n/9 Stan-dard Data Pre-pro-
  []
 
 
-! Package xcolor Error: Undefined color `myblack'.
-
-See the xcolor package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.184 \makeprofilenpage
-                       
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
+Overfull \hbox (7.00732pt too wide) in paragraph at lines 195--195
+\T1/ClearSans-TLF/bold/n/9 cess-ing Pipeline, SMOTE, Cor-re-la-tion & Fea-
+ []
 
 
-Overfull \hbox (9.43263pt too wide) in paragraph at lines 184--184
+Overfull \hbox (18.619pt too wide) in paragraph at lines 195--195
+\T1/ClearSans-TLF/bold/n/9 form \T1/ClearSans-TLF/regular/n/9 etc.[] [][][]   [
+]\T1/ClearSans-TLF/bold/n/9 Linux
+ []
+
+
+Overfull \hbox (9.43263pt too wide) in paragraph at lines 195--195
 \T1/ClearSans-TLF/bold/n/9 Web De-vel-op-ment \T1/ClearSans-TLF/regular/n/9 : F
 lask, Django (6 months) 
  []
 
 
-! Package xcolor Error: Undefined color `myblack'.
-
-See the xcolor package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.184 \makeprofilenpage
-                       
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
+Overfull \hbox (61.91011pt too wide) in paragraph at lines 195--195
+\T1/ClearSans-TLF/regular/n/9 Kubernetes : (Learn-ing)[] [][][]
+ []
 
 
-! Package xcolor Error: Undefined color `myblack'.
-
-See the xcolor package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.184 \makeprofilenpage
-                       
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
+Overfull \hbox (126.405pt too wide) in paragraph at lines 195--195
+\T1/ClearSans-TLF/regular/n/9 ESP 8266, Rasp-berry Pi (Python, C++)[] [][][]
+ []
 
 
-! Package xcolor Error: Undefined color `myblack'.
-
-See the xcolor package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.184 \makeprofilenpage
-                       
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
+Overfull \hbox (115.4555pt too wide) in paragraph at lines 195--195
+\T1/ClearSans-TLF/regular/n/9 Cal-cu-lus, En-gi-neer-ing Math-e-mat-ics[] [][][
+]
+ []
 
 
-Overfull \hbox (3.98396pt too wide) in paragraph at lines 184--184
+Overfull \hbox (3.98396pt too wide) in paragraph at lines 195--195
 []\T1/ClearSans-TLF/regular/n/9 Data Dis-tri-bu-tions, Bayes The-o-rem, En-trop
 y,
  []
 
 
-Overfull \hbox (12.80394pt too wide) in paragraph at lines 184--184
+Overfull \hbox (12.80394pt too wide) in paragraph at lines 195--195
 \T1/ClearSans-TLF/regular/n/9 Gain , Rel-e-vant the-o-rems of Prob-a-bil-ity, S
 tatis-
  []
 
 
-! Package xcolor Error: Undefined color `myblack'.
+Overfull \hbox (108.45003pt too wide) in paragraph at lines 195--195
+\T1/ClearSans-TLF/bold/n/9 Visual Odom-e-try and SLAM[] [][][]
+ []
 
-See the xcolor package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.184 \makeprofilenpage
+
+Overfull \hbox (87.36115pt too wide) in paragraph at lines 195--195
+\T1/ClearSans-TLF/regular/n/9 Recursion & Dy-namic Pro-gram-ming [] [][][]
+ []
+
+! Improper \prevdepth.
+\TP@commonendtextblock ...P@prevdepth =\prevdepth 
+                                                  \prevdepth =-1000pt \expan...
+l.195 \makeprofilenpage
                        
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
+You can refer to \spacefactor only in horizontal mode;
+you can refer to \prevdepth only in vertical mode; and
+neither of these is meaningful inside \write. So
+I'm forgetting what you said and using zero instead.
 
-
-! Package xcolor Error: Undefined color `myblack'.
-
-See the xcolor package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.184 \makeprofilenpage
+! You can't use `\prevdepth' in horizontal mode.
+\TP@commonendtextblock ... =\prevdepth \prevdepth 
+                                                  =-1000pt \expandafter \TP@...
+l.195 \makeprofilenpage
                        
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
 
 
-! Package xcolor Error: Undefined color `myblack'.
-
-See the xcolor package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.184 \makeprofilenpage
-                       
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 188--197
-
- []
-
-
-Underfull \hbox (badness 3758) in paragraph at lines 201--201
-[]\T1/ClearSans-TLF/regular/n/10 Implementing op-ti-mal steer-ing an-gle es-ti-
-ma-tor from road co-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 200--206
-
- []
-
-LaTeX Font Info:    Font shape `T1/ClearSans-TLF/m/n' in size <8> not available
-
-(Font)              Font shape `T1/ClearSans-TLF/regular/n' tried instead on in
-put line 217.
-LaTeX Font Info:    Font shape `T1/ClearSans-TLF/regular/n' will be
-(Font)              scaled to size 8.0pt on input line 217.
-
-Underfull \hbox (badness 10000) in paragraph at lines 209--229
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 232--239
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 242--246
-
- []
-
-[2]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 256.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 256.
- (./Irfan_ML_V3.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 256.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 256.
-Package rerunfilecheck Info: File `Irfan_ML_V3.out' has not changed.
-(rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
-
-
-LaTeX Font Warning: Some font shapes were not available, defaults substituted.
-
- )
-(\end occurred when \ifx on line 99 was incomplete) 
-Here is how much of TeX's memory you used:
- 17532 strings out of 481239
- 330094 string characters out of 5920377
- 596048 words of memory out of 5000000
- 32428 multiletter control sequences out of 15000+600000
- 589319 words of font info for 44 fonts, out of 8000000 for 9000
- 1141 hyphenation exceptions out of 8191
- 68i,16n,64p,801b,876s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texlive/texmf-di
-st/fonts/enc/dvips/clearsans/clr_zxbkm4.enc}</usr/share/texlive/texmf-dist/font
-s/type1/intel/clearsans/ClearSans-Bold.pfb></usr/share/texlive/texmf-dist/fonts
-/type1/intel/clearsans/ClearSans-BoldItalic.pfb></usr/share/texlive/texmf-dist/
-fonts/type1/intel/clearsans/ClearSans-Italic.pfb></usr/share/texlive/texmf-dist
-/fonts/type1/intel/clearsans/ClearSans-Regular.pfb></usr/share/texlive/texmf-di
-st/fonts/type1/public/marvosym/marvosym.pfb>
-Output written on Irfan_ML_V3.pdf (2 pages, 228822 bytes).
-PDF statistics:
- 81 PDF objects out of 1000 (max. 8388607)
- 70 compressed objects within 1 object stream
- 3 named destinations out of 1000 (max. 500000)
- 18 words of extra memory for PDF output out of 10000 (max. 10000000)
-
+Underfull \hbox (badness 3758) in paragraph at lines 203--203
+[]\T1/ClearSans-TLF/re
