@@ -10,6 +10,11 @@ a  {color:blue;}
   list-style-type: circle;
 }
 
+#a_1 {
+ color:navyblue;
+ font-size:15px;   
+}
+
 #ul_style {
     color:gray ;
     list-style-type:circle;
@@ -28,3 +33,7 @@ background-color:#FFFFFF;
 #ul_st {
     color : #641E16;
     }
+hhtml, bbody {
+min-height : 100%;
+max-width  : 2000px;
+}

@@ -1,201 +1,162 @@
+<script async defer src="https://buttons.github.io/buttons.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href='styles_1.css'>
+<link rel="stylesheet" href='styles_2.css'>
 <a id="table_of_content_link"></a> 
-<div class="columns">
-<h6> Machine Learning Algorithms from Scratch  </h6>
-<ul>
-  <li><a style="color:navyblue;font-size:15px;" 
-         href ='#ann_link'> Neural Network</a></li>
-  <li><a style="color:navyblue;font-size:15px;" 
-         href ='#id3_link'> Decision Tree(ID3)</a></li>
-  <li><a style="color:navyblue;font-size:15px;" 
-         href ='#id3_link'> SVM, Logistic Regression</a></li>
-  <li><a style="color:navyblue;font-size:15px;" 
-         href ='#naive_bayes_link'> Naive Bayes, KNN</a></li>
-</ul>
-    
-<h6> RL Algorithms from scratch  </h6>
-<ul>
-  <li><a style="color:navyblue;font-size:15px;" 
-href ='#dqn_ddpg_link'> DQN </a></li>
-  <li><a style="color:navyblue;font-size:15px;" 
-href ='#dqn_ddpg_link'> DDPG </a></li>
-  <li><a style="color:navyblue;font-size:15px;" 
-href ='#dqn_ddpg_link'> PPO </a></li>
-  <li><a style="color:navyblue;font-size:15px;" 
-href ='#dqn_ddpg_link'> A2C </a></li>
-</ul>
+<div id="div_1"> 
+   <!--I>I am Irfan, currently (2024) working as an AI Engineer in Japan. I always seek to learn something new, enthusiastic about - Artificial Intelligence, Computer Vision, Machine Learning and Robotics etc. Some of my works in these fields are organized in this page. Python, C++, little bit of React (js) is mosly used in these works. The detailed algorithms code and results for each project is demonstrated below in respective sections. I have designed the flowcharts to precisely demonstrate how each of these algorithms work. Some people may find it redundant but it helps me to dump my knowledge this way. The page has many graphical contents, please be patient while loading.
+<I>
+ E-mail : <a href="mailto:irfanhasib.me@gmail.com">irfanhasib.me@gmail.com</a>
 
-<h6> CNN based ALgorithms with Tensorflow  </h6>
-<ul>
-  <li><a style="color:navyblue;font-size:15px;" 
-href ='#yolo_link'> Yolo-V2.0 : Object Detection </a></li>
-  <li><a style="color:navyblue;font-size:15px;" 
-href ='#unet_link'> Unet : Semantic Segmentation </a></li>
-  <li><a style="color:navyblue;font-size:15px;" 
-href ='#flownet_link'> FlowNet : Optical Flow Estimation </a></li>
-  <li><a style="color:navyblue;font-size:15px;" 
-href ='#disp_link'> Disparity Estimation </a></li>
+<h3> Table of Content </h3> 
+*Note :  '(FS)' means implementation From Scratch. 'UP' is for underprogress.
+<h4> Recent works on Computer Vision on progress ...</h4-->
+<iframe src="https://docs.google.com/document/d/e/2PACX-1vQ481PU7TepDQxdvwqh9FBQ5lBpW4FZ_J9tuFkRGiV9RML-JjfGz-iqYfAKoed7HaINMrfW0rAAAUIR/pub?embedded=true"  name="targetframe" display="block" align="top" allowTransparency="true" scrolling="no" frameborder="0px" padding="0px" border="0px"  height="300px" width="100%" ></iframe>
+</div>
+<div class="row">
+<div margin-left='20px' class="column">
+<h4> Machine Learning Algorithms (FS)</h4>
+<ul id="ul_1">
+  <li><a id="a_1" href ='#ann_link'> Neural Network </a></li>
+  <li><a id="a_1" href ='#id3_link'> Decision Tree Algorithms</a></li>
+  <li><a id="a_1" href ='#svm_link'> SVM, Logistic Regression</a></li>
+  <li><a id="a_1" href ='#naive_bayes_link'> Naive Bayes, KNN</a></li>
 </ul>
 </div> 
 
-<div class="columns">
-<h6> Control Algorithms from scratch  </h6>
-<ul>
-  <li><a style="color:navyblue;font-size:15px;" 
-href ='#ilqr_mpc_link'> ILQR </a></li>
-  <li><a style="color:navyblue;font-size:15px;" 
-href ='#ilqr_mpc_link'> MPC </a></li>
+<div class="column">
+<h4> Deep Learning for Computer Vision </h4>
+<ul id="ul_1">
+  <li><a id="a_1" href ='#yolo_link'> Yolo-V4 : Object Detection </a></li>
+  <li><a id="a_1" href ='#unet_link'> Unet : Semantic Segmentation </a></li>
+  <li><a id="a_1" href ='#flownet_link'> FlowNet : Optical Flow Estimation </a></li>
+  <li><a id="a_1" href ='#disp_link'> Disparity Estimation </a></li>
 </ul>
-
-<h6> Feature Engineering and Model Tuning  </h6>
-<ul class="col1">
-  <li><a style="color:navyblue;font-size:15px;" 
-href ='#house_price_link'> Kaggle House Price Prediction.</a></li>
-  <li><a style="color:navyblue;font-size:15px;" 
-         href ='#sakura_link'> Shakura Bloom Prediction.</a></li>
+</div> 
+    
+<div class="column">
+<h4> Reinforcement Learning Algo. (FS)  </h4>
+<ul id=ul_1>
+  <li><a id="a_1" href ='#dqn_ddpg_link'> DQN </a></li>
+  <li><a id="a_1" href ='#dqn_ddpg_link'> DDPG </a></li>
+  <li><a id="a_1" href ='#dqn_ddpg_link'> PPO </a></li>
+  <li><a id="a_1" href ='#dqn_ddpg_link'> A2C </a></li>
 </ul>
+</div> 
+</div> 
 
-<h6> ROS & Robotics </h6>
-<ul>
-  <li><a style="color:navyblue;font-size:15px;" 
-href ='#ros_rrbot_link'> ROS : Simple two linked robot</a></li>
-  <li><a style="color:navyblue;font-size:15px;" 
-href ='#ros_husky_link'> ROS : Husky robot driver</a></li>
+<div class="row">
+<div class="column">
+<h4> Personal Acievements </h4>
+<ul id="ul_1">
+  <li><a id="a_1" href ='#urc_2016_link'> Mars Rover Challenge (USA, Utah), 2016</a></li>
+  <li><a id="a_1" href='https://irfanhasib0.github.io/research.html'> Journal Paper on auxiliary task guidance., 2023</li>
+  <li><a id="a_1" href='https://irfanhasib0.github.io/research.html'> Pre-print paper on sparse gradient reinforcement, 2024</li>
 </ul>
 </div>
 
-<div class="columns">
-<h6> International Robotics Compititions </h6>
-<ul>
-  <li><a style="color:navyblue;font-size:15px;" 
-href ='#urc_2016_link'> University Rover Challenge - 2016</a></li>
-    <li>-</li>
-    <li>-</li>
-    <li>-</li>
-    <li>-</li>
-</ul>
-
-
-<h6> Embedded System Projects for Pi Labs BD Ltd </h6>
- <ul>
- <li>-Vault Sequirity System</li>
- <li>-Programmable Syringe Infusion Pump</li>
- <li>-GPRS based Monitoring System.</li>
- <li>-Sening product weights to server.</li>
- - <a style="color:navyblue;font-size:15px;" 
-href ='#pi_project_link'> Details </a></li>
-</ul>
-
-<h6> Academic Project and Thesis (Undergrad) </h6>
-<ul>
- <li>-Remote rescue robot</li>
- <li>-Car velocity logging system</li>
- - <a style="color:navyblue;font-size:15px;" 
-href ='#buet_project_link'>Details </a></li>
+<div class="column">
+<h4>Professional AI Projects </h4>
+ <ul id="ul_1">
+ <li><a id="a_1" href ='#ai_project_link_1'>Process control automation (AI) </a></li>
+ <li><a id="a_1" href ='#ai_project_link_2'>Optimal shiping plan selection (AI) </a></li>
+ <li><a id="a_1" href ='#ai_project_link_3'>Early prediction Production of KPI (DL)</a></li>
+ <li><a id="a_1" href ='#ai_project_link_4'>Production Dynamics visualization (ML)</a></li>
 </ul>
 </div>
 
-<h6> Robotics Projects Personal (Undergrad) </h6>
-<ul>
- <li>-Hobby CNC machine.
- <li>-Interfacing OV7670 camera sensor with atmega AVR (Feb-May - 2013)
- <li>-Software platform for controlling Robotic ARM(Apr-Sep,2014)
-<li><a href ='#embedded_project_link'>Details </a></li>
+<div class="column">
+<h4>Professional Embedded System Projects </h4>
+ <ul id="ul_1">
+ <li><a id="a_1" href ='#pi_project_link_1'> Vault Sequirity System </a></li>
+ <li><a id="a_1" href ='#pi_project_link_2'> Programmable Syringe Infusion Pump </a></li>
+ <li><a id="a_1" href ='#pi_project_link_3'> GPRS based Monitoring System </a></li>
+ <li><a id="a_1" href ='#pi_project_link_4'> Online digital weights machine </a></li>
+</ul>
+</div>
+</div>
 
-
-<style>
-
+<div class="row">
+<div class="column">
+<h4> Control Algorithms from scratch (FS)  </h4>
+<ul id="ul_1">
+  <li><a id="a_1" href ='#ilqr_mpc_link'> ILQR </a></li>
+  <li><a id="a_1" href ='#ilqr_mpc_link'> MPC </a></li>
+</ul>
+</div>
     
-h1 {color:grey;}
-h3 {color:#48C9B0;}
-h4 {color:#9FE2BF;}
-h5 {color:lightsalmon;}
-h6 {color:royalblue;}
-a  {color:navyblue;}
+<div class="column">
+<h4> Feature Engineering and Model Tuning  </h4>
+<ul id="ul_1">
+  <li><a id="a_1" href ='#house_price_link'> Kaggle House Price Prediction.</a></li>
+  <li><a id="a_1" href ='#sakura_link'> Shakura Bloom Prediction.</a></li>
+</ul>
+</div>
 
-#ul_style {
-    color:gray ;
-    list-style-type:circle;
-    } 
+<div class="column">
+<h4> ROS & Robotics </h4>
+<ul id="ul_1">
+  <li><a id="a_1" href ='#ros_rrbot_link_1'> ROS : Simple two linked robot</a></li>
+  <li><a id="a_1" href ='#ros_rrbot_link_2'> ROS : Husky and URbot(UR5) robot driver</a></li>
+</ul>
+</div>
+</div>
+
+
+<div class = "row">
+<div class="column">
+<h4> Academic Project and Thesis (Undergrad) </h4>
+<ul id="ul_1">
+ <li><a id="a_1" href ='#buet_project_link'>Remote rescue robot </a></li>
+ <li><a id="a_1" href ='#buet_project_link'>GPS, IMU data Fusion for precision velocity </a></li>
+</ul>
+</div>
+
+
+<div class="column">
+<h4> Robotics Projects Personal (Undergrad) </h4>
+<ul id="ul_1">
+ <li><a id="a_1" href ='#embedded_project_link_1'> Desktop CNC Machine(2014) </a></li>
+ <li><a id="a_1" href ='#embedded_project_link_2'> GUI software for Robotic ARM(2014) </a></li>
+ <li><a id="a_1" href ='#embedded_project_link_3'> Visually Instructed Robotic ARM(2013) </a></li>
+</ul>  
+</div>
     
-#div_style {
-background-color:#F8F9F9;
-}
-
-#ul_st {
-    color : #641E16;
-    }
-    
-</style>
-
-
-
-
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-* {
-  box-sizing: border-box;
-}
-
-.row {
-  display: flex;
-}
-
-/* Create three equal columns that sits next to each other */
-.column {
-  flex: 33.33%;
-  padding: 5px;
-}
-</style>
-    
-<style>
-.columns
-{   
-    -moz-column-width: 21.5em; /* Firefox */
-    -webkit-column-width: 21.5em; /* webkit, Safari, Chrome */
-    column-width: 21.5em;
-}
-/*remove standard list and bullet formatting from ul*/
-.columns ul
-{
-    margin: 20px;
-    padding: 0;
-    list-style-type: none;
-}
-/* correct webkit/chrome uneven margin on the first column*/
-</style>
+<div class="column">
+</div>
+</div>
 
 <div>
-<h1  style="color:grey;" >
 <a id="ann_link"></a> 
-   Neural Network Implementation from scratch</h1></br>
-<h3> 1. Overview :  </h3>
-</div>
+<h1  style="color:grey;" > Neural Network Implementation from scratch</h1></br>
+<a id="a_1" href ='#table_of_content_link'>Go Back to Table of Content</a>
+
+<ul id="ul_1">
+    <b><I>
+    <li>Section 1: Overview </li>
+    <li>Section 2. Flowchart</li>
+    <li>Section 3. Code </li>
+    <li>Section 4. Result</li>
+    </b></I>
+</ul>
+
 
 <div id=div_style>
-   <p>Here I  have implemented Neural Network of 3 Layers. I have implemented A Layes Class and functions 
-   for Forward propagation,backward propagation and updating weights. I just tested it Banknote dataset. It was fitting good.</p>
-<ul id=ul_style>
-        <b><I>
-        <li>Banknote Dataset used for testing</li>
-        <li>Forward Propagation</li>
-        <li>Backward Propagation</li>
-        <ul>
-        <li>Calculating Gradients </li>
-        <li>Updating weights</li>
-        </ul>
-        </I></b>
-</ul>
+<h3> 1. Overview :  </h3><br>
+<p>A simple multi layer neural network is implemented here from scratch, using raw Python programming language. I preffered OOP for encapsulation and pproper organization. Layer object are the backbone of this implementation while Network object used to organize it all together. A stack of Layer objects can be used to build a Network. Network object has the following fucntions(1) Layer :: "forward_propagation", (2) Layer :: "backward_propagation", (3) Layer :: "update_weights" </b></I>. I have tested it with Banknote dataset. It was fitting good. Result can be found in Results section</p>
 </div>
 
-<h3> 2. ANN Flow Chart : (Open Image in new tab for full resolution)</h3>
+<h3> 2. Flow Chart (ANN) : (Open Image in new tab for full resolution)</h3>
 
+<img src="docs/Algorihms/NN_Brief.jpg" align="left" alt="Schematics" width="100%" />
 
-<img src="docs/Algorihms/NN_Brief.jpg" align="left" alt="Schematics" width="98%" />
-<a style="color:navyblue;font-size:15px;" href= https://github.com/irfanhasib0/Machine-Learning/blob/master/Machine_Learning_Algo_From_Scratch/ANN_From_Scratch_modular_class-V1.0.ipynb> GitHub : NN Implementation from scratch - Notebook </a>
+<!-- Place this tag where you want the button to render. -->
+<a class="github-button" href="https://github.com/irfanhasib0/Machine-Learning" data-icon="octicon-star" aria-label="Star irfanhasib0/Machine-Learning on GitHub">Star</a>
+<h3> 3. Implementation Code : </h3>
+<a style="color:royalblue;font-size:15px;" href= https://github.com/irfanhasib0/Machine-Learning/blob/master/Machine_Learning_Algo_From_Scratch/ANN_From_Scratch_modular_class-V1.0.ipynb> GitHub : NN Implementation from scratch - Notebook </a>
+<iframe src="code/ANN.html" name="targetframe" allowTransparency="true" scrolling="yes" frameborder="0" height="300" width="100%" ></iframe>
 
-<iframe src="ANN.html" name="targetframe" allowTransparency="true" scrolling="yes" frameborder="0" height="300" width="100%" ></iframe>
-
-<h5> 3. Result of ANN implementation for Bank Note data- a.Precision, Recall and Accuracy and b.True Label vs Prediction </h5>
+<h3> 4. Result of ANN implementation for Bank Note data- a.Precision, Recall and Accuracy and b.True Label vs Prediction </h3>
 
 <img src="docs/Results/banknote_ann.png" align="left"
      title="(Open Image in new tab for good resolution)" width="30%">
@@ -203,40 +164,43 @@ background-color:#F8F9F9;
      title="(Open Image in new tab for good resolution)" width="70%">
 
 
-<a style="color:navyblue;font-size:15px;" 
-href ='#table_of_content_link'>Go Back to Table of Content</a>
+
 
 <h1  style="color:grey;" >
 <a id="id3_link"></a> 
-   Descision Tree, SVM, Logistic Regression Implementation from scratch</h1>
+   Descision Tree Implementation from scratch</h1>
+<a id="a_1" 
+href ='#table_of_content_link'>Go Back to Table of Content</a>
 
-<h3> 1. Overview </h3>
-<div id=div_style>
-<ul id=ul_style>
-<li><b><I>Dataset     :</li></b></I> Titanic and irish dataset was used for testing ID3.
-<li><b><I> Steps      :</li></b></I>
-                  <ul>
-                  <li>Continuous data spliting based on information gain </li>
-                  <li>Information Gain Calculation  </li>
-                  <li>ID3 Algorithm according to flowchart </li>
-                  </ul>
-
-<li><b><I> Tuning     :</li></b></I> Reduced Error Pruining.
-<li><b><I> Prediction :</li></b></I> Accuracy,Precision,Recall Reporting.
+<ul id="ul_1">
+    <b><I>
+    <li>Section 1: Summary </li>
+    <li>Section 2: Flowchart </li>
+    <li>section 3: Code </li>
+    <li>Section 4:Result (Results can be found after code demonstration for each algorithm) </li>
+    </b></I>
 </ul>
+
+<h3> 1. Overview </h3></br>
+<div id=div_style>
+ A fundamental descision tree based classifier is implemented here using ID3 algorithm with Python from scratch. Titanic and irish dataset was used for testing the algorithm. Function for (1) Continuous data spliting based on information gain, (2) Information Gain Calculation,  (3) ID3 Algorithm (4) Prediction from the built tree, are main part of the implementation. For preventing overfitting reduced error pruining was applied. Accuracy,Precision,Recall is reported in Result section.
 </div>
 
-<h3> 2.1 ID3 Flow Chart of Implementation (Open Image in new tab for full resolution) </h3>
+<h3> 2. ID3 Flow Chart of Implementation (Open Image in new tab for full resolution) </h3>
 
 <img src="docs/Algorihms/ID3_Simple.jpg" align="left"
      title="(Open Image in new tab for full resolution)
 " width="100%">
-    
-<a style="color:navyblue;font-size:15px;" href= https://github.com/irfanhasib0/Machine-Learning/blob/master/Machine_Learning_Algo_From_Scratch/ID3_with_continuous_feature_support-V1.0.ipynb>GitHub : ID3 Implementation from scratch - Notebook</a>
 
-<iframe src="ID3.html" name="targetframe" allowTransparency="true" scrolling="yes" frameborder="0" height="300" width="100%" ></iframe>
+<!-- Place this tag where you want the button to render. -->
+<a class="github-button" href="https://github.com/irfanhasib0/Machine-Learning" data-icon="octicon-star" aria-label="Star irfanhasib0/Machine-Learning on GitHub">Star</a>
 
-<h5> 3. Result of ID3 implementation for iris data - a.Precision, Recall and Accuracy and b.True Label vs Prediction - </h5>
+<h3> 3. ID3 Implementation Code </h3>
+<a style="color:royalblue;font-size:15px;" href= https://github.com/irfanhasib0/Machine-Learning/blob/master/Machine_Learning_Algo_From_Scratch/ID3_with_continuous_feature_support-V1.0.ipynb>GitHub : ID3 Implementation from scratch - Notebook</a>
+
+<iframe src="code/ID3.html" name="targetframe" allowTransparency="true" scrolling="yes" frameborder="0" height="300" width="100%" ></iframe>
+
+<h3> 4. Result of ID3 implementation for iris data - a.Precision, Recall and Accuracy and b.True Label vs Prediction - </h3>
 
 <img src="docs/Results/iris_ID3.png" align="left"
      title="(Open Image in new tab for good resolution)
@@ -246,16 +210,45 @@ href ='#table_of_content_link'>Go Back to Table of Content</a>
      title="(Open Image in new tab for good resolution)
 " width="60%" >
 
-<h3> 2.2 (a)SVM  (b)Logistic Regression Flow Chart of Implementation (Open Image in new tab for full resolution) </h3>
-<img src="docs/Algorihms/Logistic Regression.jpg" align="center"
+
+<h1  style="color:grey;" >
+<a id="svm_link"></a> 
+   SVM, Logistic Regression Implementation from scratch</h1>
+<a id="a_1" 
+href ='#table_of_content_link'>Go Back to Table of Content</a>
+
+<ul id="ul_1">
+    <b><I>
+    <li>Section 1: Summary </li>
+    <li>Section 2: Flowchart (SVM & Logistic Regression) </li>
+    <li>section 3: Code (3.1 SVM, 3.2 Logistic Regression) </li>
+    <li>Section 4: Result(4.1 SVM ,4.2 Logistic Regression) </li>
+    </b></I>
+</ul>
+
+<h3> 1. Overview </h3></br>
+
+<div id=div_style>
+      SVM and Logisitic Regression code from scratch is presented below. SvmC object with the functions (a) SvnC.predict (b) SvmC.calc_gradients (c) SvmC.update_weights is implemented. LogisticRegression object also have the same functions. Banknote dataset is used for testing both of the algorithms. SVM and LogisticRegression Class is implemented accordingly for the respective algorithms. For each of the 2 class predict, calc loss, calc grads, update weights functions are implemented. Both of the algorithms showed good accuracy for banknote dataset after minimal parameter tuning. Results can be found in respective results section.
+</div>
+
+<h3> 2.0 SVM(Left), Logistic Regression(Right) Flow Chart of Implementation (Open Image in new tab for full resolution) </h3>
+<img src="docs/Algorihms/Logistic_Regression.jpg" align="center"
      title="(Open Image in new tab for full resolution)
 " width="100%">
 
-<a style="color:navyblue;font-size:15px;" href= https://github.com/irfanhasib0/Machine-Learning/blob/master/Machine_Learning_Algo_From_Scratch/SVM.ipynb>(a) GitHub : SVM Implementation from scratch - Notebook </a>
+<h3> 3.1 Implementation Code SVM <h3>
+<a style="color:royalblue;font-size:15px;" href= https://github.com/irfanhasib0/Machine-Learning/blob/master/Machine_Learning_Algo_From_Scratch/SVM.ipynb>(a) GitHub : SVM Implementation from scratch - Notebook </a>
 
-<iframe src="SVM.html" name="targetframe" allowTransparency="true" scrolling="yes" frameborder="0" height="300" width="100%" ></iframe>
+<iframe src="code/SVM.html" name="targetframe" allowTransparency="true" scrolling="yes" frameborder="0" height="300" width="100%" ></iframe>
+    
+<h3> 3.1 Implementation Code Logistic Regression <h3>
+<a style="color:royalblue;font-size:15px;" href= https://github.com/irfanhasib0/Machine-Learning/blob/master/Machine_Learning_Algo_From_Scratch/Logistic_Regression.ipynb> (b) GitHub : Logistic Regression Implementation from scratch - Notebook</a>
 
-<h5> 3.1 Result of SVM implementation for banknote data - a.Precision, Recall and Accuracy and b.True Label vs Prediction </h5>
+<iframe src="code/LogReg.html" name="targetframe" allowTransparency="true" scrolling="yes" frameborder="0" height="300" width="100%" ></iframe>
+
+
+<h3> 4.1 Result of SVM implementation - a.Precision, Recall and Accuracy and b.True Label vs Prediction </h3>
 
 <img src="docs/Results/banknote_svm.png" align="left"
      title="(Open Image in new tab for good resolution)
@@ -265,11 +258,7 @@ href ='#table_of_content_link'>Go Back to Table of Content</a>
      title="(Open Image in new tab for good resolution)
 " width="60%" >
 
-<a style="color:navyblue;font-size:15px;" href= https://github.com/irfanhasib0/Machine-Learning/blob/master/Machine_Learning_Algo_From_Scratch/Logistic_Regression.ipynb> (b) GitHub : Logistic Regression Implementation from scratch - Notebook</a>
-
-<iframe src="LogReg.html" name="targetframe" allowTransparency="true" scrolling="yes" frameborder="0" height="300" width="100%" ></iframe>
-
-<h5> 3.2 Result of Logitic Regression implementation for banknote data - a.Precision, Recall and Accuracy and b.True Label vs Prediction </h5>
+<h3> 4.2 Result of Logitic Regression implementation - a.Precision, Recall and Accuracy and b.True Label vs Prediction </h3>
 
 <img src="docs/Results/banknote_logr.png" align="left"
      title="(Open Image in new tab for good resolution)
@@ -279,86 +268,328 @@ href ='#table_of_content_link'>Go Back to Table of Content</a>
      title="(Open Image in new tab for good resolution)
 " width="60%" >
 
-
-<a style="color:navyblue;font-size:15px;" 
-href ='#table_of_content_link'>Go Back to Table of Content</a>
-
-<div>
-<br><h1  style="color:grey;" >
-<a id="naive_bayes_link"></a> 
-   Naive Bayes and KNN Implementation for text classification</h1></br>
-</div>
-
-<h3> 1. Overview </h3>
-<div id=div_style>
-<ul id=ul_style>
-<li><b><I> Dataset     :</li></b></I> Archived data from stack exchange is used for classification.
-<li><b><I> Steps      :</li></b></I>
-                  <ul>
-                  <li>Text Preprocessing was done with raw python without nltk. </li>
-                  <li>Calculating Attribute(word) Probabilities given each class  </li>
-                  <li>Calculating Attribute(word) Probabilities given each Samples  </li>
-                  <li>Applying Bayes Theorem for getting class probalities </li>
-                  <li>Max class probality is the predicted label </li>
-                  </ul>
-<li><b><I> Steps      :</li></b></I>
-                  <ul>
-                  <li>Text Preprocessing was done with raw python without nltk. </li>
-                  <li>Calculating Attribute Probability vector for each sample  </li>
-                  <li>Calculating Cosine/Eucleidian/Humming Distances from test sample to each of train sample </li>
-                  <li>Taking labels of K min distance samples from train data  </li>
-                  <li>Taking mode of K labels as prediction (tie breaks by random choise) </li>
-                  </ul>
-<li><b><I> Tuning     :</li></b></I> The model was Tuned for best alpha values.
-<li><b><I> Prediction :</li></b></I> Accuracy,Precision,Recall Reporting.
+<h1  style="color:grey;" >
+<a id="naive_bayes_link"></a> Naive Bayes and KNN Implementation for text classification</h1></br>
+<a id="a_1" href ='#table_of_content_link'>Go Back to Table of Content</a>
 </ul>
+<ul id="ul_1">
+    <b><I>
+    <li>Section 1: Overview </li>
+    <li>Section 2: Flowchart (Naive Bias & KNN)</li>
+    <li>Section 2: Code (3.1 Naive Bias , 3.2 KNN)</li>
+    <li>SEction 3: Result (4.1 Naive Bias, 4.2 KNN)</li>
+    </b></I>
+</ul>
+    
+<h3> 1. Overview </h3></br>
+<div id=div_style>
+ The steps for Naive Bias algorithm are as follows - (1) Calculating Attribute(word) Probabilities given each class. (2) Calculating Attribute(word) Probabilities given each Samples. (3) Applying Bayes Theorem for getting class probalities. (4) Max class probality is the predicted label. Algorithm Steps for KNN are - (1) Calculating Attribute Probability vector for each sample (2) Calculating Cosine/Eucleidian/Humming Distances from test sample to each of train sample (3) Taking labels of K min distance samples from train data. Taking mode of K labels as prediction (tie breaks by random choise). The model was Tuned for best alpha values. Archived data from stack exchange is used for testing the implementations. Accuracy,Precision and Recall are reported.
 </div>
+
+
 
 <h3> 2. (a)Naive Bayes (b)K Nearest Neighbour algorithm Flow Chart</h3>
 
-<img src="docs/Algorihms/Naive_Bayes.jpg" align="left"
-     title="Open Image in new tab for good resolution" width="50%" >
-<img src="docs/Algorihms/KNN_Algorithm.jpg" align="left"
-     title="Open Image in new tab for good resolution" width="50%" >
+<img src="docs/Algorihms/NB_KNN_Algorithm.jpg" align="center"
+     title="Open Image in new tab for good resolution" width="90%" >
 
-<a style="color:navyblue;font-size:15px;" href= https://github.com/irfanhasib0/Machine-Learning/blob/master/Machine_Learning_Algo_From_Scratch/Naive_Bayes_Stack_Exchange.ipynb> (a) GitHub : Naive Bayes Implementation from scratch - Notebook </a>
+<h3> 3.1 Implementation Code Naive Bias </h3>
+<a style="color:royalblue;font-size:15px;" href= https://github.com/irfanhasib0/Machine-Learning/blob/master/Machine_Learning_Algo_From_Scratch/Naive_Bayes_Stack_Exchange.ipynb> (a) GitHub : Naive Bayes Implementation from scratch - Notebook </a>
  
-<iframe src="NB.html" name="targetframe" allowTransparency="true" scrolling="yes" frameborder="0" height="300" width="100%" ></iframe>
+<iframe src="code/NB.html" name="targetframe" allowTransparency="true" scrolling="yes" frameborder="0" height="300" width="100%" ></iframe>
 
-<a style="color:navyblue;font-size:15px;" href= https://github.com/irfanhasib0/Machine-Learning/blob/master/Machine_Learning_Algo_From_Scratch/KNN_Stack_Exchange.ipynb> (b) GitHub : KNN Implementation from scratch - Notebook</a>
+<h3> 3.2 Implementation Code K Nearest Neighbour </h3>
+<a style="color:royalblue;font-size:15px;" href= https://github.com/irfanhasib0/Machine-Learning/blob/master/Machine_Learning_Algo_From_Scratch/KNN_Stack_Exchange.ipynb> (b) GitHub : KNN Implementation from scratch - Notebook</a>
 
-<iframe src="KNN.html" name="targetframe" allowTransparency="true" scrolling="yes" frameborder="0" height="300" width="100%" ></iframe>
 
-<h5> 3.1 Result of Naive Bayes implementation for Stack Exchange data - a.Precision Recall and Accuracy b.True Label vs Prediction <h5>
-    
+<iframe src="code/KNN.html" name="targetframe" allowTransparency="true" scrolling="yes" frameborder="0" height="300" width="100%" ></iframe>
+<h3> 4.1 Result of Naive Bayes implementation - a.Precision Recall and Accuracy b.True Label vs Prediction <h3>
+<div class='row'>
 <img src="docs/Results/Stack_Exchange_NB_.png" align="left"
      title="(Open Image in new tab for full resolution)" width="30%" >
-
 <img src="docs/Results/Stack_Exchange_NB_pred.jpg" align="left"
      title="(Open Image in new tab for full resolution)" width="70%" >
+</div>
 
-<h5> 3.2 Result of KNN implementation for Stack Exchange data- a.Precision Recall and Accuracy b.True Label vs  Prediction <h5>
-
+<h3> 4.2 Result of KNN implementation - a.Precision Recall and Accuracy b.True Label vs  Prediction <h3>
+<div class='row'>
 <img src="docs/Results/Stack_Exchange_KNN.png" align="left"
      title="(Open Image in new tab for full resolution)" width="30%" >
 
 <img src="docs/Results/Stack_Exchange_KNN_pred.jpg" align="left"
      title="(Open Image in new tab for full resolution)" width="70%" >
+</div>
+<a id="a_1" href ='#table_of_content_link'>Go Back to Table of Content</a>
+</div>
 
+<div>
+<div>
+<a id="yolo_link"></a>
+<h1  style="color:grey;"> Yolo-V4.0 with KERAS and Tensorflow for Object detection </h1>
+<a id="a_1" href ='#table_of_content_link'>Go Back to Table of Content</a></br>
 
-<a style="color:navyblue;font-size:15px;" href ='#table_of_content_link'>Go Back to Table of Content</a>
+<ul id="ul_1">
+    <b><I>
+    <li>Section 1: Overview </li>
+    <li>Section 2. Flowchart</li>
+    <li>Section 3. Code </li>
+    <li>Section 4. Result</li>
+    </b></I>
+</ul>
+</div>
+
+<div id=div_style>
+<h3>1. Overview </h3></br>
+Yolo V-2.0 is implemented here and tested with COCO dataset. It is one of the SOTA algorithm for object detection. The algorithm is showed in the figure in algorithm section. Python code can be found in code section.
+</div>
+
+<div>
+<h3>2. Flowchart </h3>    
+<img src="docs/Algorihms/yolo_algo.jpg" align="left"
+title="(Open Image in new tab for full resolution)" width="100%"/></br>
+</div>
+
+<div>
+<h3>2. Code YOLO-V2,V4 for COCO dataset </h3>
+</br><a style="color:royalblue;font-size:20px;" href=https://github.com/irfanhasib0/Deep-Learning-For-Computer-Vision/tree/main/yolo-v4> GitHub Link : Yolo V4 </a>
+</br><a style="color:royalblue;font-size:20px;" href=https://github.com/irfanhasib0/CNN-Projects/blob/master/CNN_Basic/Minimal_yolo_coco-v-2.0-exp-COCO.ipynb> GitHub Link : Yolo-V2 </a>
+<!-- Place this tag where you want the button to render. -->
+<a class="github-button" href="https://github.com/irfanhasib0/CNN-Projects" data-icon="octicon-star" aria-label="Star irfanhasib0/CNN-Projects on GitHub">Star</a>
+
+<iframe src="code/yolo_v2.html" name="targetframe" allowTransparency="true" scrolling="yes" frameborder="0" height="300" width="100%" ></iframe>
+</div>
+
+<div>
+<h3>3. Results: </h3>
+<div class="row">
+<div class="column">
+<img src="docs/Results/yolo_out_1.gif" align="left" 
+title="(Open Image in new tab for full resolution)" width="50%"/></br>
+</div>
+<div class="column">
+<img src="docs/Results/yolo_out_2.gif" align="left" 
+title="(Open Image in new tab for full resolution)" width="50%"/>
+</div>   
+</div>
+</div>
+
+<div>
+<h1  style="color:grey;">
+<a id="unet_link"></a>U-Net with KERAS for City Space Dataset</h1>
+<a id="a_1" href ='#table_of_content_link'>Go Back to Table of Content</a></br>
+
+<ul id="ul_1">
+    <b><I>
+    <li>Section 1: Overview </li>
+    <li>Section 2. Network Architecture</li>
+    <li>Section 3. Code </li>
+    <li>Section 4. Result</li>
+    </b></I>
+</ul>
+</div>
+
+<div id=div_style>
+<h3>1. Overview </h3></br>
+
+U-Net is implemented here and tested with CityScapes dataset. It is one of the SOTA algorithm for semantic segmentation. The network architecture is showed in the figure of Network Architecture section. Python code can be found in code section.
+</div>
+
+<div>
+<h3>2. Network Architecture </h3>
+<img src="docs/Algorihms/unet_algo.jpg" align="center"
+title="(Open Image in new tab for full resolution)" width="60%"/>
+</div>
+
+<div>
+<h3>3. Code of U-Net for CityScapes dataset  </h3>
+<br><a style="color:royalblue;font-size:20px;" href= https://github.com/irfanhasib0/CNN-Projects/blob/master/CNN_Basic/U-Net_cityscapes.ipynb> GitHub :Unet for segmenting City Space Dataset </a></br>
+<iframe src="code/unet_cityscapes.html" name="targetframe" allowTransparency="true" scrolling="yes" frameborder="0" height="300" width="100%" ></iframe>
+</div>
+
+<div>
+<h3>4. Result </h3>
+<img src="docs/Results/unet_pred_cs.png" align="center"
+     title="(Open Image in new tab for full resolution)" width="100%" />
+</div>
+
+<div>
+<h1  style="color:grey;" >
+<a id="flownet_link"></a> 
+  Flow-Net with KERAS and Tensorflow</h1>
+<a id="a_1" href ='#table_of_content_link'>Go Back to Table of Content</a></br>
+
+<ul id="ul_1">
+    <b><I>
+    <li>Section 1: Overview </li>
+    <li>Section 3. Code </li>
+    <li>Section 4. Result</li>
+    </b></I>
+</ul>
+</div>
+
+<div id=div_style>
+<h3>1. Overview </h3></br>
+
+FlowNet is one of the most popular architecture for optical flow prediction. Here the implementation code and results on KITTI Flow Dataset is presented below </h3>
+</div>
+
+<div>
+<h3>2. Code </h3>
+<br><a style="color:royalblue;font-size:20px;" href= https://github.com/irfanhasib0/CNN-Projects/blob/master/CNN_Basic/FlowNetS_KITTI_Flow_Data.ipynb> GitHub Link :FlowNet for Optical Flow Kitti Dataset </a></br>
+<iframe src="code/flownets_kitti_flow.html" name="targetframe" allowTransparency="true" scrolling="yes" frameborder="0" height="300" width="100%" ></iframe>
+</div>
+
+<div>
+<h3>3. Result </h3>
+Train GT, Train prediction, Test GT, Test Prediction
+
+<img src="docs/Results/of_true-1.png" align="left"
+     title="(Open Image in new tab for full resolution)" width="25%" />
+<img src="docs/Results/of_pred-1.png" align="left"
+     title="(Open Image in new tab for full resolution)" width="25%" />
+     
+<img src="docs/Results/of_true-2.png" align="left"
+     title="(Open Image in new tab for full resolution)" width="25%" />
+<img src="docs/Results/of_pred-2.png" align="left"
+     title="(Open Image in new tab for full resolution)" width="25%" />
+</div>
+
+<div>
+<h1  style="color:grey;" >
+<a id="disp_link"></a> 
+  Monocular Disparity using KERAS and Tensorflow</h1>
+<a id="a_1" href ='#table_of_content_link'>Go Back to Table of Content</a></br> 
+
+<ul id="ul_1">
+    <b><I>
+    <li>Section 1: Overview </li>
+    <li>Section 3. Code </li>
+    <li>Section 4. Result</li>
+    </b></I>
+</ul>
+</div>
+
+<div id=div_style>
+<h3>1. Overview </h3></br>
+    
+Slightly modified Architecture of FlowNet is used for monocular depth estimation. It still performed satisfactorily. The implementation code and results on KITTI Flow Dataset(on disp ground truth)  is presented below </h3>
+</div>
+
+<div>
+<h3> Code </h3>
+</br><a style="color:royalblue;font-size:20px;" href=https://github.com/irfanhasib0/CNN-Projects/blob/master/CNN_Basic/FlowNetS_KITTI_Disp_Data.ipynb> GitHub Link : Single View Depth Estimation </a></br>
+<iframe src="code/flownets_kitti_disp.html" name="targetframe" allowTransparency="true" scrolling="yes" frameborder="0" height="300" width="100%" ></iframe>
+</div>
+
+<div>
+<h3> Result </h3>
+Top row : Train ; Bottom Row : Validation ;
+Left : Ground Truth ; Right : Prediction
+<img src="docs/Results/disp_train_gt.png" align="left"
+     title="(Open Image in new tab for full resolution)" width="50%" />
+<img src="docs/Results/disp_train_pred.png" align="left"
+     title="(Open Image in new tab for full resolution)" width="50%" />
+     
+<img src="docs/Results/disp_val_gt.png" align="left"
+     title="(Open Image in new tab for full resolution)" width="50%" />
+<img src="docs/Results/disp_val_pred.png" align="left"
+     title="(Open Image in new tab for full resolution)" width="50%" />
+     
+</div>
+</div>
+
+<div>
+<br><h1  style="color:grey;" >
+<a id="dqn_ddpg_link"></a> DQN , DDPG, PPO A2C Implementation from scratch</h1></br>
+<a id="a_1" href ='#table_of_content_link'>Go Back to Table of Content</a>
+
+<ul id="ul_1">
+    <b><I>
+    <li>Section 1: GitHub Code Links </li>
+    <li>Section 2: Overview </li>
+    <li>Section 3. Flowchart</li>
+    <li>Section 4. PPO Code </li>
+    <li>Section 5. Result</li>
+    </b></I>
+</ul>
+
+<h3> 1. GitHub Code Links : </h3>
+<ul>
+<li><a id="a_1" href= https://github.com/irfanhasib0/RL-Algorithms/blob/master/1.0_Multi_Arm_Bandit.ipynb>  Multi Arm Bandit - Notebook </a></li>
+<li><a id="a_1" href= https://github.com/irfanhasib0/RL-Algorithms/blob/master/2.1_Value_Iteration.ipynb>   Value Iteration - Notebook  </a></li>
+<li><a id="a_1" href= https://github.com/irfanhasib0/RL-Algorithms/blob/master/3.0_DQN_Mountain_Car.ipynb>  DQN for Mountain Car - Notebook  </a></li>
+<li><a id="a_1" href= https://github.com/irfanhasib0/RL-Algorithms/blob/master/4.0_DDPG_Pendulum-mod.ipynb> DDPG for Pendulum - Notebook</a></li>
+<li><a id="a_1" href= https://github.com/irfanhasib0/RL-Algorithms/blob/master/5.1_PPO_Bipedal_Walker-mod.ipynb>  PPO for Bipedal Walker - Notebook</a></li>
+<li><a id="a_1" href= https://github.com/irfanhasib0/RL-Algorithms/blob/master/5.2_PPO_Lunar_Lander.ipynb>  PPO for Lunar Lander - Notebook </a></li>
+</ul>
+</div>
+<h3> 2.  Overview </h3>
+
+<div id=div_style> 
+ DQN implemented and tested on OpenAI gym Mountain Car ENvironment, DDPG implemented and tested on  OpenAI gym Pendulumn Environment, PPO implemented and tested on OpenAI gym Bipedal Walker and Lunar Lander Environment. All these algorithms are implemnted from scratch using TensorFlow, Numpy and Python.
+</div>
+<div>
+<!-- Place this tag where you want the button to render. -->
+<a class="github-button" href="https://github.com/irfanhasib0/RL-Algorithms" data-icon="octicon-star" aria-label="Star irfanhasib0/RL-Algorithms on GitHub">Star</a></br>
+
+<h3> 3. Detailed Flow Chart for DQN and DDPG : (Please Zoom or Open in New tab for proper resolution) </h3>
+
+    
+<img src="docs/Algorihms/RL_Brief.jpg" align="left"
+     title="Open Image in new tab for good resolution" width="100%" height="200%">
+     
+<!-- Place this tag where you want the button to render. -->
+<a class="github-button" href="https://github.com/irfanhasib0/RL-Algorithms" data-icon="octicon-star" aria-label="Star irfanhasib0/RL-Algorithms on GitHub">Star</a>
+
+<h3> 4. Code PPO for bipedal environment </h3>
+<iframe src="code/ppo_biped.html" name="targetframe" allowTransparency="true" scrolling="yes" frameborder="0" height="300" width="100%" ></iframe>
+
+<h3> 5. Results </h3>
+
+* a. Results DQN on Mountain Car
+* b. Results DDPG on Pendulum 
+* c. Results PPO on Bipedal Walker
+* d. Results PPO on Lunar Lander
+
+<img src="docs/Results/dqn_mcar.png" align="left"
+     title="(Open Image in new tab for full resolution)" width="25%" />
+<img src="docs/Results/ddpg_pendulum.png" align="left"
+     title="(Open Image in new tab for full resolution)" width="25%" />
+<img src="docs/Results/bipedal_ppo.png" align="left"
+     title="(Open Image in new tab for full resolution)" width="25%" />
+<img src="docs/Results/lunar_ppo.png" align="left"
+     title="(Open Image in new tab for full resolution)" width="25%" />
+     
+<img src="docs/Results/mc.gif" align="left"
+     title="(Open Image in new tab for full resolution)" width="25%" />
+<img src="docs/Results/pend.gif" align="left"
+     title="(Open Image in new tab for full resolution)" width="25%" />
+<img src="docs/Results/bipedal_ppo.gif" align="left"
+     title="(Open Image in new tab for full resolution)" width="25%" />
+<img src="docs/Results/lunar_ppo.gif" align="left"
+     title="(Open Image in new tab for full resolution)" width="25%" />
+     
+<a id="a_1" 
+href ='#table_of_content_link'>Go Back to Table of Content</a>
+</div>
 
 
 <div>
 <br><h1  style="color:grey;" >
 <a id="house_price_link"></a> 
     House Price Prediction :: Data Pre-Processing and Hiper-Parameter Tuning</h1></br>
-<a style="color:navyblue;font-size:15px;" href= https://github.com/irfanhasib0/Machine-Learning/blob/master/Kaggle/ANN_Tensorflow_Kaggle_Houseprice_prediction.ipynb>  Notebook : House Price Prediction - Notebook (Project Presentation and Code Link) </a>
-<iframe src="house_price.html" name="targetframe" allowTransparency="true" scrolling="yes" frameborder="0" height="300" width="100%" ></iframe>
+<a id="a_1" href ='#table_of_content_link'>Go Back to Table of Content</a>
+
+<b><I>
+<ul>
+    <li> Section 1: Overview </li>
+    <li> Section 2: Demonstration of Project Code </li>
+    <li> Section 3: Flow Chart </li>
+</ul>
+</b></I>
 </div>
 
 <h3> 1. Overview :</h3>
-     
 <div id=div_style>
     <ul id=ul_style>
         <b><I>
@@ -409,23 +640,36 @@ href ='#table_of_content_link'>Go Back to Table of Content</a>
 </details>
 </div>
 
+<div>
+<a style="color:royalblue;font-size:20px;" href= https://github.com/irfanhasib0/Machine-Learning/blob/master/Kaggle/ANN_Tensorflow_Kaggle_Houseprice_prediction.ipynb>  Notebook : House Price Prediction - Notebook (Project Presentation and Code Link) </a></br>
+    
+<!-- Place this tag where you want the button to render. -->
+<a class="github-button" href="https://github.com/irfanhasib0/Machine-Learning" data-icon="octicon-star" aria-label="Star irfanhasib0/Machine-Learning on GitHub">Star</a>
+    
+<iframe src="code/house_price.html" name="targetframe" allowTransparency="true" scrolling="yes" frameborder="0" height="300" width="100%" ></iframe>
+
 <h3> 2. Project Flow Chart :</h3>
 <img src="docs/Algorihms/kaggle_hp.jpg" align="center"
-     title="Open Image in new tab for good resolution" width="100%" height="1000">
+     title="Open Image in new tab for good resolution" width="80%" height="1000">
      
-<a style="color:navyblue;font-size:15px;" 
-href ='#table_of_content_link'>Go Back to Table of Content</a>
-
+</div>
 
 <div>
 <br><h1  style="color:navyblue;" >
 <a id="sakura_link"></a> 
     Japanese Job Entrance Problem :: Shakura Bloom Prediction</h1></br>
-<a style="color:navyblue;font-size:15px;" href= https://github.com/irfanhasib0/Machine-Learning/blob/master/Kaggle/Sakura_TF_NN_Report.ipynb>   Notebook : Shakura Bloom Prediction - Notebook (Project Presentation and Code Link) </a>
-<iframe src="sakura.html" name="targetframe" allowTransparency="true" scrolling="yes" frameborder="0" height="300" width="100%" ></iframe>
+    
+<b><I>
+<a id="a_1" 
+href ='#table_of_content_link'>Go Back to Table of Content</a>
 
+<ul>
+    <li> Section 1: Overview </li>
+    <li> Section 2: Demonstration of Project Code </li>
+    <li> Section 3: Flow Chart </li>
+</ul>
+</b></I>
 </div>
-
 
 <h3> 1. Overview </h3>
 <div id=div_style>
@@ -485,110 +729,30 @@ href ='#table_of_content_link'>Go Back to Table of Content</a>
              </ul>
 </ul>    
 </details>
+</div>
 
+<div>
+<a style="color:royalblue;font-size:20px;" href= https://github.com/irfanhasib0/Machine-Learning/blob/master/Kaggle/Sakura_TF_NN_Report.ipynb>   Notebook : Shakura Bloom Prediction - Notebook (Project Presentation and Code Link) </a>
+<iframe src="code/sakura.html" name="targetframe" allowTransparency="true" scrolling="yes" frameborder="0" height="300" width="100%" ></iframe>
 
 <h3> 2. Project Flow Chart :</h3>
 <img src="docs/Algorihms/sakura_jp.jpg" align="center"
-     title="Open Image in new tab for good resolution" width="70%">
-<a style="color:navyblue;font-size:15px;" 
-href ='#table_of_content_link'>Go Back to Table of Content</a>
-</div>
-
-<div>
-<br><h1  style="color:grey;" >
-<a id="dqn_ddpg_link"></a> DQN , DDPG, PPO A2C Implementation from scratch</h1></br>
-<h5> GitHub Code Links :
-<ul>
-<li><a style="color:navyblue;font-size:15px;" href= https://github.com/irfanhasib0/RL-Algorithms/blob/master/1.0_Multi_Arm_Bandit.ipynb>  Multi Arm Bandit - Notebook </a></li>
-<li><a style="color:navyblue;font-size:15px;" href= https://github.com/irfanhasib0/RL-Algorithms/blob/master/2.1_Value_Iteration.ipynb>   Value Iteration - Notebook  </a></li>
-<li><a style="color:navyblue;font-size:15px;" href= https://github.com/irfanhasib0/RL-Algorithms/blob/master/3.0_DQN_Mountain_Car.ipynb>  Mountain Car with DQN - Notebook  </a></li>
-<li><a style="color:navyblue;font-size:15px;" href= https://github.com/irfanhasib0/RL-Algorithms/blob/master/4.0_DDPG_Pendulum-mod.ipynb> Pendulum with DDPG - Notebook</a></li>
-<li><a style="color:navyblue;font-size:15px;" href= https://github.com/irfanhasib0/RL-Algorithms/blob/master/5.1_PPO_Bipedal_Walker-mod.ipynb.ipynb>  Bipedal Walker with PPO - Notebook</a></li>
-<li><a style="color:navyblue;font-size:15px;" href= https://github.com/irfanhasib0/RL-Algorithms/blob/master/5.1_PPO_Lunar_Lander.ipynb>  Lunar Lander with PPO - Notebook </a></li>
-</ul>
-</div>
-
-
-<h3> 1.  Overview </h3>
-
-<div id=div_style> 
-<ul id=ul_style>
-    <li><b><I> DQN Environments </li></b></I>  OpenAI gym --> Mountain Car ENvironment
-    <li><b><I> DQN Environments </li></b></I>  OpenAI gym --> Pendulumn Environment
-    <li><b><I> DQN Steps </li></b></I>
-    <ul>
-    For each time step of a episode 
-    <li> action : explore -> random | or exploit -> max Q value based on epsilon decay </li>
-    <li> play one step -> store experience </li>
-    <li> sample minibatch </li>
-    <li> target Q values : reward+gamma*Q_network(new_state,new_actions) </li> 
-    <li> train Q network </li>
-    </ul>
-    <li><b><I> DDPG Steps </li></b></I>
-    <ul>
-    For each time step of a episode 
-    <li>actor(state): action + OU Noise </li>
-    <li>play one step -> store experience </li>
-    <li>sample minibatch </li>
-    <li>target Q values : reward+gamma*target_critic(new_state,new_actions) </li>
-    <li>actor loss from critic(state,action)</li>
-    <li>train actor and critic </li>
-    <li>target networks : networks*tau + (1-tau)*target_networks</li>
-    </ul>
-</ul>
-</div>
-
-<div>
-<h3> 2. Detailed Flow Chart for DQN and DDPG : (Please open in New tab for proper resolution) </h3>
-
-<img src="docs/Algorihms/DQN_Brief.jpg" align="left"
-     title="Open Image in new tab for good resolution" width="50%" >
-<img src="docs/Algorihms/DDPG_Brief.jpg" align="left"
-     title="Open Image in new tab for good resolution" width="50%" ></br>
-<img src="docs/Algorihms/PPO_A2C_Brief.jpg" align="left"
-     title="Open Image in new tab for good resolution" width="100%" >
-</div>
-
-<div>
-<h3> 3. Results </h3>
-
-* a. Results DQN on Mountain Car
-* b. Results DDPG on Pendulum 
-* c. Results PPO on Bipedal Walker
-* d. Results PPO on Lunar Lander
-
-<img src="docs/Results/dqn_mcar.png" align="left"
-     title="(Open Image in new tab for full resolution)" width="25%" />
-<img src="docs/Results/ddpg_pendulum.png" align="left"
-     title="(Open Image in new tab for full resolution)" width="25%" />
-<img src="docs/Results/bipedal_ppo.png" align="left"
-     title="(Open Image in new tab for full resolution)" width="25%" />
-<img src="docs/Results/lunar_ppo.png" align="left"
-     title="(Open Image in new tab for full resolution)" width="25%" />
-     
-<img src="docs/Results/mc.gif" align="left"
-     title="(Open Image in new tab for full resolution)" width="25%" />
-<img src="docs/Results/pend.gif" align="left"
-     title="(Open Image in new tab for full resolution)" width="25%" />
-<img src="docs/Results/bipedal_ppo.gif" align="left"
-     title="(Open Image in new tab for full resolution)" width="25%" />
-<img src="docs/Results/lunar_ppo.gif" align="left"
-     title="(Open Image in new tab for full resolution)" width="25%" />
-     
-<a style="color:navyblue;font-size:15px;" 
-href ='#table_of_content_link'>Go Back to Table of Content</a>
+     title="Open Image in new tab for good resolution" width="60%">
 </div>
 
 <div>
 <br><h1  style="color:grey;" >
 <a id="ilqr_mpc_link"></a> 
    ILQR and MPC :: Implementation from scratch for self driving car simulator</h1></br>
+<a id="a_1" href ='#table_of_content_link'>Go Back to Table of Content</a>
 
-<br><a style="color:navyblue;font-size:15px;" href=https://github.com/irfanhasib0/Control-algorithms/blob/master/MPC_GYM_CAR_RACING_V0/ilqr_on_airsim_env_map_tracker_rel-exp.ipynb> Notebook : ILQR Implementation - Notebook (Project Presentation and Code Link) </a></br>
+</br><h5> GitHub links </h5>
+<ul id="ul_1">
+<li><a style="color:royalblue;font-size:20px;" href=https://github.com/irfanhasib0/Control-algorithms/blob/master/MPC_GYM_CAR_RACING_V0/ilqr_on_airsim_env_map_tracker_rel-exp.ipynb> GitHub : ILQR Implementation - Notebook  </a></li>
+<li><a style="color:royalblue;font-size:20px;" href= https://github.com/irfanhasib0/Control-algorithms/blob/master/MPC_GYM_CAR_RACING_V0/mpc_on_car_env_map_tracker_rel.ipynb> GitHub : MPC Implementation - Notebook</a></li>
+</ul>
 
-<a style="color:navyblue;font-size:15px;" href= https://github.com/irfanhasib0/Control-algorithms/blob/master/MPC_GYM_CAR_RACING_V0/mpc_on_car_env_map_tracker_rel.ipynb> Notebook : MPC Implementation - Notebook (Project Presentation and Code Link)</a>
 </div>
-
 <div id=div_style>
 <h3> 1. Overview : </h3>
 <ul id=ul_style>
@@ -889,9 +1053,11 @@ by -Yuval Tassa
 <img src="docs/Algorihms/MPC_Detail.jpg" align="center"
      title="Open Image in new tab for good resolution" width="80%" >
 </details>
-
-     
+</div>
+<!-- Place this tag where you want the button to render. -->
+<a class="github-button" href="https://github.com/irfanhasib0/Control-Algorithms" data-icon="octicon-star" aria-label="Star irfanhasib0/Control-Algorithms on GitHub">Star</a>
 <h3> 3. Results (ILQR) : </h3>
+<div>
 * OpenAI Gym Car Environment 
 * Airsim City Space Environment 
 * Airsim Neighbourhood Environment 
@@ -908,179 +1074,233 @@ by -Yuval Tassa
      title="(Open Image in new tab for full resolution)" width="30%" />
 <img src="docs/Results/fig_nh.gif" align="center"
      title="(Open Image in new tab for full resolution)" width="30%" />
-     
-     
+</div>    
+    
 <h3>Inspired from - </h3>
-
--[AtsushiSakai/PythonRobotics](https://github.com/AtsushiSakai/PythonRobotics/blob/f51a73f47cb922a12659f8ce2d544c347a2a8156/PathTracking/model_predictive_speed_and_steer_control/model_predictive_speed_and_steer_control.py#L247-L301)
-
+<div> 
+<a style="color:nevyblue;font-size:15px;"
+https://github.com/AtsushiSakai/PythonRobotics/blob/eb6d1cbe6fc90c7be9210bf153b3a04f177cc138/PathTracking/model_predictive_speed_and_steer_control/model_predictive_speed_and_steer_control.py#L80-L102> AtsushiSakai/PythonRobotics </a>
+</div> 
 <h3> Reference </h3>
-
-- [AtsushiSakai/PythonRobotics](https://github.com/AtsushiSakai/PythonRobotics/blob/eb6d1cbe6fc90c7be9210bf153b3a04f177cc138/PathTracking/model_predictive_speed_and_steer_control/model_predictive_speed_and_steer_control.py#L80-L102)
-- Synthesis and Stabilization of Complex Behaviors through
-Online Trajectory Optimization
-by -Yuval Tassa
-
+<div>
+<ul>
+<li><a style="color:nevyblue;font-size:15px;" https://github.com/AtsushiSakai/PythonRobotics/blob/eb6d1cbe6fc90c7be9210bf153b3a04f177cc138/PathTracking/model_predictive_speed_and_steer_control/model_predictive_speed_and_steer_control.py#L80-L102> AtsushiSakai/PythonRobotics </a></li>
+<li>Synthesis and Stabilization of Complex Behaviors through 
+    Online Trajectory Optimization
+    by -Yuval Tassa</li>
+</ul>
+    
 <h3> Appendix : Map Tracker and iLQR</h3>
 <img src="docs/Algorihms/map_tracker.jpg" 
      title="Open Image in new tab for good resolution" align="left" width="40%" >
 <img src="docs/Algorihms/iLQR_Algorithm_up.jpg" 
      title="Open Image in new tab for good resolution" aligh="left" width="60%" >
-<a style="color:navyblue;font-size:15px;" 
+<a id="a_1" 
 href ='#table_of_content_link'>Go Back to Table of Content</a>
 </div>
 
 <div>
 <br><h1  style="color:grey;" >
-<a id="yolo_link"></a> 
-   Yolo-V2.0 with KERAS and Tensorflow for Object detection</h1></br>
-<br><a style="color:navyblue;font-size:15px;" https://github.com/irfanhasib0/CNN-Projects/blob/master/CNN_Basic/Minimal_yolo_v_3_functioned-exp_mod-v-1.0.ipynb> GitHub : Yolo-V3 Implementation Notebook </a></br>
-</div>
-
-<img src="docs/Algorihms/yolo_algo.jpg" align="center"
-     title="(Open Image in new tab for full resolution)" width="80%" />
-     <img src="docs/Results/yolo_out_1.gif" align="left"
-     title="(Open Image in new tab for full resolution)" width="48%" />
-     <img src="docs/Results/yolo_out_2.gif" align="right"
-     title="(Open Image in new tab for full resolution)" width="48%" />
-   
-<div>
-    
-<br><h1  style="color:grey;" >
-<a id="unet_link"></a> 
-   U-Net with KERAS for City Space Dataset</h1></br>
-<br><a style="color:navyblue;font-size:15px;" href= https://github.com/irfanhasib0/CNN-Projects/blob/master/as_unet_seg-cs.ipynb> GitHub :Unet for segmenting City Space Dataset </a></br>
-</div>
-
-<img src="docs/Results/unet_pred.jpg" align="center"
-     title="(Open Image in new tab for full resolution)" width="100%" />
-<img src="docs/Results/unet_res.jpg" align="center"
-     title="(Open Image in new tab for full resolution)" width="50%" />
- <a style="color:navyblue;font-size:15px;" 
-href ='#table_of_content_link'>Go Back to Table of Content</a>    
-
-<div>
-<h1  style="color:grey;" >
-<a id="flownet_link"></a> 
-  Flow-Net with KERAS and Tensorflow</h1></br>
-<br><a style="color:navyblue;font-size:15px;" href= https://github.com/irfanhasib0/CNN-Projects/blob/master/CNN_Basic/visual_odometry_deepvo%20-%20M-Flow%20-%20V-1.0.ipynb> Notebook :FlowNet for Optical Flow Kitti Dataset </a></br>
-</div>
-Top row : Train ; Bottom Row : Validation ;
-Left : Ground Truth ; Right : Prediction
-<img src="docs/Results/of_true-1.png" align="left"
-     title="(Open Image in new tab for full resolution)" width="50%" />
-<img src="docs/Results/of_pred-1.png" align="left"
-     title="(Open Image in new tab for full resolution)" width="50%" />
-     
-<img src="docs/Results/of_true-2.png" align="left"
-     title="(Open Image in new tab for full resolution)" width="50%" />
-<img src="docs/Results/of_pred-2.png" align="left"
-     title="(Open Image in new tab for full resolution)" width="50%" />
- <a style="color:navyblue;font-size:15px;" 
-href ='#table_of_content_link'>Go Back to Table of Content</a> 
-
-<h1  style="color:grey;" >
-<a id="disp_link"></a> 
-  Monocular Disparity with CNN based Encode-Decoder with KERAS and Tensorflow</h1></br>
-<a style="color:navyblue;font-size:15px;" https://github.com/irfanhasib0/CNN-Projects/blob/master/CNN_Basic/visual_odometry_deepvo%20-%20M-Depth%20-%20V-2.0.ipynb> Notebook : Single View Depth Estimation </a>
-</div>
-
-Top row : Train ; Bottom Row : Validation ;
-Left : Ground Truth ; Right : Prediction
-<img src="docs/Results/disp_train_gt.png" align="left"
-     title="(Open Image in new tab for full resolution)" width="50%" />
-<img src="docs/Results/disp_train_pred.png" align="left"
-     title="(Open Image in new tab for full resolution)" width="50%" />
-     
-<img src="docs/Results/disp_val_gt.png" align="left"
-     title="(Open Image in new tab for full resolution)" width="50%" />
-<img src="docs/Results/disp_val_pred.png" align="left"
-     title="(Open Image in new tab for full resolution)" width="50%" />
- <a style="color:navyblue;font-size:15px;" 
-href ='#table_of_content_link'>Go Back to Table of Content</a> 
-
-<div>
-<br><h1  style="color:grey;" >
-<a id="ros_rrbot_link"></a> 
-   ROS : Simple two linked robot inspired from rrbot</h1></br>
+<a id="ai_project_link"></a> 
+ Professional AI Solutions</h1></br>
 <br>
-</div>
+<a id="a_1" 
+href ='#table_of_content_link'>Go Back to Table of Content</a></br>
 
-<ul>
-<li> <a href= "https://github.com/irfanhasib0/ros_ws/tree/master/src/rrbot/rrbot_description">URDF Link</a> </li>
-<li> <a href="https://github.com/irfanhasib0/ros_ws/tree/master/src/rrbot/rrbot_control">Controller Link </a> </li>
-<li> <a href="https://github.com/irfanhasib0/ros_ws/tree/master/src/rrbot/rrbot_gazebo"> Gazebo Link</a> </li>
-<li> <a href="https://youtu.be/lJbyy89X7gM">Vedio Link</a> </li>
-</ul>
+These are some of my profesional AI solutions. Just the outline of the projects (without any technical information) is shared for confidentiality reasons.
+<div class="row">
+<a id="ai_project_link_1"></a> 
+<img src="docs/Algorihms/ai_projects_1.jpg" align="center" alt="(Open Image in new tab for full resolution)" width="100%" />
+</div>
+<br>
+<a href ='#table_of_content_link'>Go Back to Table of Content</a><br>
+
+<div class="row">
+<a id="ai_project_link_2"></a> 
+<img src="docs/Algorihms/ai_projects_2.jpg" align="center" alt="(Open Image in new tab for full resolution)" width="100%" />
+</div>
+<br>
+<a href ='#table_of_content_link'>Go Back to Table of Content</a><br>
+
+<div class="row">
+<a id="ai_project_link_3"></a> 
+<img src="docs/Algorihms/ai_projects_3.jpg" align="center" alt="(Open Image in new tab for full resolution)" width="100%" />
+</div>
+<br>
+<a href ='#table_of_content_link'>Go Back to Table of Content</a><br>
+
+<div class="row">
+<a id="ai_project_link_4"></a> 
+<img src="docs/Algorihms/ai_projects_4.jpg" align="center" alt="(Open Image in new tab for full resolution)" width="100%" />
+</div>
+<br>
+<a href ='#table_of_content_link'>Go Back to Table of Content</a><br>
+
+</div>
 
 <div>
 <br><h1  style="color:grey;" >
 <a id="pi_project_link"></a> 
-   Embedded System Projects : Pi Labs BD LTD</h1></br>
+   Professional Embedded System Projects </h1></br>
 <br>
-</div>
+<a id="a_1" 
+href ='#table_of_content_link'>Go Back to Table of Content</a></br>
+
 
 
 All these projects I did as an employee of Pi Labs BD Ltd. www.pilabsbd.com
 
+<div class="row">
+<a id="pi_project_link_1"></a> 
+<img src="docs/old/vault_sequrity.jpg" align="center" alt="(Open Image in new tab for full resolution)" width="100%" />
+</div>
+<br>
+<a href ='#table_of_content_link'>Go Back to Table of Content</a><br>
 
-<img src="docs/old/vault_sequrity.jpg" align="left" alt="(Open Image in new tab for full resolution)" width="50%" />
-     
-<img src="docs/old/safe_box.jpg"  alt="(Open Image in new tab for full resolution)" width="50%" />
-     
-<img src="docs/old/syringe_pump.jpg" align="left" alt="(Open Image in new tab for full resolution)" width="50%" />
-     
-<img src="docs/old/weight_machine.jpg" alt="(Open Image in new tab for full resolution)" width="50%" />
+<div class="row">
+<a id="pi_project_link_2"></a> 
+<img src="docs/old/syringe_pump.jpg" align="center" alt="(Open Image in new tab for full resolution)" width="100%" />
+</div>
+<br>
+<a href ='#table_of_content_link'>Go Back to Table of Content</a><br>
+
+<div class="row">
+<a id="pi_project_link_3"></a> 
+<img src="docs/old/safe_box.jpg"  align='center' alt="(Open Image in new tab for full resolution)" width="100%" />
+</div>
+<a href ='#table_of_content_link'>Go Back to Table of Content</a><br>
+<br>
+
+<div class="row">
+<a id="pi_project_link_4"></a>     
+<img src="docs/old/weight_machine.jpg" align='center' alt="(Open Image in new tab for full resolution)" width="100%" />
+</div>
+<br>
+<a href ='#table_of_content_link'>Go Back to Table of Content</a><br>
+
+</div>
+
+<div>
+<br><h1  style="color:grey;" >
+<a id="ros_rrbot_link_1"></a> 
+ROS : Custom 2 Link robot robot inspired from rrbot</h1><br>
+
+<a id="a_1" 
+href ='#table_of_content_link'>Go Back to Table of Content</a><br>
+
+I have developed a simple 2 link robot inspired from  <a style="color:royalblue;font-size:15px;"  href='http://gazebosim.org/tutorials?tut=ros_urdf'> rrbot </a>.It is capable of obtaining Laser Scan values from laser sensor and Camera feed from both overhead camera and camera attached to arm front. I have provided the URDF and Gazebo config files and python driver code for publishing driving command and listening to sensor values.
+    
+<ul id ="ul_1">
+<li> <a style="color:royalblue;font-size:20px;" href="https://github.com/irfanhasib0/ros_ws/blob/master/run_gui.py"> Simple 2 Link robot : Driver (Python3) </a> </li>
+<li> <a  style="color:royalblue;font-size:20px;" href= "https://github.com/irfanhasib0/ros_ws/tree/master/src/rrbot/rrbot_description">Simple 2 Link robot : description file (URDF) Link</a> </li>
+<li> <a  style="color:royalblue;font-size:20px;" href="https://github.com/irfanhasib0/ros_ws/tree/master/src/rrbot/rrbot_control">Simple 2 Link robot : Controller Code(Launch file) Link </a> </li>
+<li> <a  style="color:royalblue;font-size:20px;" href="https://github.com/irfanhasib0/ros_ws/tree/master/src/rrbot/rrbot_gazebo"> Simple 2 Link robot : Gazebo config Link</a> </li>
+<li> <a  style="color:royalblue;font-size:20px;" href="https://youtu.be/lJbyy89X7gM">Simple 2 Link robot : YouTube Link</a> </li>
+</ul>
+
+<iframe width="50%" align="center" src="https://www.youtube.com/embed/lJbyy89X7gM" title="Simple 2 link robot" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
 
 
+<div>
+<br><h1  style="color:grey;" >
+<a id="ros_rrbot_link_2"></a> 
+   ROS : Husky, URbot driver in Python</h1><br>
+
+<a id="a_1" 
+href ='#table_of_content_link'>Go Back to Table of Content</a><br>
+    
+Husky is a terrain travelling robot, developed by <a style="color:royalblue;font-size:15px;" href="https://clearpathrobotics.com/husky-unmanned-ground-vehicle-robot/" >Clearpath Robotics. </a>
+URbot(UR-5) is one of the robotic arms developed by <a style="color:royalblue;font-size:15px;" href="https://www.universal-robots.com/products/ur5-robot/" >Universal-Robots. </a> Below are the GitHub link of the basic driver code I have developed for these two robots. The driver software is capable of publishing driving commands and listening to sensor valued using ROS. <br>
+
+<ul id="ul_1">    
+<li> <a style="color:royalblue;font-size:20px;" href="https://github.com/irfanhasib0/ros_ws/tree/master/src/husky_mod/husky_control"> Husky Controller(Lunch File)</a> </li>
+<li> <a style="color:royalblue;font-size:20px;" href="https://github.com/irfanhasib0/ros_ws/blob/master/run_gui_hk.py"> Husky Driver (Python3) </a></li> 
+<li> <a style="color:royalblue;font-size:20px;" href="https://github.com/irfanhasib0/ros_ws/blob/master/run_gui_ur.py"> Universal Robots (UR5) Driver (Python3)  </a></li>
+</ul>
+
+
+<img src="docs/Algorihms/ros.jpg" align="left" width="100%"/>
+
+
+</div>
+
+<div>
+<br><h1  style="color:grey;" >
+<a id = "urc_2016_link"></a> 
+   University Rover Challenge - 2016</h1><br>
+<a id="a_1" 
+href ='#table_of_content_link'>Go Back to Table of Content</a>
+
+<p>
+Along with my team, Interplaneter I have participated in <a href = 'http://urc.marssociety.org/'>University Rover challenge</a>, 2016 at Utah, USA. Our team attained 5th position in Phobos final. I was in charge of Robotic Arm Design and deployment. The Competition is organized by  <a href='https://www.marssociety.org/'>Mars Society</a>, USA annually for college students world wide. <a href='http://urc.marssociety.org/home/about-urc/urc2016-scores'>URC 2016 Result</a>, video link <a href='https://www.youtube.com/watch?v=MlN-VFj14LE'>YouTube</a>
+</p>
+
+<img src="docs/old/URC.jpg" alt="(Open Image in new tab for full resolution)" width="100%" />
+<iframe width="50%" align="center" src="https://www.youtube.com/embed/MlN-VFj14LE" title="URC Video" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
 
 <div>
 <br><h1  style="color:grey;" >
 <a id = "buet_project_link"></a> 
    Academic Project and Thesis:</h1></br>
 <br>
-</div>
+<a id="a_1" 
+href ='#table_of_content_link'>Go Back to Table of Content</a></br>
 
-* My undergrad project of intrumentation and measurement course
-* My undergrad thesis
+<a style="color:royalblue;font-size:15px;" 
+href ='https://github.com/irfanhasib0/irfanhasib0.github.io/blob/master/academic_thesis/thesis-book.pdf'>Thesis Book </a>
+(loading can be slow, In that case download will be faster)
+
+<ul id="ul_1">
+    <li> My undergrad project of intrumentation and measurement course. </li>
+    <li> My undergrad thesis. </li>
+</ul>
 
 
-<img src="docs/old/thesis_project.jpg" alt="(Open Image in new tab for full resolution)" width="80%" />
+<img src="docs/old/thesis_project.jpg" align='center' alt="(Open Image in new tab for full resolution)" width="80%" />
 
 
-<a style="color:navyblue;font-size:15px;" 
+<a id="a_1" 
 href ='#table_of_content_link'>Go Back to Table of Content</a>
-
-<div>
-<br><h1  style="color:grey;" >
-<a id = "urc_2016_link"></a> 
-   University Rover Challenge - 2016</h1></br>
-<br>
 </div>
-
-### Critical Design Rivew    : [Video Link](https://www.youtube.com/watch?v=MlN-VFj14LE)
-
-<img src="docs/old/URC.jpg" alt="(Open Image in new tab for full resolution)" width="80%" />
-<a style="color:navyblue;font-size:15px;" 
-href ='#table_of_content_link'>Go Back to Table of Content</a>
 
 <div>
 <br><h1  style="color:grey;" >
 <a id = "embedded_project_link"></a> 
    Embedded System & Robotics Projects Personal (Undergrad) :</h1></br>
 <br>
-</div>
+<a id="a_1" 
+href ='#table_of_content_link'>Go Back to Table of Content</a></br>
+
 <ul>
  <li> Hobby CNC machine ‘Ourtech v 2.0’ and 'Ourtech v1.0', Desktop CNC Machine.<a href = 'https://www.youtube.com/watch?v=xU7YMPpZMYs'>Video Link</a></li>
  <li> Interfacing ov7670 camera sensor with atmega 32 and using object tracking algorithm on AVR platform (Feb-May - 2013)<a href='https://youtu.be/tKWbYbAJSEs'>Video Link</a></li>
  <li> Software platform for controlling Robotic arm with openCV, python and Raspberry pi (Apr-Sep,2014)<a href='https://www.youtube.com/watch?v=hj1Wc6-8-7w'>Video Link</a></li>
 </ul>
+
+<div class="row">
+<a id="embedded_project_link_1"></a>     
+<img src="docs/old/CNC.jpg" align="center" alt="(Open Image in new tab for full resolution)" width="100%" />
+</div>
+<br>
+<a href ='#table_of_content_link'>Go Back to Table of Content</a><br>
     
-  <img src="docs/old/CNC.jpg" align="center" alt="(Open Image in new tab for full resolution)" width="50%" />
- 
-  <img src="docs/old/Robot_Arm.jpg" align="left" alt="(Open Image in new tab for full resolution)" width="50%" />
- 
-  <img src="docs/old/Robot_Arm_Soft.jpg" align="left" alt="(Open Image in new tab for full resolution)" width="50%" />
+<div class="row">
+<a id="embedded_project_link_2"></a>     
+<img src="docs/old/Robot_Arm.jpg" align='center' alt="(Open Image in new tab for full resolution)" width="100%" />
+</div>
+<br>
+<a href ='#table_of_content_link'>Go Back to Table of Content</a><br>
+
+<div class="row">
+<a id="embedded_project_link_3"></a>     
+<img src="docs/old/Robot_Arm_Soft.jpg" align="center" alt="(Open Image in new tab for full resolution)" width="100%" />
+</div>
+<br>
+<a href ='#table_of_content_link'>Go Back to Table of Content</a><br>
+
+</div>
 
 
 ```python
