@@ -45,7 +45,7 @@ function App() {
       <BsBook /><a href='https://irfanhasib0.github.io/blogs' target='_blank'>Blog</a>
       &nbsp;&nbsp;<BsBook /><a href='/research.html' target='_blank'>Research</a>
       </div>
-      <iframe ref={fref} src={"readme.html"} scrolling="no" width={"100%"} height={"10000 px"}></iframe>
+      <iframe ref={fref} src={"readme.html"} scrolling="no" width={"1200 px"} height={"10000 px"}></iframe>
       </Col>
       </Row> 
       </>
