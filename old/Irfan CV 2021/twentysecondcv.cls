@@ -70,10 +70,12 @@
 
 % Define custom commands for CV info
 \newcommand{\cvdate}[1]{\renewcommand{\cvdate}{#1}}
-\newcommand{\cvmail}[1]{\renewcommand{\cvmail}{#1}}
+\newcommand{\cvmaila}[1]{\renewcommand{\cvmaila}{#1}}
+\newcommand{\cvmailb}[1]{\renewcommand{\cvmailb}{#1}}
 \newcommand{\cvnumberphone}[1]{\renewcommand{\cvnumberphone}{#1}}
 \newcommand{\cvaddress}[1]{\renewcommand{\cvaddress}{#1}}
-\newcommand{\cvsite}[1]{\renewcommand{\cvsite}{#1}}
+\newcommand{\cvsitea}[1]{\renewcommand{\cvsitea}{#1}}
+\newcommand{\cvsiteb}[1]{\renewcommand{\cvsiteb}{#1}}
 \newcommand{\cvlinkedin}[1]{\renewcommand{\cvlinkedin}{#1}}
 \newcommand{\aboutme}[1]{\renewcommand{\aboutme}{#1}}
 \newcommand{\profilepic}[1]{\renewcommand{\profilepic}{#1}}
@@ -144,16 +146,19 @@
 
 		{\Large\color{black!80}\cvjobtitle}
 
-		%------------------------------------------------
+		%------sssss------------------------------------------
 
 		\renewcommand{\arraystretch}{1.6}
 		\begin{tabular}{p{0.5cm} @{\hskip 0.5cm}p{5cm}}
-			\ifthenelse{\equal{\cvdate}{}}{}{\textsc{\Large\icon{\Info}} & \cvdate\\}
-			\ifthenelse{\equal{\cvaddress}{}}{}{\textsc{\Large\icon{\Letter}} & \cvaddress\\}
-			\ifthenelse{\equal{\cvnumberphone}{}}{}{\textsc{\Large\icon{\Telefon}} & \cvnumberphone\\}
-			\ifthenelse{\equal{\cvsite}{}}{}{\textsc{\Large\icon{\Mundus}} & \cvsite\\}
-			\ifthenelse{\equal{\cvmail}{}}{}{\textsc{\large\icon{@}} & \href{mailto:\cvmail}{\cvmail}\\}
-			\ifthenelse{\equal{\cvlinkedin}{}}{}{\textsc{\Large\icon{in}} & \cvlinkedin\\}
+			\ifthenelse{\equal{\cvdate}{}}{}{\textsc{\small\icon{\Info}} & \cvdate\\}
+			\ifthenelse{\equal{\cvaddress}{}}{}{\textsc{\small\icon{\Letter}} & \cvaddress\\}
+			\ifthenelse{\equal{\cvnumberphone}{}}{}{\textsc{\small\icon{\Telefon}} & \cvnumberphone\\}
+			\ifthenelse{\equal{\cvmaila}{}}{}{\textsc{\small\icon{@}} & \href{mailto:\cvmaila}{\cvmaila}\\}
+           \ifthenelse{\equal{\cvmailb}{}}{}{\textsc{\small\icon{@}} & \href{mailto:\cvmailb}{\cvmailb}\\}
+			\ifthenelse{\equal{\cvsitea}{}}{}{\textsc{\small\icon{\Mundus}} & \cvsitea\\}
+            \ifthenelse{\equal{\cvsiteb}{}}{}{\textsc{\small\icon{B}} & \cvsiteb\\}
+
+			\ifthenelse{\equal{\cvlinkedin}{}}{}{\textsc{\small\icon{In}} & \cvlinkedin\\}
 		\end{tabular}
 
 		%------------------------------------------------
