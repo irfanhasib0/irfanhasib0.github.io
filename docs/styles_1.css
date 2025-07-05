@@ -14,8 +14,13 @@
   column-width: 22em;
 }
 
+img{
+  border: 20px solid #FAFAFA; border-radius: 5px;
+}
     
-
+iframe{
+  border: 20px solid #FAFAFA; border-radius: 5px;
+}
 /*-moz-column-width: 22em; *//* Firefox */
 /*-webkit-column-width: 22em; *//* webkit, Safari, Chrome */
 /*column-width: 22em;*/
